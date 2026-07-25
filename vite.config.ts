@@ -12,6 +12,16 @@ export default defineConfig({
     outDir: 'dist',
     sourcemap: false,
     chunkSizeWarningLimit: 900,
+    rollupOptions: {
+      output: {
+        // Recharts and React change far less often than the site does. Splitting them out
+        // means a content update invalidates a ~30 kB chunk instead of the whole bundle.
+        manualChunks: {
+          charts: ['recharts'],
+          react: ['react', 'react-dom', 'react-router-dom'],
+        },
+      },
+    },
   },
   test: {
     environment: 'node',

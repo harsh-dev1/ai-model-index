@@ -11,7 +11,7 @@
 import { join } from 'node:path';
 import { ARENA_BOARDS, BENCHMARKS } from './config/benchmarks.ts';
 import { HISTORY_DIR, ROOT, latestSnapshot, readJson, writeJson } from './lib/io.ts';
-import { canonicalSlug, canonicalVendor, inferVendor } from '../src/lib/identity.ts';
+import { canonicalSlug, canonicalVendor, displayName, inferVendor } from '../src/lib/identity.ts';
 import type { UnmatchedEntry } from '../src/lib/types.ts';
 import type { ArenaSnapshot, EpochSnapshot, OpenRouterSnapshot } from './fetch-all.ts';
 
@@ -255,6 +255,20 @@ const arenaTopMatchRate = textBoard.length ? topMatched / textBoard.length : 0;
 
 eligible.sort((a, b) => a.slug.localeCompare(b.slug));
 unmatched.sort((a, b) => a.slug.localeCompare(b.slug));
+
+// Tidy the labels, but never at the cost of telling two models apart: if stripping the
+// run qualifier makes two distinct rows read the same, both keep their raw label.
+const cleaned = new Map<string, string>();
+const seen = new Map<string, number>();
+for (const m of eligible) {
+  const name = displayName(m.name, m.vendor) || m.name;
+  cleaned.set(m.slug, name);
+  seen.set(name, (seen.get(name) ?? 0) + 1);
+}
+for (const m of eligible) {
+  const name = cleaned.get(m.slug)!;
+  if ((seen.get(name) ?? 0) === 1) m.name = name;
+}
 
 // Deterministic build stamp: the freshest source timestamp, not the time the script ran.
 // Done-bar #9 requires that re-running the pipeline on committed inputs reproduces the

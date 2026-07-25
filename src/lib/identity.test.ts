@@ -1,5 +1,11 @@
 import { describe, expect, it } from 'vitest';
-import { canonicalSlug, extractEffort, inferVendor, isSearchVariant } from './identity.ts';
+import {
+  canonicalSlug,
+  displayName,
+  extractEffort,
+  inferVendor,
+  isSearchVariant,
+} from './identity.ts';
 
 describe('canonicalSlug', () => {
   it('collapses the three sources onto one slug', () => {
@@ -84,5 +90,31 @@ describe('metadata extraction', () => {
     expect(inferVendor('gpt-5-5')).toBe('OpenAI');
     expect(inferVendor('glm-5-2')).toBe('Z.ai');
     expect(inferVendor('some-unknown-model')).toBeNull();
+  });
+});
+
+describe('displayName', () => {
+  it('drops run qualifiers the sources bake into the label', () => {
+    expect(displayName('gpt-oss-120b (unknown thinking)')).toBe('gpt-oss-120b');
+    expect(displayName('Claude Fable 5 (max)')).toBe('Claude Fable 5');
+    expect(displayName('GPT-5.6 Sol (pro, max)')).toBe('GPT-5.6 Sol');
+  });
+
+  it('keeps parentheticals that identify a different model', () => {
+    // These are separately ranked rows; stripping the qualifier would make two
+    // different models read identically, which is worse than an ugly label.
+    expect(displayName('GPT-4o (Nov 2024)')).toBe('GPT-4o (Nov 2024)');
+    expect(displayName('Qwen 3.6 Max (Preview)')).toBe('Qwen 3.6 Max (Preview)');
+    expect(displayName('Gemini 2.5 Pro (Jun 2025)')).toBe('Gemini 2.5 Pro (Jun 2025)');
+  });
+
+  it('removes the vendor prefix, which already has its own column', () => {
+    expect(displayName('Meta: Muse Spark 1.1', 'Meta')).toBe('Muse Spark 1.1');
+    expect(displayName('Google: Gemini 3 Flash', 'Google')).toBe('Gemini 3 Flash');
+  });
+
+  it('never strips a name down to nothing', () => {
+    expect(displayName('max')).toBe('max');
+    expect(displayName('')).toBe('');
   });
 });

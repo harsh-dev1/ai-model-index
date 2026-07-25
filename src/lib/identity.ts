@@ -116,6 +116,60 @@ export function canonicalVendor(raw: string | null | undefined): string {
 }
 
 /**
+ * Words that describe how a model was *run*, not which model it is: reasoning effort,
+ * thinking mode, provider tier. Sources bake these into the label, which is how you end
+ * up reading "gpt-oss-120b (unknown thinking)" on a leaderboard.
+ */
+const RUN_QUALIFIERS = new Set([
+  'max',
+  'xhigh',
+  'high',
+  'medium',
+  'low',
+  'minimal',
+  'none',
+  'pro',
+  'promax',
+  'thinking',
+  'non-thinking',
+  'nonthinking',
+  'no thinking',
+  'reasoning',
+  'unknown',
+  'unknown thinking',
+  'default',
+  'standard',
+  'extended thinking',
+  'instant',
+]);
+
+/**
+ * A model label fit to print.
+ *
+ * Two things get removed: the vendor prefix, because the vendor already has its own
+ * column, and a trailing parenthetical made up entirely of run qualifiers. Anything else
+ * in parentheses stays — "(Nov 2024)" and "(Preview)" distinguish real, separately
+ * ranked models, and dropping those would make two different rows look identical.
+ */
+export function displayName(raw: string | null | undefined, vendor?: string): string {
+  if (!raw) return '';
+  let s = raw.trim();
+
+  if (vendor && vendor !== 'Unknown') {
+    s = s.replace(new RegExp(`^${vendor.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*[:|-]\\s*`, 'i'), '');
+  }
+  s = s.replace(/^[A-Za-z0-9.\s]{2,20}:\s+/, '');
+
+  const paren = s.match(/^(.*?)\s*\(([^()]*)\)\s*$/);
+  if (paren) {
+    const parts = paren[2].split(',').map((p) => p.trim().toLowerCase());
+    if (parts.length > 0 && parts.every((p) => RUN_QUALIFIERS.has(p))) s = paren[1];
+  }
+
+  return s.trim();
+}
+
+/**
  * Vendor inferred from a canonical slug. Used only as a fallback — Epoch and OpenRouter
  * both state the organisation explicitly, and a stated value always wins.
  */
