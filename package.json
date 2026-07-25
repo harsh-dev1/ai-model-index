@@ -12,13 +12,14 @@
     "lint": "eslint .",
     "test": "vitest run --passWithNoTests",
     "test:watch": "vitest",
-    "fetch": "tsx scripts/fetch-all.ts",
-    "backfill": "tsx scripts/backfill-arena.ts",
+    "data:fetch": "tsx scripts/fetch-all.ts",
+    "data:backfill": "tsx scripts/backfill-arena.ts",
     "normalize": "tsx scripts/normalize.ts",
     "score": "tsx scripts/score.ts",
-    "pipeline": "pnpm fetch && pnpm normalize && pnpm score"
+    "pipeline": "pnpm data:fetch && pnpm normalize && pnpm score"
   },
   "dependencies": {
+    "fflate": "^0.8.3",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.9.0",

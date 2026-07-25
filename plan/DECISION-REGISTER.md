@@ -1,0 +1,17 @@
+# Decision register
+
+Append-only. Every decision gets an id, a date, and its reason. Settled decisions stay
+settled — supersede visibly with a new row, never re-argue or silently rewrite.
+
+| id | date | decision | why |
+|---|---|---|---|
+| DEC-001 | 2026-07-24 | Repo `harsh-dev1/ai-model-index`, public, personal account, no organization | Owner's explicit instruction; public is required for free GitHub Pages and a published opinion is the point of the site. |
+| DEC-002 | 2026-07-24 | Static site on GitHub Pages: Vite + React + TypeScript + Tailwind + Recharts. No server, no database. | Zero hosting cost, zero ops. Data lives in git, so every published number is auditable via `git log`. |
+| DEC-003 | 2026-07-24 | Wave 0 deploys a placeholder page before any feature work | A deploy problem found in week two is a week-two problem. Proving the pipe first is cheap. |
+| DEC-004 | 2026-07-24 | **Artificial Analysis excluded from v1** despite having strong intelligence-index data | Their free tier is licensed "internal use only with attribution — no redistribution". Publishing it would breach the licence. Owner chose to skip rather than pay or go private. |
+| DEC-005 | 2026-07-24 | Commit our own dated raw snapshots to this repo rather than reading upstream at page load | Upstreams can go stale or vanish. We own our history from day one; upstream becomes a bootstrap, not a dependency. Also makes the whole index reproducible offline. |
+| DEC-006 | 2026-07-24 | **CORRECTION — Aider Polyglot and LiveBench dropped as direct sources.** Planned as two of four pillars; both turned out stale on inspection. | Aider's newest leaderboard entry is **2025-10-03**; LiveBench's HF datasets were last modified **2025-04-07**. Neither covers any current frontier model. Shipping them as "live" data would have been false advertising. Correction recorded rather than quietly swapped. |
+| DEC-007 | 2026-07-24 | **Epoch AI Benchmarking Hub adopted as the primary capability source**, replacing DEC-006's dropped sources | `epoch.ai/data/benchmark_data.zip`, updated the same day, **CC-BY licensed — explicitly free to redistribute with credit**. Carries ~70 benchmarks including GPQA Diamond, SWE-bench Verified, FrontierMath, Terminal-Bench, ARC-AGI-2, HLE, METR time horizons, plus a *fresher* copy of Aider Polyglot than Aider's own repo. Also ships release dates, organisation, country, accessibility, and standard errors. |
+| DEC-008 | 2026-07-24 | Final source set is three independent live feeds: **Epoch AI** (capability), **Arena mirror** (human preference + 124 days of history), **OpenRouter** (economics + availability) | Three genuinely independent measurement approaches — automated benchmarks, human votes, and market pricing. No single source can dominate the composite. |
+| DEC-009 | 2026-07-24 | Pillars and default weights: Reasoning 25 · Coding 25 · Human preference 20 · Agentic 15 · Cost efficiency 15 | Owner accepted the defaults as an opening editorial position. Weights are published and re-weightable in the UI, so the opinion is arguable rather than asserted. |
+| DEC-010 | 2026-07-24 | Models whose confidence intervals overlap are displayed as **tied**, not ranked against each other | Arena publishes ±CI and Epoch publishes stderr. Ranking 3rd vs 4th across overlapping intervals is fake precision, which is the most common leaderboard failure. |

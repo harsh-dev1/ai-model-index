@@ -1,2 +1,6 @@
 allowBuilds:
   esbuild: true
+confirmModulesPurge: false
+# pnpm 11 re-verifies (and can purge) node_modules before every script run, which makes
+# multi-step local pipelines fight the package manager. CI installs from the lockfile.
+verifyDepsBeforeRun: false
