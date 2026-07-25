@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-ink-950: #07090f;
+  --color-ink-900: #0b0f18;
+  --color-ink-850: #10151f;
+  --color-ink-800: #161c28;
+  --color-ink-700: #232b3a;
+  --color-ink-600: #38425a;
+  --color-ink-400: #7c8aa6;
+  --color-ink-200: #c3ccdd;
+  --color-accent: #5eead4;
+  --color-accent-dim: #2dd4bf;
+  --color-warn: #fbbf24;
+  --color-bad: #f87171;
+}
+
+html {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-ink-950);
+  color: var(--color-ink-200);
+  font-family:
+    ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Respect users who ask for less motion; charts animate by default. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
