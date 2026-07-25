@@ -73,6 +73,57 @@ export default function IndexPage({ state }: { state: AsyncState<IndexPayload> }
         const bestOpen = [...ranked].filter((m) =>
           /open/i.test(m.accessibility ?? ''),
         )[0];
+        const longestContext = [...ranked].sort(
+          (a, b) => (b.contextLength ?? 0) - (a.contextLength ?? 0),
+        )[0];
+
+        // Under a lopsided weighting one model can win several categories at once. Four
+        // cards repeating the same name reads like a bug, so the categories collapse into
+        // one card and the sweep becomes the headline instead of being hidden.
+        const candidates = [
+          best && {
+            label: 'Best overall',
+            model: best,
+            reason: `Top of the board at ${best.score.toFixed(1)}, and the only model in its tier — the one result on this page that is not a statistical tie.`,
+          },
+          bestValue && {
+            label: 'Best value',
+            model: bestValue,
+            reason: `Scores ${bestValue.score.toFixed(1)} at ${usd(bestValue.pricing?.blendedPerM)} per million tokens. Most of the capability of the leaders for a fraction of the bill.`,
+          },
+          bestCoding && {
+            label: 'Best at coding',
+            model: bestCoding,
+            reason:
+              'Strongest coding pillar in the index, measured by benchmarks that run the code rather than asking a model to grade it.',
+          },
+          bestOpen
+            ? {
+                label: 'Best open weights',
+                model: bestOpen,
+                reason: 'The strongest model you can download and run yourself, rather than rent.',
+              }
+            : longestContext && {
+                label: 'Longest context',
+                model: longestContext,
+                reason: 'The largest context window among models near the top of the index.',
+              },
+        ].filter((p): p is { label: string; model: ScoredModel; reason: string } => Boolean(p));
+
+        const picks: Array<{ label: string; model: ScoredModel; reason: string }> = [];
+        for (const c of candidates) {
+          const existing = picks.find((p) => p.model.slug === c.model.slug);
+          if (existing) {
+            existing.label = `${existing.label} · ${c.label}`;
+          } else {
+            picks.push({ ...c });
+          }
+        }
+        for (const p of picks) {
+          if (p.label.includes('·')) {
+            p.reason = `Wins ${p.label.split(' · ').length} of these categories at once under the current weights. ${p.reason}`;
+          }
+        }
 
         return (
           <Page>
@@ -110,46 +161,9 @@ export default function IndexPage({ state }: { state: AsyncState<IndexPayload> }
               }
             >
               <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-                <Pick
-                  label="Best overall"
-                  model={best}
-                  reason={
-                    best
-                      ? `Top of the board at ${best.score.toFixed(1)}, and the only model in its tier — the one result on this page that is not a statistical tie.`
-                      : ''
-                  }
-                />
-                <Pick
-                  label="Best value"
-                  model={bestValue}
-                  reason={
-                    bestValue
-                      ? `Scores ${bestValue.score.toFixed(1)} at ${usd(bestValue.pricing?.blendedPerM)} per million tokens. Most of the capability of the leaders for a fraction of the bill.`
-                      : ''
-                  }
-                />
-                <Pick
-                  label="Best at coding"
-                  model={bestCoding}
-                  reason={
-                    bestCoding
-                      ? `Strongest coding pillar in the index, measured by benchmarks that run the code rather than asking a model to grade it.`
-                      : ''
-                  }
-                />
-                {bestOpen ? (
-                  <Pick
-                    label="Best open weights"
-                    model={bestOpen}
-                    reason="The strongest model you can download and run yourself, rather than rent."
-                  />
-                ) : (
-                  <Pick
-                    label="Longest context"
-                    model={[...ranked].sort((a, b) => (b.contextLength ?? 0) - (a.contextLength ?? 0))[0]}
-                    reason="The largest context window among models near the top of the index."
-                  />
-                )}
+                {picks.map((p) => (
+                  <Pick key={p.model.slug} label={p.label} model={p.model} reason={p.reason} />
+                ))}
               </div>
             </Section>
 

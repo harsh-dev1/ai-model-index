@@ -141,7 +141,18 @@ const RUN_QUALIFIERS = new Set([
   'standard',
   'extended thinking',
   'instant',
+  // Inference hosts. Which provider served the weights is not which model it is.
+  'together',
+  'novita',
+  'fireworks',
+  'deepinfra',
+  'groq',
+  'hyperbolic',
+  'nebius',
 ]);
+
+/** Thinking budgets: "128k thinking", "64k thinking". Same model, different leash. */
+const BUDGET_QUALIFIER = /^\d+k\s+thinking$/;
 
 /**
  * A model label fit to print.
@@ -162,8 +173,9 @@ export function displayName(raw: string | null | undefined, vendor?: string): st
 
   const paren = s.match(/^(.*?)\s*\(([^()]*)\)\s*$/);
   if (paren) {
-    const parts = paren[2].split(',').map((p) => p.trim().toLowerCase());
-    if (parts.length > 0 && parts.every((p) => RUN_QUALIFIERS.has(p))) s = paren[1];
+    const parts = paren[2].split(/[,;]/).map((p) => p.trim().toLowerCase());
+    const allRunConfig = parts.every((p) => RUN_QUALIFIERS.has(p) || BUDGET_QUALIFIER.test(p));
+    if (parts.length > 0 && allRunConfig && paren[1].trim()) s = paren[1];
   }
 
   return s.trim();

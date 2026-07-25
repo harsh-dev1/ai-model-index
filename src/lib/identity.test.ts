@@ -118,3 +118,16 @@ describe('displayName', () => {
     expect(displayName('')).toBe('');
   });
 });
+
+describe('displayName, host and budget suffixes', () => {
+  it('drops the inference host and the thinking budget', () => {
+    expect(displayName('GLM-4.7 (Together)')).toBe('GLM-4.7');
+    expect(displayName('V3.2 (Thinking; Novita)')).toBe('V3.2');
+    expect(displayName('Claude Opus 4.5 (128k thinking)')).toBe('Claude Opus 4.5');
+  });
+
+  it('leaves a parenthetical alone if any part of it identifies the model', () => {
+    expect(displayName('Qwen 3.5 Plus (hosted 397B-A17B)')).toBe('Qwen 3.5 Plus (hosted 397B-A17B)');
+    expect(displayName('Qwen 3.6 Plus (2026-04-02)')).toBe('Qwen 3.6 Plus (2026-04-02)');
+  });
+});
