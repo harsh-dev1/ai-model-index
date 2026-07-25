@@ -13,10 +13,14 @@ concurrency:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
     steps:
       - uses: actions/checkout@v5
       - uses: pnpm/action-setup@v4
@@ -62,3 +66,10 @@ jobs:
             echo "::error::Data has not refreshed in ${AGE} days — the feed is stalled."
             exit 1
           fi
+
+  # New data is worthless until it is published, and the commit above cannot trigger the
+  # push workflow on its own.
+  publish:
+    needs: refresh
+    if: needs.refresh.outputs.changed == 'true'
+    uses: ./.github/workflows/pages.yml

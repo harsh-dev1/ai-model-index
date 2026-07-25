@@ -5,60 +5,11 @@ on:
     branches: [main]
   workflow_dispatch:
 
-# Allow one concurrent deployment; let an in-progress run finish so a deploy is never half-applied.
-concurrency:
-  group: pages
-  cancel-in-progress: false
-
 permissions:
   contents: read
   pages: write
   id-token: write
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v5
-      - uses: pnpm/action-setup@v4
-      - uses: actions/setup-node@v5
-        with:
-          node-version: 22
-          cache: pnpm
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm typecheck
-      - run: pnpm lint
-      - run: pnpm test
-
-      # Done-bar #9: the published ranking must be re-derivable from the committed raw
-      # snapshots, byte for byte. If this drifts, the index is no longer something a
-      # stranger can check, and an unverifiable opinion is just an assertion.
-      - name: Verify the index is reproducible from committed data
-        run: |
-          cp public/data/index.json /tmp/index.committed.json
-          cp public/data/trends.json /tmp/trends.committed.json
-          pnpm normalize
-          pnpm score
-          diff -q /tmp/index.committed.json public/data/index.json \
-            || { echo "::error::index.json is not reproducible from the committed snapshots"; exit 1; }
-          diff -q /tmp/trends.committed.json public/data/trends.json \
-            || { echo "::error::trends.json is not reproducible from the committed snapshots"; exit 1; }
-          echo "Index reproduced byte-for-byte from committed data."
-
-      - run: pnpm build
-        env:
-          DEPLOY_BASE: /ai-model-index/
-
-      - uses: actions/upload-pages-artifact@v4
-        with:
-          path: dist
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+  publish:
+    uses: ./.github/workflows/pages.yml
