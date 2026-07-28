@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-28T14:40:23.529Z",
+  "fetchedAt": "2026-07-28T19:54:39.438Z",
   "source": "https://openrouter.ai/api/v1/models",
   "models": [
     {
@@ -118,12 +118,50 @@
       "supportsReasoning": true
     },
     {
+      "id": "google/gemini-3.6-flash:batch",
+      "name": "Google: Gemini 3.6 Flash (batch)",
+      "created": 1784646733,
+      "contextLength": 1048576,
+      "inputPerM": 0.75,
+      "outputPerM": 3.75,
+      "inputModalities": [
+        "text",
+        "image",
+        "video",
+        "file",
+        "audio"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "google/gemini-3.5-flash-lite",
       "name": "Google: Gemini 3.5 Flash Lite",
       "created": 1784646726,
       "contextLength": 1048576,
       "inputPerM": 0.3,
       "outputPerM": 2.5,
+      "inputModalities": [
+        "text",
+        "image",
+        "video",
+        "file",
+        "audio"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "google/gemini-3.5-flash-lite:batch",
+      "name": "Google: Gemini 3.5 Flash Lite (batch)",
+      "created": 1784646726,
+      "contextLength": 1048576,
+      "inputPerM": 0.15,
+      "outputPerM": 1.25,
       "inputModalities": [
         "text",
         "image",
@@ -482,6 +520,23 @@
       "supportsReasoning": true
     },
     {
+      "id": "anthropic/claude-sonnet-5:batch",
+      "name": "Anthropic: Claude Sonnet 5 (batch)",
+      "created": 1782843083,
+      "contextLength": 1000000,
+      "inputPerM": 1,
+      "outputPerM": 5,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "google/gemini-3.1-flash-lite-image",
       "name": "Google: Nano Banana 2 Lite (Gemini 3.1 Flash Lite Image)",
       "created": 1782837225,
@@ -660,6 +715,23 @@
       "supportsReasoning": true
     },
     {
+      "id": "anthropic/claude-fable-5:batch",
+      "name": "Anthropic: Claude Fable 5 (batch)",
+      "created": 1781007515,
+      "contextLength": 1000000,
+      "inputPerM": 5,
+      "outputPerM": 25,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "nex-agi/nex-n2-pro",
       "name": "Nex AGI: Nex-N2-Pro",
       "created": 1780937140,
@@ -726,8 +798,8 @@
       "name": "Qwen: Qwen3.7 Plus",
       "created": 1780491783,
       "contextLength": 1000000,
-      "inputPerM": 0.32,
-      "outputPerM": 1.28,
+      "inputPerM": 0.256,
+      "outputPerM": 1.024,
       "inputModalities": [
         "text",
         "image"
@@ -744,6 +816,23 @@
       "contextLength": 1048576,
       "inputPerM": 0.3,
       "outputPerM": 1.2,
+      "inputModalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "minimax/minimax-m3:batch",
+      "name": "MiniMax: MiniMax M3 (batch)",
+      "created": 1780245374,
+      "contextLength": 524288,
+      "inputPerM": 0.15,
+      "outputPerM": 0.6,
       "inputModalities": [
         "text",
         "image",
@@ -806,12 +895,29 @@
       "supportsReasoning": true
     },
     {
+      "id": "anthropic/claude-opus-4.8:batch",
+      "name": "Anthropic: Claude Opus 4.8 (batch)",
+      "created": 1779905091,
+      "contextLength": 1000000,
+      "inputPerM": 2.5,
+      "outputPerM": 12.5,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "qwen/qwen3.7-max",
       "name": "Qwen: Qwen3.7 Max",
       "created": 1779376861,
       "contextLength": 1000000,
-      "inputPerM": 1.475,
-      "outputPerM": 4.425,
+      "inputPerM": 0.7375,
+      "outputPerM": 2.2125,
       "inputModalities": [
         "text"
       ],
@@ -844,6 +950,25 @@
       "contextLength": 1048576,
       "inputPerM": 1.5,
       "outputPerM": 9,
+      "inputModalities": [
+        "text",
+        "image",
+        "video",
+        "file",
+        "audio"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "google/gemini-3.5-flash:batch",
+      "name": "Google: Gemini 3.5 Flash (batch)",
+      "created": 1779193800,
+      "contextLength": 1048576,
+      "inputPerM": 0.75,
+      "outputPerM": 4.5,
       "inputModalities": [
         "text",
         "image",
@@ -912,6 +1037,25 @@
       "contextLength": 1048576,
       "inputPerM": 0.25,
       "outputPerM": 1.5,
+      "inputModalities": [
+        "text",
+        "image",
+        "video",
+        "file",
+        "audio"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "google/gemini-3.1-flash-lite:batch",
+      "name": "Google: Gemini 3.1 Flash Lite (batch)",
+      "created": 1778168828,
+      "contextLength": 1048576,
+      "inputPerM": 0.125,
+      "outputPerM": 0.75,
       "inputModalities": [
         "text",
         "image",
@@ -1135,8 +1279,8 @@
       "name": "Qwen: Qwen3.5 Plus 2026-04-20",
       "created": 1777261368,
       "contextLength": 1000000,
-      "inputPerM": 0.3,
-      "outputPerM": 1.7999999999999998,
+      "inputPerM": 0.22499999999999998,
+      "outputPerM": 1.35,
       "inputModalities": [
         "text",
         "image",
@@ -1152,8 +1296,8 @@
       "name": "Qwen: Qwen3.6 Flash",
       "created": 1777261362,
       "contextLength": 1000000,
-      "inputPerM": 0.1875,
-      "outputPerM": 1.125,
+      "inputPerM": 0.140625,
+      "outputPerM": 0.84375,
       "inputModalities": [
         "text",
         "image",
@@ -1186,8 +1330,8 @@
       "name": "Qwen: Qwen3.6 Max Preview",
       "created": 1777260242,
       "contextLength": 262144,
-      "inputPerM": 1.04,
-      "outputPerM": 6.24,
+      "inputPerM": 0.8320000000000001,
+      "outputPerM": 4.992,
       "inputModalities": [
         "text"
       ],
@@ -1237,6 +1381,23 @@
       "contextLength": 1050000,
       "inputPerM": 5,
       "outputPerM": 30,
+      "inputModalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/gpt-5.5:batch",
+      "name": "OpenAI: GPT-5.5 (batch)",
+      "created": 1777051893,
+      "contextLength": 1050000,
+      "inputPerM": 2.5,
+      "outputPerM": 15,
       "inputModalities": [
         "file",
         "image",
@@ -1439,6 +1600,23 @@
       "supportsReasoning": true
     },
     {
+      "id": "anthropic/claude-opus-4.7:batch",
+      "name": "Anthropic: Claude Opus 4.7 (batch)",
+      "created": 1776351100,
+      "contextLength": 1000000,
+      "inputPerM": 2.5,
+      "outputPerM": 12.5,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "z-ai/glm-5.1",
       "name": "Z.ai: GLM 5.1",
       "created": 1775578025,
@@ -1526,8 +1704,8 @@
       "name": "Qwen: Qwen3.6 Plus",
       "created": 1775133557,
       "contextLength": 1000000,
-      "inputPerM": 0.325,
-      "outputPerM": 1.95,
+      "inputPerM": 0.21125,
+      "outputPerM": 1.2674999999999998,
       "inputModalities": [
         "text",
         "image",
@@ -1703,12 +1881,46 @@
       "supportsReasoning": true
     },
     {
+      "id": "openai/gpt-5.4-nano:batch",
+      "name": "OpenAI: GPT-5.4 Nano (batch)",
+      "created": 1773748187,
+      "contextLength": 400000,
+      "inputPerM": 0.09999999999999999,
+      "outputPerM": 0.625,
+      "inputModalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "openai/gpt-5.4-mini",
       "name": "OpenAI: GPT-5.4 Mini",
       "created": 1773748178,
       "contextLength": 400000,
       "inputPerM": 0.75,
       "outputPerM": 4.5,
+      "inputModalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/gpt-5.4-mini:batch",
+      "name": "OpenAI: GPT-5.4 Mini (batch)",
+      "created": 1773748178,
+      "contextLength": 400000,
+      "inputPerM": 0.375,
+      "outputPerM": 2.25,
       "inputModalities": [
         "file",
         "image",
@@ -1849,6 +2061,23 @@
       "supportsReasoning": true
     },
     {
+      "id": "openai/gpt-5.4:batch",
+      "name": "OpenAI: GPT-5.4 (batch)",
+      "created": 1772734352,
+      "contextLength": 1050000,
+      "inputPerM": 1.25,
+      "outputPerM": 7.5,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "inception/mercury-2",
       "name": "Inception: Mercury 2",
       "created": 1772636275,
@@ -1955,8 +2184,8 @@
       "name": "Qwen: Qwen3.5-27B",
       "created": 1772053810,
       "contextLength": 262144,
-      "inputPerM": 0.195,
-      "outputPerM": 1.56,
+      "inputPerM": 0.12675,
+      "outputPerM": 1.014,
       "inputModalities": [
         "text",
         "image",
@@ -1972,8 +2201,8 @@
       "name": "Qwen: Qwen3.5-122B-A10B",
       "created": 1772053789,
       "contextLength": 262144,
-      "inputPerM": 0.26,
-      "outputPerM": 2.08,
+      "inputPerM": 0.16899999999999998,
+      "outputPerM": 1.3519999999999999,
       "inputModalities": [
         "text",
         "image",
@@ -1989,8 +2218,8 @@
       "name": "Qwen: Qwen3.5-Flash",
       "created": 1772053776,
       "contextLength": 1000000,
-      "inputPerM": 0.065,
-      "outputPerM": 0.26,
+      "inputPerM": 0.042249999999999996,
+      "outputPerM": 0.16899999999999998,
       "inputModalities": [
         "text",
         "image",
@@ -2072,6 +2301,25 @@
       "supportsReasoning": true
     },
     {
+      "id": "google/gemini-3.1-pro-preview:batch",
+      "name": "Google: Gemini 3.1 Pro Preview (batch)",
+      "created": 1771509627,
+      "contextLength": 1048576,
+      "inputPerM": 1,
+      "outputPerM": 6,
+      "inputModalities": [
+        "audio",
+        "file",
+        "image",
+        "text",
+        "video"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "anthropic/claude-sonnet-4.6",
       "name": "Anthropic: Claude Sonnet 4.6",
       "created": 1771342990,
@@ -2093,8 +2341,8 @@
       "name": "Qwen: Qwen3.5 Plus 2026-02-15",
       "created": 1771229416,
       "contextLength": 1000000,
-      "inputPerM": 0.26,
-      "outputPerM": 1.56,
+      "inputPerM": 0.16899999999999998,
+      "outputPerM": 1.014,
       "inputModalities": [
         "text",
         "image",
@@ -2110,8 +2358,8 @@
       "name": "Qwen: Qwen3.5 397B A17B",
       "created": 1771223018,
       "contextLength": 262144,
-      "inputPerM": 0.39,
-      "outputPerM": 2.34,
+      "inputPerM": 0.2535,
+      "outputPerM": 1.521,
       "inputModalities": [
         "text",
         "image",
@@ -2157,8 +2405,8 @@
       "name": "Qwen: Qwen3 Max Thinking",
       "created": 1770671901,
       "contextLength": 262144,
-      "inputPerM": 0.78,
-      "outputPerM": 3.9,
+      "inputPerM": 0.507,
+      "outputPerM": 2.5349999999999997,
       "inputModalities": [
         "text"
       ],
@@ -2174,6 +2422,23 @@
       "contextLength": 1000000,
       "inputPerM": 5,
       "outputPerM": 25,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "anthropic/claude-opus-4.6:batch",
+      "name": "Anthropic: Claude Opus 4.6 (batch)",
+      "created": 1770219050,
+      "contextLength": 1000000,
+      "inputPerM": 2.5,
+      "outputPerM": 12.5,
       "inputModalities": [
         "text",
         "image",
@@ -2440,6 +2705,25 @@
       "supportsReasoning": true
     },
     {
+      "id": "google/gemini-3-flash-preview:batch",
+      "name": "Google: Gemini 3 Flash Preview (batch)",
+      "created": 1765987078,
+      "contextLength": 1048576,
+      "inputPerM": 0.25,
+      "outputPerM": 1.5,
+      "inputModalities": [
+        "text",
+        "image",
+        "file",
+        "audio",
+        "video"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "nvidia/nemotron-3-nano-30b-a3b",
       "name": "NVIDIA: Nemotron 3 Nano 30B A3B",
       "created": 1765731275,
@@ -2510,6 +2794,23 @@
       "contextLength": 400000,
       "inputPerM": 1.75,
       "outputPerM": 14,
+      "inputModalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/gpt-5.2:batch",
+      "name": "OpenAI: GPT-5.2 (batch)",
+      "created": 1765389775,
+      "contextLength": 400000,
+      "inputPerM": 0.875,
+      "outputPerM": 7,
       "inputModalities": [
         "file",
         "image",
@@ -2715,6 +3016,23 @@
       "supportsReasoning": true
     },
     {
+      "id": "anthropic/claude-opus-4.5:batch",
+      "name": "Anthropic: Claude Opus 4.5 (batch)",
+      "created": 1764010580,
+      "contextLength": 200000,
+      "inputPerM": 2.5,
+      "outputPerM": 12.5,
+      "inputModalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "allenai/olmo-3-32b-think",
       "name": "AllenAI: Olmo 3 32B Think",
       "created": 1763758276,
@@ -2768,6 +3086,23 @@
       "contextLength": 400000,
       "inputPerM": 1.25,
       "outputPerM": 10,
+      "inputModalities": [
+        "image",
+        "text",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/gpt-5.1:batch",
+      "name": "OpenAI: GPT-5.1 (batch)",
+      "created": 1763060305,
+      "contextLength": 400000,
+      "inputPerM": 0.625,
+      "outputPerM": 5,
       "inputModalities": [
         "image",
         "text",
@@ -2943,8 +3278,8 @@
       "name": "Qwen: Qwen3 VL 32B Instruct",
       "created": 1761231332,
       "contextLength": 131072,
-      "inputPerM": 0.10400000000000001,
-      "outputPerM": 0.41600000000000004,
+      "inputPerM": 0.0676,
+      "outputPerM": 0.2704,
       "inputModalities": [
         "text",
         "image"
@@ -3005,6 +3340,23 @@
       "supportsReasoning": true
     },
     {
+      "id": "anthropic/claude-haiku-4.5:batch",
+      "name": "Anthropic: Claude Haiku 4.5 (batch)",
+      "created": 1760547638,
+      "contextLength": 200000,
+      "inputPerM": 0.5,
+      "outputPerM": 2.5,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "qwen/qwen3-vl-8b-thinking",
       "name": "Qwen: Qwen3 VL 8B Thinking",
       "created": 1760463746,
@@ -3025,8 +3377,8 @@
       "name": "Qwen: Qwen3 VL 8B Instruct",
       "created": 1760463308,
       "contextLength": 262144,
-      "inputPerM": 0.117,
-      "outputPerM": 0.45499999999999996,
+      "inputPerM": 0.07604999999999999,
+      "outputPerM": 0.29574999999999996,
       "inputModalities": [
         "image",
         "text"
@@ -3187,6 +3539,23 @@
       "supportsReasoning": true
     },
     {
+      "id": "anthropic/claude-sonnet-4.5:batch",
+      "name": "Anthropic: Claude Sonnet 4.5 (batch)",
+      "created": 1759161676,
+      "contextLength": 1000000,
+      "inputPerM": 1.5,
+      "outputPerM": 7.5,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "deepseek/deepseek-v3.2-exp",
       "name": "DeepSeek: DeepSeek V3.2 Exp",
       "created": 1759150481,
@@ -3268,8 +3637,8 @@
       "name": "Qwen: Qwen3 Max",
       "created": 1758662808,
       "contextLength": 262144,
-      "inputPerM": 0.78,
-      "outputPerM": 3.9,
+      "inputPerM": 0.507,
+      "outputPerM": 2.5349999999999997,
       "inputModalities": [
         "text"
       ],
@@ -3283,8 +3652,8 @@
       "name": "Qwen: Qwen3 Coder Plus",
       "created": 1758662707,
       "contextLength": 1000000,
-      "inputPerM": 0.65,
-      "outputPerM": 3.25,
+      "inputPerM": 0.4225,
+      "outputPerM": 2.1125000000000003,
       "inputModalities": [
         "text"
       ],
@@ -3329,8 +3698,8 @@
       "name": "Qwen: Qwen3 Coder Flash",
       "created": 1758115536,
       "contextLength": 1000000,
-      "inputPerM": 0.195,
-      "outputPerM": 0.975,
+      "inputPerM": 0.12675,
+      "outputPerM": 0.6337499999999999,
       "inputModalities": [
         "text"
       ],
@@ -3374,8 +3743,8 @@
       "name": "Qwen: Qwen Plus 0728",
       "created": 1757347599,
       "contextLength": 1000000,
-      "inputPerM": 0.26,
-      "outputPerM": 0.78,
+      "inputPerM": 0.16899999999999998,
+      "outputPerM": 0.507,
       "inputModalities": [
         "text"
       ],
@@ -3555,6 +3924,23 @@
       "supportsReasoning": true
     },
     {
+      "id": "openai/gpt-5:batch",
+      "name": "OpenAI: GPT-5 (batch)",
+      "created": 1754587413,
+      "contextLength": 400000,
+      "inputPerM": 0.625,
+      "outputPerM": 5,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "openai/gpt-5-mini",
       "name": "OpenAI: GPT-5 Mini",
       "created": 1754587407,
@@ -3572,12 +3958,46 @@
       "supportsReasoning": true
     },
     {
+      "id": "openai/gpt-5-mini:batch",
+      "name": "OpenAI: GPT-5 Mini (batch)",
+      "created": 1754587407,
+      "contextLength": 400000,
+      "inputPerM": 0.125,
+      "outputPerM": 1,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "openai/gpt-5-nano",
       "name": "OpenAI: GPT-5 Nano",
       "created": 1754587402,
       "contextLength": 400000,
       "inputPerM": 0.049999999999999996,
       "outputPerM": 0.39999999999999997,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/gpt-5-nano:batch",
+      "name": "OpenAI: GPT-5 Nano (batch)",
+      "created": 1754587402,
+      "contextLength": 400000,
+      "inputPerM": 0.024999999999999998,
+      "outputPerM": 0.19999999999999998,
       "inputModalities": [
         "text",
         "image",
@@ -3640,6 +4060,23 @@
       "contextLength": 200000,
       "inputPerM": 15,
       "outputPerM": 75,
+      "inputModalities": [
+        "image",
+        "text",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "anthropic/claude-opus-4.1:batch",
+      "name": "Anthropic: Claude Opus 4.1 (batch)",
+      "created": 1754411591,
+      "contextLength": 200000,
+      "inputPerM": 7.5,
+      "outputPerM": 37.5,
       "inputModalities": [
         "image",
         "text",
@@ -3779,6 +4216,25 @@
       "contextLength": 1048576,
       "inputPerM": 0.09999999999999999,
       "outputPerM": 0.39999999999999997,
+      "inputModalities": [
+        "text",
+        "image",
+        "file",
+        "audio",
+        "video"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "google/gemini-2.5-flash-lite:batch",
+      "name": "Google: Gemini 2.5 Flash Lite (batch)",
+      "created": 1753200276,
+      "contextLength": 1048576,
+      "inputPerM": 0.049999999999999996,
+      "outputPerM": 0.19999999999999998,
       "inputModalities": [
         "text",
         "image",
@@ -3948,12 +4404,50 @@
       "supportsReasoning": true
     },
     {
+      "id": "google/gemini-2.5-flash:batch",
+      "name": "Google: Gemini 2.5 Flash (batch)",
+      "created": 1750172488,
+      "contextLength": 1048576,
+      "inputPerM": 0.15,
+      "outputPerM": 1.25,
+      "inputModalities": [
+        "file",
+        "image",
+        "text",
+        "audio",
+        "video"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "google/gemini-2.5-pro",
       "name": "Google: Gemini 2.5 Pro",
       "created": 1750169544,
       "contextLength": 1048576,
       "inputPerM": 1.25,
       "outputPerM": 10,
+      "inputModalities": [
+        "text",
+        "image",
+        "file",
+        "audio",
+        "video"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "google/gemini-2.5-pro:batch",
+      "name": "Google: Gemini 2.5 Pro (batch)",
+      "created": 1750169544,
+      "contextLength": 1048576,
+      "inputPerM": 0.625,
+      "outputPerM": 5,
       "inputModalities": [
         "text",
         "image",
@@ -4152,8 +4646,8 @@
       "name": "Qwen: Qwen3 8B",
       "created": 1745876632,
       "contextLength": 131072,
-      "inputPerM": 0.117,
-      "outputPerM": 0.45499999999999996,
+      "inputPerM": 0.07604999999999999,
+      "outputPerM": 0.29574999999999996,
       "inputModalities": [
         "text"
       ],
@@ -4167,8 +4661,8 @@
       "name": "Qwen: Qwen3 14B",
       "created": 1745876478,
       "contextLength": 131072,
-      "inputPerM": 0.22749999999999998,
-      "outputPerM": 0.9099999999999999,
+      "inputPerM": 0.14787499999999998,
+      "outputPerM": 0.5914999999999999,
       "inputModalities": [
         "text"
       ],
@@ -4197,8 +4691,8 @@
       "name": "Qwen: Qwen3 235B A22B",
       "created": 1745875757,
       "contextLength": 131072,
-      "inputPerM": 0.45499999999999996,
-      "outputPerM": 1.8199999999999998,
+      "inputPerM": 0.29574999999999996,
+      "outputPerM": 1.1829999999999998,
       "inputModalities": [
         "text"
       ],
@@ -4597,8 +5091,8 @@
       "name": "Qwen: Qwen-Plus",
       "created": 1738409840,
       "contextLength": 1000000,
-      "inputPerM": 0.26,
-      "outputPerM": 0.78,
+      "inputPerM": 0.16899999999999998,
+      "outputPerM": 0.507,
       "inputModalities": [
         "text"
       ],
