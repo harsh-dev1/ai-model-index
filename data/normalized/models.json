@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-07-28T19:54:39.717Z",
+  "generatedAt": "2026-07-29T03:43:13.834Z",
   "snapshotDates": {
-    "epoch": "2026-07-28",
-    "arena": "2026-07-28",
-    "openrouter": "2026-07-28"
+    "epoch": "2026-07-29",
+    "arena": "2026-07-29",
+    "openrouter": "2026-07-29"
   },
   "snapshotFetchedAt": {
-    "epoch": "2026-07-28T19:54:39.591Z",
-    "arena": "2026-07-28T19:54:39.717Z",
-    "openrouter": "2026-07-28T19:54:39.438Z"
+    "epoch": "2026-07-29T03:43:13.344Z",
+    "arena": "2026-07-29T03:43:13.834Z",
+    "openrouter": "2026-07-29T03:43:13.389Z"
   },
   "models": [
     {
@@ -57,18 +57,15 @@
       ],
       "arena": [
         {
-          "board": "text",
-          "elo": 1508,
-          "ci": 6,
-          "votes": 16056,
-          "rank": 1
-        },
-        {
           "board": "code",
           "elo": 1629,
           "ci": 10,
           "votes": 5801,
           "rank": 4
+        },
+        {
+          "board": "agent",
+          "rank": 1
         },
         {
           "board": "vision",
@@ -78,7 +75,10 @@
           "rank": 1
         },
         {
-          "board": "agent",
+          "board": "text",
+          "elo": 1508,
+          "ci": 6,
+          "votes": 16056,
           "rank": 1
         },
         {
@@ -517,13 +517,6 @@
       ],
       "arena": [
         {
-          "board": "text",
-          "elo": 1505,
-          "ci": 4,
-          "votes": 64805,
-          "rank": 2
-        },
-        {
           "board": "code",
           "elo": 1546,
           "ci": 6,
@@ -536,6 +529,13 @@
           "ci": 7,
           "votes": 19445,
           "rank": 4
+        },
+        {
+          "board": "text",
+          "elo": 1505,
+          "ci": 4,
+          "votes": 64805,
+          "rank": 2
         },
         {
           "board": "document",
@@ -634,18 +634,15 @@
       ],
       "arena": [
         {
-          "board": "text",
-          "elo": 1502,
-          "ci": 4,
-          "votes": 52303,
-          "rank": 3
-        },
-        {
           "board": "code",
           "elo": 1560,
           "ci": 7,
           "votes": 11138,
           "rank": 8
+        },
+        {
+          "board": "agent",
+          "rank": 7
         },
         {
           "board": "vision",
@@ -655,8 +652,11 @@
           "rank": 2
         },
         {
-          "board": "agent",
-          "rank": 7
+          "board": "text",
+          "elo": 1502,
+          "ci": 4,
+          "votes": 52303,
+          "rank": 3
         },
         {
           "board": "document",
@@ -740,18 +740,15 @@
       ],
       "arena": [
         {
-          "board": "text",
-          "elo": 1484,
-          "ci": 5,
-          "votes": 32817,
-          "rank": 14
-        },
-        {
           "board": "code",
           "elo": 1568,
           "ci": 8,
           "votes": 8321,
           "rank": 7
+        },
+        {
+          "board": "agent",
+          "rank": 4
         },
         {
           "board": "vision",
@@ -761,8 +758,11 @@
           "rank": 11
         },
         {
-          "board": "agent",
-          "rank": 4
+          "board": "text",
+          "elo": 1484,
+          "ci": 5,
+          "votes": 32817,
+          "rank": 14
         },
         {
           "board": "document",
@@ -831,13 +831,6 @@
       ],
       "arena": [
         {
-          "board": "text",
-          "elo": 1495,
-          "ci": 12,
-          "votes": 2386,
-          "rank": 5
-        },
-        {
           "board": "code",
           "elo": 1725,
           "ci": 27,
@@ -849,6 +842,13 @@
           "elo": 1299,
           "ci": 14,
           "votes": 1992,
+          "rank": 5
+        },
+        {
+          "board": "text",
+          "elo": 1495,
+          "ci": 12,
+          "votes": 2386,
           "rank": 5
         },
         {
@@ -1214,6 +1214,44 @@
       ]
     },
     {
+      "slug": "deepseek-chat",
+      "name": "DeepSeek-V3.2",
+      "vendor": "DeepSeek",
+      "country": "China",
+      "releaseDate": "2025-12-01",
+      "accessibility": "Open weights (unrestricted)",
+      "eci": 146.59,
+      "contextLength": 163840,
+      "inputPerM": 0.20020000000000002,
+      "outputPerM": 0.8000999999999999,
+      "modalities": [
+        "text"
+      ],
+      "supportsReasoning": false,
+      "benchmarks": [
+        {
+          "id": "gpqa_diamond",
+          "raw": 0.7121212121212122,
+          "stderr": 0.03225883512300997
+        },
+        {
+          "id": "otis_mock_aime",
+          "raw": 0.4888888888888889,
+          "stderr": 0.0753592220347252
+        },
+        {
+          "id": "aider_polyglot",
+          "raw": 70.2,
+          "stderr": null
+        }
+      ],
+      "arena": [],
+      "sources": [
+        "epoch",
+        "openrouter"
+      ]
+    },
+    {
       "slug": "deepseek-r1",
       "name": "R1",
       "vendor": "DeepSeek",
@@ -1326,7 +1364,7 @@
     },
     {
       "slug": "deepseek-v3-2",
-      "name": "V3.2",
+      "name": "DeepSeek-V3.2 (Thinking; Novita)",
       "vendor": "DeepSeek",
       "country": "China",
       "releaseDate": "2025-09-29",
@@ -1776,13 +1814,6 @@
       ],
       "arena": [
         {
-          "board": "text",
-          "elo": 1486,
-          "ci": 3,
-          "votes": 86683,
-          "rank": 10
-        },
-        {
           "board": "code",
           "elo": 1446,
           "ci": 6,
@@ -1795,6 +1826,13 @@
           "ci": 6,
           "votes": 35988,
           "rank": 20
+        },
+        {
+          "board": "text",
+          "elo": 1486,
+          "ci": 3,
+          "votes": 86683,
+          "rank": 10
         },
         {
           "board": "document",
@@ -1885,13 +1923,6 @@
       ],
       "arena": [
         {
-          "board": "text",
-          "elo": 1476,
-          "ci": 7,
-          "votes": 10011,
-          "rank": 18
-        },
-        {
           "board": "code",
           "elo": 1493,
           "ci": 14,
@@ -1904,6 +1935,13 @@
           "ci": 10,
           "votes": 4657,
           "rank": 12
+        },
+        {
+          "board": "text",
+          "elo": 1476,
+          "ci": 7,
+          "votes": 10011,
+          "rank": 18
         },
         {
           "board": "document",
@@ -1941,13 +1979,6 @@
       "benchmarks": [],
       "arena": [
         {
-          "board": "text",
-          "elo": 1482,
-          "ci": 8,
-          "votes": 6065,
-          "rank": 15
-        },
-        {
           "board": "code",
           "elo": 1527,
           "ci": 13,
@@ -1960,6 +1991,13 @@
           "ci": 38,
           "votes": 238,
           "rank": 3
+        },
+        {
+          "board": "text",
+          "elo": 1482,
+          "ci": 8,
+          "votes": 6065,
+          "rank": 15
         }
       ],
       "sources": [
@@ -2423,8 +2461,8 @@
       "accessibility": "Open weights (unrestricted)",
       "eci": 151.37,
       "contextLength": 1048576,
-      "inputPerM": 0.7686000000000001,
-      "outputPerM": 2.4156,
+      "inputPerM": 0.7574000000000001,
+      "outputPerM": 2.3804000000000003,
       "modalities": [
         "text"
       ],
@@ -2706,7 +2744,7 @@
     },
     {
       "slug": "gpt-4o",
-      "name": "GPT-4o (Nov 2024)",
+      "name": "GPT-4o (Aug 2024)",
       "vendor": "OpenAI",
       "country": "United States of America",
       "releaseDate": "2024-05-13",
@@ -3213,17 +3251,17 @@
       "benchmarks": [],
       "arena": [
         {
-          "board": "text",
-          "elo": 1476,
-          "ci": 4,
-          "votes": 34060,
-          "rank": 19
-        },
-        {
           "board": "vision",
           "elo": 1278,
           "ci": 7,
           "votes": 15403,
+          "rank": 19
+        },
+        {
+          "board": "text",
+          "elo": 1476,
+          "ci": 4,
+          "votes": 34060,
           "rank": 19
         }
       ],
@@ -3369,8 +3407,8 @@
         },
         {
           "id": "otis_mock_aime",
-          "raw": 0.953,
-          "stderr": 0.032
+          "raw": 0.9777777777777777,
+          "stderr": 0.022222222222222223
         },
         {
           "id": "hle",
@@ -3420,13 +3458,6 @@
       ],
       "arena": [
         {
-          "board": "text",
-          "elo": 1477,
-          "ci": 4,
-          "votes": 60292,
-          "rank": 17
-        },
-        {
           "board": "code",
           "elo": 1462,
           "ci": 20,
@@ -3439,6 +3470,13 @@
           "ci": 7,
           "votes": 19622,
           "rank": 15
+        },
+        {
+          "board": "text",
+          "elo": 1477,
+          "ci": 4,
+          "votes": 60292,
+          "rank": 17
         },
         {
           "board": "document",
@@ -3666,18 +3704,15 @@
       ],
       "arena": [
         {
-          "board": "text",
-          "elo": 1482,
-          "ci": 4,
-          "votes": 47572,
-          "rank": 16
-        },
-        {
           "board": "code",
           "elo": 1507,
           "ci": 7,
           "votes": 10256,
           "rank": 23
+        },
+        {
+          "board": "agent",
+          "rank": 6
         },
         {
           "board": "vision",
@@ -3687,8 +3722,11 @@
           "rank": 10
         },
         {
-          "board": "agent",
-          "rank": 6
+          "board": "text",
+          "elo": 1482,
+          "ci": 4,
+          "votes": 47572,
+          "rank": 16
         },
         {
           "board": "document",
@@ -3807,13 +3845,6 @@
       ],
       "arena": [
         {
-          "board": "text",
-          "elo": 1485,
-          "ci": 7,
-          "votes": 8359,
-          "rank": 13
-        },
-        {
           "board": "code",
           "elo": 1623,
           "ci": 10,
@@ -3823,6 +3854,13 @@
         {
           "board": "agent",
           "rank": 2
+        },
+        {
+          "board": "text",
+          "elo": 1485,
+          "ci": 7,
+          "votes": 8359,
+          "rank": 13
         }
       ],
       "sources": [
@@ -4620,13 +4658,6 @@
       ],
       "arena": [
         {
-          "board": "text",
-          "elo": 1486,
-          "ci": 10,
-          "votes": 3559,
-          "rank": 11
-        },
-        {
           "board": "code",
           "elo": 1682,
           "ci": 13,
@@ -4636,6 +4667,13 @@
         {
           "board": "agent",
           "rank": 3
+        },
+        {
+          "board": "text",
+          "elo": 1486,
+          "ci": 10,
+          "votes": 3559,
+          "rank": 11
         }
       ],
       "sources": [
@@ -4893,13 +4931,6 @@
       "benchmarks": [],
       "arena": [
         {
-          "board": "text",
-          "elo": 1491,
-          "ci": 7,
-          "votes": 9941,
-          "rank": 8
-        },
-        {
           "board": "code",
           "elo": 1537,
           "ci": 11,
@@ -4912,6 +4943,13 @@
           "ci": 11,
           "votes": 3776,
           "rank": 14
+        },
+        {
+          "board": "text",
+          "elo": 1491,
+          "ci": 7,
+          "votes": 9941,
+          "rank": 8
         },
         {
           "board": "document",
@@ -4928,7 +4966,7 @@
     },
     {
       "slug": "o1",
-      "name": "o1-preview",
+      "name": "o1",
       "vendor": "OpenAI",
       "country": "United States of America",
       "releaseDate": "2024-09-12",
@@ -5198,8 +5236,8 @@
       "accessibility": "API access",
       "eci": 143.8,
       "contextLength": 262144,
-      "inputPerM": 0.507,
-      "outputPerM": 2.5349999999999997,
+      "inputPerM": 0.78,
+      "outputPerM": 3.9,
       "modalities": [
         "text"
       ],
@@ -5241,8 +5279,8 @@
       "accessibility": null,
       "eci": 146.97,
       "contextLength": 1000000,
-      "inputPerM": 0.22499999999999998,
-      "outputPerM": 1.35,
+      "inputPerM": 0.3,
+      "outputPerM": 1.7999999999999998,
       "modalities": [
         "text",
         "image",
@@ -5296,8 +5334,8 @@
       "accessibility": null,
       "eci": 149.66,
       "contextLength": 262144,
-      "inputPerM": 0.8320000000000001,
-      "outputPerM": 4.992,
+      "inputPerM": 1.04,
+      "outputPerM": 6.24,
       "modalities": [
         "text"
       ],
@@ -5398,8 +5436,8 @@
       "accessibility": null,
       "eci": 144.2,
       "contextLength": 1000000,
-      "inputPerM": 0.140625,
-      "outputPerM": 0.84375,
+      "inputPerM": 0.1875,
+      "outputPerM": 1.125,
       "modalities": [
         "text",
         "image",
@@ -5448,8 +5486,8 @@
       "accessibility": "API access",
       "eci": 149.17,
       "contextLength": 1000000,
-      "inputPerM": 0.21125,
-      "outputPerM": 1.2674999999999998,
+      "inputPerM": 0.325,
+      "outputPerM": 1.95,
       "modalities": [
         "text",
         "image",
@@ -5522,8 +5560,8 @@
       "accessibility": "API access",
       "eci": 153.09,
       "contextLength": 1000000,
-      "inputPerM": 0.7375,
-      "outputPerM": 2.2125,
+      "inputPerM": 1.25,
+      "outputPerM": 3.75,
       "modalities": [
         "text"
       ],
@@ -5875,12 +5913,6 @@
       "raw": "dbrx-instruct",
       "slug": "dbrx-instruct",
       "reason": "no public API pricing found on OpenRouter"
-    },
-    {
-      "source": "epoch+openrouter",
-      "raw": "deepseek-chat",
-      "slug": "deepseek-chat",
-      "reason": "too few results to rank (1 benchmark, no Arena votes)"
     },
     {
       "source": "epoch",
@@ -7688,7 +7720,7 @@
     "arenaModels": 94,
     "openrouterModels": 306,
     "joined": 431,
-    "eligible": 81,
+    "eligible": 82,
     "arenaMatchRate": 0.8829787234042553,
     "arenaTopMatchRate": 1
   }
