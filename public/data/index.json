@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-08-02T19:36:13.949Z",
+    "generatedAt": "2026-08-03T03:56:37.736Z",
     "sources": [
       {
         "id": "epoch",
         "label": "Epoch AI — AI Benchmarking Hub",
         "url": "https://epoch.ai/benchmarks",
         "licence": "CC-BY 4.0",
-        "fetchedAt": "2026-08-02T19:36:13.567Z",
-        "records": 289,
+        "fetchedAt": "2026-08-03T03:56:37.736Z",
+        "records": 290,
         "stale": false
       },
       {
@@ -16,7 +16,7 @@
         "label": "Arena AI leaderboards",
         "url": "https://arena.ai/leaderboard",
         "licence": "Public leaderboard data, via the arena-ai-leaderboards archive",
-        "fetchedAt": "2026-08-02T19:36:13.949Z",
+        "fetchedAt": "2026-08-03T03:56:37.586Z",
         "records": 97,
         "stale": false
       },
@@ -25,13 +25,13 @@
         "label": "OpenRouter model catalogue",
         "url": "https://openrouter.ai/api/v1/models",
         "licence": "Public API",
-        "fetchedAt": "2026-08-02T19:36:13.634Z",
+        "fetchedAt": "2026-08-03T03:56:37.526Z",
         "records": 304,
         "stale": false
       }
     ],
     "eligibleModels": 84,
-    "totalModelsSeen": 450,
+    "totalModelsSeen": 451,
     "unmatched": [
       {
         "source": "epoch",
@@ -392,6 +392,12 @@
         "raw": "deepseek-v4-flash",
         "slug": "deepseek-v4-flash",
         "reason": "too few results to rank (2 benchmarks, no Arena votes)"
+      },
+      {
+        "source": "epoch+openrouter",
+        "raw": "deepseek-v4-flash-0731",
+        "slug": "deepseek-v4-flash-0731",
+        "reason": "too few results to rank (3 benchmarks, no Arena votes)"
       },
       {
         "source": "arena",
@@ -2509,7 +2515,7 @@
         "reasoning": 66.6,
         "coding": 71.2,
         "preference": 69.5,
-        "cost": 76.4
+        "cost": 76.8
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -2517,7 +2523,7 @@
         "preference": 2,
         "cost": 1
       },
-      "score": 70.36,
+      "score": 70.44,
       "rank": 2,
       "scoreUncertainty": 2.85,
       "coverage": 0.85,
@@ -2658,7 +2664,7 @@
         "reasoning": 75.3,
         "coding": 86,
         "preference": 73,
-        "cost": 27.2
+        "cost": 27.3
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -2666,7 +2672,7 @@
         "preference": 5,
         "cost": 1
       },
-      "score": 69.42,
+      "score": 69.44,
       "rank": 3,
       "scoreUncertainty": 2.81,
       "coverage": 0.85,
@@ -2855,7 +2861,7 @@
         "coding": 72.7,
         "agentic": 84.6,
         "preference": 80.4,
-        "cost": 27.2
+        "cost": 27.3
       },
       "pillarCoverage": {
         "reasoning": 6,
@@ -2864,7 +2870,7 @@
         "preference": 6,
         "cost": 1
       },
-      "score": 68.53,
+      "score": 68.54,
       "rank": 4,
       "scoreUncertainty": 0.84,
       "coverage": 1,
@@ -3039,7 +3045,7 @@
         "coding": 60.8,
         "agentic": 80.4,
         "preference": 96.3,
-        "cost": 27.2
+        "cost": 27.3
       },
       "pillarCoverage": {
         "reasoning": 5,
@@ -3048,142 +3054,10 @@
         "preference": 5,
         "cost": 1
       },
-      "score": 67.53,
+      "score": 67.54,
       "rank": 5,
       "scoreUncertainty": 0.82,
       "coverage": 1,
-      "tieGroup": 2
-    },
-    {
-      "slug": "glm-5-2",
-      "name": "GLM-5.2",
-      "vendor": "Z.ai",
-      "country": "China",
-      "releaseDate": "2026-06-16",
-      "accessibility": "Open weights (unrestricted)",
-      "contextLength": 1048576,
-      "modalities": [
-        "text"
-      ],
-      "supportsReasoning": true,
-      "pricing": {
-        "inputPerM": 0.2842,
-        "outputPerM": 0.8932,
-        "blendedPerM": 0.4365
-      },
-      "benchmarks": [
-        {
-          "id": "otis_mock_aime",
-          "label": "AIME (mock)",
-          "pillar": "reasoning",
-          "raw": 0.8638888888888889,
-          "display": "86.4%",
-          "normalised": 77.9,
-          "stderr": 0.04219779330510574,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "ale_bench",
-          "label": "ALE-Bench",
-          "pillar": "coding",
-          "raw": 1046.95,
-          "display": "104695.0%",
-          "normalised": 38.9,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "arc_agi_2",
-          "label": "ARC-AGI-2",
-          "pillar": "reasoning",
-          "raw": 0.22775000000000004,
-          "display": "22.8%",
-          "normalised": 24.6,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "gpqa_diamond",
-          "label": "GPQA Diamond",
-          "pillar": "reasoning",
-          "raw": 0.9185606060606061,
-          "display": "91.9%",
-          "normalised": 95.2,
-          "stderr": 0.016123207533687733,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "scicode",
-          "label": "SciCode",
-          "pillar": "coding",
-          "raw": 0.50462962962963,
-          "display": "50.5%",
-          "normalised": 71.6,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "simpleqa_verified",
-          "label": "SimpleQA Verified",
-          "pillar": "reasoning",
-          "raw": 0.381,
-          "display": "38.1%",
-          "normalised": 45.1,
-          "stderr": 0.015364734787007391,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "swe_bench_verified",
-          "label": "SWE-bench Verified",
-          "pillar": "coding",
-          "raw": 0.787,
-          "display": "78.7%",
-          "normalised": 77.4,
-          "stderr": 0.018656911901656907,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "webdev_arena",
-          "label": "WebDev Arena",
-          "pillar": "coding",
-          "raw": 1593.25,
-          "display": "1593",
-          "normalised": 76.4,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        }
-      ],
-      "arena": [
-        {
-          "board": "code",
-          "elo": 1586,
-          "ci": 9,
-          "votes": 6361,
-          "rank": 6
-        }
-      ],
-      "eci": 152.13,
-      "sources": [
-        "arena",
-        "epoch",
-        "openrouter"
-      ],
-      "pillarScores": {
-        "reasoning": 57.1,
-        "coding": 64.6,
-        "preference": 83.8,
-        "cost": 67.8
-      },
-      "pillarCoverage": {
-        "reasoning": 4,
-        "coding": 4,
-        "preference": 1,
-        "cost": 1
-      },
-      "score": 67.48,
-      "rank": 6,
-      "scoreUncertainty": 2.85,
-      "coverage": 0.85,
       "tieGroup": 2
     },
     {
@@ -3300,7 +3174,7 @@
         "reasoning": 71.8,
         "coding": 78.3,
         "preference": 62.1,
-        "cost": 46.5
+        "cost": 46.7
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -3308,8 +3182,8 @@
         "preference": 3,
         "cost": 1
       },
-      "score": 66.96,
-      "rank": 7,
+      "score": 67,
+      "rank": 6,
       "scoreUncertainty": 2.83,
       "coverage": 0.85,
       "tieGroup": 2
@@ -3439,7 +3313,7 @@
         "reasoning": 79.3,
         "coding": 86,
         "preference": 49.4,
-        "cost": 25.6
+        "cost": 25.7
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -3447,8 +3321,8 @@
         "preference": 5,
         "cost": 1
       },
-      "score": 64.76,
-      "rank": 8,
+      "score": 64.78,
+      "rank": 7,
       "scoreUncertainty": 2.83,
       "coverage": 0.85,
       "tieGroup": 2
@@ -3561,7 +3435,7 @@
         "reasoning": 72.7,
         "coding": 62.1,
         "preference": 70.1,
-        "cost": 46.8
+        "cost": 47
       },
       "pillarCoverage": {
         "reasoning": 3,
@@ -3569,8 +3443,8 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 64.4,
-      "rank": 9,
+      "score": 64.44,
+      "rank": 8,
       "scoreUncertainty": 2.86,
       "coverage": 0.85,
       "tieGroup": 2
@@ -3657,17 +3531,149 @@
       "pillarScores": {
         "coding": 74.6,
         "preference": 63.6,
-        "cost": 48.1
+        "cost": 48.3
       },
       "pillarCoverage": {
         "coding": 2,
         "preference": 4,
         "cost": 1
       },
-      "score": 64.31,
-      "rank": 10,
+      "score": 64.36,
+      "rank": 9,
       "scoreUncertainty": 7.24,
       "coverage": 0.6,
+      "tieGroup": 2
+    },
+    {
+      "slug": "glm-5-2",
+      "name": "GLM-5.2",
+      "vendor": "Z.ai",
+      "country": "China",
+      "releaseDate": "2026-06-16",
+      "accessibility": "Open weights (unrestricted)",
+      "contextLength": 1048576,
+      "modalities": [
+        "text"
+      ],
+      "supportsReasoning": true,
+      "pricing": {
+        "inputPerM": 1.19,
+        "outputPerM": 3.74,
+        "blendedPerM": 1.8275
+      },
+      "benchmarks": [
+        {
+          "id": "otis_mock_aime",
+          "label": "AIME (mock)",
+          "pillar": "reasoning",
+          "raw": 0.8638888888888889,
+          "display": "86.4%",
+          "normalised": 77.9,
+          "stderr": 0.04219779330510574,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "ale_bench",
+          "label": "ALE-Bench",
+          "pillar": "coding",
+          "raw": 1046.95,
+          "display": "104695.0%",
+          "normalised": 38.9,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "arc_agi_2",
+          "label": "ARC-AGI-2",
+          "pillar": "reasoning",
+          "raw": 0.22775000000000004,
+          "display": "22.8%",
+          "normalised": 24.6,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "gpqa_diamond",
+          "label": "GPQA Diamond",
+          "pillar": "reasoning",
+          "raw": 0.9185606060606061,
+          "display": "91.9%",
+          "normalised": 95.2,
+          "stderr": 0.016123207533687733,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "scicode",
+          "label": "SciCode",
+          "pillar": "coding",
+          "raw": 0.50462962962963,
+          "display": "50.5%",
+          "normalised": 71.6,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "simpleqa_verified",
+          "label": "SimpleQA Verified",
+          "pillar": "reasoning",
+          "raw": 0.381,
+          "display": "38.1%",
+          "normalised": 45.1,
+          "stderr": 0.015364734787007391,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "swe_bench_verified",
+          "label": "SWE-bench Verified",
+          "pillar": "coding",
+          "raw": 0.787,
+          "display": "78.7%",
+          "normalised": 77.4,
+          "stderr": 0.018656911901656907,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "webdev_arena",
+          "label": "WebDev Arena",
+          "pillar": "coding",
+          "raw": 1593.25,
+          "display": "1593",
+          "normalised": 76.4,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        }
+      ],
+      "arena": [
+        {
+          "board": "code",
+          "elo": 1586,
+          "ci": 9,
+          "votes": 6361,
+          "rank": 6
+        }
+      ],
+      "eci": 152.13,
+      "sources": [
+        "arena",
+        "epoch",
+        "openrouter"
+      ],
+      "pillarScores": {
+        "reasoning": 57.1,
+        "coding": 64.6,
+        "preference": 83.8,
+        "cost": 49.4
+      },
+      "pillarCoverage": {
+        "reasoning": 4,
+        "coding": 4,
+        "preference": 1,
+        "cost": 1
+      },
+      "score": 64.23,
+      "rank": 10,
+      "scoreUncertainty": 2.85,
+      "coverage": 0.85,
       "tieGroup": 2
     },
     {
@@ -3778,7 +3784,7 @@
         "reasoning": 72,
         "coding": 58.3,
         "preference": 59.6,
-        "cost": 64.9
+        "cost": 65.3
       },
       "pillarCoverage": {
         "reasoning": 3,
@@ -3786,11 +3792,11 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 63.8,
+      "score": 63.87,
       "rank": 11,
       "scoreUncertainty": 2.86,
       "coverage": 0.85,
-      "tieGroup": 3
+      "tieGroup": 2
     },
     {
       "slug": "gpt-5-5",
@@ -3965,7 +3971,7 @@
         "coding": 74.9,
         "agentic": 80.2,
         "preference": 47.2,
-        "cost": 25.6
+        "cost": 25.7
       },
       "pillarCoverage": {
         "reasoning": 5,
@@ -3974,7 +3980,7 @@
         "preference": 6,
         "cost": 1
       },
-      "score": 63.34,
+      "score": 63.35,
       "rank": 12,
       "scoreUncertainty": 0.85,
       "coverage": 1,
@@ -4104,7 +4110,7 @@
         "reasoning": 68.4,
         "coding": 65.8,
         "preference": 68.3,
-        "cost": 42.8
+        "cost": 43
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -4112,7 +4118,7 @@
         "preference": 3,
         "cost": 1
       },
-      "score": 63.09,
+      "score": 63.13,
       "rank": 13,
       "scoreUncertainty": 2.82,
       "coverage": 0.85,
@@ -4228,7 +4234,7 @@
         "reasoning": 69.6,
         "coding": 78.3,
         "preference": 54.8,
-        "cost": 33.8
+        "cost": 33.9
       },
       "pillarCoverage": {
         "reasoning": 3,
@@ -4236,7 +4242,7 @@
         "preference": 3,
         "cost": 1
       },
-      "score": 62.36,
+      "score": 62.38,
       "rank": 14,
       "scoreUncertainty": 2.83,
       "coverage": 0.85,
@@ -4433,7 +4439,7 @@
         "coding": 62.8,
         "agentic": 76,
         "preference": 48.7,
-        "cost": 37.5
+        "cost": 37.7
       },
       "pillarCoverage": {
         "reasoning": 6,
@@ -4442,11 +4448,11 @@
         "preference": 5,
         "cost": 1
       },
-      "score": 61.32,
+      "score": 61.35,
       "rank": 15,
       "scoreUncertainty": 0.78,
       "coverage": 1,
-      "tieGroup": 3
+      "tieGroup": 4
     },
     {
       "slug": "deepseek-chat",
@@ -4506,18 +4512,18 @@
       "pillarScores": {
         "reasoning": 41.5,
         "coding": 74,
-        "cost": 67.4
+        "cost": 67.7
       },
       "pillarCoverage": {
         "reasoning": 2,
         "coding": 1,
         "cost": 1
       },
-      "score": 59.98,
+      "score": 60.05,
       "rank": 16,
       "scoreUncertainty": 6.38,
       "coverage": 0.65,
-      "tieGroup": 3
+      "tieGroup": 4
     },
     {
       "slug": "kimi-k2-6",
@@ -4652,7 +4658,7 @@
         "reasoning": 66.8,
         "coding": 62.5,
         "preference": 52.5,
-        "cost": 53.6
+        "cost": 53.8
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -4660,11 +4666,11 @@
         "preference": 3,
         "cost": 1
       },
-      "score": 59.84,
+      "score": 59.88,
       "rank": 17,
       "scoreUncertainty": 2.81,
       "coverage": 0.85,
-      "tieGroup": 3
+      "tieGroup": 4
     },
     {
       "slug": "qwen3-6",
@@ -4764,7 +4770,7 @@
         "reasoning": 64.3,
         "coding": 61.2,
         "preference": 62.4,
-        "cost": 46.2
+        "cost": 46.4
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -4772,11 +4778,11 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 59.75,
+      "score": 59.78,
       "rank": 18,
       "scoreUncertainty": 2.88,
       "coverage": 0.85,
-      "tieGroup": 3
+      "tieGroup": 4
     },
     {
       "slug": "gemini-3-6-flash",
@@ -4894,7 +4900,7 @@
         "reasoning": 76.3,
         "coding": 55.8,
         "preference": 56.5,
-        "cost": 42.8
+        "cost": 43
       },
       "pillarCoverage": {
         "reasoning": 3,
@@ -4902,11 +4908,11 @@
         "preference": 3,
         "cost": 1
       },
-      "score": 59.7,
+      "score": 59.74,
       "rank": 19,
       "scoreUncertainty": 2.83,
       "coverage": 0.85,
-      "tieGroup": 3
+      "tieGroup": 4
     },
     {
       "slug": "glm-5-1",
@@ -5026,7 +5032,7 @@
         "reasoning": 62.3,
         "coding": 53.4,
         "preference": 69.9,
-        "cost": 52
+        "cost": 52.2
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -5034,11 +5040,11 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 59.65,
+      "score": 59.69,
       "rank": 20,
       "scoreUncertainty": 2.85,
       "coverage": 0.85,
-      "tieGroup": 3
+      "tieGroup": 4
     },
     {
       "slug": "gpt-5-4",
@@ -5229,7 +5235,7 @@
         "coding": 66.9,
         "agentic": 75.8,
         "preference": 39.1,
-        "cost": 34.7
+        "cost": 34.8
       },
       "pillarCoverage": {
         "reasoning": 6,
@@ -5238,11 +5244,124 @@
         "preference": 5,
         "cost": 1
       },
-      "score": 58.75,
+      "score": 58.76,
       "rank": 21,
       "scoreUncertainty": 0.78,
       "coverage": 1,
-      "tieGroup": 4
+      "tieGroup": 5
+    },
+    {
+      "slug": "kimi-k2-7-code",
+      "name": "Kimi K2.7 Code",
+      "vendor": "Moonshot",
+      "country": "China",
+      "releaseDate": "2026-06-12",
+      "accessibility": "Open weights (unrestricted)",
+      "contextLength": 262144,
+      "modalities": [
+        "image",
+        "text"
+      ],
+      "supportsReasoning": true,
+      "pricing": {
+        "inputPerM": 0.73,
+        "outputPerM": 3.5,
+        "blendedPerM": 1.4225
+      },
+      "benchmarks": [
+        {
+          "id": "otis_mock_aime",
+          "label": "AIME (mock)",
+          "pillar": "reasoning",
+          "raw": 0.9638888888888889,
+          "display": "96.4%",
+          "normalised": 94.1,
+          "stderr": 0.021254167083334153,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "ale_bench",
+          "label": "ALE-Bench",
+          "pillar": "coding",
+          "raw": 886.23,
+          "display": "88623.0%",
+          "normalised": 30.3,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "gpqa_diamond",
+          "label": "GPQA Diamond",
+          "pillar": "reasoning",
+          "raw": 0.8952020202020202,
+          "display": "89.5%",
+          "normalised": 90.3,
+          "stderr": 0.017753512325656702,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "scicode",
+          "label": "SciCode",
+          "pillar": "coding",
+          "raw": 0.474537037037037,
+          "display": "47.5%",
+          "normalised": 62.8,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "simpleqa_verified",
+          "label": "SimpleQA Verified",
+          "pillar": "reasoning",
+          "raw": 0.392,
+          "display": "39.2%",
+          "normalised": 46.6,
+          "stderr": 0.01544585946377134,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "webdev_arena",
+          "label": "WebDev Arena",
+          "pillar": "coding",
+          "raw": 1479.2,
+          "display": "1479",
+          "normalised": 53.7,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        }
+      ],
+      "arena": [
+        {
+          "board": "code",
+          "elo": 1473,
+          "ci": 10,
+          "votes": 4539,
+          "rank": 34
+        }
+      ],
+      "eci": 150.39,
+      "sources": [
+        "arena",
+        "epoch",
+        "openrouter"
+      ],
+      "pillarScores": {
+        "reasoning": 66.9,
+        "coding": 52,
+        "preference": 61.4,
+        "cost": 52.7
+      },
+      "pillarCoverage": {
+        "reasoning": 3,
+        "coding": 3,
+        "preference": 1,
+        "cost": 1
+      },
+      "score": 58.72,
+      "rank": 22,
+      "scoreUncertainty": 2.87,
+      "coverage": 0.85,
+      "tieGroup": 5
     },
     {
       "slug": "claude-sonnet-4-6",
@@ -5406,7 +5525,7 @@
         "coding": 59.9,
         "agentic": 70,
         "preference": 66,
-        "cost": 33.8
+        "cost": 33.9
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -5415,124 +5534,11 @@
         "preference": 4,
         "cost": 1
       },
-      "score": 58.7,
-      "rank": 22,
+      "score": 58.71,
+      "rank": 23,
       "scoreUncertainty": 0.82,
       "coverage": 1,
-      "tieGroup": 4
-    },
-    {
-      "slug": "kimi-k2-7-code",
-      "name": "Kimi K2.7 Code",
-      "vendor": "Moonshot",
-      "country": "China",
-      "releaseDate": "2026-06-12",
-      "accessibility": "Open weights (unrestricted)",
-      "contextLength": 262144,
-      "modalities": [
-        "image",
-        "text"
-      ],
-      "supportsReasoning": true,
-      "pricing": {
-        "inputPerM": 0.73,
-        "outputPerM": 3.5,
-        "blendedPerM": 1.4225
-      },
-      "benchmarks": [
-        {
-          "id": "otis_mock_aime",
-          "label": "AIME (mock)",
-          "pillar": "reasoning",
-          "raw": 0.9638888888888889,
-          "display": "96.4%",
-          "normalised": 94.1,
-          "stderr": 0.021254167083334153,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "ale_bench",
-          "label": "ALE-Bench",
-          "pillar": "coding",
-          "raw": 886.23,
-          "display": "88623.0%",
-          "normalised": 30.3,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "gpqa_diamond",
-          "label": "GPQA Diamond",
-          "pillar": "reasoning",
-          "raw": 0.8952020202020202,
-          "display": "89.5%",
-          "normalised": 90.3,
-          "stderr": 0.017753512325656702,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "scicode",
-          "label": "SciCode",
-          "pillar": "coding",
-          "raw": 0.474537037037037,
-          "display": "47.5%",
-          "normalised": 62.8,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "simpleqa_verified",
-          "label": "SimpleQA Verified",
-          "pillar": "reasoning",
-          "raw": 0.392,
-          "display": "39.2%",
-          "normalised": 46.6,
-          "stderr": 0.01544585946377134,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "webdev_arena",
-          "label": "WebDev Arena",
-          "pillar": "coding",
-          "raw": 1479.2,
-          "display": "1479",
-          "normalised": 53.7,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        }
-      ],
-      "arena": [
-        {
-          "board": "code",
-          "elo": 1473,
-          "ci": 10,
-          "votes": 4539,
-          "rank": 34
-        }
-      ],
-      "eci": 150.39,
-      "sources": [
-        "arena",
-        "epoch",
-        "openrouter"
-      ],
-      "pillarScores": {
-        "reasoning": 66.9,
-        "coding": 52,
-        "preference": 61.4,
-        "cost": 52.4
-      },
-      "pillarCoverage": {
-        "reasoning": 3,
-        "coding": 3,
-        "preference": 1,
-        "cost": 1
-      },
-      "score": 58.66,
-      "rank": 23,
-      "scoreUncertainty": 2.87,
-      "coverage": 0.85,
-      "tieGroup": 4
+      "tieGroup": 5
     },
     {
       "slug": "gemini-2-5-pro-preview-05-06",
@@ -5607,7 +5613,7 @@
         "reasoning": 43.8,
         "coding": 79.7,
         "agentic": 61.7,
-        "cost": 41
+        "cost": 41.2
       },
       "pillarCoverage": {
         "reasoning": 2,
@@ -5615,11 +5621,11 @@
         "agentic": 1,
         "cost": 1
       },
-      "score": 57.85,
+      "score": 57.89,
       "rank": 24,
       "scoreUncertainty": 3.77,
       "coverage": 0.8,
-      "tieGroup": 4
+      "tieGroup": 5
     },
     {
       "slug": "claude-opus-4-8",
@@ -5773,7 +5779,7 @@
         "reasoning": 69.5,
         "coding": 68.9,
         "preference": 50.7,
-        "cost": 27.2
+        "cost": 27.3
       },
       "pillarCoverage": {
         "reasoning": 5,
@@ -5781,11 +5787,11 @@
         "preference": 6,
         "cost": 1
       },
-      "score": 57.44,
+      "score": 57.45,
       "rank": 25,
       "scoreUncertainty": 2.8,
       "coverage": 0.85,
-      "tieGroup": 4
+      "tieGroup": 5
     },
     {
       "slug": "gemini-3-flash",
@@ -5941,7 +5947,7 @@
         "coding": 56.9,
         "agentic": 64,
         "preference": 46.3,
-        "cost": 55.5
+        "cost": 55.8
       },
       "pillarCoverage": {
         "reasoning": 5,
@@ -5950,11 +5956,11 @@
         "preference": 4,
         "cost": 1
       },
-      "score": 57.29,
+      "score": 57.33,
       "rank": 26,
       "scoreUncertainty": 0.89,
       "coverage": 1,
-      "tieGroup": 4
+      "tieGroup": 5
     },
     {
       "slug": "claude-sonnet-5",
@@ -6081,7 +6087,7 @@
         "reasoning": 62.8,
         "coding": 67.2,
         "preference": 49.6,
-        "cost": 39
+        "cost": 39.2
       },
       "pillarCoverage": {
         "reasoning": 3,
@@ -6089,11 +6095,11 @@
         "preference": 5,
         "cost": 1
       },
-      "score": 56.79,
+      "score": 56.82,
       "rank": 27,
       "scoreUncertainty": 2.82,
       "coverage": 0.85,
-      "tieGroup": 4
+      "tieGroup": 5
     },
     {
       "slug": "claude-opus-4-5",
@@ -6260,7 +6266,7 @@
         "coding": 63.2,
         "agentic": 68.3,
         "preference": 62.9,
-        "cost": 27.2
+        "cost": 27.3
       },
       "pillarCoverage": {
         "reasoning": 6,
@@ -6269,11 +6275,11 @@
         "preference": 3,
         "cost": 1
       },
-      "score": 56.46,
+      "score": 56.47,
       "rank": 28,
       "scoreUncertainty": 0.87,
       "coverage": 1,
-      "tieGroup": 5
+      "tieGroup": 6
     },
     {
       "slug": "gemini-3-5-flash",
@@ -6428,7 +6434,7 @@
         "reasoning": 72.3,
         "coding": 62.1,
         "preference": 38.1,
-        "cost": 41.2
+        "cost": 41.4
       },
       "pillarCoverage": {
         "reasoning": 5,
@@ -6436,11 +6442,11 @@
         "preference": 4,
         "cost": 1
       },
-      "score": 55.76,
+      "score": 55.8,
       "rank": 29,
       "scoreUncertainty": 2.8,
       "coverage": 0.85,
-      "tieGroup": 5
+      "tieGroup": 6
     },
     {
       "slug": "gpt-5-2",
@@ -6607,7 +6613,7 @@
         "coding": 55.3,
         "agentic": 69.3,
         "preference": 48.7,
-        "cost": 36.6
+        "cost": 36.8
       },
       "pillarCoverage": {
         "reasoning": 6,
@@ -6616,11 +6622,11 @@
         "preference": 3,
         "cost": 1
       },
-      "score": 55.3,
+      "score": 55.33,
       "rank": 30,
       "scoreUncertainty": 0.84,
       "coverage": 1,
-      "tieGroup": 5
+      "tieGroup": 6
     },
     {
       "slug": "qwen3-235b-a22b-thinking-2507",
@@ -6700,18 +6706,18 @@
       "pillarScores": {
         "reasoning": 54.7,
         "coding": 51.4,
-        "cost": 60.8
+        "cost": 61.1
       },
       "pillarCoverage": {
         "reasoning": 4,
         "coding": 1,
         "cost": 1
       },
-      "score": 54.84,
+      "score": 54.91,
       "rank": 31,
       "scoreUncertainty": 6.37,
       "coverage": 0.65,
-      "tieGroup": 5
+      "tieGroup": 6
     },
     {
       "slug": "gpt-5-3-codex",
@@ -6803,7 +6809,7 @@
         "coding": 57.7,
         "agentic": 74.6,
         "preference": 48.7,
-        "cost": 36.6
+        "cost": 36.8
       },
       "pillarCoverage": {
         "coding": 3,
@@ -6811,11 +6817,11 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 54.46,
+      "score": 54.5,
       "rank": 32,
       "scoreUncertainty": 4.59,
       "coverage": 0.75,
-      "tieGroup": 5
+      "tieGroup": 6
     },
     {
       "slug": "qwen3-6-plus",
@@ -6937,7 +6943,7 @@
         "reasoning": 62.9,
         "coding": 36.8,
         "preference": 58.4,
-        "cost": 61.1
+        "cost": 61.4
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -6945,11 +6951,11 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 53.85,
+      "score": 53.9,
       "rank": 33,
       "scoreUncertainty": 2.85,
       "coverage": 0.85,
-      "tieGroup": 5
+      "tieGroup": 6
     },
     {
       "slug": "gpt-5-4-nano",
@@ -7051,18 +7057,18 @@
       "pillarScores": {
         "reasoning": 46.1,
         "coding": 52,
-        "cost": 67.1
+        "cost": 67.4
       },
       "pillarCoverage": {
         "reasoning": 5,
         "coding": 2,
         "cost": 1
       },
-      "score": 53.22,
+      "score": 53.28,
       "rank": 34,
       "scoreUncertainty": 6.35,
       "coverage": 0.65,
-      "tieGroup": 5
+      "tieGroup": 6
     },
     {
       "slug": "o3-mini",
@@ -7143,18 +7149,18 @@
       "pillarScores": {
         "reasoning": 43.7,
         "coding": 65.5,
-        "cost": 48.5
+        "cost": 48.8
       },
       "pillarCoverage": {
         "reasoning": 4,
         "coding": 1,
         "cost": 1
       },
-      "score": 53.19,
+      "score": 53.26,
       "rank": 35,
       "scoreUncertainty": 6.37,
       "coverage": 0.65,
-      "tieGroup": 5
+      "tieGroup": 6
     },
     {
       "slug": "gpt-5",
@@ -7334,7 +7340,7 @@
         "coding": 58,
         "agentic": 59.2,
         "preference": 45,
-        "cost": 41
+        "cost": 41.2
       },
       "pillarCoverage": {
         "reasoning": 6,
@@ -7343,11 +7349,11 @@
         "preference": 2,
         "cost": 1
       },
-      "score": 52.63,
+      "score": 52.66,
       "rank": 36,
       "scoreUncertainty": 0.83,
       "coverage": 1,
-      "tieGroup": 6
+      "tieGroup": 7
     },
     {
       "slug": "gpt-oss-120b",
@@ -7458,7 +7464,7 @@
         "reasoning": 51.6,
         "coding": 39.8,
         "agentic": 35.3,
-        "cost": 91.5
+        "cost": 92
       },
       "pillarCoverage": {
         "reasoning": 3,
@@ -7466,11 +7472,11 @@
         "agentic": 2,
         "cost": 1
       },
-      "score": 52.34,
+      "score": 52.43,
       "rank": 37,
       "scoreUncertainty": 3.69,
       "coverage": 0.8,
-      "tieGroup": 6
+      "tieGroup": 7
     },
     {
       "slug": "grok-4-20",
@@ -7567,7 +7573,7 @@
         "coding": 46.1,
         "agentic": 58.4,
         "preference": 43.2,
-        "cost": 51.2
+        "cost": 51.5
       },
       "pillarCoverage": {
         "reasoning": 1,
@@ -7576,11 +7582,11 @@
         "preference": 3,
         "cost": 1
       },
-      "score": 52.33,
+      "score": 52.38,
       "rank": 38,
       "scoreUncertainty": 1.17,
       "coverage": 1,
-      "tieGroup": 6
+      "tieGroup": 7
     },
     {
       "slug": "grok-4-3",
@@ -7689,7 +7695,7 @@
         "reasoning": 65.3,
         "coding": 47.8,
         "preference": 38.7,
-        "cost": 51.2
+        "cost": 51.5
       },
       "pillarCoverage": {
         "reasoning": 3,
@@ -7697,11 +7703,11 @@
         "preference": 2,
         "cost": 1
       },
-      "score": 51.41,
+      "score": 51.46,
       "rank": 39,
       "scoreUncertainty": 2.84,
       "coverage": 0.85,
-      "tieGroup": 6
+      "tieGroup": 7
     },
     {
       "slug": "gpt-5-4-mini",
@@ -7823,7 +7829,7 @@
         "reasoning": 52.3,
         "coding": 54,
         "preference": 46.7,
-        "cost": 50.2
+        "cost": 50.5
       },
       "pillarCoverage": {
         "reasoning": 5,
@@ -7831,11 +7837,11 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 51.11,
+      "score": 51.16,
       "rank": 40,
       "scoreUncertainty": 2.86,
       "coverage": 0.85,
-      "tieGroup": 6
+      "tieGroup": 7
     },
     {
       "slug": "o4-mini",
@@ -7958,7 +7964,7 @@
         "reasoning": 46.2,
         "coding": 55.8,
         "agentic": 51.7,
-        "cost": 48.5
+        "cost": 48.8
       },
       "pillarCoverage": {
         "reasoning": 6,
@@ -7966,11 +7972,11 @@
         "agentic": 1,
         "cost": 1
       },
-      "score": 50.66,
+      "score": 50.72,
       "rank": 41,
       "scoreUncertainty": 3.71,
       "coverage": 0.8,
-      "tieGroup": 6
+      "tieGroup": 7
     },
     {
       "slug": "glm-5",
@@ -8091,7 +8097,7 @@
         "coding": 44.9,
         "agentic": 54.6,
         "preference": 53.9,
-        "cost": 53.2
+        "cost": 53.4
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -8100,11 +8106,11 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 50.53,
+      "score": 50.56,
       "rank": 42,
       "scoreUncertainty": 1.05,
       "coverage": 1,
-      "tieGroup": 7
+      "tieGroup": 8
     },
     {
       "slug": "minimax-m2-7",
@@ -8184,7 +8190,7 @@
         "coding": 44.2,
         "agentic": 48.7,
         "preference": 46.6,
-        "cost": 67.8
+        "cost": 68.1
       },
       "pillarCoverage": {
         "coding": 3,
@@ -8192,11 +8198,11 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 50.46,
+      "score": 50.52,
       "rank": 43,
       "scoreUncertainty": 4.6,
       "coverage": 0.75,
-      "tieGroup": 7
+      "tieGroup": 8
     },
     {
       "slug": "deepseek-v3-2",
@@ -8287,7 +8293,7 @@
         "coding": 58.3,
         "agentic": 64.5,
         "preference": 39.2,
-        "cost": 72.6
+        "cost": 72.9
       },
       "pillarCoverage": {
         "reasoning": 1,
@@ -8296,11 +8302,11 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 48.86,
+      "score": 48.9,
       "rank": 44,
       "scoreUncertainty": 1.23,
       "coverage": 1,
-      "tieGroup": 7
+      "tieGroup": 8
     },
     {
       "slug": "qwen3-5-plus",
@@ -8392,18 +8398,18 @@
       "pillarScores": {
         "reasoning": 54.2,
         "coding": 35.5,
-        "cost": 62.1
+        "cost": 62.4
       },
       "pillarCoverage": {
         "reasoning": 4,
         "coding": 2,
         "cost": 1
       },
-      "score": 48.83,
+      "score": 48.9,
       "rank": 45,
       "scoreUncertainty": 6.35,
       "coverage": 0.65,
-      "tieGroup": 7
+      "tieGroup": 8
     },
     {
       "slug": "deepseek-r1-0528",
@@ -8504,7 +8510,7 @@
         "reasoning": 41.6,
         "coding": 55.1,
         "agentic": 38.5,
-        "cost": 58.2
+        "cost": 58.5
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -8512,11 +8518,11 @@
         "agentic": 1,
         "cost": 1
       },
-      "score": 48.35,
+      "score": 48.41,
       "rank": 46,
       "scoreUncertainty": 3.71,
       "coverage": 0.8,
-      "tieGroup": 7
+      "tieGroup": 8
     },
     {
       "slug": "kimi-k2-5",
@@ -8635,7 +8641,7 @@
         "coding": 46.8,
         "agentic": 55.2,
         "preference": 50.8,
-        "cost": 55.4
+        "cost": 55.6
       },
       "pillarCoverage": {
         "reasoning": 2,
@@ -8644,11 +8650,11 @@
         "preference": 2,
         "cost": 1
       },
-      "score": 48.33,
+      "score": 48.36,
       "rank": 47,
       "scoreUncertainty": 0.98,
       "coverage": 1,
-      "tieGroup": 8
+      "tieGroup": 9
     },
     {
       "slug": "gpt-5-1",
@@ -8815,7 +8821,7 @@
         "coding": 45.5,
         "agentic": 50.7,
         "preference": 43.4,
-        "cost": 41
+        "cost": 41.2
       },
       "pillarCoverage": {
         "reasoning": 6,
@@ -8824,11 +8830,11 @@
         "preference": 3,
         "cost": 1
       },
-      "score": 47.86,
+      "score": 47.89,
       "rank": 48,
       "scoreUncertainty": 0.87,
       "coverage": 1,
-      "tieGroup": 8
+      "tieGroup": 9
     },
     {
       "slug": "glm-4-7",
@@ -8939,7 +8945,7 @@
         "coding": 34.6,
         "agentic": 39.5,
         "preference": 53.5,
-        "cost": 61
+        "cost": 61.3
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -8948,11 +8954,11 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 46.75,
+      "score": 46.8,
       "rank": 49,
       "scoreUncertainty": 1.09,
       "coverage": 1,
-      "tieGroup": 8
+      "tieGroup": 9
     },
     {
       "slug": "minimax-m2-1",
@@ -9022,7 +9028,7 @@
         "coding": 35.5,
         "agentic": 41.9,
         "preference": 44.6,
-        "cost": 65.4
+        "cost": 65.8
       },
       "pillarCoverage": {
         "coding": 2,
@@ -9030,11 +9036,11 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 45.19,
+      "score": 45.27,
       "rank": 50,
       "scoreUncertainty": 4.61,
       "coverage": 0.75,
-      "tieGroup": 8
+      "tieGroup": 9
     },
     {
       "slug": "o1",
@@ -9139,7 +9145,7 @@
       "rank": 51,
       "scoreUncertainty": 3.75,
       "coverage": 0.8,
-      "tieGroup": 8
+      "tieGroup": 9
     },
     {
       "slug": "gpt-5-2-codex",
@@ -9210,7 +9216,7 @@
         "coding": 44.7,
         "agentic": 65.7,
         "preference": 34.7,
-        "cost": 36.6
+        "cost": 36.8
       },
       "pillarCoverage": {
         "coding": 2,
@@ -9218,11 +9224,11 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 44.61,
+      "score": 44.65,
       "rank": 52,
       "scoreUncertainty": 4.61,
       "coverage": 0.75,
-      "tieGroup": 8
+      "tieGroup": 9
     },
     {
       "slug": "gpt-5-mini",
@@ -9355,7 +9361,7 @@
         "reasoning": 46.2,
         "coding": 34.7,
         "agentic": 40.6,
-        "cost": 61.9
+        "cost": 62.2
       },
       "pillarCoverage": {
         "reasoning": 6,
@@ -9363,11 +9369,11 @@
         "agentic": 1,
         "cost": 1
       },
-      "score": 44.5,
+      "score": 44.56,
       "rank": 53,
       "scoreUncertainty": 3.69,
       "coverage": 0.8,
-      "tieGroup": 8
+      "tieGroup": 9
     },
     {
       "slug": "gpt-5-1-codex",
@@ -9448,7 +9454,7 @@
         "coding": 43.3,
         "agentic": 61.8,
         "preference": 34.3,
-        "cost": 41
+        "cost": 41.2
       },
       "pillarCoverage": {
         "coding": 2,
@@ -9456,11 +9462,11 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 44.14,
+      "score": 44.18,
       "rank": 54,
       "scoreUncertainty": 4.6,
       "coverage": 0.75,
-      "tieGroup": 8
+      "tieGroup": 9
     },
     {
       "slug": "deepseek-r1",
@@ -9551,7 +9557,7 @@
         "reasoning": 35.4,
         "coding": 49.9,
         "agentic": 36.4,
-        "cost": 55.2
+        "cost": 55.5
       },
       "pillarCoverage": {
         "reasoning": 3,
@@ -9559,11 +9565,11 @@
         "agentic": 1,
         "cost": 1
       },
-      "score": 43.83,
+      "score": 43.89,
       "rank": 55,
       "scoreUncertainty": 3.72,
       "coverage": 0.8,
-      "tieGroup": 8
+      "tieGroup": 9
     },
     {
       "slug": "claude-sonnet-4-5",
@@ -9730,7 +9736,7 @@
         "coding": 41.7,
         "agentic": 56,
         "preference": 44.4,
-        "cost": 33.8
+        "cost": 33.9
       },
       "pillarCoverage": {
         "reasoning": 6,
@@ -9739,11 +9745,11 @@
         "preference": 3,
         "cost": 1
       },
-      "score": 43.38,
+      "score": 43.39,
       "rank": 56,
       "scoreUncertainty": 0.84,
       "coverage": 1,
-      "tieGroup": 9
+      "tieGroup": 10
     },
     {
       "slug": "gpt-5-nano",
@@ -9846,7 +9852,7 @@
         "reasoning": 38.1,
         "coding": 31.8,
         "agentic": 30.2,
-        "cost": 82.8
+        "cost": 83.2
       },
       "pillarCoverage": {
         "reasoning": 5,
@@ -9854,11 +9860,11 @@
         "agentic": 1,
         "cost": 1
       },
-      "score": 43.03,
+      "score": 43.11,
       "rank": 57,
       "scoreUncertainty": 3.75,
       "coverage": 0.8,
-      "tieGroup": 9
+      "tieGroup": 10
     },
     {
       "slug": "gpt-4-1-mini",
@@ -9950,18 +9956,18 @@
       "pillarScores": {
         "reasoning": 29.7,
         "coding": 44.2,
-        "cost": 61.7
+        "cost": 62
       },
       "pillarCoverage": {
         "reasoning": 4,
         "coding": 2,
         "cost": 1
       },
-      "score": 42.66,
+      "score": 42.73,
       "rank": 58,
       "scoreUncertainty": 6.35,
       "coverage": 0.65,
-      "tieGroup": 9
+      "tieGroup": 10
     },
     {
       "slug": "qwen3",
@@ -10031,18 +10037,18 @@
       "pillarScores": {
         "reasoning": 60.2,
         "coding": 18.1,
-        "cost": 51.2
+        "cost": 51.5
       },
       "pillarCoverage": {
         "reasoning": 3,
         "coding": 1,
         "cost": 1
       },
-      "score": 41.93,
+      "score": 42,
       "rank": 59,
       "scoreUncertainty": 6.38,
       "coverage": 0.65,
-      "tieGroup": 9
+      "tieGroup": 10
     },
     {
       "slug": "qwen3-6-35b-a3b",
@@ -10104,18 +10110,18 @@
       "pillarScores": {
         "coding": 29.8,
         "agentic": 32.4,
-        "cost": 70.5
+        "cost": 70.8
       },
       "pillarCoverage": {
         "coding": 2,
         "agentic": 1,
         "cost": 1
       },
-      "score": 41.61,
+      "score": 41.69,
       "rank": 60,
       "scoreUncertainty": 8.14,
       "coverage": 0.55,
-      "tieGroup": 9
+      "tieGroup": 10
     },
     {
       "slug": "kimi-k2",
@@ -10186,7 +10192,7 @@
         "reasoning": 45.3,
         "coding": 27.1,
         "agentic": 43.9,
-        "cost": 57
+        "cost": 57.3
       },
       "pillarCoverage": {
         "reasoning": 1,
@@ -10194,11 +10200,11 @@
         "agentic": 2,
         "cost": 1
       },
-      "score": 41.54,
+      "score": 41.6,
       "rank": 61,
       "scoreUncertainty": 3.79,
       "coverage": 0.8,
-      "tieGroup": 9
+      "tieGroup": 10
     },
     {
       "slug": "qwen3-6-flash",
@@ -10280,18 +10286,18 @@
       "pillarScores": {
         "reasoning": 50.4,
         "coding": 16.3,
-        "cost": 68.2
+        "cost": 68.5
       },
       "pillarCoverage": {
         "reasoning": 4,
         "coding": 1,
         "cost": 1
       },
-      "score": 41.39,
+      "score": 41.46,
       "rank": 62,
       "scoreUncertainty": 6.37,
       "coverage": 0.65,
-      "tieGroup": 9
+      "tieGroup": 10
     },
     {
       "slug": "minimax-m2-5",
@@ -10372,7 +10378,7 @@
         "coding": 34.7,
         "agentic": 46.8,
         "preference": 44.2,
-        "cost": 71.1
+        "cost": 71.5
       },
       "pillarCoverage": {
         "reasoning": 1,
@@ -10381,11 +10387,11 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 41.2,
+      "score": 41.26,
       "rank": 63,
       "scoreUncertainty": 1.27,
       "coverage": 1,
-      "tieGroup": 10
+      "tieGroup": 11
     },
     {
       "slug": "o3",
@@ -10538,7 +10544,7 @@
         "coding": 46.7,
         "agentic": 36.9,
         "preference": 24.9,
-        "cost": 40.7
+        "cost": 40.9
       },
       "pillarCoverage": {
         "reasoning": 6,
@@ -10547,11 +10553,11 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 40.9,
+      "score": 40.92,
       "rank": 64,
       "scoreUncertainty": 0.97,
       "coverage": 1,
-      "tieGroup": 10
+      "tieGroup": 11
     },
     {
       "slug": "claude-sonnet-4",
@@ -10684,7 +10690,7 @@
         "reasoning": 37.6,
         "coding": 47.4,
         "agentic": 42.1,
-        "cost": 33.8
+        "cost": 33.9
       },
       "pillarCoverage": {
         "reasoning": 5,
@@ -10692,11 +10698,11 @@
         "agentic": 2,
         "cost": 1
       },
-      "score": 40.79,
+      "score": 40.81,
       "rank": 65,
       "scoreUncertainty": 3.68,
       "coverage": 0.8,
-      "tieGroup": 10
+      "tieGroup": 11
     },
     {
       "slug": "claude-opus-4-1",
@@ -10839,7 +10845,7 @@
       "rank": 66,
       "scoreUncertainty": 0.95,
       "coverage": 1,
-      "tieGroup": 11
+      "tieGroup": 12
     },
     {
       "slug": "claude-haiku-4-5",
@@ -10979,7 +10985,7 @@
         "coding": 38.5,
         "agentic": 41.1,
         "preference": 31.7,
-        "cost": 48.1
+        "cost": 48.3
       },
       "pillarCoverage": {
         "reasoning": 5,
@@ -10988,11 +10994,11 @@
         "preference": 2,
         "cost": 1
       },
-      "score": 37.92,
+      "score": 37.95,
       "rank": 67,
       "scoreUncertainty": 0.94,
       "coverage": 1,
-      "tieGroup": 11
+      "tieGroup": 12
     },
     {
       "slug": "llama-3-1-8b-instruct",
@@ -11052,18 +11058,18 @@
       "pillarScores": {
         "reasoning": 20.8,
         "coding": 16.3,
-        "cost": 94.1
+        "cost": 94.6
       },
       "pillarCoverage": {
         "reasoning": 2,
         "coding": 1,
         "cost": 1
       },
-      "score": 35.98,
+      "score": 36.1,
       "rank": 68,
       "scoreUncertainty": 6.38,
       "coverage": 0.65,
-      "tieGroup": 11
+      "tieGroup": 12
     },
     {
       "slug": "gemini-2-5-pro",
@@ -11222,7 +11228,7 @@
         "coding": 29.8,
         "agentic": 38.8,
         "preference": 16.1,
-        "cost": 41
+        "cost": 41.2
       },
       "pillarCoverage": {
         "reasoning": 5,
@@ -11231,11 +11237,11 @@
         "preference": 3,
         "cost": 1
       },
-      "score": 35.57,
+      "score": 35.6,
       "rank": 69,
       "scoreUncertainty": 0.88,
       "coverage": 1,
-      "tieGroup": 12
+      "tieGroup": 13
     },
     {
       "slug": "claude-opus-4",
@@ -11371,7 +11377,7 @@
       "rank": 70,
       "scoreUncertainty": 1.08,
       "coverage": 1,
-      "tieGroup": 12
+      "tieGroup": 13
     },
     {
       "slug": "gemini-3-1-flash-lite",
@@ -11455,7 +11461,7 @@
         "reasoning": 28.9,
         "coding": 35.7,
         "preference": 18.5,
-        "cost": 64.5
+        "cost": 64.9
       },
       "pillarCoverage": {
         "reasoning": 1,
@@ -11463,11 +11469,11 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 34.74,
+      "score": 34.81,
       "rank": 71,
       "scoreUncertainty": 2.93,
       "coverage": 0.85,
-      "tieGroup": 12
+      "tieGroup": 13
     },
     {
       "slug": "gemma-4-31b-it",
@@ -11548,7 +11554,7 @@
       "rank": 72,
       "scoreUncertainty": 9.04,
       "coverage": 0.5,
-      "tieGroup": 12
+      "tieGroup": 13
     },
     {
       "slug": "gpt-4-1-nano",
@@ -11640,18 +11646,18 @@
       "pillarScores": {
         "reasoning": 21.8,
         "coding": 18.6,
-        "cost": 79.6
+        "cost": 80
       },
       "pillarCoverage": {
         "reasoning": 4,
         "coding": 2,
         "cost": 1
       },
-      "score": 33.91,
+      "score": 34,
       "rank": 73,
       "scoreUncertainty": 6.35,
       "coverage": 0.65,
-      "tieGroup": 12
+      "tieGroup": 13
     },
     {
       "slug": "glm-4-6",
@@ -11732,7 +11738,7 @@
         "coding": 28,
         "agentic": 32.4,
         "preference": 34.8,
-        "cost": 58.8
+        "cost": 59.1
       },
       "pillarCoverage": {
         "reasoning": 1,
@@ -11741,11 +11747,11 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 33.87,
+      "score": 33.91,
       "rank": 74,
       "scoreUncertainty": 1.27,
       "coverage": 1,
-      "tieGroup": 12
+      "tieGroup": 13
     },
     {
       "slug": "gemma-3-27b-it",
@@ -11816,18 +11822,18 @@
       "pillarScores": {
         "reasoning": 22.3,
         "coding": 16.9,
-        "cost": 79.8
+        "cost": 80.2
       },
       "pillarCoverage": {
         "reasoning": 2,
         "coding": 2,
         "cost": 1
       },
-      "score": 33.49,
+      "score": 33.58,
       "rank": 75,
       "scoreUncertainty": 6.36,
       "coverage": 0.65,
-      "tieGroup": 12
+      "tieGroup": 13
     },
     {
       "slug": "gemini-2-5-flash",
@@ -11892,7 +11898,7 @@
         "reasoning": 26.1,
         "coding": 29.5,
         "agentic": 26.5,
-        "cost": 59.2
+        "cost": 59.5
       },
       "pillarCoverage": {
         "reasoning": 1,
@@ -11900,11 +11906,11 @@
         "agentic": 1,
         "cost": 1
       },
-      "score": 33.44,
+      "score": 33.5,
       "rank": 76,
       "scoreUncertainty": 3.81,
       "coverage": 0.8,
-      "tieGroup": 12
+      "tieGroup": 13
     },
     {
       "slug": "gpt-4-1",
@@ -12016,18 +12022,18 @@
       "pillarScores": {
         "reasoning": 27.9,
         "coding": 33.4,
-        "cost": 40.7
+        "cost": 40.9
       },
       "pillarCoverage": {
         "reasoning": 5,
         "coding": 3,
         "cost": 1
       },
-      "score": 32.97,
+      "score": 33.02,
       "rank": 77,
       "scoreUncertainty": 6.34,
       "coverage": 0.65,
-      "tieGroup": 12
+      "tieGroup": 13
     },
     {
       "slug": "llama-3-3-70b-instruct",
@@ -12087,18 +12093,18 @@
       "pillarScores": {
         "reasoning": 21.4,
         "coding": 16.5,
-        "cost": 78.1
+        "cost": 78.5
       },
       "pillarCoverage": {
         "reasoning": 2,
         "coding": 1,
         "cost": 1
       },
-      "score": 32.6,
+      "score": 32.69,
       "rank": 78,
       "scoreUncertainty": 6.38,
       "coverage": 0.65,
-      "tieGroup": 12
+      "tieGroup": 13
     },
     {
       "slug": "llama-3-1-70b-instruct",
@@ -12158,18 +12164,18 @@
       "pillarScores": {
         "reasoning": 20.8,
         "agentic": 15.6,
-        "cost": 68.9
+        "cost": 69.3
       },
       "pillarCoverage": {
         "reasoning": 2,
         "agentic": 1,
         "cost": 1
       },
-      "score": 32.5,
+      "score": 32.61,
       "rank": 79,
       "scoreUncertainty": 8.14,
       "coverage": 0.55,
-      "tieGroup": 12
+      "tieGroup": 13
     },
     {
       "slug": "gpt-4o-mini",
@@ -12241,18 +12247,18 @@
       "pillarScores": {
         "reasoning": 20.8,
         "coding": 16.3,
-        "cost": 74.4
+        "cost": 74.7
       },
       "pillarCoverage": {
         "reasoning": 3,
         "coding": 1,
         "cost": 1
       },
-      "score": 31.44,
+      "score": 31.51,
       "rank": 80,
       "scoreUncertainty": 6.38,
       "coverage": 0.65,
-      "tieGroup": 12
+      "tieGroup": 13
     },
     {
       "slug": "gpt-5-2-chat",
@@ -12297,17 +12303,17 @@
       ],
       "pillarScores": {
         "preference": 18.8,
-        "cost": 36.6
+        "cost": 36.8
       },
       "pillarCoverage": {
         "preference": 2,
         "cost": 1
       },
-      "score": 26.43,
+      "score": 26.51,
       "rank": 81,
       "scoreUncertainty": 11.72,
       "coverage": 0.35,
-      "tieGroup": 12
+      "tieGroup": 13
     },
     {
       "slug": "gpt-oss-20b",
@@ -12376,7 +12382,7 @@
       "rank": 82,
       "scoreUncertainty": 10.82,
       "coverage": 0.4,
-      "tieGroup": 12
+      "tieGroup": 13
     },
     {
       "slug": "gpt-4o",
@@ -12509,7 +12515,7 @@
         "coding": 24.8,
         "agentic": 21.5,
         "preference": 12.1,
-        "cost": 37.9
+        "cost": 38.1
       },
       "pillarCoverage": {
         "reasoning": 5,
@@ -12518,11 +12524,11 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 22.91,
+      "score": 22.94,
       "rank": 83,
       "scoreUncertainty": 1.03,
       "coverage": 1,
-      "tieGroup": 13
+      "tieGroup": 14
     },
     {
       "slug": "gpt-4-turbo",
@@ -12583,18 +12589,18 @@
       "pillarScores": {
         "reasoning": 20.8,
         "agentic": 15.6,
-        "cost": 21.9
+        "cost": 22
       },
       "pillarCoverage": {
         "reasoning": 2,
         "agentic": 1,
         "cost": 1
       },
-      "score": 19.68,
+      "score": 19.71,
       "rank": 84,
       "scoreUncertainty": 8.14,
       "coverage": 0.55,
-      "tieGroup": 13
+      "tieGroup": 14
     }
   ]
 }
