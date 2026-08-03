@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-08-03T15:18:46.637Z",
+  "generatedAt": "2026-08-03T19:59:46.813Z",
   "snapshotDates": {
     "epoch": "2026-08-03",
     "arena": "2026-08-03",
     "openrouter": "2026-08-03"
   },
   "snapshotFetchedAt": {
-    "epoch": "2026-08-03T15:18:46.458Z",
+    "epoch": "2026-08-03T19:59:46.813Z",
     "arena": "2026-08-03T15:18:46.637Z",
-    "openrouter": "2026-08-03T15:18:46.489Z"
+    "openrouter": "2026-08-03T19:59:46.664Z"
   },
   "models": [
     {
@@ -2384,8 +2384,8 @@
       "accessibility": "Open weights (unrestricted)",
       "eci": 152.13,
       "contextLength": 1048576,
-      "inputPerM": 0.6146,
-      "outputPerM": 1.9315999999999998,
+      "inputPerM": 0.6286,
+      "outputPerM": 1.9756000000000002,
       "modalities": [
         "text"
       ],
@@ -5517,6 +5517,52 @@
         "epoch",
         "openrouter"
       ]
+    },
+    {
+      "slug": "qwen3-8",
+      "name": "Qwen3.8 Max",
+      "vendor": "Alibaba",
+      "country": null,
+      "releaseDate": null,
+      "accessibility": null,
+      "eci": null,
+      "contextLength": 1000000,
+      "inputPerM": 2,
+      "outputPerM": 6,
+      "modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "supportsReasoning": true,
+      "benchmarks": [],
+      "arena": [
+        {
+          "board": "text",
+          "elo": 1496,
+          "ci": 10,
+          "votes": 3327,
+          "rank": 5
+        },
+        {
+          "board": "vision",
+          "elo": 1305,
+          "ci": 9,
+          "votes": 5038,
+          "rank": 2
+        },
+        {
+          "board": "code",
+          "elo": 1668,
+          "ci": 18,
+          "votes": 1563,
+          "rank": 4
+        }
+      ],
+      "sources": [
+        "arena",
+        "openrouter"
+      ]
     }
   ],
   "unmatched": [
@@ -7207,12 +7253,6 @@
       "reason": "too few results to rank (1 benchmark, no Arena votes)"
     },
     {
-      "source": "arena",
-      "raw": "qwen3.8-max",
-      "slug": "qwen3-8",
-      "reason": "no public API pricing found on OpenRouter"
-    },
-    {
       "source": "epoch",
       "raw": "qwen3-coder-480b-a35b-instruct",
       "slug": "qwen3-coder-480b-a35b-instruct",
@@ -7666,10 +7706,10 @@
   "stats": {
     "epochModels": 290,
     "arenaModels": 50,
-    "openrouterModels": 304,
+    "openrouterModels": 305,
     "joined": 440,
-    "eligible": 83,
-    "arenaMatchRate": 0.9,
-    "arenaTopMatchRate": 0.95
+    "eligible": 84,
+    "arenaMatchRate": 0.92,
+    "arenaTopMatchRate": 1
   }
 }
