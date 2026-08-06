@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-06T09:08:08.449Z",
+  "fetchedAt": "2026-08-06T14:36:44.217Z",
   "source": "https://openrouter.ai/api/v1/models",
   "models": [
     {
@@ -137,6 +137,23 @@
       "supportsReasoning": true
     },
     {
+      "id": "anthropic/claude-opus-5:batch",
+      "name": "Claude Opus 5 (batch)",
+      "created": 1784912544,
+      "contextLength": 1000000,
+      "inputPerM": 2.5,
+      "outputPerM": 12.5,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "inclusionai/ling-3.0-flash",
       "name": "Ling-3.0-flash",
       "created": 1784818580,
@@ -216,12 +233,50 @@
       "supportsReasoning": true
     },
     {
+      "id": "google/gemini-3.6-flash:batch",
+      "name": "Google: Gemini 3.6 Flash (batch)",
+      "created": 1784646733,
+      "contextLength": 1048576,
+      "inputPerM": 0.75,
+      "outputPerM": 3.75,
+      "inputModalities": [
+        "text",
+        "image",
+        "video",
+        "file",
+        "audio"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "google/gemini-3.5-flash-lite",
       "name": "Google: Gemini 3.5 Flash Lite",
       "created": 1784646726,
       "contextLength": 1048576,
       "inputPerM": 0.3,
       "outputPerM": 2.5,
+      "inputModalities": [
+        "text",
+        "image",
+        "video",
+        "file",
+        "audio"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "google/gemini-3.5-flash-lite:batch",
+      "name": "Google: Gemini 3.5 Flash Lite (batch)",
+      "created": 1784646726,
+      "contextLength": 1048576,
+      "inputPerM": 0.15,
+      "outputPerM": 1.25,
       "inputModalities": [
         "text",
         "image",
@@ -256,6 +311,23 @@
       "contextLength": 1048576,
       "inputPerM": 1,
       "outputPerM": 4.05,
+      "inputModalities": [
+        "text",
+        "image",
+        "audio"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "thinkingmachines/inkling:batch",
+      "name": "Thinking Machines: Inkling (batch)",
+      "created": 1784325956,
+      "contextLength": 524288,
+      "inputPerM": 0.5,
+      "outputPerM": 2.025,
       "inputModalities": [
         "text",
         "image",
@@ -369,8 +441,42 @@
       "supportsReasoning": true
     },
     {
+      "id": "openai/gpt-5.6-luna-pro:batch",
+      "name": "OpenAI: GPT-5.6 Luna Pro (batch)",
+      "created": 1783590867,
+      "contextLength": 1050000,
+      "inputPerM": 0.09999999999999999,
+      "outputPerM": 0.6,
+      "inputModalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "openai/gpt-5.6-luna",
       "name": "OpenAI: GPT-5.6 Luna",
+      "created": 1783590864,
+      "contextLength": 1050000,
+      "inputPerM": 0.09999999999999999,
+      "outputPerM": 0.6,
+      "inputModalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/gpt-5.6-luna:batch",
+      "name": "OpenAI: GPT-5.6 Luna (batch)",
       "created": 1783590864,
       "contextLength": 1050000,
       "inputPerM": 0.09999999999999999,
@@ -403,8 +509,42 @@
       "supportsReasoning": true
     },
     {
+      "id": "openai/gpt-5.6-terra-pro:batch",
+      "name": "OpenAI: GPT-5.6 Terra Pro (batch)",
+      "created": 1783590861,
+      "contextLength": 1050000,
+      "inputPerM": 1,
+      "outputPerM": 6,
+      "inputModalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "openai/gpt-5.6-terra",
       "name": "OpenAI: GPT-5.6 Terra",
+      "created": 1783590857,
+      "contextLength": 1050000,
+      "inputPerM": 1,
+      "outputPerM": 6,
+      "inputModalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/gpt-5.6-terra:batch",
+      "name": "OpenAI: GPT-5.6 Terra (batch)",
       "created": 1783590857,
       "contextLength": 1050000,
       "inputPerM": 1,
@@ -437,12 +577,46 @@
       "supportsReasoning": true
     },
     {
+      "id": "openai/gpt-5.6-sol-pro:batch",
+      "name": "OpenAI: GPT-5.6 Sol Pro (batch)",
+      "created": 1783590854,
+      "contextLength": 1050000,
+      "inputPerM": 2.5,
+      "outputPerM": 15,
+      "inputModalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "openai/gpt-5.6-sol",
       "name": "OpenAI: GPT-5.6 Sol",
       "created": 1783590850,
       "contextLength": 1050000,
       "inputPerM": 5,
       "outputPerM": 30,
+      "inputModalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/gpt-5.6-sol:batch",
+      "name": "OpenAI: GPT-5.6 Sol (batch)",
+      "created": 1783590850,
+      "contextLength": 1050000,
+      "inputPerM": 2.5,
+      "outputPerM": 15,
       "inputModalities": [
         "file",
         "image",
@@ -580,6 +754,23 @@
       "supportsReasoning": true
     },
     {
+      "id": "anthropic/claude-sonnet-5:batch",
+      "name": "Anthropic: Claude Sonnet 5 (batch)",
+      "created": 1782843083,
+      "contextLength": 1000000,
+      "inputPerM": 1,
+      "outputPerM": 5,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "google/gemini-3.1-flash-lite-image",
       "name": "Google: Nano Banana 2 Lite (Gemini 3.1 Flash Lite Image)",
       "created": 1782837225,
@@ -682,8 +873,23 @@
       "name": "Z.ai: GLM 5.2",
       "created": 1781631930,
       "contextLength": 1048576,
-      "inputPerM": 0.76,
-      "outputPerM": 2.42,
+      "inputPerM": 0.56,
+      "outputPerM": 1.76,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "z-ai/glm-5.2:batch",
+      "name": "Z.ai: GLM 5.2 (batch)",
+      "created": 1781631930,
+      "contextLength": 512000,
+      "inputPerM": 0.7,
+      "outputPerM": 2.2,
       "inputModalities": [
         "text"
       ],
@@ -724,6 +930,22 @@
       "supportsReasoning": true
     },
     {
+      "id": "moonshotai/kimi-k2.7-code:batch",
+      "name": "MoonshotAI: Kimi K2.7 Code (batch)",
+      "created": 1781266361,
+      "contextLength": 262144,
+      "inputPerM": 0.475,
+      "outputPerM": 2,
+      "inputModalities": [
+        "text",
+        "image"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "~anthropic/claude-fable-latest",
       "name": "Anthropic: Claude Fable Latest",
       "created": 1781029944,
@@ -747,6 +969,23 @@
       "contextLength": 1000000,
       "inputPerM": 10,
       "outputPerM": 50,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "anthropic/claude-fable-5:batch",
+      "name": "Anthropic: Claude Fable 5 (batch)",
+      "created": 1781007515,
+      "contextLength": 1000000,
+      "inputPerM": 5,
+      "outputPerM": 25,
       "inputModalities": [
         "text",
         "image",
@@ -805,6 +1044,21 @@
       "supportsReasoning": true
     },
     {
+      "id": "nvidia/nemotron-3-ultra-550b-a55b:batch",
+      "name": "NVIDIA: Nemotron 3 Ultra (batch)",
+      "created": 1780551208,
+      "contextLength": 512288,
+      "inputPerM": 0.3,
+      "outputPerM": 1.7999999999999998,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
       "name": "NVIDIA: Nemotron 3 Ultra (free)",
       "created": 1780551208,
@@ -842,6 +1096,23 @@
       "contextLength": 1048576,
       "inputPerM": 0.3,
       "outputPerM": 1.2,
+      "inputModalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "minimax/minimax-m3:batch",
+      "name": "MiniMax: MiniMax M3 (batch)",
+      "created": 1780245374,
+      "contextLength": 524288,
+      "inputPerM": 0.15,
+      "outputPerM": 0.6,
       "inputModalities": [
         "text",
         "image",
@@ -904,6 +1175,23 @@
       "supportsReasoning": true
     },
     {
+      "id": "anthropic/claude-opus-4.8:batch",
+      "name": "Anthropic: Claude Opus 4.8 (batch)",
+      "created": 1779905091,
+      "contextLength": 1000000,
+      "inputPerM": 2.5,
+      "outputPerM": 12.5,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "qwen/qwen3.7-max",
       "name": "Qwen: Qwen3.7 Max",
       "created": 1779376861,
@@ -942,6 +1230,25 @@
       "contextLength": 1048576,
       "inputPerM": 1.5,
       "outputPerM": 9,
+      "inputModalities": [
+        "text",
+        "image",
+        "video",
+        "file",
+        "audio"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "google/gemini-3.5-flash:batch",
+      "name": "Google: Gemini 3.5 Flash (batch)",
+      "created": 1779193800,
+      "contextLength": 1048576,
+      "inputPerM": 0.75,
+      "outputPerM": 4.5,
       "inputModalities": [
         "text",
         "image",
@@ -1010,6 +1317,25 @@
       "contextLength": 1048576,
       "inputPerM": 0.25,
       "outputPerM": 1.5,
+      "inputModalities": [
+        "text",
+        "image",
+        "video",
+        "file",
+        "audio"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "google/gemini-3.1-flash-lite:batch",
+      "name": "Google: Gemini 3.1 Flash Lite (batch)",
+      "created": 1778168828,
+      "contextLength": 1048576,
+      "inputPerM": 0.125,
+      "outputPerM": 0.75,
       "inputModalities": [
         "text",
         "image",
@@ -1329,12 +1655,46 @@
       "supportsReasoning": true
     },
     {
+      "id": "openai/gpt-5.5-pro:batch",
+      "name": "OpenAI: GPT-5.5 Pro (batch)",
+      "created": 1777051896,
+      "contextLength": 1050000,
+      "inputPerM": 15,
+      "outputPerM": 90,
+      "inputModalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "openai/gpt-5.5",
       "name": "OpenAI: GPT-5.5",
       "created": 1777051893,
       "contextLength": 1050000,
       "inputPerM": 5,
       "outputPerM": 30,
+      "inputModalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/gpt-5.5:batch",
+      "name": "OpenAI: GPT-5.5 (batch)",
+      "created": 1777051893,
+      "contextLength": 1050000,
+      "inputPerM": 2.5,
+      "outputPerM": 15,
       "inputModalities": [
         "file",
         "image",
@@ -1508,8 +1868,8 @@
       "name": "MoonshotAI: Kimi K2.6",
       "created": 1776699402,
       "contextLength": 262144,
-      "inputPerM": 0.589,
-      "outputPerM": 2.48,
+      "inputPerM": 0.5700000000000001,
+      "outputPerM": 2.4,
       "inputModalities": [
         "text",
         "image"
@@ -1526,6 +1886,23 @@
       "contextLength": 1000000,
       "inputPerM": 5,
       "outputPerM": 25,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "anthropic/claude-opus-4.7:batch",
+      "name": "Anthropic: Claude Opus 4.7 (batch)",
+      "created": 1776351100,
+      "contextLength": 1000000,
+      "inputPerM": 2.5,
+      "outputPerM": 12.5,
       "inputModalities": [
         "text",
         "image",
@@ -1801,12 +2178,46 @@
       "supportsReasoning": true
     },
     {
+      "id": "openai/gpt-5.4-nano:batch",
+      "name": "OpenAI: GPT-5.4 Nano (batch)",
+      "created": 1773748187,
+      "contextLength": 400000,
+      "inputPerM": 0.09999999999999999,
+      "outputPerM": 0.625,
+      "inputModalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "openai/gpt-5.4-mini",
       "name": "OpenAI: GPT-5.4 Mini",
       "created": 1773748178,
       "contextLength": 400000,
       "inputPerM": 0.75,
       "outputPerM": 4.5,
+      "inputModalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/gpt-5.4-mini:batch",
+      "name": "OpenAI: GPT-5.4 Mini (batch)",
+      "created": 1773748178,
+      "contextLength": 400000,
+      "inputPerM": 0.375,
+      "outputPerM": 2.25,
       "inputModalities": [
         "file",
         "image",
@@ -1930,12 +2341,46 @@
       "supportsReasoning": true
     },
     {
+      "id": "openai/gpt-5.4-pro:batch",
+      "name": "OpenAI: GPT-5.4 Pro (batch)",
+      "created": 1772734366,
+      "contextLength": 1050000,
+      "inputPerM": 15,
+      "outputPerM": 90,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "openai/gpt-5.4",
       "name": "OpenAI: GPT-5.4",
       "created": 1772734352,
       "contextLength": 1050000,
       "inputPerM": 2.5,
       "outputPerM": 15,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/gpt-5.4:batch",
+      "name": "OpenAI: GPT-5.4 (batch)",
+      "created": 1772734352,
+      "contextLength": 1050000,
+      "inputPerM": 1.25,
+      "outputPerM": 7.5,
       "inputModalities": [
         "text",
         "image",
@@ -2170,12 +2615,48 @@
       "supportsReasoning": true
     },
     {
+      "id": "google/gemini-3.1-pro-preview:batch",
+      "name": "Google: Gemini 3.1 Pro Preview (batch)",
+      "created": 1771509627,
+      "contextLength": 1048576,
+      "inputPerM": 1,
+      "outputPerM": 6,
+      "inputModalities": [
+        "audio",
+        "file",
+        "image",
+        "text",
+        "video"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "anthropic/claude-sonnet-4.6",
       "name": "Anthropic: Claude Sonnet 4.6",
       "created": 1771342990,
       "contextLength": 1000000,
       "inputPerM": 3,
       "outputPerM": 15,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "anthropic/claude-sonnet-4.6:batch",
+      "name": "Anthropic: Claude Sonnet 4.6 (batch)",
+      "created": 1771342990,
+      "contextLength": 1000000,
+      "inputPerM": 1.5,
+      "outputPerM": 7.5,
       "inputModalities": [
         "text",
         "image",
@@ -2272,6 +2753,23 @@
       "contextLength": 1000000,
       "inputPerM": 5,
       "outputPerM": 25,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "anthropic/claude-opus-4.6:batch",
+      "name": "Anthropic: Claude Opus 4.6 (batch)",
+      "created": 1770219050,
+      "contextLength": 1000000,
+      "inputPerM": 2.5,
+      "outputPerM": 12.5,
       "inputModalities": [
         "text",
         "image",
@@ -2538,6 +3036,25 @@
       "supportsReasoning": true
     },
     {
+      "id": "google/gemini-3-flash-preview:batch",
+      "name": "Google: Gemini 3 Flash Preview (batch)",
+      "created": 1765987078,
+      "contextLength": 1048576,
+      "inputPerM": 0.25,
+      "outputPerM": 1.5,
+      "inputModalities": [
+        "text",
+        "image",
+        "file",
+        "audio",
+        "video"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "nvidia/nemotron-3-nano-30b-a3b",
       "name": "NVIDIA: Nemotron 3 Nano 30B A3B",
       "created": 1765731275,
@@ -2602,12 +3119,46 @@
       "supportsReasoning": true
     },
     {
+      "id": "openai/gpt-5.2-pro:batch",
+      "name": "OpenAI: GPT-5.2 Pro (batch)",
+      "created": 1765389780,
+      "contextLength": 400000,
+      "inputPerM": 10.5,
+      "outputPerM": 84,
+      "inputModalities": [
+        "image",
+        "text",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "openai/gpt-5.2",
       "name": "OpenAI: GPT-5.2",
       "created": 1765389775,
       "contextLength": 400000,
       "inputPerM": 1.75,
       "outputPerM": 14,
+      "inputModalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/gpt-5.2:batch",
+      "name": "OpenAI: GPT-5.2 (batch)",
+      "created": 1765389775,
+      "contextLength": 400000,
+      "inputPerM": 0.875,
+      "outputPerM": 7,
       "inputModalities": [
         "file",
         "image",
@@ -2797,6 +3348,23 @@
       "supportsReasoning": true
     },
     {
+      "id": "anthropic/claude-opus-4.5:batch",
+      "name": "Anthropic: Claude Opus 4.5 (batch)",
+      "created": 1764010580,
+      "contextLength": 200000,
+      "inputPerM": 2.5,
+      "outputPerM": 12.5,
+      "inputModalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "allenai/olmo-3-32b-think",
       "name": "AllenAI: Olmo 3 32B Think",
       "created": 1763758276,
@@ -2850,6 +3418,23 @@
       "contextLength": 400000,
       "inputPerM": 1.25,
       "outputPerM": 10,
+      "inputModalities": [
+        "image",
+        "text",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/gpt-5.1:batch",
+      "name": "OpenAI: GPT-5.1 (batch)",
+      "created": 1763060305,
+      "contextLength": 400000,
+      "inputPerM": 0.625,
+      "outputPerM": 5,
       "inputModalities": [
         "image",
         "text",
@@ -3070,6 +3655,23 @@
       "supportsReasoning": true
     },
     {
+      "id": "anthropic/claude-haiku-4.5:batch",
+      "name": "Anthropic: Claude Haiku 4.5 (batch)",
+      "created": 1760547638,
+      "contextLength": 200000,
+      "inputPerM": 0.5,
+      "outputPerM": 2.5,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "qwen/qwen3-vl-8b-thinking",
       "name": "Qwen: Qwen3 VL 8B Thinking",
       "created": 1760463746,
@@ -3186,6 +3788,23 @@
       "supportsReasoning": true
     },
     {
+      "id": "openai/gpt-5-pro:batch",
+      "name": "OpenAI: GPT-5 Pro (batch)",
+      "created": 1759776663,
+      "contextLength": 400000,
+      "inputPerM": 7.5,
+      "outputPerM": 60,
+      "inputModalities": [
+        "image",
+        "text",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "z-ai/glm-4.6",
       "name": "Z.ai: GLM 4.6",
       "created": 1759235576,
@@ -3207,6 +3826,23 @@
       "contextLength": 1000000,
       "inputPerM": 3,
       "outputPerM": 15,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "anthropic/claude-sonnet-4.5:batch",
+      "name": "Anthropic: Claude Sonnet 4.5 (batch)",
+      "created": 1759161676,
+      "contextLength": 1000000,
+      "inputPerM": 1.5,
+      "outputPerM": 7.5,
       "inputModalities": [
         "text",
         "image",
@@ -3318,6 +3954,22 @@
       "outputPerM": 3.25,
       "inputModalities": [
         "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/gpt-5-codex:batch",
+      "name": "OpenAI: GPT-5 Codex (batch)",
+      "created": 1758643403,
+      "contextLength": 400000,
+      "inputPerM": 0.625,
+      "outputPerM": 5,
+      "inputModalities": [
+        "text",
+        "image"
       ],
       "outputModalities": [
         "text"
@@ -3570,6 +4222,23 @@
       "supportsReasoning": true
     },
     {
+      "id": "openai/gpt-5:batch",
+      "name": "OpenAI: GPT-5 (batch)",
+      "created": 1754587413,
+      "contextLength": 400000,
+      "inputPerM": 0.625,
+      "outputPerM": 5,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "openai/gpt-5-mini",
       "name": "OpenAI: GPT-5 Mini",
       "created": 1754587407,
@@ -3587,12 +4256,46 @@
       "supportsReasoning": true
     },
     {
+      "id": "openai/gpt-5-mini:batch",
+      "name": "OpenAI: GPT-5 Mini (batch)",
+      "created": 1754587407,
+      "contextLength": 400000,
+      "inputPerM": 0.125,
+      "outputPerM": 1,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "openai/gpt-5-nano",
       "name": "OpenAI: GPT-5 Nano",
       "created": 1754587402,
       "contextLength": 400000,
       "inputPerM": 0.049999999999999996,
       "outputPerM": 0.39999999999999997,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/gpt-5-nano:batch",
+      "name": "OpenAI: GPT-5 Nano (batch)",
+      "created": 1754587402,
+      "contextLength": 400000,
+      "inputPerM": 0.024999999999999998,
+      "outputPerM": 0.19999999999999998,
       "inputModalities": [
         "text",
         "image",
@@ -3655,6 +4358,23 @@
       "contextLength": 200000,
       "inputPerM": 15,
       "outputPerM": 75,
+      "inputModalities": [
+        "image",
+        "text",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "anthropic/claude-opus-4.1:batch",
+      "name": "Anthropic: Claude Opus 4.1 (batch)",
+      "created": 1754411591,
+      "contextLength": 200000,
+      "inputPerM": 7.5,
+      "outputPerM": 37.5,
       "inputModalities": [
         "image",
         "text",
@@ -3794,6 +4514,25 @@
       "contextLength": 1048576,
       "inputPerM": 0.09999999999999999,
       "outputPerM": 0.39999999999999997,
+      "inputModalities": [
+        "text",
+        "image",
+        "file",
+        "audio",
+        "video"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "google/gemini-2.5-flash-lite:batch",
+      "name": "Google: Gemini 2.5 Flash Lite (batch)",
+      "created": 1753200276,
+      "contextLength": 1048576,
+      "inputPerM": 0.049999999999999996,
+      "outputPerM": 0.19999999999999998,
       "inputModalities": [
         "text",
         "image",
@@ -3963,6 +4702,25 @@
       "supportsReasoning": true
     },
     {
+      "id": "google/gemini-2.5-flash:batch",
+      "name": "Google: Gemini 2.5 Flash (batch)",
+      "created": 1750172488,
+      "contextLength": 1048576,
+      "inputPerM": 0.15,
+      "outputPerM": 1.25,
+      "inputModalities": [
+        "file",
+        "image",
+        "text",
+        "audio",
+        "video"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "google/gemini-2.5-pro",
       "name": "Google: Gemini 2.5 Pro",
       "created": 1750169544,
@@ -3982,12 +4740,48 @@
       "supportsReasoning": true
     },
     {
+      "id": "google/gemini-2.5-pro:batch",
+      "name": "Google: Gemini 2.5 Pro (batch)",
+      "created": 1750169544,
+      "contextLength": 1048576,
+      "inputPerM": 0.625,
+      "outputPerM": 5,
+      "inputModalities": [
+        "text",
+        "image",
+        "file",
+        "audio",
+        "video"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "openai/o3-pro",
       "name": "OpenAI: o3 Pro",
       "created": 1749598352,
       "contextLength": 200000,
       "inputPerM": 20,
       "outputPerM": 80,
+      "inputModalities": [
+        "text",
+        "file",
+        "image"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/o3-pro:batch",
+      "name": "OpenAI: o3 Pro (batch)",
+      "created": 1749598352,
+      "contextLength": 200000,
+      "inputPerM": 10,
+      "outputPerM": 40,
       "inputModalities": [
         "text",
         "file",
@@ -4240,12 +5034,46 @@
       "supportsReasoning": true
     },
     {
+      "id": "openai/o4-mini-high:batch",
+      "name": "OpenAI: o4 Mini High (batch)",
+      "created": 1744824212,
+      "contextLength": 200000,
+      "inputPerM": 0.55,
+      "outputPerM": 2.2,
+      "inputModalities": [
+        "image",
+        "text",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "openai/o3",
       "name": "OpenAI: o3",
       "created": 1744823457,
       "contextLength": 200000,
       "inputPerM": 2,
       "outputPerM": 8,
+      "inputModalities": [
+        "image",
+        "text",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/o3:batch",
+      "name": "OpenAI: o3 (batch)",
+      "created": 1744823457,
+      "contextLength": 200000,
+      "inputPerM": 1,
+      "outputPerM": 4,
       "inputModalities": [
         "image",
         "text",
@@ -4274,12 +5102,46 @@
       "supportsReasoning": true
     },
     {
+      "id": "openai/o4-mini:batch",
+      "name": "OpenAI: o4 Mini (batch)",
+      "created": 1744820942,
+      "contextLength": 200000,
+      "inputPerM": 0.55,
+      "outputPerM": 2.2,
+      "inputModalities": [
+        "image",
+        "text",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "openai/gpt-4.1",
       "name": "OpenAI: GPT-4.1",
       "created": 1744651385,
       "contextLength": 1047576,
       "inputPerM": 2,
       "outputPerM": 8,
+      "inputModalities": [
+        "image",
+        "text",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": false
+    },
+    {
+      "id": "openai/gpt-4.1:batch",
+      "name": "OpenAI: GPT-4.1 (batch)",
+      "created": 1744651385,
+      "contextLength": 1047576,
+      "inputPerM": 1,
+      "outputPerM": 4,
       "inputModalities": [
         "image",
         "text",
@@ -4308,12 +5170,46 @@
       "supportsReasoning": false
     },
     {
+      "id": "openai/gpt-4.1-mini:batch",
+      "name": "OpenAI: GPT-4.1 Mini (batch)",
+      "created": 1744651381,
+      "contextLength": 1047576,
+      "inputPerM": 0.19999999999999998,
+      "outputPerM": 0.7999999999999999,
+      "inputModalities": [
+        "image",
+        "text",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": false
+    },
+    {
       "id": "openai/gpt-4.1-nano",
       "name": "OpenAI: GPT-4.1 Nano",
       "created": 1744651369,
       "contextLength": 1047576,
       "inputPerM": 0.09999999999999999,
       "outputPerM": 0.39999999999999997,
+      "inputModalities": [
+        "image",
+        "text",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": false
+    },
+    {
+      "id": "openai/gpt-4.1-nano:batch",
+      "name": "OpenAI: GPT-4.1 Nano (batch)",
+      "created": 1744651369,
+      "contextLength": 1047576,
+      "inputPerM": 0.049999999999999996,
+      "outputPerM": 0.19999999999999998,
       "inputModalities": [
         "image",
         "text",
@@ -4378,6 +5274,23 @@
       "contextLength": 200000,
       "inputPerM": 150,
       "outputPerM": 600,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/o1-pro:batch",
+      "name": "OpenAI: o1-pro (batch)",
+      "created": 1742423211,
+      "contextLength": 200000,
+      "inputPerM": 75,
+      "outputPerM": 300,
       "inputModalities": [
         "text",
         "image",
@@ -4577,6 +5490,22 @@
       "supportsReasoning": true
     },
     {
+      "id": "openai/o3-mini-high:batch",
+      "name": "OpenAI: o3 Mini High (batch)",
+      "created": 1739372611,
+      "contextLength": 200000,
+      "inputPerM": 0.55,
+      "outputPerM": 2.2,
+      "inputModalities": [
+        "text",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "aion-labs/aion-rp-llama-3.1-8b",
       "name": "AionLabs: Aion-RP 1.0 (8B)",
       "created": 1738696718,
@@ -4629,6 +5558,22 @@
       "contextLength": 200000,
       "inputPerM": 1.1,
       "outputPerM": 4.4,
+      "inputModalities": [
+        "text",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/o3-mini:batch",
+      "name": "OpenAI: o3 Mini (batch)",
+      "created": 1738351721,
+      "contextLength": 200000,
+      "inputPerM": 0.55,
+      "outputPerM": 2.2,
       "inputModalities": [
         "text",
         "file"
@@ -4767,6 +5712,23 @@
       "contextLength": 200000,
       "inputPerM": 15,
       "outputPerM": 60,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/o1:batch",
+      "name": "OpenAI: o1 (batch)",
+      "created": 1734459999,
+      "contextLength": 200000,
+      "inputPerM": 7.5,
+      "outputPerM": 30,
       "inputModalities": [
         "text",
         "image",
@@ -5194,6 +6156,23 @@
       "supportsReasoning": false
     },
     {
+      "id": "openai/gpt-4o-mini:batch",
+      "name": "OpenAI: GPT-4o-mini (batch)",
+      "created": 1721260800,
+      "contextLength": 128000,
+      "inputPerM": 0.075,
+      "outputPerM": 0.3,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": false
+    },
+    {
       "id": "google/gemma-2-27b-it",
       "name": "Google: Gemma 2 27B",
       "created": 1720828800,
@@ -5243,6 +6222,23 @@
       "supportsReasoning": false
     },
     {
+      "id": "openai/gpt-4o:batch",
+      "name": "OpenAI: GPT-4o (batch)",
+      "created": 1715558400,
+      "contextLength": 128000,
+      "inputPerM": 1.25,
+      "outputPerM": 5,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": false
+    },
+    {
       "id": "mistralai/mixtral-8x22b-instruct",
       "name": "Mistral: Mixtral 8x22B Instruct",
       "created": 1713312000,
@@ -5280,6 +6276,22 @@
       "contextLength": 128000,
       "inputPerM": 10,
       "outputPerM": 30,
+      "inputModalities": [
+        "text",
+        "image"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": false
+    },
+    {
+      "id": "openai/gpt-4-turbo:batch",
+      "name": "OpenAI: GPT-4 Turbo (batch)",
+      "created": 1712620800,
+      "contextLength": 128000,
+      "inputPerM": 5,
+      "outputPerM": 15,
       "inputModalities": [
         "text",
         "image"
@@ -5453,6 +6465,21 @@
       "contextLength": 16385,
       "inputPerM": 0.5,
       "outputPerM": 1.5,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": false
+    },
+    {
+      "id": "openai/gpt-3.5-turbo:batch",
+      "name": "OpenAI: GPT-3.5 Turbo (batch)",
+      "created": 1685232000,
+      "contextLength": 16385,
+      "inputPerM": 0.25,
+      "outputPerM": 0.75,
       "inputModalities": [
         "text"
       ],
