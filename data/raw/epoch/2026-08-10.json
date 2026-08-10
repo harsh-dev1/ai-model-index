@@ -1,9 +1,17 @@
 {
-  "fetchedAt": "2026-08-10T13:46:41.089Z",
+  "fetchedAt": "2026-08-10T19:18:41.691Z",
   "source": "https://epoch.ai/benchmarks",
   "licence": "CC-BY 4.0 — Epoch AI, \"AI Benchmarking Hub\"",
   "benchmarks": {
     "gpqa_diamond": [
+      {
+        "model": "glm-5.2_none",
+        "score": 0.7121212121212122,
+        "stderr": 0.03225883512300997,
+        "releaseDate": "2026-06-16",
+        "organization": "Z.ai (Zhipu AI)",
+        "country": "China"
+      },
       {
         "model": "gpt-5.4-mini-2026-03-17_xhigh",
         "score": 0.8686868686868687,
@@ -2010,7 +2018,7 @@
         "stderr": 0.02107317439394748,
         "releaseDate": "2024-12-31",
         "organization": "Tsinghua University,University of Illinois Urbana-Champaign (UIUC),Shanghai AI Lab,Peking University,Shanghai Jiao Tong University,CUHK Shenzhen Research Institute",
-        "country": "China,United States of America"
+        "country": "United States of America,China"
       },
       {
         "model": "Llama-3.3-70B-Instruct",
@@ -2856,6 +2864,14 @@
       }
     ],
     "otis_mock_aime": [
+      {
+        "model": "glm-5.2_none",
+        "score": 0.28888888888888886,
+        "stderr": 0.06832943242540508,
+        "releaseDate": "2026-06-16",
+        "organization": "Z.ai (Zhipu AI)",
+        "country": "China"
+      },
       {
         "model": "gpt-5.4-mini-2026-03-17_xhigh",
         "score": 0.8888888888888888,
@@ -12940,6 +12956,60 @@
   },
   "eci": [
     {
+      "model": "glm-5.2_none",
+      "name": "GLM-5.2",
+      "score": 152.21,
+      "releaseDate": "2026-06-16",
+      "organization": "Z.ai (Zhipu AI)",
+      "country": "China",
+      "accessibility": "Open weights (unrestricted)"
+    },
+    {
+      "model": "gemini-3.1-pro-preview_high",
+      "name": "Gemini 3.1 Pro Preview",
+      "score": 154.75,
+      "releaseDate": "2026-02-19",
+      "organization": "Google DeepMind",
+      "country": "United States of America",
+      "accessibility": "API access"
+    },
+    {
+      "model": "gpt-5.5_high",
+      "name": "GPT-5.5 (high)",
+      "score": 159.21,
+      "releaseDate": "2026-04-23",
+      "organization": "OpenAI",
+      "country": "United States of America",
+      "accessibility": "API access"
+    },
+    {
+      "model": "gpt-5.4-2026-03-05_high",
+      "name": "GPT-5.4 (high)",
+      "score": 156.69,
+      "releaseDate": "2026-03-05",
+      "organization": "OpenAI",
+      "country": "United States of America",
+      "accessibility": "API access"
+    },
+    {
+      "model": "gpt-5.6-sol_high",
+      "name": "GPT-5.6 Sol (high)",
+      "score": 161.65,
+      "releaseDate": "2026-07-09",
+      "organization": "OpenAI",
+      "country": "United States of America",
+      "accessibility": "API access"
+    },
+    {
+      "model": "claude-fable-5_high",
+      "name": "Claude Fable 5 (high)",
+      "score": 161.53,
+      "releaseDate": "2026-06-09",
+      "organization": "Anthropic",
+      "country": "United States of America",
+      "accessibility": "API access"
+    },
+    {
       "model": "o1-2024-12-17_medium",
       "name": "o1 (medium)",
       "score": 142.45,
@@ -13390,15 +13460,6 @@
       "accessibility": "Open weights (restricted use)"
     },
     {
-      "model": "gemini-3.1-pro-preview_high",
-      "name": "Gemini 3.1 Pro Preview",
-      "score": 154.75,
-      "releaseDate": "2026-02-19",
-      "organization": "Google DeepMind",
-      "country": "United States of America",
-      "accessibility": "API access"
-    },
-    {
       "model": "deepseek-v4-pro_none",
       "name": "DeepSeek v4 Pro (unknown thinking)",
       "score": 149.07,
@@ -13590,15 +13651,6 @@
     {
       "model": "claude-fable-5_low",
       "name": "Claude Fable 5 (low)",
-      "score": 161.53,
-      "releaseDate": "2026-06-09",
-      "organization": "Anthropic",
-      "country": "United States of America",
-      "accessibility": "API access"
-    },
-    {
-      "model": "claude-fable-5_high",
-      "name": "Claude Fable 5 (high)",
       "score": 161.53,
       "releaseDate": "2026-06-09",
       "organization": "Anthropic",
@@ -13822,15 +13874,6 @@
       "accessibility": "API access"
     },
     {
-      "model": "gpt-5.5_high",
-      "name": "GPT-5.5 (high)",
-      "score": 159.21,
-      "releaseDate": "2026-04-23",
-      "organization": "OpenAI",
-      "country": "United States of America",
-      "accessibility": "API access"
-    },
-    {
       "model": "gemini-3.5-flash_high",
       "name": "Gemini 3.5 Flash",
       "score": 154.56,
@@ -14013,15 +14056,6 @@
     {
       "model": "gpt-5.4-2026-03-05_none",
       "name": "GPT-5.4 (none)",
-      "score": 156.69,
-      "releaseDate": "2026-03-05",
-      "organization": "OpenAI",
-      "country": "United States of America",
-      "accessibility": "API access"
-    },
-    {
-      "model": "gpt-5.4-2026-03-05_high",
-      "name": "GPT-5.4 (high)",
       "score": 156.69,
       "releaseDate": "2026-03-05",
       "organization": "OpenAI",
@@ -15726,7 +15760,7 @@
       "score": null,
       "releaseDate": "2024-12-31",
       "organization": "Tsinghua University,University of Illinois Urbana-Champaign (UIUC),Shanghai AI Lab,Peking University,Shanghai Jiao Tong University,CUHK Shenzhen Research Institute",
-      "country": "China,United States of America",
+      "country": "United States of America,China",
       "accessibility": "Open weights (unrestricted)"
     },
     {
@@ -15753,15 +15787,6 @@
       "score": 161.02,
       "releaseDate": "2026-07-24",
       "organization": "Anthropic",
-      "country": "United States of America",
-      "accessibility": "API access"
-    },
-    {
-      "model": "gpt-5.6-sol_high",
-      "name": "GPT-5.6 Sol (high)",
-      "score": 161.65,
-      "releaseDate": "2026-07-09",
-      "organization": "OpenAI",
       "country": "United States of America",
       "accessibility": "API access"
     },
@@ -17121,7 +17146,7 @@
       "score": null,
       "releaseDate": "2021-08-05",
       "organization": "EleutherAI,LAION",
-      "country": "Germany,United States of America",
+      "country": "United States of America,Germany",
       "accessibility": "Open weights (unrestricted)"
     },
     {
@@ -17976,7 +18001,7 @@
       "score": null,
       "releaseDate": "2024-12-06",
       "organization": "Shanghai AI Lab,SenseTime,Tsinghua University,Nanjing University,Fudan University,Chinese University of Hong Kong (CUHK),Shanghai Jiao Tong University",
-      "country": "China,Hong Kong",
+      "country": "Hong Kong,China",
       "accessibility": "Open weights (restricted use)"
     },
     {
@@ -18093,7 +18118,7 @@
       "score": null,
       "releaseDate": "2024-12-10",
       "organization": "NVIDIA,Massachusetts Institute of Technology (MIT),University of California (UC) Berkeley,University of California San Diego,University of Washington,Tsinghua University",
-      "country": "China,United States of America",
+      "country": "United States of America,China",
       "accessibility": "Open weights (non-commercial)"
     },
     {
@@ -19184,15 +19209,6 @@
       "organization": "Cursor",
       "country": "United States of America",
       "accessibility": null
-    },
-    {
-      "model": "glm-5.2_none",
-      "name": "GLM-5.2",
-      "score": 152.21,
-      "releaseDate": "2026-06-16",
-      "organization": "Z.ai (Zhipu AI)",
-      "country": "China",
-      "accessibility": "Open weights (unrestricted)"
     },
     {
       "model": "swe-1.6",
