@@ -1,7 +1,45 @@
 {
-  "fetchedAt": "2026-08-13T13:50:19.532Z",
+  "fetchedAt": "2026-08-13T19:27:28.582Z",
   "source": "https://openrouter.ai/api/v1/models",
   "models": [
+    {
+      "id": "google/gemini-3.7-flash",
+      "name": "Google: Gemini 3.7 Flash",
+      "created": 1786640581,
+      "contextLength": 1048576,
+      "inputPerM": 0.375,
+      "outputPerM": 1.875,
+      "inputModalities": [
+        "text",
+        "image",
+        "video",
+        "file",
+        "audio"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "google/gemini-3.7-flash:batch",
+      "name": "Google: Gemini 3.7 Flash (batch)",
+      "created": 1786640581,
+      "contextLength": 1048576,
+      "inputPerM": 0.1875,
+      "outputPerM": 0.9375,
+      "inputModalities": [
+        "text",
+        "image",
+        "video",
+        "file",
+        "audio"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
     {
       "id": "bytedance-seed/seed-2-1-turbo",
       "name": "ByteDance Seed: Seed 2.1 Turbo",
@@ -217,8 +255,8 @@
       "name": "DeepSeek V4 Flash Latest",
       "created": 1785606009,
       "contextLength": 1048576,
-      "inputPerM": 0.079996,
-      "outputPerM": 0.252,
+      "inputPerM": 0.072,
+      "outputPerM": 0.144,
       "inputModalities": [
         "text"
       ],
@@ -377,8 +415,8 @@
       "name": "Google: Gemini 3.6 Flash",
       "created": 1784646733,
       "contextLength": 1048576,
-      "inputPerM": 1.5,
-      "outputPerM": 7.5,
+      "inputPerM": 0.75,
+      "outputPerM": 3.75,
       "inputModalities": [
         "text",
         "image",
@@ -396,8 +434,8 @@
       "name": "Google: Gemini 3.6 Flash (batch)",
       "created": 1784646733,
       "contextLength": 1048576,
-      "inputPerM": 0.75,
-      "outputPerM": 3.75,
+      "inputPerM": 0.375,
+      "outputPerM": 1.875,
       "inputModalities": [
         "text",
         "image",
@@ -1033,8 +1071,8 @@
       "name": "Z.ai: GLM 5.2",
       "created": 1781631930,
       "contextLength": 1048576,
-      "inputPerM": 0.5,
-      "outputPerM": 3.15,
+      "inputPerM": 0.39999999999999997,
+      "outputPerM": 2.52,
       "inputModalities": [
         "text"
       ],
@@ -1650,8 +1688,8 @@
       "name": "MoonshotAI Kimi Latest",
       "created": 1777318428,
       "contextLength": 1048576,
-      "inputPerM": 2.8,
-      "outputPerM": 14,
+      "inputPerM": 2.4,
+      "outputPerM": 12,
       "inputModalities": [
         "text",
         "image",
@@ -1667,8 +1705,8 @@
       "name": "Google Gemini Flash Latest",
       "created": 1777318398,
       "contextLength": 1048576,
-      "inputPerM": 1.5,
-      "outputPerM": 7.5,
+      "inputPerM": 0.375,
+      "outputPerM": 1.875,
       "inputModalities": [
         "text",
         "image",
@@ -2029,8 +2067,8 @@
       "name": "MoonshotAI: Kimi K2.6",
       "created": 1776699402,
       "contextLength": 262144,
-      "inputPerM": 0.646,
-      "outputPerM": 2.7199999999999998,
+      "inputPerM": 0.5605,
+      "outputPerM": 2.36,
       "inputModalities": [
         "text",
         "image"
@@ -5777,7 +5815,7 @@
       "id": "deepseek/deepseek-r1",
       "name": "DeepSeek: R1",
       "created": 1737381095,
-      "contextLength": 163840,
+      "contextLength": 64000,
       "inputPerM": 0.7,
       "outputPerM": 2.5,
       "inputModalities": [

@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-08-13T13:50:19.820Z",
+  "generatedAt": "2026-08-13T19:27:28.958Z",
   "snapshotDates": {
     "epoch": "2026-08-13",
     "arena": "2026-08-13",
     "openrouter": "2026-08-13"
   },
   "snapshotFetchedAt": {
-    "epoch": "2026-08-13T13:50:19.510Z",
-    "arena": "2026-08-13T13:50:19.820Z",
-    "openrouter": "2026-08-13T13:50:19.532Z"
+    "epoch": "2026-08-13T19:27:28.782Z",
+    "arena": "2026-08-13T19:27:28.958Z",
+    "openrouter": "2026-08-13T19:27:28.582Z"
   },
   "models": [
     {
@@ -76,14 +76,14 @@
           "rank": 1
         },
         {
-          "board": "agent",
-          "rank": 1
-        },
-        {
           "board": "vision",
           "elo": 1315,
           "ci": 9,
           "votes": 8333,
+          "rank": 1
+        },
+        {
+          "board": "agent",
           "rank": 1
         },
         {
@@ -646,15 +646,15 @@
           "rank": 3
         },
         {
-          "board": "agent",
-          "rank": 8
-        },
-        {
           "board": "vision",
           "elo": 1301,
           "ci": 7,
           "votes": 20461,
           "rank": 3
+        },
+        {
+          "board": "agent",
+          "rank": 8
         },
         {
           "board": "search",
@@ -752,15 +752,15 @@
           "rank": 16
         },
         {
-          "board": "agent",
-          "rank": 6
-        },
-        {
           "board": "vision",
           "elo": 1284,
           "ci": 8,
           "votes": 11131,
           "rank": 14
+        },
+        {
+          "board": "agent",
+          "rank": 6
         },
         {
           "board": "search",
@@ -853,15 +853,15 @@
           "rank": 7
         },
         {
-          "board": "agent",
-          "rank": 2
-        },
-        {
           "board": "vision",
           "elo": 1297,
           "ci": 11,
           "votes": 3821,
           "rank": 6
+        },
+        {
+          "board": "agent",
+          "rank": 2
         },
         {
           "board": "document",
@@ -1238,7 +1238,7 @@
     },
     {
       "slug": "deepseek-chat",
-      "name": "V3.2",
+      "name": "DeepSeek-V3.2",
       "vendor": "DeepSeek",
       "country": "China",
       "releaseDate": "2025-12-01",
@@ -1282,7 +1282,7 @@
       "releaseDate": "2025-01-20",
       "accessibility": "Open weights (unrestricted)",
       "eci": 139.51,
-      "contextLength": 163840,
+      "contextLength": 64000,
       "inputPerM": 0.7,
       "outputPerM": 2.5,
       "modalities": [
@@ -1387,7 +1387,7 @@
     },
     {
       "slug": "deepseek-v3-2",
-      "name": "V3.2-Exp",
+      "name": "DeepSeek-V3.2 (Thinking; Novita)",
       "vendor": "DeepSeek",
       "country": "China",
       "releaseDate": "2025-09-29",
@@ -2081,8 +2081,8 @@
       "accessibility": "API access",
       "eci": 153.98,
       "contextLength": 1048576,
-      "inputPerM": 0.75,
-      "outputPerM": 3.75,
+      "inputPerM": 0.375,
+      "outputPerM": 1.875,
       "modalities": [
         "text",
         "image",
@@ -2608,8 +2608,8 @@
       "accessibility": "Open weights (unrestricted)",
       "eci": 152.21,
       "contextLength": 1048576,
-      "inputPerM": 0.5,
-      "outputPerM": 3.15,
+      "inputPerM": 0.39999999999999997,
+      "outputPerM": 2.52,
       "modalities": [
         "text"
       ],
@@ -3206,7 +3206,7 @@
     },
     {
       "slug": "gpt-5-1-codex",
-      "name": "GPT-5.1-Codex-Max",
+      "name": "GPT-5.1 Codex",
       "vendor": "OpenAI",
       "country": "United States of America",
       "releaseDate": "2025-11-12",
@@ -3797,15 +3797,15 @@
           "rank": 17
         },
         {
-          "board": "agent",
-          "rank": 7
-        },
-        {
           "board": "vision",
           "elo": 1286,
           "ci": 7,
           "votes": 18722,
           "rank": 12
+        },
+        {
+          "board": "agent",
+          "rank": 7
         },
         {
           "board": "search",
@@ -4547,9 +4547,24 @@
       "supportsReasoning": true,
       "benchmarks": [
         {
+          "id": "gpqa_diamond",
+          "raw": 0.8825757575757576,
+          "stderr": 0.019355903133033585
+        },
+        {
+          "id": "otis_mock_aime",
+          "raw": 0.8888888888888888,
+          "stderr": 0.039171949640122654
+        },
+        {
           "id": "arc_agi_2",
           "raw": 0.3652777777777778,
           "stderr": null
+        },
+        {
+          "id": "simpleqa_verified",
+          "raw": 0.402,
+          "stderr": 0.015512467135714957
         },
         {
           "id": "scicode",
@@ -4698,8 +4713,8 @@
       "accessibility": "Open weights (unrestricted)",
       "eci": 151.11,
       "contextLength": 262144,
-      "inputPerM": 0.646,
-      "outputPerM": 2.7199999999999998,
+      "inputPerM": 0.5605,
+      "outputPerM": 2.36,
       "modalities": [
         "text",
         "image"
@@ -7063,10 +7078,10 @@
       "reason": "no public API pricing found on OpenRouter"
     },
     {
-      "source": "arena+openrouter",
+      "source": "epoch+arena+openrouter",
       "raw": "grok-4-6",
       "slug": "grok-4-6",
-      "reason": "too few results to rank (0 benchmarks, no Arena votes)"
+      "reason": "too few results to rank (1 benchmark, no Arena votes)"
     },
     {
       "source": "epoch+openrouter",
@@ -8348,9 +8363,9 @@
     }
   ],
   "stats": {
-    "epochModels": 296,
+    "epochModels": 297,
     "arenaModels": 63,
-    "openrouterModels": 316,
+    "openrouterModels": 317,
     "joined": 454,
     "eligible": 91,
     "arenaMatchRate": 0.9365079365079365,
