@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-08-18T13:10:01.704Z",
+  "generatedAt": "2026-08-18T18:58:10.825Z",
   "snapshotDates": {
     "epoch": "2026-08-18",
     "arena": "2026-08-18",
     "openrouter": "2026-08-18"
   },
   "snapshotFetchedAt": {
-    "epoch": "2026-08-18T13:10:01.419Z",
+    "epoch": "2026-08-18T18:58:10.767Z",
     "arena": "2026-08-18T13:10:01.704Z",
-    "openrouter": "2026-08-18T13:10:01.428Z"
+    "openrouter": "2026-08-18T18:58:10.825Z"
   },
   "models": [
     {
@@ -38,6 +38,11 @@
           "id": "otis_mock_aime",
           "raw": 1,
           "stderr": 0
+        },
+        {
+          "id": "arc_agi_2",
+          "raw": 0.8916666666666667,
+          "stderr": null
         },
         {
           "id": "simpleqa_verified",
@@ -725,7 +730,7 @@
         },
         {
           "id": "webdev_arena",
-          "raw": 1552.22,
+          "raw": 1564.26,
           "stderr": null
         }
       ],
@@ -1451,6 +1456,11 @@
           "stderr": 0.020854366486931897
         },
         {
+          "id": "arc_agi_2",
+          "raw": 0.6138888888888888,
+          "stderr": null
+        },
+        {
           "id": "simpleqa_verified",
           "raw": 0.3466933867735471,
           "stderr": 0.015072445660728776
@@ -2028,6 +2038,11 @@
           "stderr": 0.0683294324254051
         },
         {
+          "id": "arc_agi_2",
+          "raw": 0.10277777777777779,
+          "stderr": null
+        },
+        {
           "id": "scicode",
           "raw": 0.40856481481481505,
           "stderr": null
@@ -2089,6 +2104,11 @@
           "stderr": 0.030926354359015452
         },
         {
+          "id": "arc_agi_2",
+          "raw": 0.6041666666666666,
+          "stderr": null
+        },
+        {
           "id": "simpleqa_verified",
           "raw": 0.687,
           "stderr": 0.014671272822977775
@@ -2105,7 +2125,7 @@
         },
         {
           "id": "webdev_arena",
-          "raw": 1527.83,
+          "raw": 1536.94,
           "stderr": null
         }
       ],
@@ -2172,6 +2192,16 @@
           "id": "simpleqa_verified",
           "raw": 0.712,
           "stderr": 0.014326941797231577
+        },
+        {
+          "id": "ale_bench",
+          "raw": 904.3,
+          "stderr": null
+        },
+        {
+          "id": "webdev_arena",
+          "raw": 1587.48,
+          "stderr": null
         }
       ],
       "arena": [
@@ -2645,8 +2675,8 @@
       "accessibility": "Open weights (unrestricted)",
       "eci": 152.18,
       "contextLength": 1048576,
-      "inputPerM": 0.7,
-      "outputPerM": 2.2,
+      "inputPerM": 0,
+      "outputPerM": 0,
       "modalities": [
         "text"
       ],
@@ -4520,6 +4550,70 @@
       ]
     },
     {
+      "slug": "grok-4-6",
+      "name": "Grok 4.6",
+      "vendor": "xAI",
+      "country": "United States of America",
+      "releaseDate": "2026-08-12",
+      "accessibility": "API access",
+      "eci": 154.91,
+      "contextLength": 500000,
+      "inputPerM": 2,
+      "outputPerM": 6,
+      "modalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "supportsReasoning": true,
+      "benchmarks": [
+        {
+          "id": "gpqa_diamond",
+          "raw": 0.9400252525252525,
+          "stderr": 0.014480018812911388
+        },
+        {
+          "id": "otis_mock_aime",
+          "raw": 0.9916666666666667,
+          "stderr": 0.004700633956814717
+        },
+        {
+          "id": "arc_agi_2",
+          "raw": 0.6708333333333333,
+          "stderr": null
+        },
+        {
+          "id": "simpleqa_verified",
+          "raw": 0.544,
+          "stderr": 0.01575792855397918
+        },
+        {
+          "id": "ale_bench",
+          "raw": 1508.08,
+          "stderr": null
+        },
+        {
+          "id": "webdev_arena",
+          "raw": 1631.12,
+          "stderr": null
+        }
+      ],
+      "arena": [
+        {
+          "board": "code",
+          "elo": 1631,
+          "ci": 17,
+          "votes": 1513,
+          "rank": 5
+        }
+      ],
+      "sources": [
+        "epoch",
+        "arena",
+        "openrouter"
+      ]
+    },
+    {
       "slug": "inkling",
       "name": "Inkling",
       "vendor": "Thinking Machines",
@@ -4606,6 +4700,11 @@
           "id": "otis_mock_aime",
           "raw": 0.9,
           "stderr": 0.03964807305493795
+        },
+        {
+          "id": "arc_agi_2",
+          "raw": 0.40138888888888885,
+          "stderr": null
         },
         {
           "id": "simpleqa_verified",
@@ -4749,8 +4848,8 @@
       "accessibility": "Open weights (unrestricted)",
       "eci": 150.98,
       "contextLength": 262144,
-      "inputPerM": 0.5795,
-      "outputPerM": 2.44,
+      "inputPerM": 0.5605,
+      "outputPerM": 2.36,
       "modalities": [
         "text",
         "image"
@@ -6179,6 +6278,11 @@
           "id": "simpleqa_verified",
           "raw": 0.46292585170340683,
           "stderr": 0.015791568269596348
+        },
+        {
+          "id": "webdev_arena",
+          "raw": 1666.72,
+          "stderr": null
         }
       ],
       "arena": [
@@ -6577,6 +6681,12 @@
       "raw": "deepseek-v4-flash",
       "slug": "deepseek-v4-flash",
       "reason": "too few results to rank (3 benchmarks, no Arena votes)"
+    },
+    {
+      "source": "epoch+openrouter",
+      "raw": "deepseek-v4-pro-0813",
+      "slug": "deepseek-v4-pro-0813",
+      "reason": "too few results to rank (2 benchmarks, no Arena votes)"
     },
     {
       "source": "epoch",
@@ -7111,12 +7221,6 @@
       "raw": "grok-4-20-0309",
       "slug": "grok-4-20-0309",
       "reason": "no public API pricing found on OpenRouter"
-    },
-    {
-      "source": "epoch+arena+openrouter",
-      "raw": "grok-4-6",
-      "slug": "grok-4-6",
-      "reason": "too few results to rank (3 benchmarks, no Arena votes)"
     },
     {
       "source": "epoch+openrouter",
@@ -8392,11 +8496,11 @@
     }
   ],
   "stats": {
-    "epochModels": 298,
+    "epochModels": 299,
     "arenaModels": 63,
-    "openrouterModels": 318,
-    "joined": 455,
-    "eligible": 92,
+    "openrouterModels": 319,
+    "joined": 456,
+    "eligible": 93,
     "arenaMatchRate": 0.9365079365079365,
     "arenaTopMatchRate": 1
   }
