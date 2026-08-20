@@ -1,7 +1,37 @@
 {
-  "fetchedAt": "2026-08-20T13:12:15.844Z",
+  "fetchedAt": "2026-08-20T19:01:16.433Z",
   "source": "https://openrouter.ai/api/v1/models",
   "models": [
+    {
+      "id": "tencent/hy-mt2-1.8b",
+      "name": "Tencent: Hy-MT2-1.8B",
+      "created": 1787231581,
+      "contextLength": 8192,
+      "inputPerM": 0.044,
+      "outputPerM": 0.17700000000000002,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": false
+    },
+    {
+      "id": "tencent/hy-mt2-30b-a3b",
+      "name": "Tencent: Hy-MT2-30B-A3B",
+      "created": 1787231561,
+      "contextLength": 8192,
+      "inputPerM": 0.074,
+      "outputPerM": 0.295,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": false
+    },
     {
       "id": "~z-ai/glm-latest",
       "name": "Z.ai: GLM Latest",
@@ -203,7 +233,7 @@
       "id": "nvidia/nemotron-3.5-lightning",
       "name": "NVIDIA: Nemotron 3.5 Lightning",
       "created": 1786452751,
-      "contextLength": 1000000,
+      "contextLength": 262144,
       "inputPerM": 0.08,
       "outputPerM": 0.19999999999999998,
       "inputModalities": [
@@ -2002,8 +2032,8 @@
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "created": 1777000666,
       "contextLength": 1048576,
-      "inputPerM": 0.0868,
-      "outputPerM": 0.1736,
+      "inputPerM": 0.0784,
+      "outputPerM": 0.1568,
       "inputModalities": [
         "text"
       ],
@@ -2145,8 +2175,8 @@
       "name": "MoonshotAI: Kimi K2.6",
       "created": 1776699402,
       "contextLength": 262144,
-      "inputPerM": 0.9405,
-      "outputPerM": 3.9600000000000004,
+      "inputPerM": 0.5605,
+      "outputPerM": 2.36,
       "inputModalities": [
         "text",
         "image"
@@ -6131,6 +6161,21 @@
       "contextLength": 32768,
       "inputPerM": 3,
       "outputPerM": 5,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": false
+    },
+    {
+      "id": "mistralai/ministral-8b",
+      "name": "Mistral: Ministral 8B",
+      "created": 1729123200,
+      "contextLength": 128000,
+      "inputPerM": 0.11,
+      "outputPerM": 0.11,
       "inputModalities": [
         "text"
       ],
