@@ -1,7 +1,24 @@
 {
-  "fetchedAt": "2026-08-26T13:17:58.013Z",
+  "fetchedAt": "2026-08-26T20:05:25.088Z",
   "source": "https://openrouter.ai/api/v1/models",
   "models": [
+    {
+      "id": "z-ai/glm-5.3-flash",
+      "name": "Z.ai: GLM 5.3 Flash",
+      "created": 1787752741,
+      "contextLength": 1310720,
+      "inputPerM": 0.075,
+      "outputPerM": 0.25,
+      "inputModalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
     {
       "id": "meta/muse-spark-1.2-contributor",
       "name": "Meta: Muse Spark 1.2 Contributor",
@@ -31,23 +48,6 @@
       "inputModalities": [
         "text",
         "image"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": true
-    },
-    {
-      "id": "stealth/ox-alpha",
-      "name": "Ox Alpha",
-      "created": 1787256295,
-      "contextLength": 1048576,
-      "inputPerM": 0,
-      "outputPerM": 0,
-      "inputModalities": [
-        "text",
-        "image",
-        "video"
       ],
       "outputModalities": [
         "text"
@@ -1088,8 +1088,8 @@
       "name": "Tencent: Hy3",
       "created": 1783344048,
       "contextLength": 262144,
-      "inputPerM": 0.13199999999999998,
-      "outputPerM": 0.5279999999999999,
+      "inputPerM": 0.0825,
+      "outputPerM": 0.33,
       "inputModalities": [
         "text"
       ],
@@ -1267,21 +1267,6 @@
       "contextLength": 1048576,
       "inputPerM": 1.19,
       "outputPerM": 3.74,
-      "inputModalities": [
-        "text"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": true
-    },
-    {
-      "id": "z-ai/glm-5.2:batch",
-      "name": "Z.ai: GLM 5.2 (batch)",
-      "created": 1781631930,
-      "contextLength": 1048575,
-      "inputPerM": 1.4,
-      "outputPerM": 4.4,
       "inputModalities": [
         "text"
       ],
@@ -2035,8 +2020,8 @@
       "name": "Qwen: Qwen3.6 27B",
       "created": 1777255064,
       "contextLength": 262144,
-      "inputPerM": 0.6,
-      "outputPerM": 3.5999999999999996,
+      "inputPerM": 0.32,
+      "outputPerM": 3.1999999999999997,
       "inputModalities": [
         "text",
         "image",
@@ -2135,8 +2120,8 @@
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "created": 1777000666,
       "contextLength": 1048576,
-      "inputPerM": 0.08106,
-      "outputPerM": 0.16212,
+      "inputPerM": 0.07952,
+      "outputPerM": 0.15904,
       "inputModalities": [
         "text"
       ],
@@ -3209,8 +3194,8 @@
       "name": "MoonshotAI: Kimi K2.5",
       "created": 1769487076,
       "contextLength": 262144,
-      "inputPerM": 0.6,
-      "outputPerM": 3,
+      "inputPerM": 0.44999999999999996,
+      "outputPerM": 2.25,
       "inputModalities": [
         "text",
         "image"
