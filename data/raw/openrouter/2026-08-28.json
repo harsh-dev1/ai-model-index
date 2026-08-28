@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-28T11:26:58.412Z",
+  "fetchedAt": "2026-08-28T22:23:11.801Z",
   "source": "https://openrouter.ai/api/v1/models",
   "models": [
     {
@@ -56,6 +56,23 @@
       "contextLength": 1310720,
       "inputPerM": 0.075,
       "outputPerM": 0.25,
+      "inputModalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "z-ai/glm-5.3-flash:batch",
+      "name": "Z.ai: GLM 5.3 Flash (batch)",
+      "created": 1787752741,
+      "contextLength": 1048575,
+      "inputPerM": 0.15,
+      "outputPerM": 0.5,
       "inputModalities": [
         "text",
         "image",
@@ -135,8 +152,8 @@
       "id": "~z-ai/glm-latest",
       "name": "Z.ai: GLM Latest",
       "created": 1787151053,
-      "contextLength": 1048576,
-      "inputPerM": 1.4,
+      "contextLength": 1310720,
+      "inputPerM": 1.25,
       "outputPerM": 4.4,
       "inputModalities": [
         "text"
@@ -165,7 +182,7 @@
       "id": "z-ai/glm-5.3",
       "name": "Z.ai: GLM 5.3",
       "created": 1787086655,
-      "contextLength": 1048576,
+      "contextLength": 1310720,
       "inputPerM": 1.4,
       "outputPerM": 4.4,
       "inputModalities": [
@@ -214,8 +231,8 @@
       "name": "Google: Gemini 3.7 Flash",
       "created": 1786640581,
       "contextLength": 1048576,
-      "inputPerM": 0.375,
-      "outputPerM": 1.875,
+      "inputPerM": 0.75,
+      "outputPerM": 3.75,
       "inputModalities": [
         "text",
         "image",
@@ -280,6 +297,21 @@
       "supportsReasoning": true
     },
     {
+      "id": "qwen/qwen3.8-2.4t-a95b:batch",
+      "name": "Qwen: Qwen3.8 2.4T A95B (batch)",
+      "created": 1786551702,
+      "contextLength": 1010000,
+      "inputPerM": 2.5,
+      "outputPerM": 6.25,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "bytedance-seed/seed-2.0-code",
       "name": "ByteDance Seed: Seed-2.0-Code",
       "created": 1786550701,
@@ -303,6 +335,21 @@
       "contextLength": 1048576,
       "inputPerM": 0.66,
       "outputPerM": 1.9800000000000002,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "deepseek/deepseek-v4-pro-0813:batch",
+      "name": "DeepSeek: DeepSeek V4 Pro 0813 (batch)",
+      "created": 1786549364,
+      "contextLength": 1048576,
+      "inputPerM": 1.32,
+      "outputPerM": 3.9600000000000004,
       "inputModalities": [
         "text"
       ],
@@ -348,8 +395,8 @@
       "name": "NVIDIA: Nemotron 3.5 Lightning",
       "created": 1786452751,
       "contextLength": 262144,
-      "inputPerM": 0.09999999999999999,
-      "outputPerM": 0.25,
+      "inputPerM": 0.08,
+      "outputPerM": 0.19999999999999998,
       "inputModalities": [
         "text"
       ],
@@ -408,6 +455,22 @@
     {
       "id": "meta/muse-glimmer-30b",
       "name": "Meta: Muse Glimmer 30B",
+      "created": 1786302394,
+      "contextLength": 131072,
+      "inputPerM": 0.3,
+      "outputPerM": 1.2,
+      "inputModalities": [
+        "text",
+        "image"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "meta/muse-glimmer-30b:batch",
+      "name": "Meta: Muse Glimmer 30B (batch)",
       "created": 1786302394,
       "contextLength": 131072,
       "inputPerM": 0.35,
@@ -477,8 +540,23 @@
       "name": "DeepSeek: DeepSeek V4 Flash 0731",
       "created": 1785478908,
       "contextLength": 1310720,
-      "inputPerM": 0.07,
-      "outputPerM": 0.14,
+      "inputPerM": 0.049999999999999996,
+      "outputPerM": 0.09999999999999999,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "deepseek/deepseek-v4-flash-0731:batch",
+      "name": "DeepSeek: DeepSeek V4 Flash 0731 (batch)",
+      "created": 1785478908,
+      "contextLength": 1048576,
+      "inputPerM": 0.14,
+      "outputPerM": 0.28,
       "inputModalities": [
         "text"
       ],
@@ -493,6 +571,23 @@
       "created": 1785443117,
       "contextLength": 1048576,
       "inputPerM": 0.44999999999999996,
+      "outputPerM": 1.2,
+      "inputModalities": [
+        "text",
+        "image",
+        "audio"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "thinkingmachines/inkling-small:batch",
+      "name": "Thinking Machines: Inkling Small (batch)",
+      "created": 1785443117,
+      "contextLength": 524288,
+      "inputPerM": 0.5,
       "outputPerM": 1.2,
       "inputModalities": [
         "text",
@@ -814,6 +909,23 @@
       "supportsReasoning": true
     },
     {
+      "id": "moonshotai/kimi-k3:batch",
+      "name": "MoonshotAI: Kimi K3 (batch)",
+      "created": 1784215858,
+      "contextLength": 1048576,
+      "inputPerM": 3,
+      "outputPerM": 15,
+      "inputModalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "meta/muse-spark-1.1",
       "name": "Meta: Muse Spark 1.1",
       "created": 1784215741,
@@ -1033,8 +1145,8 @@
       "name": "Tencent: Hy3",
       "created": 1783344048,
       "contextLength": 262144,
-      "inputPerM": 0.13199999999999998,
-      "outputPerM": 0.5279999999999999,
+      "inputPerM": 0.0825,
+      "outputPerM": 0.33,
       "inputModalities": [
         "text"
       ],
@@ -1847,8 +1959,8 @@
       "name": "Google Gemini Flash Latest",
       "created": 1777318398,
       "contextLength": 1048576,
-      "inputPerM": 0.375,
-      "outputPerM": 1.875,
+      "inputPerM": 0.75,
+      "outputPerM": 3.75,
       "inputModalities": [
         "text",
         "image",
@@ -2017,8 +2129,8 @@
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "created": 1777000679,
       "contextLength": 1048576,
-      "inputPerM": 0.87,
-      "outputPerM": 1.74,
+      "inputPerM": 0.741588,
+      "outputPerM": 1.483176,
       "inputModalities": [
         "text"
       ],
@@ -2032,8 +2144,8 @@
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "created": 1777000666,
       "contextLength": 1048576,
-      "inputPerM": 0.088606,
-      "outputPerM": 0.177212,
+      "inputPerM": 0.0868,
+      "outputPerM": 0.1736,
       "inputModalities": [
         "text"
       ],
@@ -2246,6 +2358,23 @@
       "contextLength": 262144,
       "inputPerM": 0.09,
       "outputPerM": 0.33999999999999997,
+      "inputModalities": [
+        "image",
+        "text",
+        "video"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "google/gemma-4-31b-it:batch",
+      "name": "Google: Gemma 4 31B (batch)",
+      "created": 1775148486,
+      "contextLength": 262144,
+      "inputPerM": 0.39,
+      "outputPerM": 0.9700000000000001,
       "inputModalities": [
         "image",
         "text",
@@ -2587,6 +2716,23 @@
       "contextLength": 262144,
       "inputPerM": 0.09999999999999999,
       "outputPerM": 0.15,
+      "inputModalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "qwen/qwen3.5-9b:batch",
+      "name": "Qwen: Qwen3.5-9B (batch)",
+      "created": 1773152396,
+      "contextLength": 262144,
+      "inputPerM": 0.16999999999999998,
+      "outputPerM": 0.25,
       "inputModalities": [
         "text",
         "image",
@@ -3719,7 +3865,7 @@
       "id": "mistralai/voxtral-small-24b-2507",
       "name": "Mistral: Voxtral Small 24B 2507",
       "created": 1761835144,
-      "contextLength": 32000,
+      "contextLength": 32768,
       "inputPerM": 0.09999999999999999,
       "outputPerM": 0.3,
       "inputModalities": [
@@ -3933,8 +4079,8 @@
       "name": "Qwen: Qwen3 VL 30B A3B Instruct",
       "created": 1759794476,
       "contextLength": 262144,
-      "inputPerM": 0.13,
-      "outputPerM": 0.52,
+      "inputPerM": 0.15,
+      "outputPerM": 0.6,
       "inputModalities": [
         "text",
         "image"
@@ -4384,12 +4530,42 @@
       "supportsReasoning": true
     },
     {
+      "id": "openai/gpt-oss-120b:batch",
+      "name": "OpenAI: gpt-oss-120b (batch)",
+      "created": 1754414231,
+      "contextLength": 131072,
+      "inputPerM": 0.15,
+      "outputPerM": 0.6,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "openai/gpt-oss-20b",
       "name": "OpenAI: gpt-oss-20b",
       "created": 1754414229,
       "contextLength": 131072,
       "inputPerM": 0.03,
       "outputPerM": 0.13,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/gpt-oss-20b:batch",
+      "name": "OpenAI: gpt-oss-20b (batch)",
+      "created": 1754414229,
+      "contextLength": 131072,
+      "inputPerM": 0.049999999999999996,
+      "outputPerM": 0.19999999999999998,
       "inputModalities": [
         "text"
       ],
