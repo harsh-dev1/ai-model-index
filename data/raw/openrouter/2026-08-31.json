@@ -1,7 +1,22 @@
 {
-  "fetchedAt": "2026-08-31T13:56:05.537Z",
+  "fetchedAt": "2026-08-31T22:53:14.581Z",
   "source": "https://openrouter.ai/api/v1/models",
   "models": [
+    {
+      "id": "ibm-granite/granite-4.2-8b",
+      "name": "IBM: Granite 4.2 8B",
+      "created": 1788206780,
+      "contextLength": 131072,
+      "inputPerM": 0.09999999999999999,
+      "outputPerM": 0.15,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
     {
       "id": "tencent/hy4-preview",
       "name": "Tencent: Hy4 preview",
@@ -153,8 +168,8 @@
       "name": "Z.ai: GLM Latest",
       "created": 1787151053,
       "contextLength": 1310720,
-      "inputPerM": 1.1875,
-      "outputPerM": 4.18,
+      "inputPerM": 1.17,
+      "outputPerM": 3.9600000000000004,
       "inputModalities": [
         "text"
       ],
@@ -525,7 +540,7 @@
       "name": "DeepSeek V4 Flash Latest",
       "created": 1785606009,
       "contextLength": 1310720,
-      "inputPerM": 0.03,
+      "inputPerM": 0.049999999999999996,
       "outputPerM": 0.16,
       "inputModalities": [
         "text"
@@ -945,21 +960,6 @@
       "supportsReasoning": true
     },
     {
-      "id": "kwaipilot/kat-coder-air-v2.5",
-      "name": "Kwaipilot: KAT-Coder-Air V2.5",
-      "created": 1783714590,
-      "contextLength": 256000,
-      "inputPerM": 0.15,
-      "outputPerM": 0.6,
-      "inputModalities": [
-        "text"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": false
-    },
-    {
       "id": "kwaipilot/kat-coder-pro-v2.5",
       "name": "Kwaipilot: KAT-Coder-Pro V2.5",
       "created": 1783714589,
@@ -992,12 +992,46 @@
       "supportsReasoning": true
     },
     {
+      "id": "openai/gpt-5.6-luna-pro:batch",
+      "name": "OpenAI: GPT-5.6 Luna Pro (batch)",
+      "created": 1783590867,
+      "contextLength": 1050000,
+      "inputPerM": 0.09999999999999999,
+      "outputPerM": 0.6,
+      "inputModalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "openai/gpt-5.6-luna",
       "name": "OpenAI: GPT-5.6 Luna",
       "created": 1783590864,
       "contextLength": 1050000,
       "inputPerM": 0.19999999999999998,
       "outputPerM": 1.2,
+      "inputModalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/gpt-5.6-luna:batch",
+      "name": "OpenAI: GPT-5.6 Luna (batch)",
+      "created": 1783590864,
+      "contextLength": 1050000,
+      "inputPerM": 0.09999999999999999,
+      "outputPerM": 0.6,
       "inputModalities": [
         "file",
         "image",
@@ -1026,12 +1060,46 @@
       "supportsReasoning": true
     },
     {
+      "id": "openai/gpt-5.6-terra-pro:batch",
+      "name": "OpenAI: GPT-5.6 Terra Pro (batch)",
+      "created": 1783590861,
+      "contextLength": 1050000,
+      "inputPerM": 1,
+      "outputPerM": 6,
+      "inputModalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "openai/gpt-5.6-terra",
       "name": "OpenAI: GPT-5.6 Terra",
       "created": 1783590857,
       "contextLength": 1050000,
       "inputPerM": 2,
       "outputPerM": 12,
+      "inputModalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/gpt-5.6-terra:batch",
+      "name": "OpenAI: GPT-5.6 Terra (batch)",
+      "created": 1783590857,
+      "contextLength": 1050000,
+      "inputPerM": 1,
+      "outputPerM": 6,
       "inputModalities": [
         "file",
         "image",
@@ -1060,12 +1128,46 @@
       "supportsReasoning": true
     },
     {
+      "id": "openai/gpt-5.6-sol-pro:batch",
+      "name": "OpenAI: GPT-5.6 Sol Pro (batch)",
+      "created": 1783590854,
+      "contextLength": 1050000,
+      "inputPerM": 1,
+      "outputPerM": 5,
+      "inputModalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "openai/gpt-5.6-sol",
       "name": "OpenAI: GPT-5.6 Sol",
       "created": 1783590850,
       "contextLength": 1050000,
       "inputPerM": 2,
       "outputPerM": 10,
+      "inputModalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/gpt-5.6-sol:batch",
+      "name": "OpenAI: GPT-5.6 Sol (batch)",
+      "created": 1783590850,
+      "contextLength": 1050000,
+      "inputPerM": 1,
+      "outputPerM": 5,
       "inputModalities": [
         "file",
         "image",
@@ -1145,8 +1247,8 @@
       "name": "Tencent: Hy3",
       "created": 1783344048,
       "contextLength": 262144,
-      "inputPerM": 0.13199999999999998,
-      "outputPerM": 0.5279999999999999,
+      "inputPerM": 0.0825,
+      "outputPerM": 0.33,
       "inputModalities": [
         "text"
       ],
@@ -2108,6 +2210,23 @@
       "supportsReasoning": true
     },
     {
+      "id": "openai/gpt-5.5-pro:batch",
+      "name": "OpenAI: GPT-5.5 Pro (batch)",
+      "created": 1777051896,
+      "contextLength": 1050000,
+      "inputPerM": 15,
+      "outputPerM": 90,
+      "inputModalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "openai/gpt-5.5",
       "name": "OpenAI: GPT-5.5",
       "created": 1777051893,
@@ -2125,12 +2244,29 @@
       "supportsReasoning": true
     },
     {
+      "id": "openai/gpt-5.5:batch",
+      "name": "OpenAI: GPT-5.5 (batch)",
+      "created": 1777051893,
+      "contextLength": 1050000,
+      "inputPerM": 2.5,
+      "outputPerM": 15,
+      "inputModalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "created": 1777000679,
       "contextLength": 1048576,
-      "inputPerM": 1.039302,
-      "outputPerM": 2.078604,
+      "inputPerM": 0.87,
+      "outputPerM": 1.74,
       "inputModalities": [
         "text"
       ],
@@ -2144,8 +2280,8 @@
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "created": 1777000666,
       "contextLength": 1048576,
-      "inputPerM": 0.08707999999999999,
-      "outputPerM": 0.17415999999999998,
+      "inputPerM": 0.07938,
+      "outputPerM": 0.15876,
       "inputModalities": [
         "text"
       ],
@@ -2599,12 +2735,46 @@
       "supportsReasoning": true
     },
     {
+      "id": "openai/gpt-5.4-nano:batch",
+      "name": "OpenAI: GPT-5.4 Nano (batch)",
+      "created": 1773748187,
+      "contextLength": 400000,
+      "inputPerM": 0.09999999999999999,
+      "outputPerM": 0.625,
+      "inputModalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "openai/gpt-5.4-mini",
       "name": "OpenAI: GPT-5.4 Mini",
       "created": 1773748178,
       "contextLength": 400000,
       "inputPerM": 0.75,
       "outputPerM": 4.5,
+      "inputModalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/gpt-5.4-mini:batch",
+      "name": "OpenAI: GPT-5.4 Mini (batch)",
+      "created": 1773748178,
+      "contextLength": 400000,
+      "inputPerM": 0.375,
+      "outputPerM": 2.25,
       "inputModalities": [
         "file",
         "image",
@@ -2761,12 +2931,46 @@
       "supportsReasoning": true
     },
     {
+      "id": "openai/gpt-5.4-pro:batch",
+      "name": "OpenAI: GPT-5.4 Pro (batch)",
+      "created": 1772734366,
+      "contextLength": 1050000,
+      "inputPerM": 15,
+      "outputPerM": 90,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "openai/gpt-5.4",
       "name": "OpenAI: GPT-5.4",
       "created": 1772734352,
       "contextLength": 1050000,
       "inputPerM": 2.5,
       "outputPerM": 15,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/gpt-5.4:batch",
+      "name": "OpenAI: GPT-5.4 (batch)",
+      "created": 1772734352,
+      "contextLength": 1050000,
+      "inputPerM": 1.25,
+      "outputPerM": 7.5,
       "inputModalities": [
         "text",
         "image",
@@ -3473,12 +3677,46 @@
       "supportsReasoning": true
     },
     {
+      "id": "openai/gpt-5.2-pro:batch",
+      "name": "OpenAI: GPT-5.2 Pro (batch)",
+      "created": 1765389780,
+      "contextLength": 400000,
+      "inputPerM": 10.5,
+      "outputPerM": 84,
+      "inputModalities": [
+        "image",
+        "text",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "openai/gpt-5.2",
       "name": "OpenAI: GPT-5.2",
       "created": 1765389775,
       "contextLength": 400000,
       "inputPerM": 1.75,
       "outputPerM": 14,
+      "inputModalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/gpt-5.2:batch",
+      "name": "OpenAI: GPT-5.2 (batch)",
+      "created": 1765389775,
+      "contextLength": 400000,
+      "inputPerM": 0.875,
+      "outputPerM": 7,
       "inputModalities": [
         "file",
         "image",
@@ -3757,6 +3995,23 @@
       "contextLength": 400000,
       "inputPerM": 1.25,
       "outputPerM": 10,
+      "inputModalities": [
+        "image",
+        "text",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/gpt-5.1:batch",
+      "name": "OpenAI: GPT-5.1 (batch)",
+      "created": 1763060305,
+      "contextLength": 400000,
+      "inputPerM": 0.625,
+      "outputPerM": 5,
       "inputModalities": [
         "image",
         "text",
@@ -4093,6 +4348,23 @@
       "supportsReasoning": true
     },
     {
+      "id": "openai/gpt-5-pro:batch",
+      "name": "OpenAI: GPT-5 Pro (batch)",
+      "created": 1759776663,
+      "contextLength": 400000,
+      "inputPerM": 7.5,
+      "outputPerM": 60,
+      "inputModalities": [
+        "image",
+        "text",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "z-ai/glm-4.6",
       "name": "Z.ai: GLM 4.6",
       "created": 1759235576,
@@ -4298,7 +4570,7 @@
       "name": "Qwen: Qwen3 Next 80B A3B Instruct",
       "created": 1757612213,
       "contextLength": 262144,
-      "inputPerM": 0.09,
+      "inputPerM": 0.09999999999999999,
       "outputPerM": 1.1,
       "inputModalities": [
         "text"
@@ -4466,6 +4738,23 @@
       "supportsReasoning": true
     },
     {
+      "id": "openai/gpt-5:batch",
+      "name": "OpenAI: GPT-5 (batch)",
+      "created": 1754587413,
+      "contextLength": 400000,
+      "inputPerM": 0.625,
+      "outputPerM": 5,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "openai/gpt-5-mini",
       "name": "OpenAI: GPT-5 Mini",
       "created": 1754587407,
@@ -4483,12 +4772,46 @@
       "supportsReasoning": true
     },
     {
+      "id": "openai/gpt-5-mini:batch",
+      "name": "OpenAI: GPT-5 Mini (batch)",
+      "created": 1754587407,
+      "contextLength": 400000,
+      "inputPerM": 0.125,
+      "outputPerM": 1,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "openai/gpt-5-nano",
       "name": "OpenAI: GPT-5 Nano",
       "created": 1754587402,
       "contextLength": 400000,
       "inputPerM": 0.049999999999999996,
       "outputPerM": 0.39999999999999997,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/gpt-5-nano:batch",
+      "name": "OpenAI: GPT-5 Nano (batch)",
+      "created": 1754587402,
+      "contextLength": 400000,
+      "inputPerM": 0.024999999999999998,
+      "outputPerM": 0.19999999999999998,
       "inputModalities": [
         "text",
         "image",
@@ -5228,12 +5551,46 @@
       "supportsReasoning": true
     },
     {
+      "id": "openai/o3:batch",
+      "name": "OpenAI: o3 (batch)",
+      "created": 1744823457,
+      "contextLength": 200000,
+      "inputPerM": 1,
+      "outputPerM": 4,
+      "inputModalities": [
+        "image",
+        "text",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "openai/o4-mini",
       "name": "OpenAI: o4 Mini",
       "created": 1744820942,
       "contextLength": 200000,
       "inputPerM": 1.1,
       "outputPerM": 4.4,
+      "inputModalities": [
+        "image",
+        "text",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/o4-mini:batch",
+      "name": "OpenAI: o4 Mini (batch)",
+      "created": 1744820942,
+      "contextLength": 200000,
+      "inputPerM": 0.55,
+      "outputPerM": 2.2,
       "inputModalities": [
         "image",
         "text",
@@ -5262,6 +5619,23 @@
       "supportsReasoning": false
     },
     {
+      "id": "openai/gpt-4.1:batch",
+      "name": "OpenAI: GPT-4.1 (batch)",
+      "created": 1744651385,
+      "contextLength": 1047576,
+      "inputPerM": 1,
+      "outputPerM": 4,
+      "inputModalities": [
+        "image",
+        "text",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": false
+    },
+    {
       "id": "openai/gpt-4.1-mini",
       "name": "OpenAI: GPT-4.1 Mini",
       "created": 1744651381,
@@ -5279,12 +5653,46 @@
       "supportsReasoning": false
     },
     {
+      "id": "openai/gpt-4.1-mini:batch",
+      "name": "OpenAI: GPT-4.1 Mini (batch)",
+      "created": 1744651381,
+      "contextLength": 1047576,
+      "inputPerM": 0.19999999999999998,
+      "outputPerM": 0.7999999999999999,
+      "inputModalities": [
+        "image",
+        "text",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": false
+    },
+    {
       "id": "openai/gpt-4.1-nano",
       "name": "OpenAI: GPT-4.1 Nano",
       "created": 1744651369,
       "contextLength": 1047576,
       "inputPerM": 0.09999999999999999,
       "outputPerM": 0.39999999999999997,
+      "inputModalities": [
+        "image",
+        "text",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": false
+    },
+    {
+      "id": "openai/gpt-4.1-nano:batch",
+      "name": "OpenAI: GPT-4.1 Nano (batch)",
+      "created": 1744651369,
+      "contextLength": 1047576,
+      "inputPerM": 0.049999999999999996,
+      "outputPerM": 0.19999999999999998,
       "inputModalities": [
         "image",
         "text",
@@ -5600,6 +6008,22 @@
       "contextLength": 200000,
       "inputPerM": 1.1,
       "outputPerM": 4.4,
+      "inputModalities": [
+        "text",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/o3-mini:batch",
+      "name": "OpenAI: o3 Mini (batch)",
+      "created": 1738351721,
+      "contextLength": 200000,
+      "inputPerM": 0.55,
+      "outputPerM": 2.2,
       "inputModalities": [
         "text",
         "file"
@@ -6150,6 +6574,23 @@
       "supportsReasoning": false
     },
     {
+      "id": "openai/gpt-4o-mini:batch",
+      "name": "OpenAI: GPT-4o-mini (batch)",
+      "created": 1721260800,
+      "contextLength": 128000,
+      "inputPerM": 0.075,
+      "outputPerM": 0.3,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": false
+    },
+    {
       "id": "google/gemma-2-27b-it",
       "name": "Google: Gemma 2 27B",
       "created": 1720828800,
@@ -6199,6 +6640,23 @@
       "supportsReasoning": false
     },
     {
+      "id": "openai/gpt-4o:batch",
+      "name": "OpenAI: GPT-4o (batch)",
+      "created": 1715558400,
+      "contextLength": 128000,
+      "inputPerM": 1.25,
+      "outputPerM": 5,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": false
+    },
+    {
       "id": "mistralai/mixtral-8x22b-instruct",
       "name": "Mistral: Mixtral 8x22B Instruct",
       "created": 1713312000,
@@ -6236,6 +6694,22 @@
       "contextLength": 128000,
       "inputPerM": 10,
       "outputPerM": 30,
+      "inputModalities": [
+        "text",
+        "image"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": false
+    },
+    {
+      "id": "openai/gpt-4-turbo:batch",
+      "name": "OpenAI: GPT-4 Turbo (batch)",
+      "created": 1712620800,
+      "contextLength": 128000,
+      "inputPerM": 5,
+      "outputPerM": 15,
       "inputModalities": [
         "text",
         "image"
@@ -6409,6 +6883,21 @@
       "contextLength": 16385,
       "inputPerM": 0.5,
       "outputPerM": 1.5,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": false
+    },
+    {
+      "id": "openai/gpt-3.5-turbo:batch",
+      "name": "OpenAI: GPT-3.5 Turbo (batch)",
+      "created": 1685232000,
+      "contextLength": 16385,
+      "inputPerM": 0.25,
+      "outputPerM": 0.75,
       "inputModalities": [
         "text"
       ],
