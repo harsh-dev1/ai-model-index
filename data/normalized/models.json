@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-08-31T22:53:14.581Z",
+  "generatedAt": "2026-09-01T05:13:45.989Z",
   "snapshotDates": {
-    "epoch": "2026-08-31",
-    "arena": "2026-08-31",
-    "openrouter": "2026-08-31"
+    "epoch": "2026-09-01",
+    "arena": "2026-09-01",
+    "openrouter": "2026-09-01"
   },
   "snapshotFetchedAt": {
-    "epoch": "2026-08-31T22:53:14.508Z",
-    "arena": "2026-08-31T05:39:57.166Z",
-    "openrouter": "2026-08-31T22:53:14.581Z"
+    "epoch": "2026-09-01T05:13:45.982Z",
+    "arena": "2026-09-01T05:13:45.989Z",
+    "openrouter": "2026-09-01T05:13:45.864Z"
   },
   "models": [
     {
@@ -1530,8 +1530,8 @@
       "accessibility": "Open weights (unrestricted)",
       "eci": 149.24,
       "contextLength": 1048576,
-      "inputPerM": 0.87,
-      "outputPerM": 1.74,
+      "inputPerM": 1.5999999999999999,
+      "outputPerM": 3.1999999999999997,
       "modalities": [
         "text"
       ],
@@ -3091,6 +3091,11 @@
           "stderr": null
         },
         {
+          "id": "simpleqa_verified",
+          "raw": 0.127,
+          "stderr": 0.010534798620855644
+        },
+        {
           "id": "aider_polyglot",
           "raw": 32.4,
           "stderr": null
@@ -3144,6 +3149,11 @@
           "id": "arc_agi_2",
           "raw": 0,
           "stderr": null
+        },
+        {
+          "id": "simpleqa_verified",
+          "raw": 0.06,
+          "stderr": 0.007513751157474971
         },
         {
           "id": "aider_polyglot",
@@ -3245,6 +3255,11 @@
           "stderr": null
         },
         {
+          "id": "simpleqa_verified",
+          "raw": 0.26,
+          "stderr": 0.01387777332977422
+        },
+        {
           "id": "swe_bench_verified",
           "raw": 0.30991735537190085,
           "stderr": 0.021042625979133336
@@ -3312,6 +3327,11 @@
           "id": "arc_agi_2",
           "raw": 0,
           "stderr": null
+        },
+        {
+          "id": "simpleqa_verified",
+          "raw": 0.083,
+          "stderr": 0.008728527206074758
         },
         {
           "id": "aider_polyglot",
@@ -6012,6 +6032,11 @@
           "stderr": 0.0106
         },
         {
+          "id": "simpleqa_verified",
+          "raw": 0.411,
+          "stderr": 0.01556667341859915
+        },
+        {
           "id": "aider_polyglot",
           "raw": 61.7,
           "stderr": null
@@ -6153,6 +6178,11 @@
           "id": "arc_agi_2",
           "raw": 0.0299,
           "stderr": null
+        },
+        {
+          "id": "simpleqa_verified",
+          "raw": 0.153,
+          "stderr": 0.011389500459665504
         },
         {
           "id": "aider_polyglot",
@@ -6323,6 +6353,49 @@
         {
           "id": "scicode",
           "raw": 0.423611111111111,
+          "stderr": null
+        }
+      ],
+      "arena": [],
+      "sources": [
+        "epoch",
+        "openrouter"
+      ]
+    },
+    {
+      "slug": "qwen3-32b",
+      "name": "Qwen3-32B",
+      "vendor": "Alibaba",
+      "country": "China",
+      "releaseDate": "2025-04-28",
+      "accessibility": "Open weights (unrestricted)",
+      "eci": null,
+      "contextLength": 131072,
+      "inputPerM": 0.08,
+      "outputPerM": 0.28,
+      "modalities": [
+        "text"
+      ],
+      "supportsReasoning": true,
+      "benchmarks": [
+        {
+          "id": "gpqa_diamond",
+          "raw": 0.6571969696969697,
+          "stderr": 0.027890331058144285
+        },
+        {
+          "id": "otis_mock_aime",
+          "raw": 0.6694444444444444,
+          "stderr": 0.06040106323530329
+        },
+        {
+          "id": "aider_polyglot",
+          "raw": 40,
+          "stderr": null
+        },
+        {
+          "id": "scicode",
+          "raw": 0.354166666666667,
           "stderr": null
         }
       ],
@@ -7782,8 +7855,20 @@
     },
     {
       "source": "epoch",
+      "raw": "granite-4-0-1b",
+      "slug": "granite-4-0-1b",
+      "reason": "no public API pricing found on OpenRouter"
+    },
+    {
+      "source": "epoch",
       "raw": "granite-4-0-350m",
       "slug": "granite-4-0-350m",
+      "reason": "no public API pricing found on OpenRouter"
+    },
+    {
+      "source": "epoch",
+      "raw": "granite-4-0-micro",
+      "slug": "granite-4-0-micro",
       "reason": "no public API pricing found on OpenRouter"
     },
     {
@@ -8129,6 +8214,12 @@
       "reason": "no public API pricing found on OpenRouter"
     },
     {
+      "source": "epoch+openrouter",
+      "raw": "llama-3-2-1b-instruct",
+      "slug": "llama-3-2-1b-instruct",
+      "reason": "too few results to rank (2 benchmarks, no Arena votes)"
+    },
+    {
       "source": "epoch",
       "raw": "llama-3-2-90b-vision-instruct",
       "slug": "llama-3-2-90b-vision-instruct",
@@ -8343,6 +8434,24 @@
       "raw": "mistral-small-2603",
       "slug": "mistral-small-2603",
       "reason": "too few results to rank (1 benchmark, no Arena votes)"
+    },
+    {
+      "source": "epoch",
+      "raw": "mistral-small-3-1-2503",
+      "slug": "mistral-small-3-1-2503",
+      "reason": "no public API pricing found on OpenRouter"
+    },
+    {
+      "source": "epoch",
+      "raw": "mistral-small-3-2-2506",
+      "slug": "mistral-small-3-2-2506",
+      "reason": "no public API pricing found on OpenRouter"
+    },
+    {
+      "source": "epoch",
+      "raw": "mistral-small-3-2501",
+      "slug": "mistral-small-3-2501",
+      "reason": "no public API pricing found on OpenRouter"
     },
     {
       "source": "epoch",
@@ -8603,6 +8712,18 @@
       "reason": "no public API pricing found on OpenRouter"
     },
     {
+      "source": "epoch",
+      "raw": "qwen3-1-7b",
+      "slug": "qwen3-1-7b",
+      "reason": "no public API pricing found on OpenRouter"
+    },
+    {
+      "source": "epoch+openrouter",
+      "raw": "qwen3-14b",
+      "slug": "qwen3-14b",
+      "reason": "too few results to rank (2 benchmarks, no Arena votes)"
+    },
+    {
       "source": "epoch+openrouter",
       "raw": "qwen3-235b-a22b",
       "slug": "qwen3-235b-a22b",
@@ -8616,9 +8737,33 @@
     },
     {
       "source": "epoch+openrouter",
-      "raw": "qwen3-32b",
-      "slug": "qwen3-32b",
+      "raw": "qwen3-30b-a3b",
+      "slug": "qwen3-30b-a3b",
       "reason": "too few results to rank (2 benchmarks, no Arena votes)"
+    },
+    {
+      "source": "epoch+openrouter",
+      "raw": "qwen3-30b-a3b-instruct-2507",
+      "slug": "qwen3-30b-a3b-instruct-2507",
+      "reason": "too few results to rank (2 benchmarks, no Arena votes)"
+    },
+    {
+      "source": "epoch+openrouter",
+      "raw": "qwen3-30b-a3b-thinking-2507",
+      "slug": "qwen3-30b-a3b-thinking-2507",
+      "reason": "too few results to rank (2 benchmarks, no Arena votes)"
+    },
+    {
+      "source": "epoch",
+      "raw": "qwen3-4b",
+      "slug": "qwen3-4b",
+      "reason": "no public API pricing found on OpenRouter"
+    },
+    {
+      "source": "epoch",
+      "raw": "qwen3-4b-instruct-2507",
+      "slug": "qwen3-4b-instruct-2507",
+      "reason": "no public API pricing found on OpenRouter"
     },
     {
       "source": "arena",
@@ -8633,10 +8778,22 @@
       "reason": "too few results to rank (2 benchmarks, no Arena votes)"
     },
     {
+      "source": "epoch+openrouter",
+      "raw": "qwen3-5-35b-a3b",
+      "slug": "qwen3-5-35b-a3b",
+      "reason": "too few results to rank (2 benchmarks, no Arena votes)"
+    },
+    {
       "source": "epoch+arena+openrouter",
       "raw": "qwen3-5-397b-a17b",
       "slug": "qwen3-5-397b-a17b",
       "reason": "too few results to rank (2 benchmarks, no Arena votes)"
+    },
+    {
+      "source": "epoch",
+      "raw": "qwen3-5-4b",
+      "slug": "qwen3-5-4b",
+      "reason": "no public API pricing found on OpenRouter"
     },
     {
       "source": "epoch",
@@ -8804,6 +8961,12 @@
       "source": "arena",
       "raw": "seed-2.1-pro-preview",
       "slug": "seed-2-1-pro",
+      "reason": "no public API pricing found on OpenRouter"
+    },
+    {
+      "source": "epoch",
+      "raw": "seed-oss-36b-instruct",
+      "slug": "seed-oss-36b-instruct",
       "reason": "no public API pricing found on OpenRouter"
     },
     {
@@ -9120,11 +9283,11 @@
     }
   ],
   "stats": {
-    "epochModels": 313,
+    "epochModels": 329,
     "arenaModels": 71,
     "openrouterModels": 319,
-    "joined": 473,
-    "eligible": 99,
+    "joined": 489,
+    "eligible": 100,
     "arenaMatchRate": 0.9014084507042254,
     "arenaTopMatchRate": 0.96
   }
