@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-09-02T16:36:59.088Z",
+  "generatedAt": "2026-09-02T21:05:37.981Z",
   "snapshotDates": {
     "epoch": "2026-09-02",
     "arena": "2026-09-02",
     "openrouter": "2026-09-02"
   },
   "snapshotFetchedAt": {
-    "epoch": "2026-09-02T16:36:59.088Z",
+    "epoch": "2026-09-02T21:05:37.981Z",
     "arena": "2026-09-02T11:22:30.602Z",
-    "openrouter": "2026-09-02T16:36:58.567Z"
+    "openrouter": "2026-09-02T21:05:37.445Z"
   },
   "models": [
     {
@@ -109,6 +109,56 @@
       "sources": [
         "epoch",
         "arena",
+        "openrouter"
+      ]
+    },
+    {
+      "slug": "claude-fable-5-1",
+      "name": "Claude Fable 5.1",
+      "vendor": "Anthropic",
+      "country": "United States of America",
+      "releaseDate": "2026-09-01",
+      "accessibility": "API access",
+      "eci": null,
+      "contextLength": 1000000,
+      "inputPerM": 5,
+      "outputPerM": 25,
+      "modalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "supportsReasoning": true,
+      "benchmarks": [
+        {
+          "id": "otis_mock_aime",
+          "raw": 1,
+          "stderr": 0
+        },
+        {
+          "id": "arc_agi_2",
+          "raw": 0.9,
+          "stderr": null
+        },
+        {
+          "id": "simpleqa_verified",
+          "raw": 0.708,
+          "stderr": 0.014385511563477433
+        },
+        {
+          "id": "scicode",
+          "raw": 0.62037037037037,
+          "stderr": null
+        },
+        {
+          "id": "webdev_arena",
+          "raw": 1765.37,
+          "stderr": null
+        }
+      ],
+      "arena": [],
+      "sources": [
+        "epoch",
         "openrouter"
       ]
     },
@@ -1488,8 +1538,8 @@
       "accessibility": "Open weights (unrestricted)",
       "eci": 149.05,
       "contextLength": 1048576,
-      "inputPerM": 1.030776,
-      "outputPerM": 2.061552,
+      "inputPerM": 1.0274699999999999,
+      "outputPerM": 2.0549399999999998,
       "modalities": [
         "text"
       ],
@@ -1581,6 +1631,11 @@
           "id": "simpleqa_verified",
           "raw": 0.5290581162324649,
           "stderr": 0.015808394665706597
+        },
+        {
+          "id": "scicode",
+          "raw": 0.491898148148148,
+          "stderr": null
         },
         {
           "id": "ale_bench",
@@ -2216,6 +2271,11 @@
           "stderr": 0.01460648312734278
         },
         {
+          "id": "scicode",
+          "raw": 0.578703703703704,
+          "stderr": null
+        },
+        {
           "id": "ale_bench",
           "raw": 904.3,
           "stderr": null
@@ -2824,6 +2884,11 @@
           "stderr": 0.015560917136921659
         },
         {
+          "id": "scicode",
+          "raw": 0.564814814814815,
+          "stderr": null
+        },
+        {
           "id": "ale_bench",
           "raw": 1317.4,
           "stderr": null
@@ -2841,6 +2906,65 @@
           "ci": 13,
           "votes": 2560,
           "rank": 10
+        }
+      ],
+      "sources": [
+        "epoch",
+        "arena",
+        "openrouter"
+      ]
+    },
+    {
+      "slug": "glm-5-3-flash",
+      "name": "GLM-5.3-Flash",
+      "vendor": "Z.ai",
+      "country": "China",
+      "releaseDate": "2026-08-20",
+      "accessibility": "Open weights (unrestricted)",
+      "eci": 150.3,
+      "contextLength": 1310720,
+      "inputPerM": 0.075,
+      "outputPerM": 0.25,
+      "modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "supportsReasoning": true,
+      "benchmarks": [
+        {
+          "id": "gpqa_diamond",
+          "raw": 0.9015151515151515,
+          "stderr": 0.017183231147411448
+        },
+        {
+          "id": "otis_mock_aime",
+          "raw": 0.9388888888888889,
+          "stderr": 0.021622267380853318
+        },
+        {
+          "id": "scicode",
+          "raw": 0.460648148148148,
+          "stderr": null
+        },
+        {
+          "id": "ale_bench",
+          "raw": 303.55,
+          "stderr": null
+        },
+        {
+          "id": "webdev_arena",
+          "raw": 1604.43,
+          "stderr": null
+        }
+      ],
+      "arena": [
+        {
+          "board": "code",
+          "elo": 1606,
+          "ci": 16,
+          "votes": 1593,
+          "rank": 11
         }
       ],
       "sources": [
@@ -4726,6 +4850,11 @@
           "stderr": 0.01581774956184353
         },
         {
+          "id": "scicode",
+          "raw": 0.546296296296296,
+          "stderr": null
+        },
+        {
           "id": "ale_bench",
           "raw": 1508.08,
           "stderr": null
@@ -5605,6 +5734,11 @@
           "stderr": 0.015518791563606454
         },
         {
+          "id": "scicode",
+          "raw": 0.563657407407407,
+          "stderr": null
+        },
+        {
           "id": "webdev_arena",
           "raw": 1533.68,
           "stderr": null
@@ -5961,6 +6095,44 @@
       ]
     },
     {
+      "slug": "qwen3-14b",
+      "name": "Qwen3-14B",
+      "vendor": "Alibaba",
+      "country": "China",
+      "releaseDate": "2025-04-28",
+      "accessibility": "Open weights (unrestricted)",
+      "eci": 139.8,
+      "contextLength": 131072,
+      "inputPerM": 0.12,
+      "outputPerM": 0.24,
+      "modalities": [
+        "text"
+      ],
+      "supportsReasoning": true,
+      "benchmarks": [
+        {
+          "id": "gpqa_diamond",
+          "raw": 0.6376262626262627,
+          "stderr": 0.02931953778086544
+        },
+        {
+          "id": "otis_mock_aime",
+          "raw": 0.6638888888888889,
+          "stderr": 0.06190655406811223
+        },
+        {
+          "id": "scicode",
+          "raw": 0.315972222222222,
+          "stderr": null
+        }
+      ],
+      "arena": [],
+      "sources": [
+        "epoch",
+        "openrouter"
+      ]
+    },
+    {
       "slug": "qwen3-235b-a22b-thinking-2507",
       "name": "Qwen3-235B-A22B (Jul 2025)",
       "vendor": "Alibaba",
@@ -6009,6 +6181,44 @@
       ]
     },
     {
+      "slug": "qwen3-30b-a3b-thinking-2507",
+      "name": "Qwen3 30B A3B Thinking 2507",
+      "vendor": "Alibaba",
+      "country": null,
+      "releaseDate": "2025-07-30",
+      "accessibility": null,
+      "eci": null,
+      "contextLength": 81920,
+      "inputPerM": 0.19999999999999998,
+      "outputPerM": 2.4,
+      "modalities": [
+        "text"
+      ],
+      "supportsReasoning": true,
+      "benchmarks": [
+        {
+          "id": "gpqa_diamond",
+          "raw": 0.7007575757575758,
+          "stderr": 0.028327897613545493
+        },
+        {
+          "id": "otis_mock_aime",
+          "raw": 0.7027777777777777,
+          "stderr": 0.060418480757624834
+        },
+        {
+          "id": "scicode",
+          "raw": 0.333333333333333,
+          "stderr": null
+        }
+      ],
+      "arena": [],
+      "sources": [
+        "epoch",
+        "openrouter"
+      ]
+    },
+    {
       "slug": "qwen3-32b",
       "name": "Qwen3-32B",
       "vendor": "Alibaba",
@@ -6042,6 +6252,46 @@
         {
           "id": "scicode",
           "raw": 0.354166666666667,
+          "stderr": null
+        }
+      ],
+      "arena": [],
+      "sources": [
+        "epoch",
+        "openrouter"
+      ]
+    },
+    {
+      "slug": "qwen3-5-35b-a3b",
+      "name": "Qwen3.5-35B-A3B",
+      "vendor": "Alibaba",
+      "country": "China",
+      "releaseDate": "2026-02-24",
+      "accessibility": "Open weights (unrestricted)",
+      "eci": null,
+      "contextLength": 262144,
+      "inputPerM": 0.25,
+      "outputPerM": 1.25,
+      "modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "supportsReasoning": true,
+      "benchmarks": [
+        {
+          "id": "gpqa_diamond",
+          "raw": 0.8345959595959596,
+          "stderr": 0.02179018174848238
+        },
+        {
+          "id": "otis_mock_aime",
+          "raw": 0.7,
+          "stderr": 0.06003996985174109
+        },
+        {
+          "id": "scicode",
+          "raw": 0.292824074074074,
           "stderr": null
         }
       ],
@@ -6210,6 +6460,46 @@
       "sources": [
         "epoch",
         "arena",
+        "openrouter"
+      ]
+    },
+    {
+      "slug": "qwen3-6-27b",
+      "name": "Qwen3.6 27B",
+      "vendor": "Alibaba",
+      "country": "China",
+      "releaseDate": "2026-04-22",
+      "accessibility": "Open weights (unrestricted)",
+      "eci": 147.47,
+      "contextLength": 262144,
+      "inputPerM": 0.6,
+      "outputPerM": 3.5999999999999996,
+      "modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "supportsReasoning": true,
+      "benchmarks": [
+        {
+          "id": "gpqa_diamond",
+          "raw": 0.8585858585858586,
+          "stderr": 0.024825909793343353
+        },
+        {
+          "id": "otis_mock_aime",
+          "raw": 0.9111111111111111,
+          "stderr": 0.04290254662948546
+        },
+        {
+          "id": "scicode",
+          "raw": 0.372685185185185,
+          "stderr": null
+        }
+      ],
+      "arena": [],
+      "sources": [
+        "epoch",
         "openrouter"
       ]
     },
@@ -6536,6 +6826,11 @@
           "stderr": 0.015763390640483554
         },
         {
+          "id": "scicode",
+          "raw": 0.528935185185185,
+          "stderr": null
+        },
+        {
           "id": "webdev_arena",
           "raw": 1668.94,
           "stderr": null
@@ -6560,6 +6855,44 @@
       "sources": [
         "epoch",
         "arena",
+        "openrouter"
+      ]
+    },
+    {
+      "slug": "qwen3-8b",
+      "name": "Qwen3-8B",
+      "vendor": "Alibaba",
+      "country": "China",
+      "releaseDate": "2025-04-28",
+      "accessibility": "Open weights (unrestricted)",
+      "eci": 138.09,
+      "contextLength": 131072,
+      "inputPerM": 0.117,
+      "outputPerM": 0.45499999999999996,
+      "modalities": [
+        "text"
+      ],
+      "supportsReasoning": true,
+      "benchmarks": [
+        {
+          "id": "gpqa_diamond",
+          "raw": 0.5675505050505051,
+          "stderr": 0.029327713464985333
+        },
+        {
+          "id": "otis_mock_aime",
+          "raw": 0.5611111111111111,
+          "stderr": 0.0645035213369854
+        },
+        {
+          "id": "scicode",
+          "raw": 0.225694444444444,
+          "stderr": null
+        }
+      ],
+      "arena": [],
+      "sources": [
+        "epoch",
         "openrouter"
       ]
     }
@@ -6672,12 +7005,6 @@
       "raw": "claude-3-sonnet",
       "slug": "claude-3-sonnet",
       "reason": "no public API pricing found on OpenRouter"
-    },
-    {
-      "source": "epoch+openrouter",
-      "raw": "claude-fable-5-1",
-      "slug": "claude-fable-5-1",
-      "reason": "too few results to rank (2 benchmarks, no Arena votes)"
     },
     {
       "source": "epoch",
@@ -7244,6 +7571,12 @@
       "reason": "no public API pricing found on OpenRouter"
     },
     {
+      "source": "epoch+openrouter",
+      "raw": "gemini-3-8-flash",
+      "slug": "gemini-3-8-flash",
+      "reason": "too few results to rank (2 benchmarks, no Arena votes)"
+    },
+    {
       "source": "epoch",
       "raw": "gemini-3-deep-think",
       "slug": "gemini-3-deep-think",
@@ -7337,12 +7670,6 @@
       "source": "epoch+openrouter",
       "raw": "glm-4-7-flash",
       "slug": "glm-4-7-flash",
-      "reason": "too few results to rank (2 benchmarks, no Arena votes)"
-    },
-    {
-      "source": "epoch+arena+openrouter",
-      "raw": "glm-5-3-flash",
-      "slug": "glm-5-3-flash",
       "reason": "too few results to rank (2 benchmarks, no Arena votes)"
     },
     {
@@ -8349,12 +8676,6 @@
     },
     {
       "source": "epoch+openrouter",
-      "raw": "qwen3-14b",
-      "slug": "qwen3-14b",
-      "reason": "too few results to rank (2 benchmarks, no Arena votes)"
-    },
-    {
-      "source": "epoch+openrouter",
       "raw": "qwen3-235b-a22b",
       "slug": "qwen3-235b-a22b",
       "reason": "too few results to rank (2 benchmarks, no Arena votes)"
@@ -8378,12 +8699,6 @@
       "reason": "too few results to rank (2 benchmarks, no Arena votes)"
     },
     {
-      "source": "epoch+openrouter",
-      "raw": "qwen3-30b-a3b-thinking-2507",
-      "slug": "qwen3-30b-a3b-thinking-2507",
-      "reason": "too few results to rank (2 benchmarks, no Arena votes)"
-    },
-    {
       "source": "epoch",
       "raw": "qwen3-4b",
       "slug": "qwen3-4b",
@@ -8397,14 +8712,14 @@
     },
     {
       "source": "epoch+openrouter",
-      "raw": "qwen3-5-27b",
-      "slug": "qwen3-5-27b",
-      "reason": "too few results to rank (2 benchmarks, no Arena votes)"
+      "raw": "qwen3-5-122b-a10b",
+      "slug": "qwen3-5-122b-a10b",
+      "reason": "too few results to rank (1 benchmark, no Arena votes)"
     },
     {
       "source": "epoch+openrouter",
-      "raw": "qwen3-5-35b-a3b",
-      "slug": "qwen3-5-35b-a3b",
+      "raw": "qwen3-5-27b",
+      "slug": "qwen3-5-27b",
       "reason": "too few results to rank (2 benchmarks, no Arena votes)"
     },
     {
@@ -8427,12 +8742,6 @@
     },
     {
       "source": "epoch+openrouter",
-      "raw": "qwen3-6-27b",
-      "slug": "qwen3-6-27b",
-      "reason": "too few results to rank (2 benchmarks, no Arena votes)"
-    },
-    {
-      "source": "epoch+openrouter",
       "raw": "qwen3-7-flash",
       "slug": "qwen3-7-flash",
       "reason": "too few results to rank (2 benchmarks, no Arena votes)"
@@ -8441,19 +8750,13 @@
       "source": "epoch+arena+openrouter",
       "raw": "qwen3-8-27b",
       "slug": "qwen3-8-27b",
-      "reason": "too few results to rank (1 benchmark, no Arena votes)"
+      "reason": "too few results to rank (2 benchmarks, no Arena votes)"
     },
     {
       "source": "arena",
       "raw": "qwen3.8-flash-next",
       "slug": "qwen3-8-flash-next",
       "reason": "no public API pricing found on OpenRouter"
-    },
-    {
-      "source": "epoch+openrouter",
-      "raw": "qwen3-8b",
-      "slug": "qwen3-8b",
-      "reason": "too few results to rank (2 benchmarks, no Arena votes)"
     },
     {
       "source": "epoch",
@@ -8919,11 +9222,11 @@
     }
   ],
   "stats": {
-    "epochModels": 330,
+    "epochModels": 332,
     "arenaModels": 67,
-    "openrouterModels": 323,
-    "joined": 490,
-    "eligible": 98,
+    "openrouterModels": 325,
+    "joined": 492,
+    "eligible": 105,
     "arenaMatchRate": 0.9253731343283582,
     "arenaTopMatchRate": 1
   }
