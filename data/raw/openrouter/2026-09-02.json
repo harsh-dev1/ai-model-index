@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-02T04:38:51.550Z",
+  "fetchedAt": "2026-09-02T11:22:30.565Z",
   "source": "https://openrouter.ai/api/v1/models",
   "models": [
     {
@@ -9,6 +9,23 @@
       "contextLength": 1000000,
       "inputPerM": 10,
       "outputPerM": 50,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "anthropic/claude-fable-5.1:batch",
+      "name": "Anthropic: Claude Fable 5.1 (batch)",
+      "created": 1788285838,
+      "contextLength": 1000000,
+      "inputPerM": 5,
+      "outputPerM": 25,
       "inputModalities": [
         "text",
         "image",
@@ -217,8 +234,8 @@
       "name": "Z.ai: GLM Latest",
       "created": 1787151053,
       "contextLength": 1310720,
-      "inputPerM": 1.17,
-      "outputPerM": 3.9600000000000004,
+      "inputPerM": 1.15,
+      "outputPerM": 3.5,
       "inputModalities": [
         "text"
       ],
