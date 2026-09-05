@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-05T04:33:35.435Z",
+  "fetchedAt": "2026-09-05T10:38:33.915Z",
   "source": "https://openrouter.ai/api/v1/models",
   "models": [
     {
@@ -79,6 +79,23 @@
       "outputPerM": 0,
       "inputModalities": [
         "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "qwen/qwen3.8-max-0902",
+      "name": "Qwen: Qwen3.8 Max (0902)",
+      "created": 1788469704,
+      "contextLength": 1000000,
+      "inputPerM": 2,
+      "outputPerM": 6,
+      "inputModalities": [
+        "text",
+        "image",
+        "video"
       ],
       "outputModalities": [
         "text"
@@ -752,23 +769,6 @@
         "video",
         "file",
         "audio"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": true
-    },
-    {
-      "id": "qwen/qwen3.8-max",
-      "name": "Qwen: Qwen3.8 Max (0803)",
-      "created": 1785731612,
-      "contextLength": 1000000,
-      "inputPerM": 2,
-      "outputPerM": 6,
-      "inputModalities": [
-        "text",
-        "image",
-        "video"
       ],
       "outputModalities": [
         "text"
@@ -2236,8 +2236,8 @@
       "name": "MoonshotAI Kimi Latest",
       "created": 1777318428,
       "contextLength": 1048576,
-      "inputPerM": 2.5,
-      "outputPerM": 14,
+      "inputPerM": 2.5500000000000003,
+      "outputPerM": 12.75,
       "inputModalities": [
         "text",
         "image",
@@ -2457,8 +2457,8 @@
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "created": 1777000679,
       "contextLength": 1048576,
-      "inputPerM": 0.9613499999999999,
-      "outputPerM": 1.9226999999999999,
+      "inputPerM": 0.90045,
+      "outputPerM": 1.8009,
       "inputModalities": [
         "text"
       ],
@@ -2472,8 +2472,8 @@
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "created": 1777000666,
       "contextLength": 1048576,
-      "inputPerM": 0.08666,
-      "outputPerM": 0.17332,
+      "inputPerM": 0.08553999999999999,
+      "outputPerM": 0.17107999999999998,
       "inputModalities": [
         "text"
       ],
