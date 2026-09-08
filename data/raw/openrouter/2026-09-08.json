@@ -1,7 +1,53 @@
 {
-  "fetchedAt": "2026-09-08T16:40:42.610Z",
+  "fetchedAt": "2026-09-08T21:11:34.363Z",
   "source": "https://openrouter.ai/api/v1/models",
   "models": [
+    {
+      "id": "inception/mercury-2.5",
+      "name": "Inception: Mercury 2.5",
+      "created": 1788892137,
+      "contextLength": 260000,
+      "inputPerM": 0.04,
+      "outputPerM": 0.15,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "nex-agi/nex-n2.5-mini:free",
+      "name": "Nex AGI: Nex-N2.5-Mini (free)",
+      "created": 1788890061,
+      "contextLength": 262144,
+      "inputPerM": 0,
+      "outputPerM": 0,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "nex-agi/nex-n2.5-pro:free",
+      "name": "Nex AGI: Nex-N2.5-Pro (free)",
+      "created": 1788890050,
+      "contextLength": 262144,
+      "inputPerM": 0,
+      "outputPerM": 0,
+      "inputModalities": [
+        "text",
+        "image"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
     {
       "id": "openai/gpt-6-astra",
       "name": "OpenAI: GPT-6 Astra",
@@ -213,21 +259,6 @@
       "supportsReasoning": true
     },
     {
-      "id": "inception/mercury-2.5-preview",
-      "name": "Inception: Mercury 2.5 Preview",
-      "created": 1788209864,
-      "contextLength": 260000,
-      "inputPerM": 0.04,
-      "outputPerM": 0.15,
-      "inputModalities": [
-        "text"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": true
-    },
-    {
       "id": "ibm-granite/granite-4.2-8b",
       "name": "IBM: Granite 4.2 8B",
       "created": 1788206780,
@@ -342,9 +373,9 @@
       "id": "z-ai/glm-5.3-flash:batch",
       "name": "Z.ai: GLM 5.3 Flash (batch)",
       "created": 1787752741,
-      "contextLength": 1048575,
-      "inputPerM": 0.15,
-      "outputPerM": 0.5,
+      "contextLength": 1048576,
+      "inputPerM": 0.075,
+      "outputPerM": 0.25,
       "inputModalities": [
         "text",
         "image",
@@ -776,8 +807,8 @@
       "name": "Meta: Muse Glimmer 30B (batch)",
       "created": 1786302394,
       "contextLength": 131072,
-      "inputPerM": 0.35,
-      "outputPerM": 1.5,
+      "inputPerM": 0.175,
+      "outputPerM": 0.75,
       "inputModalities": [
         "text",
         "image"
@@ -2218,8 +2249,8 @@
       "name": "MoonshotAI Kimi Latest",
       "created": 1777318428,
       "contextLength": 1048576,
-      "inputPerM": 2.5,
-      "outputPerM": 14,
+      "inputPerM": 2.5500000000000003,
+      "outputPerM": 12.75,
       "inputModalities": [
         "text",
         "image",
@@ -2439,8 +2470,8 @@
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "created": 1777000679,
       "contextLength": 1048576,
-      "inputPerM": 0.9552599999999999,
-      "outputPerM": 1.9105199999999998,
+      "inputPerM": 0.946386,
+      "outputPerM": 1.892772,
       "inputModalities": [
         "text"
       ],
@@ -2454,8 +2485,8 @@
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "created": 1777000666,
       "contextLength": 1048576,
-      "inputPerM": 0.08707999999999999,
-      "outputPerM": 0.17415999999999998,
+      "inputPerM": 0.08245999999999999,
+      "outputPerM": 0.16491999999999998,
       "inputModalities": [
         "text"
       ],
@@ -5296,7 +5327,7 @@
       "name": "MiniMax: MiniMax M1",
       "created": 1750200414,
       "contextLength": 1000000,
-      "inputPerM": 0.55,
+      "inputPerM": 0.39999999999999997,
       "outputPerM": 2.2,
       "inputModalities": [
         "text"
