@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-09-09T16:40:57.668Z",
+  "generatedAt": "2026-09-09T20:57:27.196Z",
   "snapshotDates": {
     "epoch": "2026-09-09",
     "arena": "2026-09-09",
     "openrouter": "2026-09-09"
   },
   "snapshotFetchedAt": {
-    "epoch": "2026-09-09T16:40:57.668Z",
+    "epoch": "2026-09-09T20:57:27.196Z",
     "arena": "2026-09-09T11:27:07.578Z",
-    "openrouter": "2026-09-09T16:40:57.430Z"
+    "openrouter": "2026-09-09T20:57:26.762Z"
   },
   "models": [
     {
@@ -2360,6 +2360,21 @@
       "supportsReasoning": true,
       "benchmarks": [
         {
+          "id": "gpqa_diamond",
+          "raw": 0.9539141414141414,
+          "stderr": 0.01401136318210652
+        },
+        {
+          "id": "otis_mock_aime",
+          "raw": 0.9888888888888889,
+          "stderr": 0.008724007409153888
+        },
+        {
+          "id": "simpleqa_verified",
+          "raw": 0.697,
+          "stderr": 0.014539683710535193
+        },
+        {
           "id": "scicode",
           "raw": 0.543981481481482,
           "stderr": null
@@ -2944,7 +2959,7 @@
       "releaseDate": "2026-08-14",
       "accessibility": null,
       "eci": null,
-      "contextLength": 1048576,
+      "contextLength": 1310720,
       "inputPerM": 0.7,
       "outputPerM": 2.2,
       "modalities": [
@@ -8870,10 +8885,10 @@
       "reason": "no public API pricing found on OpenRouter"
     },
     {
-      "source": "arena+openrouter",
+      "source": "epoch+arena+openrouter",
       "raw": "qwen3-8-max-0902",
       "slug": "qwen3-8-max-0902",
-      "reason": "too few results to rank (0 benchmarks, no Arena votes)"
+      "reason": "too few results to rank (3 benchmarks, no Arena votes)"
     },
     {
       "source": "epoch",
@@ -9339,7 +9354,7 @@
     }
   ],
   "stats": {
-    "epochModels": 333,
+    "epochModels": 334,
     "arenaModels": 70,
     "openrouterModels": 326,
     "joined": 498,
