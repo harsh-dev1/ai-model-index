@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-09-10T04:46:35.915Z",
+  "fetchedAt": "2026-09-10T11:23:49.072Z",
   "source": "https://openrouter.ai/api/v1/models",
   "models": [
+    {
+      "id": "deepseek/deepseek-v4.1-flash",
+      "name": "DeepSeek: DeepSeek V4.1 Flash",
+      "created": 1789021285,
+      "contextLength": 1048576,
+      "inputPerM": 0.15,
+      "outputPerM": 0.6,
+      "inputModalities": [
+        "text",
+        "image"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
     {
       "id": "inception/mercury-2.5",
       "name": "Inception: Mercury 2.5",
@@ -358,8 +374,8 @@
       "name": "Z.ai: GLM 5.3 Flash",
       "created": 1787752741,
       "contextLength": 1310720,
-      "inputPerM": 0.075,
-      "outputPerM": 0.25,
+      "inputPerM": 0.15,
+      "outputPerM": 0.5,
       "inputModalities": [
         "text",
         "image",
@@ -473,8 +489,8 @@
       "name": "Z.ai: GLM Latest",
       "created": 1787151053,
       "contextLength": 1310720,
-      "inputPerM": 1.092,
-      "outputPerM": 3.432,
+      "inputPerM": 1.085,
+      "outputPerM": 3.41,
       "inputModalities": [
         "text"
       ],
@@ -532,7 +548,7 @@
       "id": "qwen/qwen3.8-27b",
       "name": "Qwen: Qwen3.8 27B",
       "created": 1786722910,
-      "contextLength": 1048576,
+      "contextLength": 1000000,
       "inputPerM": 0.42,
       "outputPerM": 3,
       "inputModalities": [
