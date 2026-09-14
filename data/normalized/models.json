@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-09-14T12:53:01.306Z",
+  "generatedAt": "2026-09-14T21:51:24.315Z",
   "snapshotDates": {
     "epoch": "2026-09-14",
     "arena": "2026-09-14",
     "openrouter": "2026-09-14"
   },
   "snapshotFetchedAt": {
-    "epoch": "2026-09-14T12:53:01.306Z",
+    "epoch": "2026-09-14T21:51:24.298Z",
     "arena": "2026-09-14T05:00:25.355Z",
-    "openrouter": "2026-09-14T12:53:01.190Z"
+    "openrouter": "2026-09-14T21:51:24.315Z"
   },
   "models": [
     {
@@ -1631,8 +1631,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.66,
-      "outputPerM": 1.9800000000000002,
+      "inputPerM": 0.57948,
+      "outputPerM": 1.73844,
       "modalities": [
         "text"
       ],
@@ -1807,53 +1807,6 @@
       "sources": [
         "epoch",
         "arena",
-        "openrouter"
-      ]
-    },
-    {
-      "slug": "gemini-2-5-pro-preview-05-06",
-      "name": "Gemini 2.5 Pro Preview 05-06",
-      "vendor": "Google",
-      "country": "United States of America",
-      "releaseDate": "2025-05-06",
-      "accessibility": null,
-      "eci": null,
-      "contextLength": 1048576,
-      "inputPerM": 1.25,
-      "outputPerM": 10,
-      "modalities": [
-        "text",
-        "image",
-        "file",
-        "audio",
-        "video"
-      ],
-      "supportsReasoning": true,
-      "benchmarks": [
-        {
-          "id": "gpqa_diamond",
-          "raw": 0.6666666666666666,
-          "stderr": 0.033586181457325226
-        },
-        {
-          "id": "hle",
-          "raw": 0.17800000000000002,
-          "stderr": 0.015
-        },
-        {
-          "id": "aider_polyglot",
-          "raw": 76.9,
-          "stderr": null
-        },
-        {
-          "id": "the_agent_company",
-          "raw": 0.393,
-          "stderr": null
-        }
-      ],
-      "arena": [],
-      "sources": [
-        "epoch",
         "openrouter"
       ]
     },
@@ -7624,6 +7577,12 @@
     },
     {
       "source": "epoch",
+      "raw": "gemini-2-5-pro-preview-05-06",
+      "slug": "gemini-2-5-pro-preview-05-06",
+      "reason": "no public API pricing found on OpenRouter"
+    },
+    {
+      "source": "epoch",
       "raw": "gemini-2-5-pro-preview-06-05",
       "slug": "gemini-2-5-pro-preview-06-05",
       "reason": "no public API pricing found on OpenRouter"
@@ -9330,9 +9289,9 @@
   "stats": {
     "epochModels": 334,
     "arenaModels": 68,
-    "openrouterModels": 335,
+    "openrouterModels": 336,
     "joined": 499,
-    "eligible": 106,
+    "eligible": 105,
     "arenaMatchRate": 0.9264705882352942,
     "arenaTopMatchRate": 1
   }
