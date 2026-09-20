@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generatedAt": "2026-09-19T20:43:44.230Z",
+    "generatedAt": "2026-09-20T04:56:35.816Z",
     "sources": [
       {
         "id": "epoch",
         "label": "Epoch AI — AI Benchmarking Hub",
         "url": "https://epoch.ai/benchmarks",
         "licence": "CC-BY 4.0",
-        "fetchedAt": "2026-09-19T20:43:44.230Z",
+        "fetchedAt": "2026-09-20T04:56:35.724Z",
         "records": 335,
         "stale": false
       },
@@ -16,7 +16,7 @@
         "label": "Arena AI leaderboards",
         "url": "https://arena.ai/leaderboard",
         "licence": "Public leaderboard data, via the arena-ai-leaderboards archive",
-        "fetchedAt": "2026-09-19T11:03:32.695Z",
+        "fetchedAt": "2026-09-20T04:56:35.816Z",
         "records": 68,
         "stale": false
       },
@@ -25,7 +25,7 @@
         "label": "OpenRouter model catalogue",
         "url": "https://openrouter.ai/api/v1/models",
         "licence": "Public API",
-        "fetchedAt": "2026-09-19T20:43:44.037Z",
+        "fetchedAt": "2026-09-20T04:56:35.746Z",
         "records": 339,
         "stale": false
       }
@@ -527,7 +527,7 @@
       },
       {
         "source": "arena",
-        "raw": "flux-3-video-20260811",
+        "raw": "flux-3-video",
         "slug": "flux-3-video",
         "reason": "no public API pricing found on OpenRouter"
       },
@@ -2569,7 +2569,7 @@
         "reasoning": 76.5,
         "coding": 91.8,
         "preference": 78.9,
-        "cost": 18.4
+        "cost": 19.4
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -2577,7 +2577,7 @@
         "preference": 5,
         "cost": 1
       },
-      "score": 71.31,
+      "score": 71.49,
       "rank": 1,
       "scoreUncertainty": 2.81,
       "coverage": 0.85,
@@ -2725,7 +2725,7 @@
         "reasoning": 73.1,
         "coding": 82.7,
         "preference": 90.4,
-        "cost": 18.4
+        "cost": 19.4
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -2733,7 +2733,7 @@
         "preference": 6,
         "cost": 1
       },
-      "score": 70.34,
+      "score": 70.52,
       "rank": 2,
       "scoreUncertainty": 2.81,
       "coverage": 0.85,
@@ -2857,7 +2857,7 @@
         "reasoning": 78.4,
         "coding": 88.3,
         "preference": 68.3,
-        "cost": 18.4
+        "cost": 19.4
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -2865,10 +2865,121 @@
         "preference": 4,
         "cost": 1
       },
-      "score": 68.35,
+      "score": 68.52,
       "rank": 3,
       "scoreUncertainty": 2.83,
       "coverage": 0.85,
+      "tieGroup": 1
+    },
+    {
+      "slug": "deepseek-v4-flash-0731",
+      "name": "DeepSeek V4 Flash 0731",
+      "vendor": "DeepSeek",
+      "country": "China",
+      "releaseDate": "2026-07-31",
+      "accessibility": null,
+      "contextLength": 1310720,
+      "modalities": [
+        "text"
+      ],
+      "supportsReasoning": true,
+      "pricing": {
+        "inputPerM": 0.04,
+        "outputPerM": 0.08,
+        "blendedPerM": 0.05
+      },
+      "benchmarks": [
+        {
+          "id": "otis_mock_aime",
+          "label": "AIME (mock)",
+          "pillar": "reasoning",
+          "raw": 0.9444444444444444,
+          "display": "94.4%",
+          "normalised": 91,
+          "stderr": 0.020854366486931897,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "ale_bench",
+          "label": "ALE-Bench",
+          "pillar": "coding",
+          "raw": 1306.08,
+          "display": "130608.0%",
+          "normalised": 53.5,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "arc_agi_2",
+          "label": "ARC-AGI-2",
+          "pillar": "reasoning",
+          "raw": 0.6138888888888888,
+          "display": "61.4%",
+          "normalised": 64.6,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "gpqa_diamond",
+          "label": "GPQA Diamond",
+          "pillar": "reasoning",
+          "raw": 0.9103535353535354,
+          "display": "91.0%",
+          "normalised": 89.9,
+          "stderr": 0.017655466909172534,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "scicode",
+          "label": "SciCode",
+          "pillar": "coding",
+          "raw": 0.49884259259259306,
+          "display": "49.9%",
+          "normalised": 70.3,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "simpleqa_verified",
+          "label": "SimpleQA Verified",
+          "pillar": "reasoning",
+          "raw": 0.33633633633633636,
+          "display": "33.6%",
+          "normalised": 39.7,
+          "stderr": 0.01495531772489948,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "webdev_arena",
+          "label": "WebDev Arena",
+          "pillar": "coding",
+          "raw": 1579.1,
+          "display": "1579",
+          "normalised": 61.9,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        }
+      ],
+      "arena": [],
+      "eci": null,
+      "sources": [
+        "epoch",
+        "openrouter"
+      ],
+      "pillarScores": {
+        "reasoning": 60.7,
+        "coding": 63.4,
+        "cost": 89.8
+      },
+      "pillarCoverage": {
+        "reasoning": 4,
+        "coding": 3,
+        "cost": 1
+      },
+      "score": 68.45,
+      "rank": 4,
+      "scoreUncertainty": 6.34,
+      "coverage": 0.65,
       "tieGroup": 1
     },
     {
@@ -3050,7 +3161,7 @@
         "coding": 73,
         "agentic": 79,
         "preference": 85.1,
-        "cost": 28
+        "cost": 28.6
       },
       "pillarCoverage": {
         "reasoning": 6,
@@ -3059,8 +3170,8 @@
         "preference": 5,
         "cost": 1
       },
-      "score": 68.1,
-      "rank": 4,
+      "score": 68.19,
+      "rank": 5,
       "scoreUncertainty": 0.84,
       "coverage": 1,
       "tieGroup": 1
@@ -3200,7 +3311,7 @@
         "reasoning": 73.3,
         "coding": 84.5,
         "preference": 70.8,
-        "cost": 28
+        "cost": 28.6
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -3208,8 +3319,8 @@
         "preference": 5,
         "cost": 1
       },
-      "score": 68.01,
-      "rank": 5,
+      "score": 68.12,
+      "rank": 6,
       "scoreUncertainty": 2.81,
       "coverage": 0.85,
       "tieGroup": 1
@@ -3286,15 +3397,15 @@
       "pillarScores": {
         "reasoning": 77.5,
         "preference": 75.8,
-        "cost": 40.6
+        "cost": 40.8
       },
       "pillarCoverage": {
         "reasoning": 1,
         "preference": 4,
         "cost": 1
       },
-      "score": 67.71,
-      "rank": 6,
+      "score": 67.76,
+      "rank": 7,
       "scoreUncertainty": 7.26,
       "coverage": 0.6,
       "tieGroup": 1
@@ -3398,7 +3509,7 @@
         "reasoning": 76.1,
         "coding": 70.3,
         "preference": 59.3,
-        "cost": 54.2
+        "cost": 53.9
       },
       "pillarCoverage": {
         "reasoning": 3,
@@ -3406,8 +3517,8 @@
         "preference": 2,
         "cost": 1
       },
-      "score": 66.58,
-      "rank": 7,
+      "score": 66.52,
+      "rank": 8,
       "scoreUncertainty": 2.85,
       "coverage": 0.85,
       "tieGroup": 1
@@ -3502,7 +3613,7 @@
         "reasoning": 71.7,
         "coding": 47.9,
         "preference": 73.5,
-        "cost": 79.6
+        "cost": 78.3
       },
       "pillarCoverage": {
         "reasoning": 2,
@@ -3510,8 +3621,8 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 66.52,
-      "rank": 8,
+      "score": 66.29,
+      "rank": 9,
       "scoreUncertainty": 2.88,
       "coverage": 0.85,
       "tieGroup": 1
@@ -3685,7 +3796,7 @@
         "coding": 59.9,
         "agentic": 80.6,
         "preference": 89.4,
-        "cost": 28
+        "cost": 28.6
       },
       "pillarCoverage": {
         "reasoning": 5,
@@ -3694,8 +3805,8 @@
         "preference": 5,
         "cost": 1
       },
-      "score": 65.35,
-      "rank": 9,
+      "score": 65.44,
+      "rank": 10,
       "scoreUncertainty": 0.82,
       "coverage": 1,
       "tieGroup": 2
@@ -3817,7 +3928,7 @@
         "reasoning": 67.2,
         "coding": 71.7,
         "preference": 75.9,
-        "cost": 35.1
+        "cost": 35.4
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -3825,8 +3936,8 @@
         "preference": 2,
         "cost": 1
       },
-      "score": 64.91,
-      "rank": 10,
+      "score": 64.96,
+      "rank": 11,
       "scoreUncertainty": 2.83,
       "coverage": 0.85,
       "tieGroup": 2
@@ -3973,7 +4084,7 @@
         "reasoning": 75.9,
         "coding": 82.1,
         "preference": 45.5,
-        "cost": 40.6
+        "cost": 40.8
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -3981,8 +4092,8 @@
         "preference": 6,
         "cost": 1
       },
-      "score": 64.34,
-      "rank": 11,
+      "score": 64.38,
+      "rank": 12,
       "scoreUncertainty": 2.81,
       "coverage": 0.85,
       "tieGroup": 2
@@ -4106,7 +4217,7 @@
         "reasoning": 74.3,
         "coding": 63.3,
         "preference": 55.8,
-        "cost": 54.2
+        "cost": 53.9
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -4114,8 +4225,8 @@
         "preference": 2,
         "cost": 1
       },
-      "score": 63.16,
-      "rank": 12,
+      "score": 63.11,
+      "rank": 13,
       "scoreUncertainty": 2.83,
       "coverage": 0.85,
       "tieGroup": 2
@@ -4206,7 +4317,7 @@
         "reasoning": 64.8,
         "coding": 69.9,
         "preference": 69.2,
-        "cost": 40.6
+        "cost": 40.8
       },
       "pillarCoverage": {
         "reasoning": 1,
@@ -4214,8 +4325,8 @@
         "preference": 3,
         "cost": 1
       },
-      "score": 63.06,
-      "rank": 13,
+      "score": 63.1,
+      "rank": 14,
       "scoreUncertainty": 2.91,
       "coverage": 0.85,
       "tieGroup": 2
@@ -4233,9 +4344,9 @@
       ],
       "supportsReasoning": true,
       "pricing": {
-        "inputPerM": 0.5782,
-        "outputPerM": 1.7345,
-        "blendedPerM": 0.8672
+        "inputPerM": 0.66,
+        "outputPerM": 1.98,
+        "blendedPerM": 0.99
       },
       "benchmarks": [
         {
@@ -4318,126 +4429,17 @@
       "pillarScores": {
         "reasoning": 66.2,
         "coding": 64.5,
-        "cost": 52.2
+        "cost": 50.1
       },
       "pillarCoverage": {
         "reasoning": 4,
         "coding": 3,
         "cost": 1
       },
-      "score": 62.32,
-      "rank": 14,
+      "score": 61.83,
+      "rank": 15,
       "scoreUncertainty": 6.34,
       "coverage": 0.65,
-      "tieGroup": 2
-    },
-    {
-      "slug": "deepseek-v4-flash-0731",
-      "name": "DeepSeek V4 Flash 0731",
-      "vendor": "DeepSeek",
-      "country": "China",
-      "releaseDate": "2026-07-31",
-      "accessibility": null,
-      "contextLength": 1310720,
-      "modalities": [
-        "text"
-      ],
-      "supportsReasoning": true,
-      "pricing": {
-        "inputPerM": 0,
-        "outputPerM": 0,
-        "blendedPerM": 0
-      },
-      "benchmarks": [
-        {
-          "id": "otis_mock_aime",
-          "label": "AIME (mock)",
-          "pillar": "reasoning",
-          "raw": 0.9444444444444444,
-          "display": "94.4%",
-          "normalised": 91,
-          "stderr": 0.020854366486931897,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "ale_bench",
-          "label": "ALE-Bench",
-          "pillar": "coding",
-          "raw": 1306.08,
-          "display": "130608.0%",
-          "normalised": 53.5,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "arc_agi_2",
-          "label": "ARC-AGI-2",
-          "pillar": "reasoning",
-          "raw": 0.6138888888888888,
-          "display": "61.4%",
-          "normalised": 64.6,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "gpqa_diamond",
-          "label": "GPQA Diamond",
-          "pillar": "reasoning",
-          "raw": 0.9103535353535354,
-          "display": "91.0%",
-          "normalised": 89.9,
-          "stderr": 0.017655466909172534,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "scicode",
-          "label": "SciCode",
-          "pillar": "coding",
-          "raw": 0.49884259259259306,
-          "display": "49.9%",
-          "normalised": 70.3,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "simpleqa_verified",
-          "label": "SimpleQA Verified",
-          "pillar": "reasoning",
-          "raw": 0.33633633633633636,
-          "display": "33.6%",
-          "normalised": 39.7,
-          "stderr": 0.01495531772489948,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "webdev_arena",
-          "label": "WebDev Arena",
-          "pillar": "coding",
-          "raw": 1579.1,
-          "display": "1579",
-          "normalised": 61.9,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        }
-      ],
-      "arena": [],
-      "eci": null,
-      "sources": [
-        "epoch",
-        "openrouter"
-      ],
-      "pillarScores": {
-        "reasoning": 60.7,
-        "coding": 63.4
-      },
-      "pillarCoverage": {
-        "reasoning": 4,
-        "coding": 3
-      },
-      "score": 62.05,
-      "rank": 15,
-      "scoreUncertainty": 9.02,
-      "coverage": 0.5,
       "tieGroup": 2
     },
     {
@@ -4509,7 +4511,7 @@
         "reasoning": 69.9,
         "coding": 61.5,
         "preference": 53.8,
-        "cost": 58.2
+        "cost": 57.7
       },
       "pillarCoverage": {
         "reasoning": 2,
@@ -4517,11 +4519,11 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 61.58,
+      "score": 61.49,
       "rank": 16,
       "scoreUncertainty": 2.95,
       "coverage": 0.85,
-      "tieGroup": 2
+      "tieGroup": 3
     },
     {
       "slug": "deepseek-v4-pro",
@@ -4631,7 +4633,7 @@
         "reasoning": 66.7,
         "coding": 58.3,
         "preference": 60.4,
-        "cost": 59
+        "cost": 58.5
       },
       "pillarCoverage": {
         "reasoning": 3,
@@ -4639,7 +4641,7 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 61.39,
+      "score": 61.3,
       "rank": 17,
       "scoreUncertainty": 2.86,
       "coverage": 0.85,
@@ -4820,7 +4822,7 @@
         "coding": 67.2,
         "agentic": 76.2,
         "preference": 51.7,
-        "cost": 35.9
+        "cost": 36.3
       },
       "pillarCoverage": {
         "reasoning": 6,
@@ -4829,7 +4831,7 @@
         "preference": 3,
         "cost": 1
       },
-      "score": 60.83,
+      "score": 60.89,
       "rank": 18,
       "scoreUncertainty": 0.81,
       "coverage": 1,
@@ -5086,7 +5088,7 @@
         "reasoning": 65.7,
         "coding": 76.6,
         "preference": 52.8,
-        "cost": 33.4
+        "cost": 33.7
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -5094,7 +5096,7 @@
         "preference": 3,
         "cost": 1
       },
-      "score": 60.17,
+      "score": 60.22,
       "rank": 20,
       "scoreUncertainty": 2.82,
       "coverage": 0.85,
@@ -5273,7 +5275,7 @@
         "coding": 75.6,
         "agentic": 82.6,
         "preference": 30.6,
-        "cost": 26.4
+        "cost": 27.1
       },
       "pillarCoverage": {
         "reasoning": 5,
@@ -5282,7 +5284,7 @@
         "preference": 6,
         "cost": 1
       },
-      "score": 59.97,
+      "score": 60.08,
       "rank": 21,
       "scoreUncertainty": 0.85,
       "coverage": 1,
@@ -5374,7 +5376,7 @@
         "reasoning": 62.6,
         "coding": 72.1,
         "preference": 55.5,
-        "cost": 40.6
+        "cost": 40.8
       },
       "pillarCoverage": {
         "reasoning": 1,
@@ -5382,7 +5384,7 @@
         "preference": 3,
         "cost": 1
       },
-      "score": 59.84,
+      "score": 59.88,
       "rank": 22,
       "scoreUncertainty": 2.91,
       "coverage": 0.85,
@@ -5565,7 +5567,7 @@
         "coding": 61.8,
         "agentic": 76.4,
         "preference": 44.7,
-        "cost": 39
+        "cost": 39.2
       },
       "pillarCoverage": {
         "reasoning": 6,
@@ -5574,7 +5576,7 @@
         "preference": 3,
         "cost": 1
       },
-      "score": 59.75,
+      "score": 59.78,
       "rank": 23,
       "scoreUncertainty": 0.81,
       "coverage": 1,
@@ -5697,7 +5699,7 @@
         "reasoning": 63.2,
         "coding": 67.4,
         "preference": 35,
-        "cost": 70.8
+        "cost": 69.8
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -5705,7 +5707,7 @@
         "preference": 2,
         "cost": 1
       },
-      "score": 59.14,
+      "score": 58.96,
       "rank": 24,
       "scoreUncertainty": 2.83,
       "coverage": 0.85,
@@ -5816,7 +5818,7 @@
         "reasoning": 63.1,
         "coding": 68.8,
         "preference": 44.1,
-        "cost": 49.2
+        "cost": 49
       },
       "pillarCoverage": {
         "reasoning": 3,
@@ -5824,7 +5826,7 @@
         "preference": 2,
         "cost": 1
       },
-      "score": 57.85,
+      "score": 57.82,
       "rank": 25,
       "scoreUncertainty": 2.84,
       "coverage": 0.85,
@@ -5888,14 +5890,14 @@
       "pillarScores": {
         "reasoning": 36.6,
         "coding": 76.9,
-        "cost": 60.8
+        "cost": 60.3
       },
       "pillarCoverage": {
         "reasoning": 2,
         "coding": 1,
         "cost": 1
       },
-      "score": 57.68,
+      "score": 57.57,
       "rank": 26,
       "scoreUncertainty": 6.38,
       "coverage": 0.65,
@@ -6041,7 +6043,7 @@
         "coding": 52.9,
         "agentic": 66.1,
         "preference": 49.6,
-        "cost": 58.1
+        "cost": 57.7
       },
       "pillarCoverage": {
         "reasoning": 5,
@@ -6050,7 +6052,7 @@
         "preference": 2,
         "cost": 1
       },
-      "score": 57.38,
+      "score": 57.32,
       "rank": 27,
       "scoreUncertainty": 0.94,
       "coverage": 1,
@@ -6173,7 +6175,7 @@
         "reasoning": 68.5,
         "coding": 72.4,
         "preference": 38,
-        "cost": 39
+        "cost": 39.2
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -6181,7 +6183,7 @@
         "preference": 2,
         "cost": 1
       },
-      "score": 57.26,
+      "score": 57.3,
       "rank": 28,
       "scoreUncertainty": 2.83,
       "coverage": 0.85,
@@ -6311,7 +6313,7 @@
         "reasoning": 64.1,
         "coding": 65.1,
         "preference": 54.2,
-        "cost": 35.1
+        "cost": 35.4
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -6319,7 +6321,7 @@
         "preference": 3,
         "cost": 1
       },
-      "score": 56.95,
+      "score": 57,
       "rank": 29,
       "scoreUncertainty": 2.82,
       "coverage": 0.85,
@@ -6385,14 +6387,14 @@
       "pillarScores": {
         "reasoning": 67.4,
         "coding": 45.6,
-        "cost": 54.6
+        "cost": 54.3
       },
       "pillarCoverage": {
         "reasoning": 2,
         "coding": 1,
         "cost": 1
       },
-      "score": 56.06,
+      "score": 55.99,
       "rank": 30,
       "scoreUncertainty": 6.38,
       "coverage": 0.65,
@@ -6517,7 +6519,7 @@
         "reasoning": 68.7,
         "coding": 55,
         "preference": 42.5,
-        "cost": 54.2
+        "cost": 53.9
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -6525,7 +6527,7 @@
         "preference": 2,
         "cost": 1
       },
-      "score": 55.95,
+      "score": 55.89,
       "rank": 31,
       "scoreUncertainty": 2.83,
       "coverage": 0.85,
@@ -6676,7 +6678,7 @@
         "reasoning": 68.8,
         "coding": 68.7,
         "preference": 41.6,
-        "cost": 28
+        "cost": 28.6
       },
       "pillarCoverage": {
         "reasoning": 5,
@@ -6684,7 +6686,7 @@
         "preference": 5,
         "cost": 1
       },
-      "score": 55.17,
+      "score": 55.28,
       "rank": 32,
       "scoreUncertainty": 2.8,
       "coverage": 0.85,
@@ -6848,7 +6850,7 @@
         "coding": 59.9,
         "agentic": 68.1,
         "preference": 63.6,
-        "cost": 28
+        "cost": 28.6
       },
       "pillarCoverage": {
         "reasoning": 6,
@@ -6857,7 +6859,7 @@
         "preference": 2,
         "cost": 1
       },
-      "score": 55.14,
+      "score": 55.23,
       "rank": 33,
       "scoreUncertainty": 0.91,
       "coverage": 1,
@@ -7021,7 +7023,7 @@
         "coding": 54.4,
         "agentic": 69.6,
         "preference": 49.5,
-        "cost": 38.1
+        "cost": 38.4
       },
       "pillarCoverage": {
         "reasoning": 6,
@@ -7030,7 +7032,7 @@
         "preference": 2,
         "cost": 1
       },
-      "score": 54.63,
+      "score": 54.68,
       "rank": 34,
       "scoreUncertainty": 0.87,
       "coverage": 1,
@@ -7124,14 +7126,14 @@
       "pillarScores": {
         "reasoning": 59.5,
         "coding": 58.8,
-        "cost": 38.7
+        "cost": 38.9
       },
       "pillarCoverage": {
         "reasoning": 4,
         "coding": 2,
         "cost": 1
       },
-      "score": 54.43,
+      "score": 54.48,
       "rank": 35,
       "scoreUncertainty": 6.35,
       "coverage": 0.65,
@@ -7292,7 +7294,7 @@
         "coding": 59.9,
         "agentic": 70,
         "preference": 46.3,
-        "cost": 35.1
+        "cost": 35.4
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -7301,7 +7303,7 @@
         "preference": 3,
         "cost": 1
       },
-      "score": 54.4,
+      "score": 54.45,
       "rank": 36,
       "scoreUncertainty": 0.84,
       "coverage": 1,
@@ -7396,14 +7398,14 @@
       "pillarScores": {
         "reasoning": 61.9,
         "coding": 51,
-        "cost": 46.3
+        "cost": 46.2
       },
       "pillarCoverage": {
         "reasoning": 3,
         "coding": 3,
         "cost": 1
       },
-      "score": 54.11,
+      "score": 54.08,
       "rank": 37,
       "scoreUncertainty": 6.35,
       "coverage": 0.65,
@@ -7527,7 +7529,7 @@
         "reasoning": 61.9,
         "coding": 66.1,
         "preference": 39.1,
-        "cost": 40.6
+        "cost": 40.8
       },
       "pillarCoverage": {
         "reasoning": 3,
@@ -7535,7 +7537,7 @@
         "preference": 4,
         "cost": 1
       },
-      "score": 54.01,
+      "score": 54.05,
       "rank": 38,
       "scoreUncertainty": 2.82,
       "coverage": 0.85,
@@ -7621,14 +7623,14 @@
       "pillarScores": {
         "coding": 55.6,
         "agentic": 75,
-        "cost": 28.6
+        "cost": 29.1
       },
       "pillarCoverage": {
         "coding": 3,
         "agentic": 2,
         "cost": 1
       },
-      "score": 53.53,
+      "score": 53.66,
       "rank": 39,
       "scoreUncertainty": 8.13,
       "coverage": 0.55,
@@ -7734,14 +7736,14 @@
       "pillarScores": {
         "reasoning": 42.2,
         "coding": 54.1,
-        "cost": 70.4
+        "cost": 69.4
       },
       "pillarCoverage": {
         "reasoning": 5,
         "coding": 2,
         "cost": 1
       },
-      "score": 53.28,
+      "score": 53.05,
       "rank": 40,
       "scoreUncertainty": 6.35,
       "coverage": 0.65,
@@ -7837,7 +7839,7 @@
         "reasoning": 60.7,
         "coding": 46.8,
         "preference": 46.3,
-        "cost": 59.1
+        "cost": 58.6
       },
       "pillarCoverage": {
         "reasoning": 2,
@@ -7845,7 +7847,7 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 52.94,
+      "score": 52.85,
       "rank": 41,
       "scoreUncertainty": 2.88,
       "coverage": 0.85,
@@ -8030,14 +8032,14 @@
       "pillarScores": {
         "reasoning": 49,
         "coding": 55.4,
-        "cost": 54.2
+        "cost": 53.9
       },
       "pillarCoverage": {
         "reasoning": 4,
         "coding": 1,
         "cost": 1
       },
-      "score": 52.66,
+      "score": 52.59,
       "rank": 43,
       "scoreUncertainty": 6.37,
       "coverage": 0.65,
@@ -8204,82 +8206,60 @@
       "tieGroup": 5
     },
     {
-      "slug": "gpt-5-4-mini",
-      "name": "GPT-5.4 Mini",
-      "vendor": "OpenAI",
-      "country": "United States of America",
-      "releaseDate": "2026-03-17",
+      "slug": "qwen3-7",
+      "name": "Qwen3.7 Max",
+      "vendor": "Alibaba",
+      "country": "China",
+      "releaseDate": "2026-05-19",
       "accessibility": null,
-      "contextLength": 400000,
+      "contextLength": 1000000,
       "modalities": [
-        "file",
-        "image",
         "text"
       ],
       "supportsReasoning": true,
       "pricing": {
-        "inputPerM": 0.375,
-        "outputPerM": 2.25,
-        "blendedPerM": 0.8438
+        "inputPerM": 1.475,
+        "outputPerM": 4.425,
+        "blendedPerM": 2.2125
       },
       "benchmarks": [
         {
           "id": "otis_mock_aime",
           "label": "AIME (mock)",
           "pillar": "reasoning",
-          "raw": 0.8888888888888888,
-          "display": "88.9%",
-          "normalised": 82,
-          "stderr": 0.047377936967913425,
+          "raw": 0.9555555555555556,
+          "display": "95.6%",
+          "normalised": 92.8,
+          "stderr": 0.031067790907534736,
           "sourceUrl": "https://epoch.ai/benchmarks"
         },
         {
           "id": "ale_bench",
           "label": "ALE-Bench",
           "pillar": "coding",
-          "raw": 1188.58,
-          "display": "118858.0%",
-          "normalised": 47.2,
+          "raw": 1189.4,
+          "display": "118940.0%",
+          "normalised": 47.3,
           "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "arc_agi_2",
-          "label": "ARC-AGI-2",
-          "pillar": "reasoning",
-          "raw": 0.189,
-          "display": "18.9%",
-          "normalised": 19.9,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "frontiermath",
-          "label": "FrontierMath",
-          "pillar": "reasoning",
-          "raw": 0.2828,
-          "display": "28.3%",
-          "normalised": 54.4,
-          "stderr": 0.02065,
           "sourceUrl": "https://epoch.ai/benchmarks"
         },
         {
           "id": "gpqa_diamond",
           "label": "GPQA Diamond",
           "pillar": "reasoning",
-          "raw": 0.8686868686868687,
-          "display": "86.9%",
-          "normalised": 81,
-          "stderr": 0.02406315641682249,
+          "raw": 0.9090909090909091,
+          "display": "90.9%",
+          "normalised": 89.6,
+          "stderr": 0.020482086775424225,
           "sourceUrl": "https://epoch.ai/benchmarks"
         },
         {
           "id": "scicode",
           "label": "SciCode",
           "pillar": "coding",
-          "raw": 0.49884259259259306,
-          "display": "49.9%",
-          "normalised": 70.3,
+          "raw": 0.488425925925926,
+          "display": "48.8%",
+          "normalised": 67.7,
           "stderr": null,
           "sourceUrl": "https://epoch.ai/benchmarks"
         },
@@ -8287,43 +8267,64 @@
           "id": "simpleqa_verified",
           "label": "SimpleQA Verified",
           "pillar": "reasoning",
-          "raw": 0.294,
-          "display": "29.4%",
-          "normalised": 33.6,
-          "stderr": 0.014414290540008265,
+          "raw": 0.5576730190571715,
+          "display": "55.8%",
+          "normalised": 71.5,
+          "stderr": 0.015737359397180177,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "swe_bench_verified",
+          "label": "SWE-bench Verified",
+          "pillar": "coding",
+          "raw": 0.7727272727272727,
+          "display": "77.3%",
+          "normalised": 70.7,
+          "stderr": 0.01906835447169652,
           "sourceUrl": "https://epoch.ai/benchmarks"
         },
         {
           "id": "webdev_arena",
           "label": "WebDev Arena",
           "pillar": "coding",
-          "raw": 1397.08,
-          "display": "1397",
-          "normalised": 30,
+          "raw": 1516.65,
+          "display": "1517",
+          "normalised": 50.9,
           "stderr": null,
           "sourceUrl": "https://epoch.ai/benchmarks"
         }
       ],
-      "arena": [],
+      "arena": [
+        {
+          "board": "code",
+          "elo": 1517,
+          "ci": 8,
+          "votes": 8363,
+          "rank": 39
+        }
+      ],
       "eci": null,
       "sources": [
+        "arena",
         "epoch",
         "openrouter"
       ],
       "pillarScores": {
-        "reasoning": 50.1,
-        "coding": 53.3,
-        "cost": 52.5
+        "reasoning": 68.9,
+        "coding": 61.3,
+        "preference": 28.2,
+        "cost": 39.5
       },
       "pillarCoverage": {
-        "reasoning": 5,
-        "coding": 3,
+        "reasoning": 3,
+        "coding": 4,
+        "preference": 1,
         "cost": 1
       },
-      "score": 51.88,
+      "score": 51.9,
       "rank": 45,
-      "scoreUncertainty": 6.34,
-      "coverage": 0.65,
+      "scoreUncertainty": 2.86,
+      "coverage": 0.85,
       "tieGroup": 5
     },
     {
@@ -8438,60 +8439,82 @@
       "tieGroup": 5
     },
     {
-      "slug": "qwen3-7",
-      "name": "Qwen3.7 Max",
-      "vendor": "Alibaba",
-      "country": "China",
-      "releaseDate": "2026-05-19",
+      "slug": "gpt-5-4-mini",
+      "name": "GPT-5.4 Mini",
+      "vendor": "OpenAI",
+      "country": "United States of America",
+      "releaseDate": "2026-03-17",
       "accessibility": null,
-      "contextLength": 1000000,
+      "contextLength": 400000,
       "modalities": [
+        "file",
+        "image",
         "text"
       ],
       "supportsReasoning": true,
       "pricing": {
-        "inputPerM": 1.475,
-        "outputPerM": 4.425,
-        "blendedPerM": 2.2125
+        "inputPerM": 0.375,
+        "outputPerM": 2.25,
+        "blendedPerM": 0.8438
       },
       "benchmarks": [
         {
           "id": "otis_mock_aime",
           "label": "AIME (mock)",
           "pillar": "reasoning",
-          "raw": 0.9555555555555556,
-          "display": "95.6%",
-          "normalised": 92.8,
-          "stderr": 0.031067790907534736,
+          "raw": 0.8888888888888888,
+          "display": "88.9%",
+          "normalised": 82,
+          "stderr": 0.047377936967913425,
           "sourceUrl": "https://epoch.ai/benchmarks"
         },
         {
           "id": "ale_bench",
           "label": "ALE-Bench",
           "pillar": "coding",
-          "raw": 1189.4,
-          "display": "118940.0%",
-          "normalised": 47.3,
+          "raw": 1188.58,
+          "display": "118858.0%",
+          "normalised": 47.2,
           "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "arc_agi_2",
+          "label": "ARC-AGI-2",
+          "pillar": "reasoning",
+          "raw": 0.189,
+          "display": "18.9%",
+          "normalised": 19.9,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "frontiermath",
+          "label": "FrontierMath",
+          "pillar": "reasoning",
+          "raw": 0.2828,
+          "display": "28.3%",
+          "normalised": 54.4,
+          "stderr": 0.02065,
           "sourceUrl": "https://epoch.ai/benchmarks"
         },
         {
           "id": "gpqa_diamond",
           "label": "GPQA Diamond",
           "pillar": "reasoning",
-          "raw": 0.9090909090909091,
-          "display": "90.9%",
-          "normalised": 89.6,
-          "stderr": 0.020482086775424225,
+          "raw": 0.8686868686868687,
+          "display": "86.9%",
+          "normalised": 81,
+          "stderr": 0.02406315641682249,
           "sourceUrl": "https://epoch.ai/benchmarks"
         },
         {
           "id": "scicode",
           "label": "SciCode",
           "pillar": "coding",
-          "raw": 0.488425925925926,
-          "display": "48.8%",
-          "normalised": 67.7,
+          "raw": 0.49884259259259306,
+          "display": "49.9%",
+          "normalised": 70.3,
           "stderr": null,
           "sourceUrl": "https://epoch.ai/benchmarks"
         },
@@ -8499,64 +8522,43 @@
           "id": "simpleqa_verified",
           "label": "SimpleQA Verified",
           "pillar": "reasoning",
-          "raw": 0.5576730190571715,
-          "display": "55.8%",
-          "normalised": 71.5,
-          "stderr": 0.015737359397180177,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "swe_bench_verified",
-          "label": "SWE-bench Verified",
-          "pillar": "coding",
-          "raw": 0.7727272727272727,
-          "display": "77.3%",
-          "normalised": 70.7,
-          "stderr": 0.01906835447169652,
+          "raw": 0.294,
+          "display": "29.4%",
+          "normalised": 33.6,
+          "stderr": 0.014414290540008265,
           "sourceUrl": "https://epoch.ai/benchmarks"
         },
         {
           "id": "webdev_arena",
           "label": "WebDev Arena",
           "pillar": "coding",
-          "raw": 1516.65,
-          "display": "1517",
-          "normalised": 50.9,
+          "raw": 1397.08,
+          "display": "1397",
+          "normalised": 30,
           "stderr": null,
           "sourceUrl": "https://epoch.ai/benchmarks"
         }
       ],
-      "arena": [
-        {
-          "board": "code",
-          "elo": 1517,
-          "ci": 8,
-          "votes": 8363,
-          "rank": 39
-        }
-      ],
+      "arena": [],
       "eci": null,
       "sources": [
-        "arena",
         "epoch",
         "openrouter"
       ],
       "pillarScores": {
-        "reasoning": 68.9,
-        "coding": 61.3,
-        "preference": 28.2,
-        "cost": 39.2
+        "reasoning": 50.1,
+        "coding": 53.3,
+        "cost": 52.3
       },
       "pillarCoverage": {
-        "reasoning": 3,
-        "coding": 4,
-        "preference": 1,
+        "reasoning": 5,
+        "coding": 3,
         "cost": 1
       },
-      "score": 51.85,
+      "score": 51.84,
       "rank": 47,
-      "scoreUncertainty": 2.86,
-      "coverage": 0.85,
+      "scoreUncertainty": 6.34,
+      "coverage": 0.65,
       "tieGroup": 5
     },
     {
@@ -8730,130 +8732,17 @@
       "pillarScores": {
         "reasoning": 42,
         "coding": 45.2,
-        "cost": 78.4
+        "cost": 77.1
       },
       "pillarCoverage": {
         "reasoning": 2,
         "coding": 2,
         "cost": 1
       },
-      "score": 51.63,
+      "score": 51.33,
       "rank": 49,
       "scoreUncertainty": 6.36,
       "coverage": 0.65,
-      "tieGroup": 6
-    },
-    {
-      "slug": "gpt-oss-120b",
-      "name": "gpt-oss-120b",
-      "vendor": "OpenAI",
-      "country": "United States of America",
-      "releaseDate": "2025-08-05",
-      "accessibility": null,
-      "contextLength": 131072,
-      "modalities": [
-        "text"
-      ],
-      "supportsReasoning": true,
-      "pricing": {
-        "inputPerM": 0.15,
-        "outputPerM": 0.6,
-        "blendedPerM": 0.2625
-      },
-      "benchmarks": [
-        {
-          "id": "aider_polyglot",
-          "label": "Aider Polyglot",
-          "pillar": "coding",
-          "raw": 41.8,
-          "display": "4180.0%",
-          "normalised": 45.3,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "otis_mock_aime",
-          "label": "AIME (mock)",
-          "pillar": "reasoning",
-          "raw": 0.8888888888888888,
-          "display": "88.9%",
-          "normalised": 82,
-          "stderr": 0.04463343655613273,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "ale_bench",
-          "label": "ALE-Bench",
-          "pillar": "coding",
-          "raw": 575.62,
-          "display": "57562.0%",
-          "normalised": 14.5,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "gpqa_diamond",
-          "label": "GPQA Diamond",
-          "pillar": "reasoning",
-          "raw": 0.7575757575757576,
-          "display": "75.8%",
-          "normalised": 57.3,
-          "stderr": 0.027437163443883767,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "metr_time_horizon",
-          "label": "METR time horizon",
-          "pillar": "agentic",
-          "raw": 41.983451,
-          "display": "42 min",
-          "normalised": 39.5,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "scicode",
-          "label": "SciCode",
-          "pillar": "coding",
-          "raw": 0.388888888888889,
-          "display": "38.9%",
-          "normalised": 43.3,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "terminalbench",
-          "label": "Terminal-Bench",
-          "pillar": "agentic",
-          "raw": 0.187,
-          "display": "18.7%",
-          "normalised": 18.8,
-          "stderr": 0.027,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        }
-      ],
-      "arena": [],
-      "eci": null,
-      "sources": [
-        "epoch",
-        "openrouter"
-      ],
-      "pillarScores": {
-        "reasoning": 59.7,
-        "coding": 41.6,
-        "agentic": 36.2,
-        "cost": 68.6
-      },
-      "pillarCoverage": {
-        "reasoning": 2,
-        "coding": 3,
-        "agentic": 2,
-        "cost": 1
-      },
-      "score": 51.31,
-      "rank": 50,
-      "scoreUncertainty": 3.71,
-      "coverage": 0.8,
       "tieGroup": 6
     },
     {
@@ -8982,7 +8871,7 @@
         "reasoning": 62.9,
         "coding": 61.6,
         "preference": 30.1,
-        "cost": 42.8
+        "cost": 42.9
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -8990,10 +8879,123 @@
         "preference": 2,
         "cost": 1
       },
-      "score": 51.25,
-      "rank": 51,
+      "score": 51.27,
+      "rank": 50,
       "scoreUncertainty": 2.82,
       "coverage": 0.85,
+      "tieGroup": 6
+    },
+    {
+      "slug": "gpt-oss-120b",
+      "name": "gpt-oss-120b",
+      "vendor": "OpenAI",
+      "country": "United States of America",
+      "releaseDate": "2025-08-05",
+      "accessibility": null,
+      "contextLength": 131072,
+      "modalities": [
+        "text"
+      ],
+      "supportsReasoning": true,
+      "pricing": {
+        "inputPerM": 0.15,
+        "outputPerM": 0.6,
+        "blendedPerM": 0.2625
+      },
+      "benchmarks": [
+        {
+          "id": "aider_polyglot",
+          "label": "Aider Polyglot",
+          "pillar": "coding",
+          "raw": 41.8,
+          "display": "4180.0%",
+          "normalised": 45.3,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "otis_mock_aime",
+          "label": "AIME (mock)",
+          "pillar": "reasoning",
+          "raw": 0.8888888888888888,
+          "display": "88.9%",
+          "normalised": 82,
+          "stderr": 0.04463343655613273,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "ale_bench",
+          "label": "ALE-Bench",
+          "pillar": "coding",
+          "raw": 575.62,
+          "display": "57562.0%",
+          "normalised": 14.5,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "gpqa_diamond",
+          "label": "GPQA Diamond",
+          "pillar": "reasoning",
+          "raw": 0.7575757575757576,
+          "display": "75.8%",
+          "normalised": 57.3,
+          "stderr": 0.027437163443883767,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "metr_time_horizon",
+          "label": "METR time horizon",
+          "pillar": "agentic",
+          "raw": 41.983451,
+          "display": "42 min",
+          "normalised": 39.5,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "scicode",
+          "label": "SciCode",
+          "pillar": "coding",
+          "raw": 0.388888888888889,
+          "display": "38.9%",
+          "normalised": 43.3,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "terminalbench",
+          "label": "Terminal-Bench",
+          "pillar": "agentic",
+          "raw": 0.187,
+          "display": "18.7%",
+          "normalised": 18.8,
+          "stderr": 0.027,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        }
+      ],
+      "arena": [],
+      "eci": null,
+      "sources": [
+        "epoch",
+        "openrouter"
+      ],
+      "pillarScores": {
+        "reasoning": 59.7,
+        "coding": 41.6,
+        "agentic": 36.2,
+        "cost": 67.7
+      },
+      "pillarCoverage": {
+        "reasoning": 2,
+        "coding": 3,
+        "agentic": 2,
+        "cost": 1
+      },
+      "score": 51.14,
+      "rank": 51,
+      "scoreUncertainty": 3.71,
+      "coverage": 0.8,
       "tieGroup": 6
     },
     {
@@ -9096,7 +9098,7 @@
         "reasoning": 60.6,
         "coding": 46.4,
         "preference": 47.7,
-        "cost": 47.1
+        "cost": 47
       },
       "pillarCoverage": {
         "reasoning": 3,
@@ -9104,7 +9106,7 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 51.01,
+      "score": 50.99,
       "rank": 52,
       "scoreUncertainty": 2.87,
       "coverage": 0.85,
@@ -9231,7 +9233,7 @@
         "reasoning": 41.8,
         "coding": 57.6,
         "agentic": 51.3,
-        "cost": 50.8
+        "cost": 50.5
       },
       "pillarCoverage": {
         "reasoning": 6,
@@ -9239,7 +9241,7 @@
         "agentic": 1,
         "cost": 1
       },
-      "score": 50.21,
+      "score": 50.15,
       "rank": 53,
       "scoreUncertainty": 3.71,
       "coverage": 0.8,
@@ -9313,14 +9315,14 @@
       "pillarScores": {
         "coding": 43.2,
         "agentic": 50.7,
-        "cost": 59.1
+        "cost": 58.6
       },
       "pillarCoverage": {
         "coding": 3,
         "agentic": 1,
         "cost": 1
       },
-      "score": 49.58,
+      "score": 49.45,
       "rank": 54,
       "scoreUncertainty": 8.14,
       "coverage": 0.55,
@@ -9436,14 +9438,14 @@
       "pillarScores": {
         "reasoning": 59.7,
         "coding": 35.8,
-        "cost": 54.6
+        "cost": 54.2
       },
       "pillarCoverage": {
         "reasoning": 4,
         "coding": 4,
         "cost": 1
       },
-      "score": 49.33,
+      "score": 49.24,
       "rank": 55,
       "scoreUncertainty": 6.34,
       "coverage": 0.65,
@@ -9548,120 +9550,15 @@
       "pillarScores": {
         "reasoning": 36.7,
         "coding": 59.1,
-        "cost": 50.8
+        "cost": 50.5
       },
       "pillarCoverage": {
         "reasoning": 5,
         "coding": 2,
         "cost": 1
       },
-      "score": 48.57,
+      "score": 48.5,
       "rank": 56,
-      "scoreUncertainty": 6.35,
-      "coverage": 0.65,
-      "tieGroup": 6
-    },
-    {
-      "slug": "gemini-3-5-flash-lite",
-      "name": "Gemini 3.5 Flash Lite",
-      "vendor": "Google",
-      "country": "United States of America",
-      "releaseDate": "2026-07-21",
-      "accessibility": null,
-      "contextLength": 1048576,
-      "modalities": [
-        "audio",
-        "file",
-        "image",
-        "text",
-        "video"
-      ],
-      "supportsReasoning": true,
-      "pricing": {
-        "inputPerM": 0.15,
-        "outputPerM": 1.25,
-        "blendedPerM": 0.425
-      },
-      "benchmarks": [
-        {
-          "id": "otis_mock_aime",
-          "label": "AIME (mock)",
-          "pillar": "reasoning",
-          "raw": 0.7111111111111111,
-          "display": "71.1%",
-          "normalised": 53.2,
-          "stderr": 0.0683294324254051,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "ale_bench",
-          "label": "ALE-Bench",
-          "pillar": "coding",
-          "raw": 765.27,
-          "display": "76527.0%",
-          "normalised": 24.6,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "arc_agi_2",
-          "label": "ARC-AGI-2",
-          "pillar": "reasoning",
-          "raw": 0.10277777777777779,
-          "display": "10.3%",
-          "normalised": 10.8,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "gpqa_diamond",
-          "label": "GPQA Diamond",
-          "pillar": "reasoning",
-          "raw": 0.8333333333333334,
-          "display": "83.3%",
-          "normalised": 73.5,
-          "stderr": 0.026552207828215258,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "scicode",
-          "label": "SciCode",
-          "pillar": "coding",
-          "raw": 0.40856481481481505,
-          "display": "40.9%",
-          "normalised": 48.2,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "webdev_arena",
-          "label": "WebDev Arena",
-          "pillar": "coding",
-          "raw": 1449.14,
-          "display": "1449",
-          "normalised": 39.1,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        }
-      ],
-      "arena": [],
-      "eci": null,
-      "sources": [
-        "epoch",
-        "openrouter"
-      ],
-      "pillarScores": {
-        "reasoning": 44.9,
-        "coding": 43.9,
-        "cost": 62
-      },
-      "pillarCoverage": {
-        "reasoning": 3,
-        "coding": 3,
-        "cost": 1
-      },
-      "score": 48.46,
-      "rank": 57,
       "scoreUncertainty": 6.35,
       "coverage": 0.65,
       "tieGroup": 6
@@ -9837,7 +9734,7 @@
         "coding": 59.7,
         "agentic": 59.6,
         "preference": 24.6,
-        "cost": 42.7
+        "cost": 42.8
       },
       "pillarCoverage": {
         "reasoning": 6,
@@ -9846,10 +9743,115 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 48.44,
-      "rank": 58,
+      "score": 48.46,
+      "rank": 57,
       "scoreUncertainty": 0.93,
       "coverage": 1,
+      "tieGroup": 7
+    },
+    {
+      "slug": "gemini-3-5-flash-lite",
+      "name": "Gemini 3.5 Flash Lite",
+      "vendor": "Google",
+      "country": "United States of America",
+      "releaseDate": "2026-07-21",
+      "accessibility": null,
+      "contextLength": 1048576,
+      "modalities": [
+        "audio",
+        "file",
+        "image",
+        "text",
+        "video"
+      ],
+      "supportsReasoning": true,
+      "pricing": {
+        "inputPerM": 0.15,
+        "outputPerM": 1.25,
+        "blendedPerM": 0.425
+      },
+      "benchmarks": [
+        {
+          "id": "otis_mock_aime",
+          "label": "AIME (mock)",
+          "pillar": "reasoning",
+          "raw": 0.7111111111111111,
+          "display": "71.1%",
+          "normalised": 53.2,
+          "stderr": 0.0683294324254051,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "ale_bench",
+          "label": "ALE-Bench",
+          "pillar": "coding",
+          "raw": 765.27,
+          "display": "76527.0%",
+          "normalised": 24.6,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "arc_agi_2",
+          "label": "ARC-AGI-2",
+          "pillar": "reasoning",
+          "raw": 0.10277777777777779,
+          "display": "10.3%",
+          "normalised": 10.8,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "gpqa_diamond",
+          "label": "GPQA Diamond",
+          "pillar": "reasoning",
+          "raw": 0.8333333333333334,
+          "display": "83.3%",
+          "normalised": 73.5,
+          "stderr": 0.026552207828215258,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "scicode",
+          "label": "SciCode",
+          "pillar": "coding",
+          "raw": 0.40856481481481505,
+          "display": "40.9%",
+          "normalised": 48.2,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "webdev_arena",
+          "label": "WebDev Arena",
+          "pillar": "coding",
+          "raw": 1449.14,
+          "display": "1449",
+          "normalised": 39.1,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        }
+      ],
+      "arena": [],
+      "eci": null,
+      "sources": [
+        "epoch",
+        "openrouter"
+      ],
+      "pillarScores": {
+        "reasoning": 44.9,
+        "coding": 43.9,
+        "cost": 61.3
+      },
+      "pillarCoverage": {
+        "reasoning": 3,
+        "coding": 3,
+        "cost": 1
+      },
+      "score": 48.3,
+      "rank": 58,
+      "scoreUncertainty": 6.35,
+      "coverage": 0.65,
       "tieGroup": 7
     },
     {
@@ -9933,7 +9935,7 @@
         "reasoning": 64.6,
         "coding": 30.1,
         "agentic": 32.9,
-        "cost": 66.9
+        "cost": 66
       },
       "pillarCoverage": {
         "reasoning": 2,
@@ -9941,7 +9943,7 @@
         "agentic": 1,
         "cost": 1
       },
-      "score": 48.31,
+      "score": 48.14,
       "rank": 59,
       "scoreUncertainty": 3.73,
       "coverage": 0.8,
@@ -10105,7 +10107,7 @@
         "coding": 45.5,
         "agentic": 52.7,
         "preference": 45.9,
-        "cost": 42.7
+        "cost": 42.8
       },
       "pillarCoverage": {
         "reasoning": 6,
@@ -10114,115 +10116,10 @@
         "preference": 2,
         "cost": 1
       },
-      "score": 48.04,
+      "score": 48.06,
       "rank": 60,
       "scoreUncertainty": 0.91,
       "coverage": 1,
-      "tieGroup": 7
-    },
-    {
-      "slug": "gemini-3-1-flash-lite",
-      "name": "Gemini 3.1 Flash Lite",
-      "vendor": "Google",
-      "country": "United States of America",
-      "releaseDate": "2026-03-03",
-      "accessibility": null,
-      "contextLength": 1048576,
-      "modalities": [
-        "audio",
-        "file",
-        "image",
-        "text",
-        "video"
-      ],
-      "supportsReasoning": true,
-      "pricing": {
-        "inputPerM": 0.125,
-        "outputPerM": 0.75,
-        "blendedPerM": 0.2813
-      },
-      "benchmarks": [
-        {
-          "id": "otis_mock_aime",
-          "label": "AIME (mock)",
-          "pillar": "reasoning",
-          "raw": 0.8,
-          "display": "80.0%",
-          "normalised": 67.6,
-          "stderr": 0.06030226891555273,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "ale_bench",
-          "label": "ALE-Bench",
-          "pillar": "coding",
-          "raw": 797.73,
-          "display": "79773.0%",
-          "normalised": 26.4,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "gpqa_diamond",
-          "label": "GPQA Diamond",
-          "pillar": "reasoning",
-          "raw": 0.8181818181818182,
-          "display": "81.8%",
-          "normalised": 70.2,
-          "stderr": 0.027479603010538825,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "hle",
-          "label": "Humanity's Last Exam",
-          "pillar": "reasoning",
-          "raw": 0.0864,
-          "display": "8.6%",
-          "normalised": 13.5,
-          "stderr": 0.011000000000000001,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "scicode",
-          "label": "SciCode",
-          "pillar": "coding",
-          "raw": 0.418981481481481,
-          "display": "41.9%",
-          "normalised": 50.7,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "webdev_arena",
-          "label": "WebDev Arena",
-          "pillar": "coding",
-          "raw": 1254.07,
-          "display": "1254",
-          "normalised": 5,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        }
-      ],
-      "arena": [],
-      "eci": null,
-      "sources": [
-        "epoch",
-        "openrouter"
-      ],
-      "pillarScores": {
-        "reasoning": 47.7,
-        "coding": 36,
-        "cost": 67.7
-      },
-      "pillarCoverage": {
-        "reasoning": 3,
-        "coding": 3,
-        "cost": 1
-      },
-      "score": 47.82,
-      "rank": 61,
-      "scoreUncertainty": 6.35,
-      "coverage": 0.65,
       "tieGroup": 7
     },
     {
@@ -10334,7 +10231,7 @@
         "reasoning": 45.5,
         "coding": 42.7,
         "agentic": 56.6,
-        "cost": 51.2
+        "cost": 50.9
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -10342,10 +10239,115 @@
         "agentic": 1,
         "cost": 1
       },
-      "score": 47.78,
-      "rank": 62,
+      "score": 47.72,
+      "rank": 61,
       "scoreUncertainty": 3.7,
       "coverage": 0.8,
+      "tieGroup": 7
+    },
+    {
+      "slug": "gemini-3-1-flash-lite",
+      "name": "Gemini 3.1 Flash Lite",
+      "vendor": "Google",
+      "country": "United States of America",
+      "releaseDate": "2026-03-03",
+      "accessibility": null,
+      "contextLength": 1048576,
+      "modalities": [
+        "audio",
+        "file",
+        "image",
+        "text",
+        "video"
+      ],
+      "supportsReasoning": true,
+      "pricing": {
+        "inputPerM": 0.125,
+        "outputPerM": 0.75,
+        "blendedPerM": 0.2813
+      },
+      "benchmarks": [
+        {
+          "id": "otis_mock_aime",
+          "label": "AIME (mock)",
+          "pillar": "reasoning",
+          "raw": 0.8,
+          "display": "80.0%",
+          "normalised": 67.6,
+          "stderr": 0.06030226891555273,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "ale_bench",
+          "label": "ALE-Bench",
+          "pillar": "coding",
+          "raw": 797.73,
+          "display": "79773.0%",
+          "normalised": 26.4,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "gpqa_diamond",
+          "label": "GPQA Diamond",
+          "pillar": "reasoning",
+          "raw": 0.8181818181818182,
+          "display": "81.8%",
+          "normalised": 70.2,
+          "stderr": 0.027479603010538825,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "hle",
+          "label": "Humanity's Last Exam",
+          "pillar": "reasoning",
+          "raw": 0.0864,
+          "display": "8.6%",
+          "normalised": 13.5,
+          "stderr": 0.011000000000000001,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "scicode",
+          "label": "SciCode",
+          "pillar": "coding",
+          "raw": 0.418981481481481,
+          "display": "41.9%",
+          "normalised": 50.7,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "webdev_arena",
+          "label": "WebDev Arena",
+          "pillar": "coding",
+          "raw": 1254.07,
+          "display": "1254",
+          "normalised": 5,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        }
+      ],
+      "arena": [],
+      "eci": null,
+      "sources": [
+        "epoch",
+        "openrouter"
+      ],
+      "pillarScores": {
+        "reasoning": 47.7,
+        "coding": 36,
+        "cost": 66.8
+      },
+      "pillarCoverage": {
+        "reasoning": 3,
+        "coding": 3,
+        "cost": 1
+      },
+      "score": 47.61,
+      "rank": 62,
+      "scoreUncertainty": 6.35,
+      "coverage": 0.65,
       "tieGroup": 7
     },
     {
@@ -10437,7 +10439,7 @@
         "reasoning": 19.2,
         "coding": 54.4,
         "agentic": 64.4,
-        "cost": 66.7
+        "cost": 65.9
       },
       "pillarCoverage": {
         "reasoning": 1,
@@ -10445,83 +10447,10 @@
         "agentic": 2,
         "cost": 1
       },
-      "score": 47.58,
+      "score": 47.43,
       "rank": 63,
       "scoreUncertainty": 3.74,
       "coverage": 0.8,
-      "tieGroup": 7
-    },
-    {
-      "slug": "qwen3-5-35b-a3b",
-      "name": "Qwen3.5-35B-A3B",
-      "vendor": "Alibaba",
-      "country": "China",
-      "releaseDate": "2026-02-24",
-      "accessibility": null,
-      "contextLength": 262144,
-      "modalities": [
-        "image",
-        "text",
-        "video"
-      ],
-      "supportsReasoning": true,
-      "pricing": {
-        "inputPerM": 0.1625,
-        "outputPerM": 1.3,
-        "blendedPerM": 0.4469
-      },
-      "benchmarks": [
-        {
-          "id": "otis_mock_aime",
-          "label": "AIME (mock)",
-          "pillar": "reasoning",
-          "raw": 0.7,
-          "display": "70.0%",
-          "normalised": 51.4,
-          "stderr": 0.06003996985174109,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "gpqa_diamond",
-          "label": "GPQA Diamond",
-          "pillar": "reasoning",
-          "raw": 0.8345959595959596,
-          "display": "83.5%",
-          "normalised": 73.7,
-          "stderr": 0.02179018174848238,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "scicode",
-          "label": "SciCode",
-          "pillar": "coding",
-          "raw": 0.292824074074074,
-          "display": "29.3%",
-          "normalised": 19.8,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        }
-      ],
-      "arena": [],
-      "eci": null,
-      "sources": [
-        "epoch",
-        "openrouter"
-      ],
-      "pillarScores": {
-        "reasoning": 55.3,
-        "coding": 30,
-        "cost": 61.3
-      },
-      "pillarCoverage": {
-        "reasoning": 2,
-        "coding": 1,
-        "cost": 1
-      },
-      "score": 46.95,
-      "rank": 64,
-      "scoreUncertainty": 6.38,
-      "coverage": 0.65,
       "tieGroup": 7
     },
     {
@@ -10654,7 +10583,7 @@
         "coding": 51.4,
         "agentic": 55.7,
         "preference": 42.1,
-        "cost": 51.7
+        "cost": 51.4
       },
       "pillarCoverage": {
         "reasoning": 3,
@@ -10663,8 +10592,8 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 46.81,
-      "rank": 65,
+      "score": 46.76,
+      "rank": 64,
       "scoreUncertainty": 1,
       "coverage": 1,
       "tieGroup": 7
@@ -10758,7 +10687,7 @@
         "reasoning": 38.3,
         "coding": 56.8,
         "agentic": 38.8,
-        "cost": 51.5
+        "cost": 51.2
       },
       "pillarCoverage": {
         "reasoning": 3,
@@ -10766,8 +10695,8 @@
         "agentic": 1,
         "cost": 1
       },
-      "score": 46.65,
-      "rank": 66,
+      "score": 46.59,
+      "rank": 65,
       "scoreUncertainty": 3.72,
       "coverage": 0.8,
       "tieGroup": 7
@@ -10899,9 +10828,82 @@
         "cost": 1
       },
       "score": 46.55,
-      "rank": 67,
+      "rank": 66,
       "scoreUncertainty": 2.85,
       "coverage": 0.85,
+      "tieGroup": 7
+    },
+    {
+      "slug": "qwen3-5-35b-a3b",
+      "name": "Qwen3.5-35B-A3B",
+      "vendor": "Alibaba",
+      "country": "China",
+      "releaseDate": "2026-02-24",
+      "accessibility": null,
+      "contextLength": 262144,
+      "modalities": [
+        "image",
+        "text",
+        "video"
+      ],
+      "supportsReasoning": true,
+      "pricing": {
+        "inputPerM": 0.3125,
+        "outputPerM": 1.25,
+        "blendedPerM": 0.5469
+      },
+      "benchmarks": [
+        {
+          "id": "otis_mock_aime",
+          "label": "AIME (mock)",
+          "pillar": "reasoning",
+          "raw": 0.7,
+          "display": "70.0%",
+          "normalised": 51.4,
+          "stderr": 0.06003996985174109,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "gpqa_diamond",
+          "label": "GPQA Diamond",
+          "pillar": "reasoning",
+          "raw": 0.8345959595959596,
+          "display": "83.5%",
+          "normalised": 73.7,
+          "stderr": 0.02179018174848238,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "scicode",
+          "label": "SciCode",
+          "pillar": "coding",
+          "raw": 0.292824074074074,
+          "display": "29.3%",
+          "normalised": 19.8,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        }
+      ],
+      "arena": [],
+      "eci": null,
+      "sources": [
+        "epoch",
+        "openrouter"
+      ],
+      "pillarScores": {
+        "reasoning": 55.3,
+        "coding": 30,
+        "cost": 58
+      },
+      "pillarCoverage": {
+        "reasoning": 2,
+        "coding": 1,
+        "cost": 1
+      },
+      "score": 46.19,
+      "rank": 67,
+      "scoreUncertainty": 6.38,
+      "coverage": 0.65,
       "tieGroup": 7
     },
     {
@@ -10962,14 +10964,14 @@
       "pillarScores": {
         "reasoning": 40.4,
         "coding": 34.5,
-        "cost": 76.4
+        "cost": 75.2
       },
       "pillarCoverage": {
         "reasoning": 2,
         "coding": 1,
         "cost": 1
       },
-      "score": 46.44,
+      "score": 46.16,
       "rank": 68,
       "scoreUncertainty": 6.38,
       "coverage": 0.65,
@@ -11034,14 +11036,14 @@
       "pillarScores": {
         "coding": 43.3,
         "agentic": 67.9,
-        "cost": 28.6
+        "cost": 29.1
       },
       "pillarCoverage": {
         "coding": 2,
         "agentic": 1,
         "cost": 1
       },
-      "score": 46,
+      "score": 46.14,
       "rank": 69,
       "scoreUncertainty": 8.14,
       "coverage": 0.55,
@@ -11116,120 +11118,17 @@
       "pillarScores": {
         "coding": 41.9,
         "agentic": 64.6,
-        "cost": 33.2
+        "cost": 33.6
       },
       "pillarCoverage": {
         "coding": 2,
         "agentic": 2,
         "cost": 1
       },
-      "score": 45.72,
+      "score": 45.83,
       "rank": 70,
       "scoreUncertainty": 8.14,
       "coverage": 0.55,
-      "tieGroup": 7
-    },
-    {
-      "slug": "qwen3-5-plus",
-      "name": "Qwen3.5 Plus 2026-04-20",
-      "vendor": "Alibaba",
-      "country": "China",
-      "releaseDate": "2026-02-16",
-      "accessibility": null,
-      "contextLength": 1000000,
-      "modalities": [
-        "image",
-        "text",
-        "video"
-      ],
-      "supportsReasoning": true,
-      "pricing": {
-        "inputPerM": 0.3,
-        "outputPerM": 1.8,
-        "blendedPerM": 0.675
-      },
-      "benchmarks": [
-        {
-          "id": "otis_mock_aime",
-          "label": "AIME (mock)",
-          "pillar": "reasoning",
-          "raw": 0.8666666666666667,
-          "display": "86.7%",
-          "normalised": 78.4,
-          "stderr": 0.051247074319053836,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "ale_bench",
-          "label": "ALE-Bench",
-          "pillar": "coding",
-          "raw": 621.92,
-          "display": "62192.0%",
-          "normalised": 17,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "frontiermath",
-          "label": "FrontierMath",
-          "pillar": "reasoning",
-          "raw": 0.2103448275862069,
-          "display": "21.0%",
-          "normalised": 40.3,
-          "stderr": 0.02397373715108675,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "gpqa_diamond",
-          "label": "GPQA Diamond",
-          "pillar": "reasoning",
-          "raw": 0.8484848484848485,
-          "display": "84.8%",
-          "normalised": 76.7,
-          "stderr": 0.025545650426603637,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "simpleqa_verified",
-          "label": "SimpleQA Verified",
-          "pillar": "reasoning",
-          "raw": 0.2535070140280561,
-          "display": "25.4%",
-          "normalised": 27.8,
-          "stderr": 0.013777178222916077,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "webdev_arena",
-          "label": "WebDev Arena",
-          "pillar": "coding",
-          "raw": 1399.23,
-          "display": "1399",
-          "normalised": 30.4,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        }
-      ],
-      "arena": [],
-      "eci": null,
-      "sources": [
-        "epoch",
-        "openrouter"
-      ],
-      "pillarScores": {
-        "reasoning": 51.1,
-        "coding": 33.1,
-        "cost": 55.6
-      },
-      "pillarCoverage": {
-        "reasoning": 4,
-        "coding": 2,
-        "cost": 1
-      },
-      "score": 45.22,
-      "rank": 71,
-      "scoreUncertainty": 6.35,
-      "coverage": 0.65,
       "tieGroup": 7
     },
     {
@@ -11400,7 +11299,7 @@
         "coding": 45.1,
         "agentic": 56.5,
         "preference": 50.7,
-        "cost": 35.1
+        "cost": 35.4
       },
       "pillarCoverage": {
         "reasoning": 6,
@@ -11409,10 +11308,113 @@
         "preference": 2,
         "cost": 1
       },
-      "score": 45.18,
-      "rank": 72,
+      "score": 45.23,
+      "rank": 71,
       "scoreUncertainty": 0.85,
       "coverage": 1,
+      "tieGroup": 8
+    },
+    {
+      "slug": "qwen3-5-plus",
+      "name": "Qwen3.5 Plus 2026-04-20",
+      "vendor": "Alibaba",
+      "country": "China",
+      "releaseDate": "2026-02-16",
+      "accessibility": null,
+      "contextLength": 1000000,
+      "modalities": [
+        "image",
+        "text",
+        "video"
+      ],
+      "supportsReasoning": true,
+      "pricing": {
+        "inputPerM": 0.3,
+        "outputPerM": 1.8,
+        "blendedPerM": 0.675
+      },
+      "benchmarks": [
+        {
+          "id": "otis_mock_aime",
+          "label": "AIME (mock)",
+          "pillar": "reasoning",
+          "raw": 0.8666666666666667,
+          "display": "86.7%",
+          "normalised": 78.4,
+          "stderr": 0.051247074319053836,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "ale_bench",
+          "label": "ALE-Bench",
+          "pillar": "coding",
+          "raw": 621.92,
+          "display": "62192.0%",
+          "normalised": 17,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "frontiermath",
+          "label": "FrontierMath",
+          "pillar": "reasoning",
+          "raw": 0.2103448275862069,
+          "display": "21.0%",
+          "normalised": 40.3,
+          "stderr": 0.02397373715108675,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "gpqa_diamond",
+          "label": "GPQA Diamond",
+          "pillar": "reasoning",
+          "raw": 0.8484848484848485,
+          "display": "84.8%",
+          "normalised": 76.7,
+          "stderr": 0.025545650426603637,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "simpleqa_verified",
+          "label": "SimpleQA Verified",
+          "pillar": "reasoning",
+          "raw": 0.2535070140280561,
+          "display": "25.4%",
+          "normalised": 27.8,
+          "stderr": 0.013777178222916077,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "webdev_arena",
+          "label": "WebDev Arena",
+          "pillar": "coding",
+          "raw": 1399.23,
+          "display": "1399",
+          "normalised": 30.4,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        }
+      ],
+      "arena": [],
+      "eci": null,
+      "sources": [
+        "epoch",
+        "openrouter"
+      ],
+      "pillarScores": {
+        "reasoning": 51.1,
+        "coding": 33.1,
+        "cost": 55.2
+      },
+      "pillarCoverage": {
+        "reasoning": 4,
+        "coding": 2,
+        "cost": 1
+      },
+      "score": 45.12,
+      "rank": 72,
+      "scoreUncertainty": 6.35,
+      "coverage": 0.65,
       "tieGroup": 8
     },
     {
@@ -11473,14 +11475,14 @@
       "pillarScores": {
         "reasoning": 46.6,
         "coding": 37.9,
-        "cost": 54.2
+        "cost": 53.9
       },
       "pillarCoverage": {
         "reasoning": 2,
         "coding": 1,
         "cost": 1
       },
-      "score": 45.01,
+      "score": 44.94,
       "rank": 73,
       "scoreUncertainty": 6.38,
       "coverage": 0.65,
@@ -11595,7 +11597,7 @@
         "reasoning": 45.7,
         "coding": 40.8,
         "agentic": 41.3,
-        "cost": 54.4
+        "cost": 54
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -11603,7 +11605,7 @@
         "agentic": 1,
         "cost": 1
       },
-      "score": 44.98,
+      "score": 44.9,
       "rank": 74,
       "scoreUncertainty": 3.7,
       "coverage": 0.8,
@@ -11740,7 +11742,7 @@
         "reasoning": 42.5,
         "coding": 35.9,
         "agentic": 42.4,
-        "cost": 64.9
+        "cost": 64.2
       },
       "pillarCoverage": {
         "reasoning": 6,
@@ -11748,7 +11750,7 @@
         "agentic": 1,
         "cost": 1
       },
-      "score": 44.62,
+      "score": 44.49,
       "rank": 75,
       "scoreUncertainty": 3.69,
       "coverage": 0.8,
@@ -11855,7 +11857,7 @@
         "reasoning": 40.8,
         "coding": 68.9,
         "agentic": 41.8,
-        "cost": 12.9
+        "cost": 6.6
       },
       "pillarCoverage": {
         "reasoning": 5,
@@ -11863,10 +11865,182 @@
         "agentic": 1,
         "cost": 1
       },
-      "score": 44.54,
+      "score": 43.36,
       "rank": 76,
       "scoreUncertainty": 3.75,
       "coverage": 0.8,
+      "tieGroup": 8
+    },
+    {
+      "slug": "minimax-m2-1",
+      "name": "MiniMax M2.1",
+      "vendor": "MiniMax",
+      "country": "China",
+      "releaseDate": "2025-12-23",
+      "accessibility": null,
+      "contextLength": 204800,
+      "modalities": [
+        "text"
+      ],
+      "supportsReasoning": true,
+      "pricing": {
+        "inputPerM": 0.3,
+        "outputPerM": 1.2,
+        "blendedPerM": 0.525
+      },
+      "benchmarks": [
+        {
+          "id": "ale_bench",
+          "label": "ALE-Bench",
+          "pillar": "coding",
+          "raw": 623.83,
+          "display": "62383.0%",
+          "normalised": 17.1,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "terminalbench",
+          "label": "Terminal-Bench",
+          "pillar": "agentic",
+          "raw": 0.36600000000000005,
+          "display": "36.6%",
+          "normalised": 40.8,
+          "stderr": 0.028999999999999998,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "webdev_arena",
+          "label": "WebDev Arena",
+          "pillar": "coding",
+          "raw": 1386.99,
+          "display": "1387",
+          "normalised": 28.2,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        }
+      ],
+      "arena": [],
+      "eci": null,
+      "sources": [
+        "epoch",
+        "openrouter"
+      ],
+      "pillarScores": {
+        "coding": 32.3,
+        "agentic": 43.8,
+        "cost": 58.6
+      },
+      "pillarCoverage": {
+        "coding": 2,
+        "agentic": 1,
+        "cost": 1
+      },
+      "score": 42.61,
+      "rank": 77,
+      "scoreUncertainty": 8.14,
+      "coverage": 0.55,
+      "tieGroup": 8
+    },
+    {
+      "slug": "gemma-4-31b-it",
+      "name": "Gemma 4 31B",
+      "vendor": "Google",
+      "country": "United States of America",
+      "releaseDate": "2026-04-02",
+      "accessibility": null,
+      "contextLength": 262144,
+      "modalities": [
+        "image",
+        "text",
+        "video"
+      ],
+      "supportsReasoning": true,
+      "pricing": {
+        "inputPerM": 0,
+        "outputPerM": 0,
+        "blendedPerM": 0
+      },
+      "benchmarks": [
+        {
+          "id": "otis_mock_aime",
+          "label": "AIME (mock)",
+          "pillar": "reasoning",
+          "raw": 0.7333333333333333,
+          "display": "73.3%",
+          "normalised": 56.8,
+          "stderr": 0.06666666666666667,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "ale_bench",
+          "label": "ALE-Bench",
+          "pillar": "coding",
+          "raw": 925.5,
+          "display": "92550.0%",
+          "normalised": 33.2,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "gpqa_diamond",
+          "label": "GPQA Diamond",
+          "pillar": "reasoning",
+          "raw": 0.7575757575757576,
+          "display": "75.8%",
+          "normalised": 57.3,
+          "stderr": 0.03053289223393202,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "scicode",
+          "label": "SciCode",
+          "pillar": "coding",
+          "raw": 0.434027777777778,
+          "display": "43.4%",
+          "normalised": 54.4,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "simpleqa_verified",
+          "label": "SimpleQA Verified",
+          "pillar": "reasoning",
+          "raw": 0.104,
+          "display": "10.4%",
+          "normalised": 6.3,
+          "stderr": 0.009658016218524242,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "webdev_arena",
+          "label": "WebDev Arena",
+          "pillar": "coding",
+          "raw": 1363.56,
+          "display": "1364",
+          "normalised": 24.1,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        }
+      ],
+      "arena": [],
+      "eci": null,
+      "sources": [
+        "epoch",
+        "openrouter"
+      ],
+      "pillarScores": {
+        "reasoning": 41.4,
+        "coding": 43.8
+      },
+      "pillarCoverage": {
+        "reasoning": 3,
+        "coding": 3
+      },
+      "score": 42.6,
+      "rank": 78,
+      "scoreUncertainty": 9.02,
+      "coverage": 0.5,
       "tieGroup": 8
     },
     {
@@ -11970,7 +12144,7 @@
         "reasoning": 33.8,
         "coding": 31.9,
         "agentic": 31.9,
-        "cost": 87.1
+        "cost": 85.5
       },
       "pillarCoverage": {
         "reasoning": 5,
@@ -11978,182 +12152,10 @@
         "agentic": 1,
         "cost": 1
       },
-      "score": 42.84,
-      "rank": 77,
+      "score": 42.54,
+      "rank": 79,
       "scoreUncertainty": 3.75,
       "coverage": 0.8,
-      "tieGroup": 8
-    },
-    {
-      "slug": "minimax-m2-1",
-      "name": "MiniMax M2.1",
-      "vendor": "MiniMax",
-      "country": "China",
-      "releaseDate": "2025-12-23",
-      "accessibility": null,
-      "contextLength": 204800,
-      "modalities": [
-        "text"
-      ],
-      "supportsReasoning": true,
-      "pricing": {
-        "inputPerM": 0.3,
-        "outputPerM": 1.2,
-        "blendedPerM": 0.525
-      },
-      "benchmarks": [
-        {
-          "id": "ale_bench",
-          "label": "ALE-Bench",
-          "pillar": "coding",
-          "raw": 623.83,
-          "display": "62383.0%",
-          "normalised": 17.1,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "terminalbench",
-          "label": "Terminal-Bench",
-          "pillar": "agentic",
-          "raw": 0.36600000000000005,
-          "display": "36.6%",
-          "normalised": 40.8,
-          "stderr": 0.028999999999999998,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "webdev_arena",
-          "label": "WebDev Arena",
-          "pillar": "coding",
-          "raw": 1386.99,
-          "display": "1387",
-          "normalised": 28.2,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        }
-      ],
-      "arena": [],
-      "eci": null,
-      "sources": [
-        "epoch",
-        "openrouter"
-      ],
-      "pillarScores": {
-        "coding": 32.3,
-        "agentic": 43.8,
-        "cost": 59.1
-      },
-      "pillarCoverage": {
-        "coding": 2,
-        "agentic": 1,
-        "cost": 1
-      },
-      "score": 42.75,
-      "rank": 78,
-      "scoreUncertainty": 8.14,
-      "coverage": 0.55,
-      "tieGroup": 8
-    },
-    {
-      "slug": "gemma-4-31b-it",
-      "name": "Gemma 4 31B",
-      "vendor": "Google",
-      "country": "United States of America",
-      "releaseDate": "2026-04-02",
-      "accessibility": null,
-      "contextLength": 262144,
-      "modalities": [
-        "image",
-        "text",
-        "video"
-      ],
-      "supportsReasoning": true,
-      "pricing": {
-        "inputPerM": 0,
-        "outputPerM": 0,
-        "blendedPerM": 0
-      },
-      "benchmarks": [
-        {
-          "id": "otis_mock_aime",
-          "label": "AIME (mock)",
-          "pillar": "reasoning",
-          "raw": 0.7333333333333333,
-          "display": "73.3%",
-          "normalised": 56.8,
-          "stderr": 0.06666666666666667,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "ale_bench",
-          "label": "ALE-Bench",
-          "pillar": "coding",
-          "raw": 925.5,
-          "display": "92550.0%",
-          "normalised": 33.2,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "gpqa_diamond",
-          "label": "GPQA Diamond",
-          "pillar": "reasoning",
-          "raw": 0.7575757575757576,
-          "display": "75.8%",
-          "normalised": 57.3,
-          "stderr": 0.03053289223393202,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "scicode",
-          "label": "SciCode",
-          "pillar": "coding",
-          "raw": 0.434027777777778,
-          "display": "43.4%",
-          "normalised": 54.4,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "simpleqa_verified",
-          "label": "SimpleQA Verified",
-          "pillar": "reasoning",
-          "raw": 0.104,
-          "display": "10.4%",
-          "normalised": 6.3,
-          "stderr": 0.009658016218524242,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "webdev_arena",
-          "label": "WebDev Arena",
-          "pillar": "coding",
-          "raw": 1363.56,
-          "display": "1364",
-          "normalised": 24.1,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        }
-      ],
-      "arena": [],
-      "eci": null,
-      "sources": [
-        "epoch",
-        "openrouter"
-      ],
-      "pillarScores": {
-        "reasoning": 41.4,
-        "coding": 43.8
-      },
-      "pillarCoverage": {
-        "reasoning": 3,
-        "coding": 3
-      },
-      "score": 42.6,
-      "rank": 79,
-      "scoreUncertainty": 9.02,
-      "coverage": 0.5,
       "tieGroup": 8
     },
     {
@@ -12227,7 +12229,7 @@
         "reasoning": 48.1,
         "coding": 26.7,
         "agentic": 21.7,
-        "cost": 80.3
+        "cost": 79.1
       },
       "pillarCoverage": {
         "reasoning": 2,
@@ -12235,7 +12237,7 @@
         "agentic": 1,
         "cost": 1
       },
-      "score": 42.5,
+      "score": 42.28,
       "rank": 80,
       "scoreUncertainty": 3.77,
       "coverage": 0.8,
@@ -12330,7 +12332,7 @@
         "reasoning": 30.8,
         "coding": 53.5,
         "agentic": 36.8,
-        "cost": 48.3
+        "cost": 48.1
       },
       "pillarCoverage": {
         "reasoning": 3,
@@ -12338,7 +12340,7 @@
         "agentic": 1,
         "cost": 1
       },
-      "score": 42.3,
+      "score": 42.26,
       "rank": 81,
       "scoreUncertainty": 3.72,
       "coverage": 0.8,
@@ -12444,110 +12446,17 @@
       "pillarScores": {
         "reasoning": 24.5,
         "coding": 46.5,
-        "cost": 64.7
+        "cost": 63.9
       },
       "pillarCoverage": {
         "reasoning": 5,
         "coding": 2,
         "cost": 1
       },
-      "score": 42.24,
+      "score": 42.05,
       "rank": 82,
       "scoreUncertainty": 6.35,
       "coverage": 0.65,
-      "tieGroup": 8
-    },
-    {
-      "slug": "gpt-oss-20b",
-      "name": "gpt-oss-20b",
-      "vendor": "OpenAI",
-      "country": "United States of America",
-      "releaseDate": "2025-08-05",
-      "accessibility": null,
-      "contextLength": 131072,
-      "modalities": [
-        "text"
-      ],
-      "supportsReasoning": true,
-      "pricing": {
-        "inputPerM": 0.03,
-        "outputPerM": 0.13,
-        "blendedPerM": 0.055
-      },
-      "benchmarks": [
-        {
-          "id": "otis_mock_aime",
-          "label": "AIME (mock)",
-          "pillar": "reasoning",
-          "raw": 0.6527777777777778,
-          "display": "65.3%",
-          "normalised": 43.7,
-          "stderr": 0.0593111883162336,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "ale_bench",
-          "label": "ALE-Bench",
-          "pillar": "coding",
-          "raw": 566.05,
-          "display": "56605.0%",
-          "normalised": 14,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "gpqa_diamond",
-          "label": "GPQA Diamond",
-          "pillar": "reasoning",
-          "raw": 0.6079545454545454,
-          "display": "60.8%",
-          "normalised": 25.3,
-          "stderr": 0.024864059770258008,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "scicode",
-          "label": "SciCode",
-          "pillar": "coding",
-          "raw": 0.34375,
-          "display": "34.4%",
-          "normalised": 32.3,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "terminalbench",
-          "label": "Terminal-Bench",
-          "pillar": "agentic",
-          "raw": 0.034,
-          "display": "3.4%",
-          "normalised": 0,
-          "stderr": 0.014,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        }
-      ],
-      "arena": [],
-      "eci": null,
-      "sources": [
-        "epoch",
-        "openrouter"
-      ],
-      "pillarScores": {
-        "reasoning": 37.9,
-        "coding": 32.7,
-        "agentic": 17.1,
-        "cost": 90.2
-      },
-      "pillarCoverage": {
-        "reasoning": 2,
-        "coding": 2,
-        "agentic": 1,
-        "cost": 1
-      },
-      "score": 42.18,
-      "rank": 83,
-      "scoreUncertainty": 3.73,
-      "coverage": 0.8,
       "tieGroup": 8
     },
     {
@@ -12711,9 +12620,102 @@
         "cost": 1
       },
       "score": 41.97,
-      "rank": 84,
+      "rank": 83,
       "scoreUncertainty": 0.97,
       "coverage": 1,
+      "tieGroup": 9
+    },
+    {
+      "slug": "gpt-oss-20b",
+      "name": "gpt-oss-20b",
+      "vendor": "OpenAI",
+      "country": "United States of America",
+      "releaseDate": "2025-08-05",
+      "accessibility": null,
+      "contextLength": 131072,
+      "modalities": [
+        "text"
+      ],
+      "supportsReasoning": true,
+      "pricing": {
+        "inputPerM": 0.03,
+        "outputPerM": 0.13,
+        "blendedPerM": 0.055
+      },
+      "benchmarks": [
+        {
+          "id": "otis_mock_aime",
+          "label": "AIME (mock)",
+          "pillar": "reasoning",
+          "raw": 0.6527777777777778,
+          "display": "65.3%",
+          "normalised": 43.7,
+          "stderr": 0.0593111883162336,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "ale_bench",
+          "label": "ALE-Bench",
+          "pillar": "coding",
+          "raw": 566.05,
+          "display": "56605.0%",
+          "normalised": 14,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "gpqa_diamond",
+          "label": "GPQA Diamond",
+          "pillar": "reasoning",
+          "raw": 0.6079545454545454,
+          "display": "60.8%",
+          "normalised": 25.3,
+          "stderr": 0.024864059770258008,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "scicode",
+          "label": "SciCode",
+          "pillar": "coding",
+          "raw": 0.34375,
+          "display": "34.4%",
+          "normalised": 32.3,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "terminalbench",
+          "label": "Terminal-Bench",
+          "pillar": "agentic",
+          "raw": 0.034,
+          "display": "3.4%",
+          "normalised": 0,
+          "stderr": 0.014,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        }
+      ],
+      "arena": [],
+      "eci": null,
+      "sources": [
+        "epoch",
+        "openrouter"
+      ],
+      "pillarScores": {
+        "reasoning": 37.9,
+        "coding": 32.7,
+        "agentic": 17.1,
+        "cost": 88.5
+      },
+      "pillarCoverage": {
+        "reasoning": 2,
+        "coding": 2,
+        "agentic": 1,
+        "cost": 1
+      },
+      "score": 41.86,
+      "rank": 84,
+      "scoreUncertainty": 3.73,
+      "coverage": 0.8,
       "tieGroup": 9
     },
     {
@@ -12785,7 +12787,7 @@
         "reasoning": 41.9,
         "coding": 26.7,
         "agentic": 44.8,
-        "cost": 50.1
+        "cost": 49.9
       },
       "pillarCoverage": {
         "reasoning": 1,
@@ -12793,7 +12795,7 @@
         "agentic": 2,
         "cost": 1
       },
-      "score": 39.23,
+      "score": 39.19,
       "rank": 85,
       "scoreUncertainty": 3.79,
       "coverage": 0.8,
@@ -12930,7 +12932,7 @@
         "reasoning": 33.4,
         "coding": 49.6,
         "agentic": 42.2,
-        "cost": 25.5
+        "cost": 26.2
       },
       "pillarCoverage": {
         "reasoning": 5,
@@ -12938,7 +12940,7 @@
         "agentic": 2,
         "cost": 1
       },
-      "score": 38.63,
+      "score": 38.76,
       "rank": 86,
       "scoreUncertainty": 3.68,
       "coverage": 0.8,
@@ -13075,7 +13077,7 @@
         "coding": 38.3,
         "agentic": 43,
         "preference": 33.7,
-        "cost": 50.2
+        "cost": 50
       },
       "pillarCoverage": {
         "reasoning": 5,
@@ -13084,7 +13086,7 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 38.12,
+      "score": 38.09,
       "rank": 87,
       "scoreUncertainty": 1.03,
       "coverage": 1,
@@ -13230,7 +13232,7 @@
         "coding": 29.9,
         "agentic": 40.6,
         "preference": 32.9,
-        "cost": 42.7
+        "cost": 42.8
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -13239,7 +13241,7 @@
         "preference": 2,
         "cost": 1
       },
-      "score": 37.8,
+      "score": 37.82,
       "rank": 88,
       "scoreUncertainty": 0.93,
       "coverage": 1,
@@ -13325,14 +13327,14 @@
       "pillarScores": {
         "reasoning": 44.7,
         "coding": 15.2,
-        "cost": 62.1
+        "cost": 61.5
       },
       "pillarCoverage": {
         "reasoning": 4,
         "coding": 1,
         "cost": 1
       },
-      "score": 37.37,
+      "score": 37.23,
       "rank": 89,
       "scoreUncertainty": 6.37,
       "coverage": 0.65,
@@ -13407,7 +13409,7 @@
         "reasoning": 19.7,
         "coding": 32,
         "agentic": 48.7,
-        "cost": 60.6
+        "cost": 59.9
       },
       "pillarCoverage": {
         "reasoning": 1,
@@ -13415,7 +13417,7 @@
         "agentic": 1,
         "cost": 1
       },
-      "score": 36.65,
+      "score": 36.52,
       "rank": 90,
       "scoreUncertainty": 3.77,
       "coverage": 0.8,
@@ -13500,142 +13502,6 @@
       "rank": 91,
       "scoreUncertainty": 6.38,
       "coverage": 0.65,
-      "tieGroup": 10
-    },
-    {
-      "slug": "claude-opus-4",
-      "name": "Claude Opus 4",
-      "vendor": "Anthropic",
-      "country": "United States of America",
-      "releaseDate": "2025-05-22",
-      "accessibility": null,
-      "contextLength": 200000,
-      "modalities": [
-        "file",
-        "image",
-        "text"
-      ],
-      "supportsReasoning": true,
-      "pricing": {
-        "inputPerM": 15,
-        "outputPerM": 75,
-        "blendedPerM": 30
-      },
-      "benchmarks": [
-        {
-          "id": "aider_polyglot",
-          "label": "Aider Polyglot",
-          "pillar": "coding",
-          "raw": 72,
-          "display": "7200.0%",
-          "normalised": 81,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "otis_mock_aime",
-          "label": "AIME (mock)",
-          "pillar": "reasoning",
-          "raw": 0.4222222222222222,
-          "display": "42.2%",
-          "normalised": 6.3,
-          "stderr": 0.07446027270295805,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "arc_agi_2",
-          "label": "ARC-AGI-2",
-          "pillar": "reasoning",
-          "raw": 0.012700000000000001,
-          "display": "1.3%",
-          "normalised": 1.3,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "frontiermath",
-          "label": "FrontierMath",
-          "pillar": "reasoning",
-          "raw": 0.04482758620689655,
-          "display": "4.5%",
-          "normalised": 8.1,
-          "stderr": 0.012172075609474642,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "gpqa_diamond",
-          "label": "GPQA Diamond",
-          "pillar": "reasoning",
-          "raw": 0.6919191919191919,
-          "display": "69.2%",
-          "normalised": 43.3,
-          "stderr": 0.03289477330098615,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "hle",
-          "label": "Humanity's Last Exam",
-          "pillar": "reasoning",
-          "raw": 0.1072,
-          "display": "10.7%",
-          "normalised": 18.3,
-          "stderr": 0.0121,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "metr_time_horizon",
-          "label": "METR time horizon",
-          "pillar": "agentic",
-          "raw": 100.366123,
-          "display": "1.7 h",
-          "normalised": 58.1,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "swe_bench_verified",
-          "label": "SWE-bench Verified",
-          "pillar": "coding",
-          "raw": 0.7066115702479339,
-          "display": "70.7%",
-          "normalised": 39.4,
-          "stderr": 0.02071754535128056,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        }
-      ],
-      "arena": [
-        {
-          "board": "search",
-          "elo": 1126,
-          "ci": 5,
-          "votes": 31037,
-          "rank": 32
-        }
-      ],
-      "eci": null,
-      "sources": [
-        "arena",
-        "epoch",
-        "openrouter"
-      ],
-      "pillarScores": {
-        "reasoning": 26.2,
-        "coding": 62.1,
-        "agentic": 55.1,
-        "preference": 19.6,
-        "cost": 12.9
-      },
-      "pillarCoverage": {
-        "reasoning": 5,
-        "coding": 2,
-        "agentic": 1,
-        "preference": 1,
-        "cost": 1
-      },
-      "score": 36.2,
-      "rank": 92,
-      "scoreUncertainty": 1.08,
-      "coverage": 1,
       "tieGroup": 10
     },
     {
@@ -13759,7 +13625,7 @@
         "coding": 46.4,
         "agentic": 50.1,
         "preference": 35.4,
-        "cost": 12.9
+        "cost": 14
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -13768,9 +13634,145 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 35.58,
-      "rank": 93,
+      "score": 35.74,
+      "rank": 92,
       "scoreUncertainty": 1.04,
+      "coverage": 1,
+      "tieGroup": 11
+    },
+    {
+      "slug": "claude-opus-4",
+      "name": "Claude Opus 4",
+      "vendor": "Anthropic",
+      "country": "United States of America",
+      "releaseDate": "2025-05-22",
+      "accessibility": null,
+      "contextLength": 200000,
+      "modalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "supportsReasoning": true,
+      "pricing": {
+        "inputPerM": 15,
+        "outputPerM": 75,
+        "blendedPerM": 30
+      },
+      "benchmarks": [
+        {
+          "id": "aider_polyglot",
+          "label": "Aider Polyglot",
+          "pillar": "coding",
+          "raw": 72,
+          "display": "7200.0%",
+          "normalised": 81,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "otis_mock_aime",
+          "label": "AIME (mock)",
+          "pillar": "reasoning",
+          "raw": 0.4222222222222222,
+          "display": "42.2%",
+          "normalised": 6.3,
+          "stderr": 0.07446027270295805,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "arc_agi_2",
+          "label": "ARC-AGI-2",
+          "pillar": "reasoning",
+          "raw": 0.012700000000000001,
+          "display": "1.3%",
+          "normalised": 1.3,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "frontiermath",
+          "label": "FrontierMath",
+          "pillar": "reasoning",
+          "raw": 0.04482758620689655,
+          "display": "4.5%",
+          "normalised": 8.1,
+          "stderr": 0.012172075609474642,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "gpqa_diamond",
+          "label": "GPQA Diamond",
+          "pillar": "reasoning",
+          "raw": 0.6919191919191919,
+          "display": "69.2%",
+          "normalised": 43.3,
+          "stderr": 0.03289477330098615,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "hle",
+          "label": "Humanity's Last Exam",
+          "pillar": "reasoning",
+          "raw": 0.1072,
+          "display": "10.7%",
+          "normalised": 18.3,
+          "stderr": 0.0121,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "metr_time_horizon",
+          "label": "METR time horizon",
+          "pillar": "agentic",
+          "raw": 100.366123,
+          "display": "1.7 h",
+          "normalised": 58.1,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "swe_bench_verified",
+          "label": "SWE-bench Verified",
+          "pillar": "coding",
+          "raw": 0.7066115702479339,
+          "display": "70.7%",
+          "normalised": 39.4,
+          "stderr": 0.02071754535128056,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        }
+      ],
+      "arena": [
+        {
+          "board": "search",
+          "elo": 1126,
+          "ci": 5,
+          "votes": 31037,
+          "rank": 32
+        }
+      ],
+      "eci": null,
+      "sources": [
+        "arena",
+        "epoch",
+        "openrouter"
+      ],
+      "pillarScores": {
+        "reasoning": 26.2,
+        "coding": 62.1,
+        "agentic": 55.1,
+        "preference": 19.6,
+        "cost": 6.6
+      },
+      "pillarCoverage": {
+        "reasoning": 5,
+        "coding": 2,
+        "agentic": 1,
+        "preference": 1,
+        "cost": 1
+      },
+      "score": 35.25,
+      "rank": 93,
+      "scoreUncertainty": 1.08,
       "coverage": 1,
       "tieGroup": 11
     },
@@ -13832,14 +13834,14 @@
       "pillarScores": {
         "reasoning": 30.7,
         "coding": 17,
-        "cost": 72.3
+        "cost": 71.2
       },
       "pillarCoverage": {
         "reasoning": 2,
         "coding": 1,
         "cost": 1
       },
-      "score": 35.03,
+      "score": 34.78,
       "rank": 94,
       "scoreUncertainty": 6.38,
       "coverage": 0.65,
@@ -13945,87 +13947,16 @@
       "pillarScores": {
         "reasoning": 16.8,
         "coding": 21.4,
-        "cost": 83.8
+        "cost": 82.4
       },
       "pillarCoverage": {
         "reasoning": 5,
         "coding": 2,
         "cost": 1
       },
-      "score": 34.03,
+      "score": 33.71,
       "rank": 95,
       "scoreUncertainty": 6.35,
-      "coverage": 0.65,
-      "tieGroup": 11
-    },
-    {
-      "slug": "llama-3-3-70b-instruct",
-      "name": "Llama 3.3 70B Instruct",
-      "vendor": "Meta",
-      "country": "United States of America",
-      "releaseDate": "2024-12-06",
-      "accessibility": null,
-      "contextLength": 131072,
-      "modalities": [
-        "text"
-      ],
-      "supportsReasoning": false,
-      "pricing": {
-        "inputPerM": 0.1,
-        "outputPerM": 0.32,
-        "blendedPerM": 0.155
-      },
-      "benchmarks": [
-        {
-          "id": "otis_mock_aime",
-          "label": "AIME (mock)",
-          "pillar": "reasoning",
-          "raw": 0.05138888888888889,
-          "display": "5.1%",
-          "normalised": 0,
-          "stderr": 0.023611111111111107,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "gpqa_diamond",
-          "label": "GPQA Diamond",
-          "pillar": "reasoning",
-          "raw": 0.4744318181818182,
-          "display": "47.4%",
-          "normalised": 0,
-          "stderr": 0.028523027562061026,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "scicode",
-          "label": "SciCode",
-          "pillar": "coding",
-          "raw": 0.260416666666667,
-          "display": "26.0%",
-          "normalised": 11.9,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        }
-      ],
-      "arena": [],
-      "eci": null,
-      "sources": [
-        "epoch",
-        "openrouter"
-      ],
-      "pillarScores": {
-        "reasoning": 16.6,
-        "coding": 23.7,
-        "cost": 75.9
-      },
-      "pillarCoverage": {
-        "reasoning": 2,
-        "coding": 1,
-        "cost": 1
-      },
-      "score": 33.02,
-      "rank": 96,
-      "scoreUncertainty": 6.38,
       "coverage": 0.65,
       "tieGroup": 11
     },
@@ -14092,7 +14023,7 @@
         "reasoning": 22,
         "coding": 29.4,
         "agentic": 28.2,
-        "cost": 62
+        "cost": 61.3
       },
       "pillarCoverage": {
         "reasoning": 1,
@@ -14100,8 +14031,8 @@
         "agentic": 1,
         "cost": 1
       },
-      "score": 32.98,
-      "rank": 97,
+      "score": 32.84,
+      "rank": 96,
       "scoreUncertainty": 3.81,
       "coverage": 0.8,
       "tieGroup": 11
@@ -14185,7 +14116,7 @@
         "reasoning": 20.8,
         "coding": 31.3,
         "agentic": 34.1,
-        "cost": 54
+        "cost": 53.7
       },
       "pillarCoverage": {
         "reasoning": 1,
@@ -14193,10 +14124,81 @@
         "agentic": 1,
         "cost": 1
       },
-      "score": 32.8,
-      "rank": 98,
+      "score": 32.74,
+      "rank": 97,
       "scoreUncertainty": 3.76,
       "coverage": 0.8,
+      "tieGroup": 11
+    },
+    {
+      "slug": "llama-3-3-70b-instruct",
+      "name": "Llama 3.3 70B Instruct",
+      "vendor": "Meta",
+      "country": "United States of America",
+      "releaseDate": "2024-12-06",
+      "accessibility": null,
+      "contextLength": 131072,
+      "modalities": [
+        "text"
+      ],
+      "supportsReasoning": false,
+      "pricing": {
+        "inputPerM": 0.1,
+        "outputPerM": 0.32,
+        "blendedPerM": 0.155
+      },
+      "benchmarks": [
+        {
+          "id": "otis_mock_aime",
+          "label": "AIME (mock)",
+          "pillar": "reasoning",
+          "raw": 0.05138888888888889,
+          "display": "5.1%",
+          "normalised": 0,
+          "stderr": 0.023611111111111107,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "gpqa_diamond",
+          "label": "GPQA Diamond",
+          "pillar": "reasoning",
+          "raw": 0.4744318181818182,
+          "display": "47.4%",
+          "normalised": 0,
+          "stderr": 0.028523027562061026,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "scicode",
+          "label": "SciCode",
+          "pillar": "coding",
+          "raw": 0.260416666666667,
+          "display": "26.0%",
+          "normalised": 11.9,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        }
+      ],
+      "arena": [],
+      "eci": null,
+      "sources": [
+        "epoch",
+        "openrouter"
+      ],
+      "pillarScores": {
+        "reasoning": 16.6,
+        "coding": 23.7,
+        "cost": 74.7
+      },
+      "pillarCoverage": {
+        "reasoning": 2,
+        "coding": 1,
+        "cost": 1
+      },
+      "score": 32.74,
+      "rank": 98,
+      "scoreUncertainty": 6.38,
+      "coverage": 0.65,
       "tieGroup": 11
     },
     {
@@ -14390,14 +14392,14 @@
       "pillarScores": {
         "reasoning": 16.6,
         "coding": 14.3,
-        "cost": 89.6
+        "cost": 88
       },
       "pillarCoverage": {
         "reasoning": 2,
         "coding": 1,
         "cost": 1
       },
-      "score": 32.56,
+      "score": 32.19,
       "rank": 100,
       "scoreUncertainty": 6.38,
       "coverage": 0.65,
@@ -14462,14 +14464,14 @@
       "pillarScores": {
         "reasoning": 16.6,
         "coding": 14.3,
-        "cost": 86
+        "cost": 84.4
       },
       "pillarCoverage": {
         "reasoning": 2,
         "coding": 1,
         "cost": 1
       },
-      "score": 31.73,
+      "score": 31.36,
       "rank": 101,
       "scoreUncertainty": 6.38,
       "coverage": 0.65,
@@ -14555,14 +14557,14 @@
       "pillarScores": {
         "reasoning": 17.1,
         "coding": 14.3,
-        "cost": 78.2
+        "cost": 77
       },
       "pillarCoverage": {
         "reasoning": 4,
         "coding": 1,
         "cost": 1
       },
-      "score": 30.12,
+      "score": 29.85,
       "rank": 102,
       "scoreUncertainty": 6.37,
       "coverage": 0.65,
@@ -14626,14 +14628,14 @@
       "pillarScores": {
         "reasoning": 16.6,
         "agentic": 17.1,
-        "cost": 62.8
+        "cost": 62.2
       },
       "pillarCoverage": {
         "reasoning": 2,
         "agentic": 1,
         "cost": 1
       },
-      "score": 29.34,
+      "score": 29.17,
       "rank": 103,
       "scoreUncertainty": 8.14,
       "coverage": 0.55,
@@ -14708,14 +14710,14 @@
       "pillarScores": {
         "reasoning": 16.6,
         "coding": 14.9,
-        "cost": 74.4
+        "cost": 73.3
       },
       "pillarCoverage": {
         "reasoning": 2,
         "coding": 2,
         "cost": 1
       },
-      "score": 29.28,
+      "score": 29.03,
       "rank": 104,
       "scoreUncertainty": 6.36,
       "coverage": 0.65,
@@ -14862,7 +14864,7 @@
         "coding": 23.5,
         "agentic": 22.7,
         "preference": 19.6,
-        "cost": 39.4
+        "cost": 39.6
       },
       "pillarCoverage": {
         "reasoning": 6,
@@ -14871,7 +14873,7 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 24.01,
+      "score": 24.04,
       "rank": 105,
       "scoreUncertainty": 1.02,
       "coverage": 1,
@@ -14936,14 +14938,14 @@
       "pillarScores": {
         "reasoning": 16.6,
         "agentic": 17.1,
-        "cost": 22.4
+        "cost": 23.2
       },
       "pillarCoverage": {
         "reasoning": 2,
         "agentic": 1,
         "cost": 1
       },
-      "score": 18.32,
+      "score": 18.54,
       "rank": 106,
       "scoreUncertainty": 8.14,
       "coverage": 0.55,
