@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-09-21T12:53:02.403Z",
+  "generatedAt": "2026-09-21T22:00:16.023Z",
   "snapshotDates": {
     "epoch": "2026-09-21",
     "arena": "2026-09-21",
     "openrouter": "2026-09-21"
   },
   "snapshotFetchedAt": {
-    "epoch": "2026-09-21T12:53:02.058Z",
+    "epoch": "2026-09-21T22:00:16.023Z",
     "arena": "2026-09-21T12:53:02.403Z",
-    "openrouter": "2026-09-21T12:53:01.886Z"
+    "openrouter": "2026-09-21T22:00:15.875Z"
   },
   "models": [
     {
@@ -277,80 +277,6 @@
           "ci": 6,
           "votes": 34677,
           "rank": 37
-        }
-      ],
-      "sources": [
-        "epoch",
-        "arena",
-        "openrouter"
-      ]
-    },
-    {
-      "slug": "claude-opus-4",
-      "name": "Claude Opus 4",
-      "vendor": "Anthropic",
-      "country": "United States of America",
-      "releaseDate": "2025-05-22",
-      "accessibility": null,
-      "eci": null,
-      "contextLength": 200000,
-      "inputPerM": 15,
-      "outputPerM": 75,
-      "modalities": [
-        "image",
-        "text",
-        "file"
-      ],
-      "supportsReasoning": true,
-      "benchmarks": [
-        {
-          "id": "gpqa_diamond",
-          "raw": 0.6919191919191919,
-          "stderr": 0.03289477330098615
-        },
-        {
-          "id": "frontiermath",
-          "raw": 0.04482758620689655,
-          "stderr": 0.012172075609474642
-        },
-        {
-          "id": "otis_mock_aime",
-          "raw": 0.4222222222222222,
-          "stderr": 0.07446027270295805
-        },
-        {
-          "id": "hle",
-          "raw": 0.1072,
-          "stderr": 0.0121
-        },
-        {
-          "id": "arc_agi_2",
-          "raw": 0.012700000000000001,
-          "stderr": null
-        },
-        {
-          "id": "swe_bench_verified",
-          "raw": 0.7066115702479339,
-          "stderr": 0.02071754535128056
-        },
-        {
-          "id": "aider_polyglot",
-          "raw": 72,
-          "stderr": null
-        },
-        {
-          "id": "metr_time_horizon",
-          "raw": 100.366123,
-          "stderr": null
-        }
-      ],
-      "arena": [
-        {
-          "board": "search",
-          "elo": 1126,
-          "ci": 5,
-          "votes": 31037,
-          "rank": 32
         }
       ],
       "sources": [
@@ -938,7 +864,7 @@
       "releaseDate": "2025-05-22",
       "accessibility": null,
       "eci": null,
-      "contextLength": 1000000,
+      "contextLength": 200000,
       "inputPerM": 3,
       "outputPerM": 15,
       "modalities": [
@@ -1486,7 +1412,7 @@
       "eci": null,
       "contextLength": 1310720,
       "inputPerM": 0.04,
-      "outputPerM": 0.16,
+      "outputPerM": 0.64,
       "modalities": [
         "text"
       ],
@@ -1543,8 +1469,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.953172,
-      "outputPerM": 1.906344,
+      "inputPerM": 0.895578,
+      "outputPerM": 1.791156,
       "modalities": [
         "text"
       ],
@@ -5298,8 +5224,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 1.7,
-      "outputPerM": 8.5,
+      "inputPerM": 3,
+      "outputPerM": 15,
       "modalities": [
         "text",
         "image",
@@ -5371,8 +5297,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 131072,
-      "inputPerM": 0.72,
-      "outputPerM": 0.72,
+      "inputPerM": 0.39999999999999997,
+      "outputPerM": 0.39999999999999997,
       "modalities": [
         "text"
       ],
@@ -6999,6 +6925,12 @@
       "source": "epoch",
       "raw": "claude-mythos-preview-early",
       "slug": "claude-mythos-preview-early",
+      "reason": "no public API pricing found on OpenRouter"
+    },
+    {
+      "source": "epoch+arena",
+      "raw": "claude-opus-4-search",
+      "slug": "claude-opus-4",
       "reason": "no public API pricing found on OpenRouter"
     },
     {
@@ -9231,9 +9163,9 @@
   "stats": {
     "epochModels": 335,
     "arenaModels": 63,
-    "openrouterModels": 339,
+    "openrouterModels": 342,
     "joined": 499,
-    "eligible": 106,
+    "eligible": 105,
     "arenaMatchRate": 0.9365079365079365,
     "arenaTopMatchRate": 1
   }

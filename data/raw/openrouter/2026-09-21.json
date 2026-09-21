@@ -1,7 +1,78 @@
 {
-  "fetchedAt": "2026-09-21T12:53:01.886Z",
+  "fetchedAt": "2026-09-21T22:00:15.875Z",
   "source": "https://openrouter.ai/api/v1/models",
   "models": [
+    {
+      "id": "xiaomi/mimo-v2.6-pro-ultraspeed",
+      "name": "Xiaomi: MiMo-V2.6-Pro-UltraSpeed",
+      "created": 1790021267,
+      "contextLength": 1048576,
+      "inputPerM": 4.35,
+      "outputPerM": 8.7,
+      "inputModalities": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "xiaomi/mimo-v2.6-flash",
+      "name": "Xiaomi: MiMo-V2.6-Flash",
+      "created": 1790021264,
+      "contextLength": 1048576,
+      "inputPerM": 0.14,
+      "outputPerM": 0.28,
+      "inputModalities": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "xiaomi/mimo-v2.6-pro",
+      "name": "Xiaomi: MiMo-V2.6-Pro",
+      "created": 1790021259,
+      "contextLength": 1048576,
+      "inputPerM": 0.435,
+      "outputPerM": 0.87,
+      "inputModalities": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "x-ai/grok-4.7",
+      "name": "SpaceXAI: Grok 4.7",
+      "created": 1790007541,
+      "contextLength": 500000,
+      "inputPerM": 1.5999999999999999,
+      "outputPerM": 4.8,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
     {
       "id": "prism-ml/ternary-bonsai-2-27b",
       "name": "PrismML: Ternary Bonsai 2 27B",
@@ -56,8 +127,8 @@
       "name": "DeepSeek: DeepSeek Pro Latest",
       "created": 1789399174,
       "contextLength": 1048576,
-      "inputPerM": 0.65736,
-      "outputPerM": 1.97208,
+      "inputPerM": 0.5412,
+      "outputPerM": 1.6236,
       "inputModalities": [
         "text"
       ],
@@ -526,8 +597,8 @@
       "name": "IBM: Granite 4.2 8B",
       "created": 1788206780,
       "contextLength": 131072,
-      "inputPerM": 0.09999999999999999,
-      "outputPerM": 0.15,
+      "inputPerM": 0.06,
+      "outputPerM": 0.25,
       "inputModalities": [
         "text"
       ],
@@ -620,8 +691,8 @@
       "name": "Z.ai: GLM 5.3 Flash",
       "created": 1787752741,
       "contextLength": 1310720,
-      "inputPerM": 0.09,
-      "outputPerM": 0.3,
+      "inputPerM": 0.075,
+      "outputPerM": 0.25,
       "inputModalities": [
         "text",
         "image",
@@ -735,8 +806,8 @@
       "name": "Z.ai: GLM Latest",
       "created": 1787151053,
       "contextLength": 1310720,
-      "inputPerM": 0.7735,
-      "outputPerM": 2.431,
+      "inputPerM": 0.7728,
+      "outputPerM": 2.4288,
       "inputModalities": [
         "text"
       ],
@@ -795,8 +866,8 @@
       "name": "Qwen: Qwen3.8 27B",
       "created": 1786722910,
       "contextLength": 1000000,
-      "inputPerM": 0.19999999999999998,
-      "outputPerM": 2.5,
+      "inputPerM": 0.42,
+      "outputPerM": 3,
       "inputModalities": [
         "text",
         "image",
@@ -900,21 +971,6 @@
       "name": "Qwen: Qwen3.8 2.4T A95B",
       "created": 1786551702,
       "contextLength": 1048576,
-      "inputPerM": 2,
-      "outputPerM": 6,
-      "inputModalities": [
-        "text"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": true
-    },
-    {
-      "id": "qwen/qwen3.8-2.4t-a95b:batch",
-      "name": "Qwen: Qwen3.8 2.4T A95B (batch)",
-      "created": 1786551702,
-      "contextLength": 1010000,
       "inputPerM": 2,
       "outputPerM": 6,
       "inputModalities": [
@@ -1123,7 +1179,7 @@
       "created": 1785606009,
       "contextLength": 1310720,
       "inputPerM": 0.04,
-      "outputPerM": 0.16,
+      "outputPerM": 0.39999999999999997,
       "inputModalities": [
         "text"
       ],
@@ -1138,7 +1194,7 @@
       "created": 1785478908,
       "contextLength": 1310720,
       "inputPerM": 0.04,
-      "outputPerM": 0.16,
+      "outputPerM": 0.64,
       "inputModalities": [
         "text"
       ],
@@ -1401,23 +1457,6 @@
       "supportsReasoning": true
     },
     {
-      "id": "thinkingmachines/inkling:batch",
-      "name": "Thinking Machines: Inkling (batch)",
-      "created": 1784325956,
-      "contextLength": 524288,
-      "inputPerM": 1,
-      "outputPerM": 4.05,
-      "inputModalities": [
-        "text",
-        "image",
-        "audio"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": true
-    },
-    {
       "id": "thinkingmachines/inkling:free",
       "name": "Thinking Machines: Inkling (free)",
       "created": 1784325956,
@@ -1457,23 +1496,6 @@
     {
       "id": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
-      "created": 1784215858,
-      "contextLength": 1048576,
-      "inputPerM": 1.7,
-      "outputPerM": 8.5,
-      "inputModalities": [
-        "text",
-        "image",
-        "video"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": true
-    },
-    {
-      "id": "moonshotai/kimi-k3:batch",
-      "name": "MoonshotAI: Kimi K3 (batch)",
       "created": 1784215858,
       "contextLength": 1048576,
       "inputPerM": 3,
@@ -1748,8 +1770,8 @@
       "name": "xAI: Grok Latest",
       "created": 1783519360,
       "contextLength": 500000,
-      "inputPerM": 2,
-      "outputPerM": 6,
+      "inputPerM": 1.5999999999999999,
+      "outputPerM": 4.8,
       "inputModalities": [
         "text",
         "image",
@@ -1795,8 +1817,8 @@
       "name": "Tencent: Hy3",
       "created": 1783344048,
       "contextLength": 262144,
-      "inputPerM": 0.13199999999999998,
-      "outputPerM": 0.5279999999999999,
+      "inputPerM": 0.0825,
+      "outputPerM": 0.33,
       "inputModalities": [
         "text"
       ],
@@ -2174,23 +2196,6 @@
       "supportsReasoning": true
     },
     {
-      "id": "minimax/minimax-m3:batch",
-      "name": "MiniMax: MiniMax M3 (batch)",
-      "created": 1780245374,
-      "contextLength": 524288,
-      "inputPerM": 0.3,
-      "outputPerM": 1.2,
-      "inputModalities": [
-        "text",
-        "image",
-        "video"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": true
-    },
-    {
       "id": "stepfun/step-3.7-flash",
       "name": "StepFun: Step 3.7 Flash",
       "created": 1779985069,
@@ -2527,8 +2532,8 @@
       "name": "MoonshotAI: Kimi Latest",
       "created": 1777318428,
       "contextLength": 1048576,
-      "inputPerM": 1.7,
-      "outputPerM": 8.5,
+      "inputPerM": 1.5,
+      "outputPerM": 7.5,
       "inputModalities": [
         "text",
         "image",
@@ -2731,8 +2736,8 @@
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "created": 1777000679,
       "contextLength": 1048576,
-      "inputPerM": 0.953172,
-      "outputPerM": 1.906344,
+      "inputPerM": 0.895578,
+      "outputPerM": 1.791156,
       "inputModalities": [
         "text"
       ],
@@ -2746,8 +2751,8 @@
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "created": 1777000666,
       "contextLength": 1048576,
-      "inputPerM": 0.058519999999999996,
-      "outputPerM": 0.11703999999999999,
+      "inputPerM": 0.055439999999999996,
+      "outputPerM": 0.11087999999999999,
       "inputModalities": [
         "text"
       ],
@@ -3320,23 +3325,6 @@
       "contextLength": 262144,
       "inputPerM": 0.09999999999999999,
       "outputPerM": 0.15,
-      "inputModalities": [
-        "text",
-        "image",
-        "video"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": true
-    },
-    {
-      "id": "qwen/qwen3.5-9b:batch",
-      "name": "Qwen: Qwen3.5-9B (batch)",
-      "created": 1773152396,
-      "contextLength": 262144,
-      "inputPerM": 0.16999999999999998,
-      "outputPerM": 0.25,
       "inputModalities": [
         "text",
         "image",
@@ -4066,8 +4054,8 @@
       "name": "NVIDIA: Nemotron 3 Nano 30B A3B",
       "created": 1765731275,
       "contextLength": 262144,
-      "inputPerM": 0.06,
-      "outputPerM": 0.24,
+      "inputPerM": 0.049999999999999996,
+      "outputPerM": 0.19999999999999998,
       "inputModalities": [
         "text"
       ],
@@ -5240,21 +5228,6 @@
       "supportsReasoning": true
     },
     {
-      "id": "openai/gpt-oss-120b:batch",
-      "name": "OpenAI: gpt-oss-120b (batch)",
-      "created": 1754414231,
-      "contextLength": 131072,
-      "inputPerM": 0.15,
-      "outputPerM": 0.6,
-      "inputModalities": [
-        "text"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": true
-    },
-    {
       "id": "openai/gpt-oss-20b",
       "name": "OpenAI: gpt-oss-20b",
       "created": 1754414229,
@@ -5743,27 +5716,10 @@
       "supportsReasoning": true
     },
     {
-      "id": "anthropic/claude-opus-4",
-      "name": "Anthropic: Claude Opus 4",
-      "created": 1747931245,
-      "contextLength": 200000,
-      "inputPerM": 15,
-      "outputPerM": 75,
-      "inputModalities": [
-        "image",
-        "text",
-        "file"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": true
-    },
-    {
       "id": "anthropic/claude-sonnet-4",
       "name": "Anthropic: Claude Sonnet 4",
       "created": 1747930371,
-      "contextLength": 1000000,
+      "contextLength": 200000,
       "inputPerM": 3,
       "outputPerM": 15,
       "inputModalities": [
@@ -6867,8 +6823,8 @@
       "name": "Meta: Llama 3.1 70B Instruct",
       "created": 1721692800,
       "contextLength": 131072,
-      "inputPerM": 0.72,
-      "outputPerM": 0.72,
+      "inputPerM": 0.39999999999999997,
+      "outputPerM": 0.39999999999999997,
       "inputModalities": [
         "text"
       ],
