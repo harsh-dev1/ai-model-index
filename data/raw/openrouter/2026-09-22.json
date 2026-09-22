@@ -1,7 +1,41 @@
 {
-  "fetchedAt": "2026-09-22T11:42:47.660Z",
+  "fetchedAt": "2026-09-22T16:59:27.543Z",
   "source": "https://openrouter.ai/api/v1/models",
   "models": [
+    {
+      "id": "anthropic/claude-opus-5.5",
+      "name": "Anthropic: Claude Opus 5.5",
+      "created": 1790094732,
+      "contextLength": 1000000,
+      "inputPerM": 4,
+      "outputPerM": 20,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "anthropic/claude-opus-5.5:batch",
+      "name": "Anthropic: Claude Opus 5.5 (batch)",
+      "created": 1790094732,
+      "contextLength": 1000000,
+      "inputPerM": 2,
+      "outputPerM": 10,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
     {
       "id": "xiaomi/mimo-v2.6-pro-ultraspeed",
       "name": "Xiaomi: MiMo-V2.6-Pro-UltraSpeed",
@@ -127,8 +161,8 @@
       "name": "DeepSeek: DeepSeek Pro Latest",
       "created": 1789399174,
       "contextLength": 1048576,
-      "inputPerM": 0.624,
-      "outputPerM": 2.88,
+      "inputPerM": 0.55968,
+      "outputPerM": 1.67904,
       "inputModalities": [
         "text"
       ],
@@ -326,6 +360,22 @@
       "contextLength": 1048576,
       "inputPerM": 0.15,
       "outputPerM": 0.6,
+      "inputModalities": [
+        "text",
+        "image"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "deepseek/deepseek-v4.1-flash:batch",
+      "name": "DeepSeek: DeepSeek V4.1 Flash (batch)",
+      "created": 1789021285,
+      "contextLength": 1048576,
+      "inputPerM": 0.112,
+      "outputPerM": 0.33599999999999997,
       "inputModalities": [
         "text",
         "image"
@@ -740,8 +790,8 @@
       "name": "Z.ai: GLM 5.3 Flash (batch)",
       "created": 1787752741,
       "contextLength": 1048576,
-      "inputPerM": 0.075,
-      "outputPerM": 0.25,
+      "inputPerM": 0.06,
+      "outputPerM": 0.19999999999999998,
       "inputModalities": [
         "text",
         "image",
@@ -788,22 +838,6 @@
       "supportsReasoning": true
     },
     {
-      "id": "deepseek/deepseek-v4-flash-vision-exp:batch",
-      "name": "DeepSeek: DeepSeek V4 Flash Vision Exp (batch)",
-      "created": 1787311563,
-      "contextLength": 1048576,
-      "inputPerM": 0.11,
-      "outputPerM": 0.33,
-      "inputModalities": [
-        "text",
-        "image"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": true
-    },
-    {
       "id": "tencent/hy-mt2-1.8b",
       "name": "Tencent: Hy-MT2-1.8B",
       "created": 1787231581,
@@ -838,8 +872,8 @@
       "name": "Z.ai: GLM Latest",
       "created": 1787151053,
       "contextLength": 1310720,
-      "inputPerM": 0.6545000000000001,
-      "outputPerM": 2.057,
+      "inputPerM": 0.6537999999999999,
+      "outputPerM": 2.0547999999999997,
       "inputModalities": [
         "text"
       ],
@@ -868,8 +902,8 @@
       "name": "Z.ai: GLM 5.3",
       "created": 1787086655,
       "contextLength": 1310720,
-      "inputPerM": 0.84,
-      "outputPerM": 2.64,
+      "inputPerM": 0.6537999999999999,
+      "outputPerM": 2.0547999999999997,
       "inputModalities": [
         "text"
       ],
@@ -883,8 +917,8 @@
       "name": "Z.ai: GLM 5.3 (batch)",
       "created": 1787086655,
       "contextLength": 1048576,
-      "inputPerM": 0.7,
-      "outputPerM": 2.2,
+      "inputPerM": 0.72,
+      "outputPerM": 2.4,
       "inputModalities": [
         "text"
       ],
@@ -1046,21 +1080,6 @@
       "supportsReasoning": true
     },
     {
-      "id": "deepseek/deepseek-v4-pro-0813:batch",
-      "name": "DeepSeek: DeepSeek V4 Pro 0813 (batch)",
-      "created": 1786549364,
-      "contextLength": 1048576,
-      "inputPerM": 0.66,
-      "outputPerM": 1.9800000000000002,
-      "inputModalities": [
-        "text"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": true
-    },
-    {
       "id": "x-ai/grok-4.6",
       "name": "SpaceXAI: Grok 4.6",
       "created": 1786548957,
@@ -1171,22 +1190,6 @@
       "supportsReasoning": true
     },
     {
-      "id": "meta/muse-glimmer-30b:batch",
-      "name": "Meta: Muse Glimmer 30B (batch)",
-      "created": 1786302394,
-      "contextLength": 131072,
-      "inputPerM": 0.175,
-      "outputPerM": 0.75,
-      "inputModalities": [
-        "text",
-        "image"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": true
-    },
-    {
       "id": "meta/muse-spark-1.2",
       "name": "Meta: Muse Spark 1.2",
       "created": 1785959287,
@@ -1227,21 +1230,6 @@
       "contextLength": 1310720,
       "inputPerM": 0.04,
       "outputPerM": 0.64,
-      "inputModalities": [
-        "text"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": true
-    },
-    {
-      "id": "deepseek/deepseek-v4-flash-0731:batch",
-      "name": "DeepSeek: DeepSeek V4 Flash 0731 (batch)",
-      "created": 1785478908,
-      "contextLength": 1048576,
-      "inputPerM": 0.11,
-      "outputPerM": 0.33,
       "inputModalities": [
         "text"
       ],
@@ -1543,6 +1531,23 @@
       "supportsReasoning": true
     },
     {
+      "id": "moonshotai/kimi-k3:batch",
+      "name": "MoonshotAI: Kimi K3 (batch)",
+      "created": 1784215858,
+      "contextLength": 1048576,
+      "inputPerM": 2.2800000000000002,
+      "outputPerM": 11.399999999999999,
+      "inputModalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "meta/muse-spark-1.1",
       "name": "Meta: Muse Spark 1.1",
       "created": 1784215741,
@@ -1818,7 +1823,7 @@
       "id": "aion-labs/aion-3.0-mini",
       "name": "AionLabs: Aion-3.0-Mini",
       "created": 1783443096,
-      "contextLength": 131072,
+      "contextLength": 1048576,
       "inputPerM": 0.7,
       "outputPerM": 1.4,
       "inputModalities": [
@@ -1833,7 +1838,7 @@
       "id": "aion-labs/aion-3.0",
       "name": "AionLabs: Aion-3.0",
       "created": 1783443095,
-      "contextLength": 131072,
+      "contextLength": 1048576,
       "inputPerM": 3,
       "outputPerM": 6,
       "inputModalities": [
@@ -1849,8 +1854,8 @@
       "name": "Tencent: Hy3",
       "created": 1783344048,
       "contextLength": 262144,
-      "inputPerM": 0.13199999999999998,
-      "outputPerM": 0.5279999999999999,
+      "inputPerM": 0.0825,
+      "outputPerM": 0.33,
       "inputModalities": [
         "text"
       ],
@@ -2012,21 +2017,6 @@
       "contextLength": 1048576,
       "inputPerM": 0.6496,
       "outputPerM": 2.0416,
-      "inputModalities": [
-        "text"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": true
-    },
-    {
-      "id": "z-ai/glm-5.2:batch",
-      "name": "Z.ai: GLM 5.2 (batch)",
-      "created": 1781631930,
-      "contextLength": 1048576,
-      "inputPerM": 0.7,
-      "outputPerM": 2.2,
       "inputModalities": [
         "text"
       ],
@@ -2683,8 +2673,8 @@
       "name": "Qwen: Qwen3.6 27B",
       "created": 1777255064,
       "contextLength": 262144,
-      "inputPerM": 0.3,
-      "outputPerM": 2,
+      "inputPerM": 0.32,
+      "outputPerM": 2.7,
       "inputModalities": [
         "text",
         "image",
@@ -2768,8 +2758,8 @@
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "created": 1777000679,
       "contextLength": 1048576,
-      "inputPerM": 0.9552599999999999,
-      "outputPerM": 1.9105199999999998,
+      "inputPerM": 0.922722,
+      "outputPerM": 1.845444,
       "inputModalities": [
         "text"
       ],
@@ -2783,8 +2773,8 @@
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "created": 1777000666,
       "contextLength": 1048576,
-      "inputPerM": 0.088606,
-      "outputPerM": 0.177212,
+      "inputPerM": 0.049,
+      "outputPerM": 0.098,
       "inputModalities": [
         "text"
       ],
@@ -2864,8 +2854,8 @@
       "name": "Anthropic: Claude Opus Latest",
       "created": 1776795361,
       "contextLength": 1000000,
-      "inputPerM": 5,
-      "outputPerM": 25,
+      "inputPerM": 4,
+      "outputPerM": 20,
       "inputModalities": [
         "text",
         "image",
@@ -3596,7 +3586,7 @@
       "id": "aion-labs/aion-2.0",
       "name": "AionLabs: Aion-2.0",
       "created": 1771881306,
-      "contextLength": 131072,
+      "contextLength": 1048576,
       "inputPerM": 0.7999999999999999,
       "outputPerM": 1.5999999999999999,
       "inputModalities": [
@@ -5249,8 +5239,23 @@
       "name": "OpenAI: gpt-oss-20b",
       "created": 1754414229,
       "contextLength": 131072,
-      "inputPerM": 0.03,
-      "outputPerM": 0.13,
+      "inputPerM": 0.018,
+      "outputPerM": 0.09,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/gpt-oss-20b:batch",
+      "name": "OpenAI: gpt-oss-20b (batch)",
+      "created": 1754414229,
+      "contextLength": 131072,
+      "inputPerM": 0.024,
+      "outputPerM": 0.112,
       "inputModalities": [
         "text"
       ],
