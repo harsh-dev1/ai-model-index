@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-24T17:14:15.580Z",
+  "fetchedAt": "2026-09-24T21:33:00.179Z",
   "source": "https://openrouter.ai/api/v1/models",
   "models": [
     {
@@ -1004,8 +1004,8 @@
       "name": "Z.ai: GLM 5.3 Flash",
       "created": 1787752741,
       "contextLength": 1310720,
-      "inputPerM": 0.15,
-      "outputPerM": 0.5,
+      "inputPerM": 0.045,
+      "outputPerM": 0.6,
       "inputModalities": [
         "text",
         "image",
@@ -2989,8 +2989,8 @@
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "created": 1777000679,
       "contextLength": 1048576,
-      "inputPerM": 0.900798,
-      "outputPerM": 1.801596,
+      "inputPerM": 0.8635619999999999,
+      "outputPerM": 1.7271239999999999,
       "inputModalities": [
         "text"
       ],
@@ -3004,8 +3004,8 @@
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "created": 1777000666,
       "contextLength": 1048576,
-      "inputPerM": 0.08092,
-      "outputPerM": 0.16184,
+      "inputPerM": 0.06552,
+      "outputPerM": 0.13104,
       "inputModalities": [
         "text"
       ],
@@ -4388,6 +4388,22 @@
       "supportsReasoning": true
     },
     {
+      "id": "mistralai/devstral-2512",
+      "name": "Mistral: Devstral 2 2512",
+      "created": 1765285419,
+      "contextLength": 262144,
+      "inputPerM": 0.39999999999999997,
+      "outputPerM": 2,
+      "inputModalities": [
+        "text",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": false
+    },
+    {
       "id": "relace/relace-search",
       "name": "Relace: Relace Search",
       "created": 1765213560,
@@ -4526,6 +4542,23 @@
       "inputModalities": [
         "text",
         "image"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": false
+    },
+    {
+      "id": "mistralai/mistral-large-2512",
+      "name": "Mistral: Mistral Large 3 2512",
+      "created": 1764624472,
+      "contextLength": 262144,
+      "inputPerM": 0.5,
+      "outputPerM": 1.5,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
       ],
       "outputModalities": [
         "text"
