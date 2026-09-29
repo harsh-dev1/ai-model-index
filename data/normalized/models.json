@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-09-28T23:18:35.804Z",
+  "generatedAt": "2026-09-29T05:47:06.583Z",
   "snapshotDates": {
-    "epoch": "2026-09-28",
-    "arena": "2026-09-28",
-    "openrouter": "2026-09-28"
+    "epoch": "2026-09-29",
+    "arena": "2026-09-29",
+    "openrouter": "2026-09-29"
   },
   "snapshotFetchedAt": {
-    "epoch": "2026-09-28T23:18:35.804Z",
-    "arena": "2026-09-28T05:27:55.503Z",
-    "openrouter": "2026-09-28T23:18:35.604Z"
+    "epoch": "2026-09-29T05:47:06.350Z",
+    "arena": "2026-09-29T05:47:06.583Z",
+    "openrouter": "2026-09-29T05:47:06.369Z"
   },
   "models": [
     {
@@ -81,6 +81,10 @@
           "rank": 14
         },
         {
+          "board": "agent",
+          "rank": 7
+        },
+        {
           "board": "vision",
           "elo": 1310,
           "ci": 8,
@@ -88,7 +92,10 @@
           "rank": 1
         },
         {
-          "board": "agent",
+          "board": "search",
+          "elo": 1230,
+          "ci": 8,
+          "votes": 41795,
           "rank": 5
         },
         {
@@ -96,13 +103,6 @@
           "elo": 1496,
           "ci": 8,
           "votes": 8497,
-          "rank": 5
-        },
-        {
-          "board": "search",
-          "elo": 1230,
-          "ci": 8,
-          "votes": 41795,
           "rank": 5
         }
       ],
@@ -182,15 +182,15 @@
           "rank": 3
         },
         {
+          "board": "agent",
+          "rank": 1
+        },
+        {
           "board": "vision",
           "elo": 1289,
           "ci": 12,
           "votes": 2701,
           "rank": 11
-        },
-        {
-          "board": "agent",
-          "rank": 1
         },
         {
           "board": "document",
@@ -435,18 +435,18 @@
       ],
       "arena": [
         {
-          "board": "document",
-          "elo": 1462,
-          "ci": 10,
-          "votes": 7981,
-          "rank": 21
-        },
-        {
           "board": "search",
           "elo": 1180,
           "ci": 6,
           "votes": 61573,
           "rank": 19
+        },
+        {
+          "board": "document",
+          "elo": 1462,
+          "ci": 10,
+          "votes": 7981,
+          "rank": 21
         }
       ],
       "sources": [
@@ -540,18 +540,18 @@
           "rank": 5
         },
         {
-          "board": "document",
-          "elo": 1507,
-          "ci": 6,
-          "votes": 27929,
-          "rank": 3
-        },
-        {
           "board": "search",
           "elo": 1253,
           "ci": 5,
           "votes": 134699,
           "rank": 2
+        },
+        {
+          "board": "document",
+          "elo": 1507,
+          "ci": 6,
+          "votes": 27929,
+          "rank": 3
         }
       ],
       "sources": [
@@ -657,18 +657,18 @@
           "rank": 3
         },
         {
-          "board": "document",
-          "elo": 1495,
-          "ci": 6,
-          "votes": 22192,
-          "rank": 6
-        },
-        {
           "board": "search",
           "elo": 1233,
           "ci": 5,
           "votes": 91394,
           "rank": 4
+        },
+        {
+          "board": "document",
+          "elo": 1495,
+          "ci": 6,
+          "votes": 22192,
+          "rank": 6
         }
       ],
       "sources": [
@@ -745,6 +745,10 @@
           "rank": 22
         },
         {
+          "board": "agent",
+          "rank": 8
+        },
+        {
           "board": "vision",
           "elo": 1283,
           "ci": 7,
@@ -752,21 +756,17 @@
           "rank": 18
         },
         {
-          "board": "agent",
-          "rank": 7
+          "board": "search",
+          "elo": 1204,
+          "ci": 6,
+          "votes": 70998,
+          "rank": 12
         },
         {
           "board": "document",
           "elo": 1475,
           "ci": 7,
           "votes": 11551,
-          "rank": 12
-        },
-        {
-          "board": "search",
-          "elo": 1204,
-          "ci": 6,
-          "votes": 70998,
           "rank": 12
         }
       ],
@@ -846,15 +846,15 @@
           "rank": 4
         },
         {
+          "board": "agent",
+          "rank": 4
+        },
+        {
           "board": "vision",
           "elo": 1289,
           "ci": 8,
           "votes": 11599,
           "rank": 10
-        },
-        {
-          "board": "agent",
-          "rank": 3
         },
         {
           "board": "document",
@@ -874,8 +874,8 @@
       "slug": "claude-opus-5-5",
       "name": "Claude Opus 5.5",
       "vendor": "Anthropic",
-      "country": null,
-      "releaseDate": null,
+      "country": "United States of America",
+      "releaseDate": "2026-09-22",
       "accessibility": null,
       "eci": null,
       "contextLength": 1000000,
@@ -887,7 +887,18 @@
         "file"
       ],
       "supportsReasoning": true,
-      "benchmarks": [],
+      "benchmarks": [
+        {
+          "id": "arc_agi_2",
+          "raw": 0.9166666666666666,
+          "stderr": null
+        },
+        {
+          "id": "scicode",
+          "raw": 0.668981481481482,
+          "stderr": null
+        }
+      ],
       "arena": [
         {
           "board": "text",
@@ -902,9 +913,14 @@
           "ci": 18,
           "votes": 1607,
           "rank": 1
+        },
+        {
+          "board": "agent",
+          "rank": 2
         }
       ],
       "sources": [
+        "epoch",
         "arena",
         "openrouter"
       ]
@@ -1065,18 +1081,18 @@
       ],
       "arena": [
         {
-          "board": "document",
-          "elo": 1450,
-          "ci": 6,
-          "votes": 31455,
-          "rank": 28
-        },
-        {
           "board": "search",
           "elo": 1158,
           "ci": 5,
           "votes": 127378,
           "rank": 24
+        },
+        {
+          "board": "document",
+          "elo": 1450,
+          "ci": 6,
+          "votes": 31455,
+          "rank": 28
         }
       ],
       "sources": [
@@ -1156,18 +1172,18 @@
       ],
       "arena": [
         {
-          "board": "document",
-          "elo": 1482,
-          "ci": 6,
-          "votes": 57813,
-          "rank": 11
-        },
-        {
           "board": "search",
           "elo": 1221,
           "ci": 5,
           "votes": 134905,
           "rank": 7
+        },
+        {
+          "board": "document",
+          "elo": 1482,
+          "ci": 6,
+          "votes": 57813,
+          "rank": 11
         }
       ],
       "sources": [
@@ -1228,20 +1244,20 @@
       "arena": [
         {
           "board": "agent",
-          "rank": 9
-        },
-        {
-          "board": "document",
-          "elo": 1466,
-          "ci": 8,
-          "votes": 7411,
-          "rank": 17
+          "rank": 10
         },
         {
           "board": "search",
           "elo": 1194,
           "ci": 7,
           "votes": 40230,
+          "rank": 17
+        },
+        {
+          "board": "document",
+          "elo": 1466,
+          "ci": 8,
+          "votes": 7411,
           "rank": 17
         }
       ],
@@ -1404,8 +1420,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 163840,
-      "inputPerM": 0.13440000000000002,
-      "outputPerM": 0.2016,
+      "inputPerM": 0.27,
+      "outputPerM": 0.41,
       "modalities": [
         "text"
       ],
@@ -1512,7 +1528,7 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1310720,
-      "inputPerM": 0.020999999999999998,
+      "inputPerM": 0.018,
       "outputPerM": 0.32,
       "modalities": [
         "text"
@@ -1570,8 +1586,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.7829999999999999,
-      "outputPerM": 1.5659999999999998,
+      "inputPerM": 0.9552599999999999,
+      "outputPerM": 1.9105199999999998,
       "modalities": [
         "text"
       ],
@@ -1637,7 +1653,7 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.39149999999999996,
+      "inputPerM": 0.39999999999999997,
       "outputPerM": 4.199999999999999,
       "modalities": [
         "text"
@@ -1796,18 +1812,18 @@
       ],
       "arena": [
         {
-          "board": "document",
-          "elo": 1421,
-          "ci": 6,
-          "votes": 25110,
-          "rank": 36
-        },
-        {
           "board": "search",
           "elo": 1142,
           "ci": 5,
           "votes": 83404,
           "rank": 27
+        },
+        {
+          "board": "document",
+          "elo": 1421,
+          "ci": 6,
+          "votes": 25110,
+          "rank": 36
         }
       ],
       "sources": [
@@ -1963,18 +1979,18 @@
           "rank": 17
         },
         {
-          "board": "document",
-          "elo": 1444,
-          "ci": 5,
-          "votes": 49457,
-          "rank": 31
-        },
-        {
           "board": "search",
           "elo": 1210,
           "ci": 5,
           "votes": 113282,
           "rank": 9
+        },
+        {
+          "board": "document",
+          "elo": 1444,
+          "ci": 5,
+          "votes": 49457,
+          "rank": 31
         }
       ],
       "sources": [
@@ -2437,18 +2453,18 @@
       ],
       "arena": [
         {
-          "board": "document",
-          "elo": 1413,
-          "ci": 9,
-          "votes": 7158,
-          "rank": 40
-        },
-        {
           "board": "search",
           "elo": 1198,
           "ci": 5,
           "votes": 149334,
           "rank": 15
+        },
+        {
+          "board": "document",
+          "elo": 1413,
+          "ci": 9,
+          "votes": 7158,
+          "rank": 40
         }
       ],
       "sources": [
@@ -2778,8 +2794,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 204800,
-      "inputPerM": 0.9646,
-      "outputPerM": 3.0316,
+      "inputPerM": 1.4,
+      "outputPerM": 4.4,
       "modalities": [
         "text"
       ],
@@ -2841,8 +2857,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.6496,
-      "outputPerM": 2.0416,
+      "inputPerM": 0.3249,
+      "outputPerM": 4.4,
       "modalities": [
         "text"
       ],
@@ -3570,18 +3586,18 @@
       ],
       "arena": [
         {
-          "board": "document",
-          "elo": 1403,
-          "ci": 9,
-          "votes": 8244,
-          "rank": 42
-        },
-        {
           "board": "search",
           "elo": 1199,
           "ci": 5,
           "votes": 59909,
           "rank": 14
+        },
+        {
+          "board": "document",
+          "elo": 1403,
+          "ci": 9,
+          "votes": 8244,
+          "rank": 42
         }
       ],
       "sources": [
@@ -3710,18 +3726,18 @@
       ],
       "arena": [
         {
-          "board": "document",
-          "elo": 1405,
-          "ci": 10,
-          "votes": 7108,
-          "rank": 41
-        },
-        {
           "board": "search",
           "elo": 1207,
           "ci": 6,
           "votes": 52712,
           "rank": 11
+        },
+        {
+          "board": "document",
+          "elo": 1405,
+          "ci": 10,
+          "votes": 7108,
+          "rank": 41
         }
       ],
       "sources": [
@@ -3939,18 +3955,18 @@
           "rank": 15
         },
         {
-          "board": "document",
-          "elo": 1471,
-          "ci": 6,
-          "votes": 33331,
-          "rank": 14
-        },
-        {
           "board": "search",
           "elo": 1197,
           "ci": 5,
           "votes": 110116,
           "rank": 16
+        },
+        {
+          "board": "document",
+          "elo": 1471,
+          "ci": 6,
+          "votes": 33331,
+          "rank": 14
         }
       ],
       "sources": [
@@ -4169,18 +4185,18 @@
           "rank": 13
         },
         {
-          "board": "document",
-          "elo": 1486,
-          "ci": 6,
-          "votes": 21279,
-          "rank": 8
-        },
-        {
           "board": "search",
           "elo": 1242,
           "ci": 5,
           "votes": 89873,
           "rank": 3
+        },
+        {
+          "board": "document",
+          "elo": 1486,
+          "ci": 6,
+          "votes": 21279,
+          "rank": 8
         }
       ],
       "sources": [
@@ -4328,6 +4344,10 @@
           "rank": 20
         },
         {
+          "board": "agent",
+          "rank": 9
+        },
+        {
           "board": "vision",
           "elo": 1286,
           "ci": 8,
@@ -4335,8 +4355,11 @@
           "rank": 14
         },
         {
-          "board": "agent",
-          "rank": 8
+          "board": "search",
+          "elo": 1257,
+          "ci": 7,
+          "votes": 29663,
+          "rank": 1
         },
         {
           "board": "document",
@@ -4344,13 +4367,6 @@
           "ci": 9,
           "votes": 4818,
           "rank": 10
-        },
-        {
-          "board": "search",
-          "elo": 1257,
-          "ci": 7,
-          "votes": 29663,
-          "rank": 1
         }
       ],
       "sources": [
@@ -4638,6 +4654,10 @@
           "rank": 2
         },
         {
+          "board": "agent",
+          "rank": 3
+        },
+        {
           "board": "vision",
           "elo": 1284,
           "ci": 17,
@@ -4645,15 +4665,64 @@
           "rank": 16
         },
         {
-          "board": "agent",
-          "rank": 2
-        },
-        {
           "board": "document",
           "elo": 1468,
           "ci": 14,
           "votes": 1621,
           "rank": 16
+        }
+      ],
+      "sources": [
+        "epoch",
+        "arena",
+        "openrouter"
+      ]
+    },
+    {
+      "slug": "gpt-6-sol",
+      "name": "GPT-6 Sol",
+      "vendor": "OpenAI",
+      "country": "United States of America",
+      "releaseDate": "2026-09-22",
+      "accessibility": null,
+      "eci": null,
+      "contextLength": 1050000,
+      "inputPerM": 1,
+      "outputPerM": 5,
+      "modalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "supportsReasoning": true,
+      "benchmarks": [
+        {
+          "id": "arc_agi_2",
+          "raw": 0.8958333333333335,
+          "stderr": null
+        },
+        {
+          "id": "scicode",
+          "raw": 0.576388888888889,
+          "stderr": null
+        },
+        {
+          "id": "ale_bench",
+          "raw": 2462,
+          "stderr": null
+        }
+      ],
+      "arena": [
+        {
+          "board": "code",
+          "elo": 1681,
+          "ci": 15,
+          "votes": 2019,
+          "rank": 5
+        },
+        {
+          "board": "agent",
+          "rank": 6
         }
       ],
       "sources": [
@@ -4809,18 +4878,18 @@
       ],
       "arena": [
         {
-          "board": "document",
-          "elo": 1416,
-          "ci": 7,
-          "votes": 20948,
-          "rank": 38
-        },
-        {
           "board": "search",
           "elo": 1204,
           "ci": 5,
           "votes": 109553,
           "rank": 13
+        },
+        {
+          "board": "document",
+          "elo": 1416,
+          "ci": 7,
+          "votes": 20948,
+          "rank": 38
         }
       ],
       "sources": [
@@ -4949,18 +5018,18 @@
       ],
       "arena": [
         {
-          "board": "document",
-          "elo": 1452,
-          "ci": 9,
-          "votes": 4965,
-          "rank": 26
-        },
-        {
           "board": "search",
           "elo": 1213,
           "ci": 7,
           "votes": 31505,
           "rank": 8
+        },
+        {
+          "board": "document",
+          "elo": 1452,
+          "ci": 9,
+          "votes": 4965,
+          "rank": 26
         }
       ],
       "sources": [
@@ -5476,10 +5545,6 @@
           "ci": 7,
           "votes": 14739,
           "rank": 9
-        },
-        {
-          "board": "agent",
-          "rank": 10
         }
       ],
       "sources": [
@@ -5732,8 +5797,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 204800,
-      "inputPerM": 0.3,
-      "outputPerM": 1.2,
+      "inputPerM": 0.21,
+      "outputPerM": 0.84,
       "modalities": [
         "text"
       ],
@@ -7788,7 +7853,7 @@
     },
     {
       "source": "epoch+arena",
-      "raw": "gemini-3-pro-grounding",
+      "raw": "gemini-3-pro",
       "slug": "gemini-3-pro",
       "reason": "no public API pricing found on OpenRouter"
     },
@@ -7973,16 +8038,10 @@
       "reason": "too few results to rank (2 benchmarks, no Arena votes)"
     },
     {
-      "source": "arena+openrouter",
+      "source": "epoch+arena+openrouter",
       "raw": "gpt-6-luna",
       "slug": "gpt-6-luna",
-      "reason": "too few results to rank (0 benchmarks, no Arena votes)"
-    },
-    {
-      "source": "arena+openrouter",
-      "raw": "gpt-6-sol",
-      "slug": "gpt-6-sol",
-      "reason": "too few results to rank (0 benchmarks, no Arena votes)"
+      "reason": "too few results to rank (2 benchmarks, no Arena votes)"
     },
     {
       "source": "arena",
@@ -9486,11 +9545,11 @@
     }
   ],
   "stats": {
-    "epochModels": 339,
+    "epochModels": 342,
     "arenaModels": 71,
     "openrouterModels": 356,
     "joined": 508,
-    "eligible": 110,
+    "eligible": 111,
     "arenaMatchRate": 0.9436619718309859,
     "arenaTopMatchRate": 1
   }
