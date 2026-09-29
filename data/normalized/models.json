@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-09-29T12:56:59.403Z",
+  "generatedAt": "2026-09-29T22:18:32.529Z",
   "snapshotDates": {
     "epoch": "2026-09-29",
     "arena": "2026-09-29",
     "openrouter": "2026-09-29"
   },
   "snapshotFetchedAt": {
-    "epoch": "2026-09-29T12:56:59.398Z",
+    "epoch": "2026-09-29T22:18:32.529Z",
     "arena": "2026-09-29T12:56:59.403Z",
-    "openrouter": "2026-09-29T12:56:58.742Z"
+    "openrouter": "2026-09-29T22:18:32.384Z"
   },
   "models": [
     {
@@ -905,6 +905,11 @@
           "id": "scicode",
           "raw": 0.668981481481482,
           "stderr": null
+        },
+        {
+          "id": "webdev_arena",
+          "raw": 1820.31,
+          "stderr": null
         }
       ],
       "arena": [
@@ -1276,6 +1281,61 @@
       ]
     },
     {
+      "slug": "claude-sonnet-5-5",
+      "name": "Claude Sonnet 5.5",
+      "vendor": "Anthropic",
+      "country": "United States of America",
+      "releaseDate": "2026-09-28",
+      "accessibility": null,
+      "eci": null,
+      "contextLength": 1000000,
+      "inputPerM": 1,
+      "outputPerM": 5,
+      "modalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "supportsReasoning": true,
+      "benchmarks": [
+        {
+          "id": "gpqa_diamond",
+          "raw": 0.9558080808080808,
+          "stderr": 0.013710320714521202
+        },
+        {
+          "id": "otis_mock_aime",
+          "raw": 1,
+          "stderr": 0
+        },
+        {
+          "id": "simpleqa_verified",
+          "raw": 0.465,
+          "stderr": 0.015780495050030086
+        },
+        {
+          "id": "scicode",
+          "raw": 0.609953703703704,
+          "stderr": null
+        },
+        {
+          "id": "ale_bench",
+          "raw": 1819.12,
+          "stderr": null
+        },
+        {
+          "id": "webdev_arena",
+          "raw": 1698.82,
+          "stderr": null
+        }
+      ],
+      "arena": [],
+      "sources": [
+        "epoch",
+        "openrouter"
+      ]
+    },
+    {
       "slug": "deepseek-chat",
       "name": "DeepSeek V3",
       "vendor": "DeepSeek",
@@ -1594,8 +1654,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.953172,
-      "outputPerM": 1.906344,
+      "inputPerM": 0.9159360000000001,
+      "outputPerM": 1.8318720000000002,
       "modalities": [
         "text"
       ],
@@ -1652,8 +1712,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.48,
-      "outputPerM": 4.199999999999999,
+      "inputPerM": 0.39289999999999997,
+      "outputPerM": 3.49,
       "modalities": [
         "text"
       ],
@@ -2857,7 +2917,7 @@
       "eci": null,
       "contextLength": 1048576,
       "inputPerM": 0.19490000000000002,
-      "outputPerM": 4.4,
+      "outputPerM": 3.9899999999999998,
       "modalities": [
         "text"
       ],
@@ -4651,99 +4711,6 @@
           "ci": 14,
           "votes": 1621,
           "rank": 16
-        }
-      ],
-      "sources": [
-        "epoch",
-        "arena",
-        "openrouter"
-      ]
-    },
-    {
-      "slug": "gpt-6-luna",
-      "name": "GPT-6 Luna",
-      "vendor": "OpenAI",
-      "country": "United States of America",
-      "releaseDate": "2026-09-22",
-      "accessibility": null,
-      "eci": null,
-      "contextLength": 1050000,
-      "inputPerM": 0.049999999999999996,
-      "outputPerM": 0.25,
-      "modalities": [
-        "file",
-        "image",
-        "text"
-      ],
-      "supportsReasoning": true,
-      "benchmarks": [
-        {
-          "id": "arc_agi_2",
-          "raw": 0.5930555555555556,
-          "stderr": null
-        },
-        {
-          "id": "scicode",
-          "raw": 0.546296296296296,
-          "stderr": null
-        },
-        {
-          "id": "ale_bench",
-          "raw": 1576.92,
-          "stderr": null
-        }
-      ],
-      "arena": [],
-      "sources": [
-        "epoch",
-        "openrouter"
-      ]
-    },
-    {
-      "slug": "gpt-6-sol",
-      "name": "GPT-6 Sol",
-      "vendor": "OpenAI",
-      "country": "United States of America",
-      "releaseDate": "2026-09-22",
-      "accessibility": null,
-      "eci": null,
-      "contextLength": 1050000,
-      "inputPerM": 1,
-      "outputPerM": 5,
-      "modalities": [
-        "file",
-        "image",
-        "text"
-      ],
-      "supportsReasoning": true,
-      "benchmarks": [
-        {
-          "id": "arc_agi_2",
-          "raw": 0.8958333333333335,
-          "stderr": null
-        },
-        {
-          "id": "scicode",
-          "raw": 0.576388888888889,
-          "stderr": null
-        },
-        {
-          "id": "ale_bench",
-          "raw": 2462,
-          "stderr": null
-        }
-      ],
-      "arena": [
-        {
-          "board": "code",
-          "elo": 1681,
-          "ci": 15,
-          "votes": 2019,
-          "rank": 5
-        },
-        {
-          "board": "agent",
-          "rank": 6
         }
       ],
       "sources": [
@@ -7429,12 +7396,6 @@
       "reason": "no public API pricing found on OpenRouter"
     },
     {
-      "source": "epoch+openrouter",
-      "raw": "claude-sonnet-5-5",
-      "slug": "claude-sonnet-5-5",
-      "reason": "too few results to rank (1 benchmark, no Arena votes)"
-    },
-    {
       "source": "epoch",
       "raw": "codestral-2501",
       "slug": "codestral-2501",
@@ -8063,6 +8024,12 @@
       "raw": "gpt-5-pro",
       "slug": "gpt-5-pro",
       "reason": "too few results to rank (2 benchmarks, no Arena votes)"
+    },
+    {
+      "source": "arena+openrouter",
+      "raw": "gpt-6-sol",
+      "slug": "gpt-6-sol",
+      "reason": "too few results to rank (0 benchmarks, no Arena votes)"
     },
     {
       "source": "arena",
@@ -9566,11 +9533,11 @@
     }
   ],
   "stats": {
-    "epochModels": 343,
+    "epochModels": 341,
     "arenaModels": 64,
-    "openrouterModels": 356,
-    "joined": 509,
-    "eligible": 112,
+    "openrouterModels": 358,
+    "joined": 508,
+    "eligible": 111,
     "arenaMatchRate": 0.9375,
     "arenaTopMatchRate": 1
   }
