@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-09-30T12:38:49.920Z",
+  "generatedAt": "2026-09-30T22:18:33.612Z",
   "snapshotDates": {
     "epoch": "2026-09-30",
     "arena": "2026-09-30",
     "openrouter": "2026-09-30"
   },
   "snapshotFetchedAt": {
-    "epoch": "2026-09-30T12:38:49.920Z",
+    "epoch": "2026-09-30T22:18:33.595Z",
     "arena": "2026-09-30T05:36:12.624Z",
-    "openrouter": "2026-09-30T12:38:49.634Z"
+    "openrouter": "2026-09-30T22:18:33.612Z"
   },
   "models": [
     {
@@ -2916,7 +2916,7 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.41,
+      "inputPerM": 0.624,
       "outputPerM": 3.9899999999999998,
       "modalities": [
         "text"
@@ -4711,6 +4711,139 @@
           "ci": 14,
           "votes": 1621,
           "rank": 16
+        }
+      ],
+      "sources": [
+        "epoch",
+        "arena",
+        "openrouter"
+      ]
+    },
+    {
+      "slug": "gpt-6-luna",
+      "name": "GPT-6 Luna",
+      "vendor": "OpenAI",
+      "country": "United States of America",
+      "releaseDate": "2026-09-22",
+      "accessibility": null,
+      "eci": null,
+      "contextLength": 1050000,
+      "inputPerM": 0.049999999999999996,
+      "outputPerM": 0.25,
+      "modalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "supportsReasoning": true,
+      "benchmarks": [
+        {
+          "id": "gpqa_diamond",
+          "raw": 0.9046717171717171,
+          "stderr": 0.018537378631915503
+        },
+        {
+          "id": "otis_mock_aime",
+          "raw": 0.9888888888888889,
+          "stderr": 0.006674027922425511
+        },
+        {
+          "id": "arc_agi_2",
+          "raw": 0.5930555555555556,
+          "stderr": null
+        },
+        {
+          "id": "simpleqa_verified",
+          "raw": 0.414,
+          "stderr": 0.015583544104177553
+        },
+        {
+          "id": "scicode",
+          "raw": 0.546296296296296,
+          "stderr": null
+        },
+        {
+          "id": "ale_bench",
+          "raw": 1576.92,
+          "stderr": null
+        },
+        {
+          "id": "webdev_arena",
+          "raw": 1581.95,
+          "stderr": null
+        }
+      ],
+      "arena": [],
+      "sources": [
+        "epoch",
+        "openrouter"
+      ]
+    },
+    {
+      "slug": "gpt-6-sol",
+      "name": "GPT-6 Sol",
+      "vendor": "OpenAI",
+      "country": "United States of America",
+      "releaseDate": "2026-09-22",
+      "accessibility": null,
+      "eci": null,
+      "contextLength": 1050000,
+      "inputPerM": 1,
+      "outputPerM": 5,
+      "modalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "supportsReasoning": true,
+      "benchmarks": [
+        {
+          "id": "gpqa_diamond",
+          "raw": 0.9431818181818182,
+          "stderr": 0.014938512008159717
+        },
+        {
+          "id": "otis_mock_aime",
+          "raw": 1,
+          "stderr": 0
+        },
+        {
+          "id": "arc_agi_2",
+          "raw": 0.8958333333333335,
+          "stderr": null
+        },
+        {
+          "id": "simpleqa_verified",
+          "raw": 0.607,
+          "stderr": 0.015452824654081525
+        },
+        {
+          "id": "scicode",
+          "raw": 0.576388888888889,
+          "stderr": null
+        },
+        {
+          "id": "ale_bench",
+          "raw": 2462,
+          "stderr": null
+        },
+        {
+          "id": "webdev_arena",
+          "raw": 1689.33,
+          "stderr": null
+        }
+      ],
+      "arena": [
+        {
+          "board": "code",
+          "elo": 1681,
+          "ci": 15,
+          "votes": 2019,
+          "rank": 5
+        },
+        {
+          "board": "agent",
+          "rank": 6
         }
       ],
       "sources": [
@@ -8026,10 +8159,10 @@
       "reason": "too few results to rank (2 benchmarks, no Arena votes)"
     },
     {
-      "source": "arena+openrouter",
-      "raw": "gpt-6-sol",
-      "slug": "gpt-6-sol",
-      "reason": "too few results to rank (0 benchmarks, no Arena votes)"
+      "source": "epoch+openrouter",
+      "raw": "gpt-6-1-sol",
+      "slug": "gpt-6-1-sol",
+      "reason": "too few results to rank (2 benchmarks, no Arena votes)"
     },
     {
       "source": "arena",
@@ -9533,11 +9666,11 @@
     }
   ],
   "stats": {
-    "epochModels": 341,
+    "epochModels": 344,
     "arenaModels": 64,
     "openrouterModels": 358,
-    "joined": 508,
-    "eligible": 111,
+    "joined": 510,
+    "eligible": 113,
     "arenaMatchRate": 0.9375,
     "arenaTopMatchRate": 1
   }
