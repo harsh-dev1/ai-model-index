@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-10-01T13:21:24.349Z",
+  "generatedAt": "2026-10-01T22:43:19.096Z",
   "snapshotDates": {
     "epoch": "2026-10-01",
     "arena": "2026-10-01",
     "openrouter": "2026-10-01"
   },
   "snapshotFetchedAt": {
-    "epoch": "2026-10-01T13:21:24.126Z",
+    "epoch": "2026-10-01T22:43:19.086Z",
     "arena": "2026-10-01T13:21:24.349Z",
-    "openrouter": "2026-10-01T13:21:24.144Z"
+    "openrouter": "2026-10-01T22:43:19.096Z"
   },
   "models": [
     {
@@ -5291,6 +5291,60 @@
       ]
     },
     {
+      "slug": "grok-4-7",
+      "name": "Grok 4.7",
+      "vendor": "xAI",
+      "country": "United States of America",
+      "releaseDate": "2026-09-21",
+      "accessibility": null,
+      "eci": null,
+      "contextLength": 500000,
+      "inputPerM": 2,
+      "outputPerM": 6,
+      "modalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "supportsReasoning": true,
+      "benchmarks": [
+        {
+          "id": "gpqa_diamond",
+          "raw": 0.92739898989899,
+          "stderr": 0.015505824295534454
+        },
+        {
+          "id": "otis_mock_aime",
+          "raw": 0.9805555555555555,
+          "stderr": 0.014299486306926387
+        },
+        {
+          "id": "simpleqa_verified",
+          "raw": 0.56,
+          "stderr": 0.015704987954361718
+        },
+        {
+          "id": "scicode",
+          "raw": 0.574074074074074,
+          "stderr": null
+        }
+      ],
+      "arena": [
+        {
+          "board": "code",
+          "elo": 1636,
+          "ci": 12,
+          "votes": 3062,
+          "rank": 15
+        }
+      ],
+      "sources": [
+        "epoch",
+        "arena",
+        "openrouter"
+      ]
+    },
+    {
       "slug": "inkling",
       "name": "Inkling",
       "vendor": "Thinking Machines",
@@ -5669,7 +5723,7 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.6705,
+      "inputPerM": 0.415,
       "outputPerM": 10,
       "modalities": [
         "text",
@@ -8288,12 +8342,6 @@
       "reason": "no public API pricing found on OpenRouter"
     },
     {
-      "source": "epoch+arena+openrouter",
-      "raw": "grok-4-7",
-      "slug": "grok-4-7",
-      "reason": "too few results to rank (1 benchmark, no Arena votes)"
-    },
-    {
       "source": "epoch+openrouter",
       "raw": "grok-build-0-1",
       "slug": "grok-build-0-1",
@@ -9515,9 +9563,9 @@
   "stats": {
     "epochModels": 344,
     "arenaModels": 75,
-    "openrouterModels": 358,
+    "openrouterModels": 360,
     "joined": 475,
-    "eligible": 111,
+    "eligible": 112,
     "arenaMatchRate": 0.92,
     "arenaTopMatchRate": 0.95
   }
