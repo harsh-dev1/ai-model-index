@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-08T13:34:47.391Z",
+  "fetchedAt": "2026-10-08T23:23:07.946Z",
   "source": "https://openrouter.ai/api/v1/models",
   "models": [
     {
@@ -150,12 +150,46 @@
       "supportsReasoning": true
     },
     {
+      "id": "openai/gpt-6.1-sol-pro:batch",
+      "name": "OpenAI: GPT-6.1 Sol Pro (batch)",
+      "created": 1790702886,
+      "contextLength": 1050000,
+      "inputPerM": 1,
+      "outputPerM": 5,
+      "inputModalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "openai/gpt-6.1-sol",
       "name": "OpenAI: GPT-6.1 Sol",
       "created": 1790702882,
       "contextLength": 1050000,
       "inputPerM": 2,
       "outputPerM": 10,
+      "inputModalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/gpt-6.1-sol:batch",
+      "name": "OpenAI: GPT-6.1 Sol (batch)",
+      "created": 1790702882,
+      "contextLength": 1050000,
+      "inputPerM": 1,
+      "outputPerM": 5,
       "inputModalities": [
         "file",
         "image",
@@ -689,8 +723,8 @@
       "name": "DeepSeek: DeepSeek Flash Latest",
       "created": 1789399150,
       "contextLength": 1048576,
-      "inputPerM": 0.0356,
-      "outputPerM": 1,
+      "inputPerM": 0.012,
+      "outputPerM": 1.2,
       "inputModalities": [
         "text",
         "image"
@@ -854,8 +888,8 @@
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "created": 1789021285,
       "contextLength": 1048576,
-      "inputPerM": 0.0356,
-      "outputPerM": 1,
+      "inputPerM": 0.3,
+      "outputPerM": 1.2,
       "inputModalities": [
         "text",
         "image"
@@ -997,12 +1031,12 @@
       "supportsReasoning": true
     },
     {
-      "id": "inclusionai/ling-3.0-flash-sante:free",
-      "name": "inclusionAI: Ling 3.0 Flash Sante (free)",
+      "id": "inclusionai/ling-3.0-flash-sante",
+      "name": "inclusionAI: Ling 3.0 Flash Sante",
       "created": 1788545946,
       "contextLength": 262144,
-      "inputPerM": 0,
-      "outputPerM": 0,
+      "inputPerM": 0.041999999999999996,
+      "outputPerM": 0.12319999999999999,
       "inputModalities": [
         "text"
       ],
@@ -1156,8 +1190,8 @@
       "name": "Tencent: Hy4 preview",
       "created": 1787897375,
       "contextLength": 1048576,
-      "inputPerM": 0.834,
-      "outputPerM": 2.501,
+      "inputPerM": 0.7505999999999999,
+      "outputPerM": 2.2509,
       "inputModalities": [
         "text"
       ],
@@ -1187,7 +1221,7 @@
       "created": 1787817633,
       "contextLength": 1048576,
       "inputPerM": 0.032,
-      "outputPerM": 3.669545,
+      "outputPerM": 2.798391,
       "inputModalities": [
         "text",
         "image",
@@ -1318,8 +1352,8 @@
       "name": "Z.ai: GLM Latest",
       "created": 1787151053,
       "contextLength": 1048576,
-      "inputPerM": 0.036,
-      "outputPerM": 12,
+      "inputPerM": 0.031200000000000002,
+      "outputPerM": 4.4,
       "inputModalities": [
         "text"
       ],
@@ -1348,7 +1382,7 @@
       "name": "Z.ai: GLM 5.3",
       "created": 1787086655,
       "contextLength": 1048576,
-      "inputPerM": 0.049,
+      "inputPerM": 0.039,
       "outputPerM": 3.39,
       "inputModalities": [
         "text"
@@ -1641,8 +1675,8 @@
       "name": "DeepSeek: DeepSeek V4 Flash Latest",
       "created": 1785606009,
       "contextLength": 1048576,
-      "inputPerM": 0.0137,
-      "outputPerM": 1.28,
+      "inputPerM": 0.010960000000000001,
+      "outputPerM": 0.532795,
       "inputModalities": [
         "text"
       ],
@@ -1946,8 +1980,8 @@
       "name": "MoonshotAI: Kimi K3",
       "created": 1784215858,
       "contextLength": 1048576,
-      "inputPerM": 0.62,
-      "outputPerM": 12.3,
+      "inputPerM": 0.82,
+      "outputPerM": 13.5,
       "inputModalities": [
         "text",
         "image",
@@ -2266,8 +2300,8 @@
       "name": "Tencent: Hy3",
       "created": 1783344048,
       "contextLength": 262144,
-      "inputPerM": 0.13199999999999998,
-      "outputPerM": 0.5279999999999999,
+      "inputPerM": 0.0825,
+      "outputPerM": 0.33,
       "inputModalities": [
         "text"
       ],
@@ -2427,8 +2461,8 @@
       "name": "Z.ai: GLM 5.2",
       "created": 1781631930,
       "contextLength": 1048576,
-      "inputPerM": 0.03,
-      "outputPerM": 10,
+      "inputPerM": 0.06899999999999999,
+      "outputPerM": 4.300000000000001,
       "inputModalities": [
         "text"
       ],
@@ -2951,7 +2985,7 @@
       "name": "MoonshotAI: Kimi Latest",
       "created": 1777318428,
       "contextLength": 1048576,
-      "inputPerM": 0.44999999999999996,
+      "inputPerM": 0.8099999999999999,
       "outputPerM": 13,
       "inputModalities": [
         "text",
@@ -3070,8 +3104,8 @@
       "name": "Qwen: Qwen3.6 27B",
       "created": 1777255064,
       "contextLength": 262144,
-      "inputPerM": 0.44999999999999996,
-      "outputPerM": 2.7,
+      "inputPerM": 0.3,
+      "outputPerM": 2,
       "inputModalities": [
         "text",
         "image",
@@ -3155,8 +3189,8 @@
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "created": 1777000679,
       "contextLength": 1048576,
-      "inputPerM": 0.29232,
-      "outputPerM": 0.58464,
+      "inputPerM": 0.28727400000000003,
+      "outputPerM": 0.5745480000000001,
       "inputModalities": [
         "text"
       ],
@@ -3170,7 +3204,7 @@
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "created": 1777000666,
       "contextLength": 1048576,
-      "inputPerM": 0.022799999999999997,
+      "inputPerM": 0.0173,
       "outputPerM": 1.28,
       "inputModalities": [
         "text"
@@ -3283,7 +3317,7 @@
       "name": "MoonshotAI: Kimi K2.6",
       "created": 1776699402,
       "contextLength": 262144,
-      "inputPerM": 0.441,
+      "inputPerM": 0.4344,
       "outputPerM": 2.4499999999999997,
       "inputModalities": [
         "text",
@@ -3348,8 +3382,8 @@
       "name": "Google: Gemma 4 26B A4B ",
       "created": 1775227989,
       "contextLength": 262144,
-      "inputPerM": 0.09,
-      "outputPerM": 0.3,
+      "inputPerM": 0.0765,
+      "outputPerM": 0.255,
       "inputModalities": [
         "image",
         "text",
@@ -3680,8 +3714,8 @@
       "name": "NVIDIA: Nemotron 3 Super",
       "created": 1773245239,
       "contextLength": 262144,
-      "inputPerM": 0.08499999999999999,
-      "outputPerM": 0.39999999999999997,
+      "inputPerM": 0.08,
+      "outputPerM": 0.44999999999999996,
       "inputModalities": [
         "text"
       ],
@@ -4088,8 +4122,8 @@
       "name": "Qwen: Qwen3.5 397B A17B",
       "created": 1771223018,
       "contextLength": 262144,
-      "inputPerM": 0.44999999999999996,
-      "outputPerM": 3,
+      "inputPerM": 0.55,
+      "outputPerM": 3.5,
       "inputModalities": [
         "text",
         "image",
@@ -5396,8 +5430,8 @@
       "name": "Qwen: Qwen3 Next 80B A3B Instruct",
       "created": 1757612213,
       "contextLength": 262144,
-      "inputPerM": 0.15,
-      "outputPerM": 1.5,
+      "inputPerM": 0.09,
+      "outputPerM": 1.1,
       "inputModalities": [
         "text"
       ],
@@ -5779,8 +5813,8 @@
       "name": "Qwen: Qwen3 30B A3B Instruct 2507",
       "created": 1753806965,
       "contextLength": 262144,
-      "inputPerM": 0.04815,
-      "outputPerM": 0.19305,
+      "inputPerM": 0.09999999999999999,
+      "outputPerM": 0.3,
       "inputModalities": [
         "text"
       ],
@@ -5992,22 +6026,6 @@
         "text"
       ],
       "supportsReasoning": false
-    },
-    {
-      "id": "baidu/ernie-4.5-vl-424b-a47b",
-      "name": "Baidu: ERNIE 4.5 VL 424B A47B ",
-      "created": 1751300903,
-      "contextLength": 123000,
-      "inputPerM": 0.42,
-      "outputPerM": 1.25,
-      "inputModalities": [
-        "image",
-        "text"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": true
     },
     {
       "id": "mistralai/mistral-small-3.2-24b-instruct",
@@ -7289,7 +7307,7 @@
       "name": "Mistral: Mistral Nemo",
       "created": 1721347200,
       "contextLength": 131072,
-      "inputPerM": 0.019000000000000003,
+      "inputPerM": 0.029,
       "outputPerM": 0.03,
       "inputModalities": [
         "text"
