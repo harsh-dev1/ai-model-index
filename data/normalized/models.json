@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-10-13T14:15:58.964Z",
+  "generatedAt": "2026-10-13T22:47:58.204Z",
   "snapshotDates": {
     "epoch": "2026-10-13",
     "arena": "2026-10-13",
     "openrouter": "2026-10-13"
   },
   "snapshotFetchedAt": {
-    "epoch": "2026-10-13T14:15:58.964Z",
+    "epoch": "2026-10-13T22:47:58.204Z",
     "arena": "2026-10-13T00:44:20.106Z",
-    "openrouter": "2026-10-13T14:15:58.799Z"
+    "openrouter": "2026-10-13T22:47:57.912Z"
   },
   "models": [
     {
@@ -1537,8 +1537,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.0438,
-      "outputPerM": 0.1752,
+      "inputPerM": 0.0441,
+      "outputPerM": 0.765,
       "modalities": [
         "text",
         "image"
@@ -1554,6 +1554,11 @@
           "id": "otis_mock_aime",
           "raw": 0.9833333333333333,
           "stderr": 0.006405884289881728
+        },
+        {
+          "id": "simpleqa_verified",
+          "raw": 0.429,
+          "stderr": 0.015658997547870177
         },
         {
           "id": "scicode",
@@ -1644,8 +1649,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.43934999999999996,
-      "outputPerM": 0.8786999999999999,
+      "inputPerM": 0.388716,
+      "outputPerM": 0.777432,
       "modalities": [
         "text"
       ],
@@ -2514,6 +2519,73 @@
       ]
     },
     {
+      "slug": "gemini-4-argon",
+      "name": "Gemini 4 Argon",
+      "vendor": "Google",
+      "country": "United States of America",
+      "releaseDate": "2026-09-30",
+      "accessibility": null,
+      "eci": null,
+      "contextLength": 1048576,
+      "inputPerM": 1,
+      "outputPerM": 5,
+      "modalities": [
+        "audio",
+        "file",
+        "image",
+        "text",
+        "video"
+      ],
+      "supportsReasoning": true,
+      "benchmarks": [
+        {
+          "id": "gpqa_diamond",
+          "raw": 0.9640151515151515,
+          "stderr": 0.011918129589602694
+        },
+        {
+          "id": "simpleqa_verified",
+          "raw": 0.76,
+          "stderr": 0.013512312258920845
+        },
+        {
+          "id": "scicode",
+          "raw": 0.618055555555556,
+          "stderr": null
+        },
+        {
+          "id": "webdev_arena",
+          "raw": 1679.5,
+          "stderr": null
+        }
+      ],
+      "arena": [
+        {
+          "board": "code",
+          "elo": 1678,
+          "ci": 15,
+          "votes": 1772,
+          "rank": 9
+        },
+        {
+          "board": "agent",
+          "rank": 10
+        },
+        {
+          "board": "text",
+          "elo": 1525,
+          "ci": 9,
+          "votes": 4932,
+          "rank": 1
+        }
+      ],
+      "sources": [
+        "epoch",
+        "arena",
+        "openrouter"
+      ]
+    },
+    {
       "slug": "gemma-3-12b-it",
       "name": "Gemma 3 12B",
       "vendor": "Google",
@@ -2897,7 +2969,7 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.06,
+      "inputPerM": 0.08,
       "outputPerM": 7,
       "modalities": [
         "text"
@@ -3013,7 +3085,7 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.026099999999999998,
+      "inputPerM": 0.0297,
       "outputPerM": 0.8999999999999999,
       "modalities": [
         "text",
@@ -6605,8 +6677,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 262144,
-      "inputPerM": 0.08,
-      "outputPerM": 0.75,
+      "inputPerM": 0.15,
+      "outputPerM": 1,
       "modalities": [
         "text",
         "image",
@@ -7828,12 +7900,6 @@
       "reason": "no public API pricing found on OpenRouter"
     },
     {
-      "source": "epoch+arena",
-      "raw": "gemini-4-argon-high",
-      "slug": "gemini-4-argon",
-      "reason": "no public API pricing found on OpenRouter"
-    },
-    {
       "source": "arena+openrouter",
       "raw": "gemini-nano-banana-2-1",
       "slug": "gemini-nano-banana-2-1",
@@ -8551,7 +8617,7 @@
       "source": "epoch+openrouter",
       "raw": "mistral-large-4-0",
       "slug": "mistral-large-4-0",
-      "reason": "too few results to rank (1 benchmark, no Arena votes)"
+      "reason": "too few results to rank (3 benchmarks, no Arena votes)"
     },
     {
       "source": "epoch",
@@ -9367,9 +9433,9 @@
   "stats": {
     "epochModels": 350,
     "arenaModels": 65,
-    "openrouterModels": 357,
+    "openrouterModels": 356,
     "joined": 480,
-    "eligible": 110,
+    "eligible": 111,
     "arenaMatchRate": 0.9384615384615385,
     "arenaTopMatchRate": 1
   }
