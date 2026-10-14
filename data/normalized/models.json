@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-10-14T04:57:45.126Z",
+  "generatedAt": "2026-10-14T11:57:24.665Z",
   "snapshotDates": {
     "epoch": "2026-10-14",
     "arena": "2026-10-14",
     "openrouter": "2026-10-14"
   },
   "snapshotFetchedAt": {
-    "epoch": "2026-10-14T04:57:45.121Z",
-    "arena": "2026-10-14T04:57:45.126Z",
-    "openrouter": "2026-10-14T04:57:44.609Z"
+    "epoch": "2026-10-14T11:57:24.487Z",
+    "arena": "2026-10-14T11:57:24.665Z",
+    "openrouter": "2026-10-14T11:57:24.300Z"
   },
   "models": [
     {
@@ -161,18 +161,18 @@
       ],
       "arena": [
         {
-          "board": "text",
-          "elo": 1501,
-          "ci": 6,
-          "votes": 11800,
-          "rank": 6
-        },
-        {
           "board": "code",
           "elo": 1745,
           "ci": 9,
           "votes": 6521,
           "rank": 5
+        },
+        {
+          "board": "text",
+          "elo": 1501,
+          "ci": 6,
+          "votes": 11800,
+          "rank": 6
         },
         {
           "board": "vision",
@@ -244,7 +244,7 @@
         },
         {
           "id": "scicode",
-          "raw": 0.43287037037037,
+          "raw": 0.42245370370370405,
           "stderr": null
         },
         {
@@ -275,6 +275,56 @@
       "sources": [
         "epoch",
         "arena",
+        "openrouter"
+      ]
+    },
+    {
+      "slug": "claude-haiku-5-5",
+      "name": "Claude Haiku 5.5",
+      "vendor": "Anthropic",
+      "country": "United States of America",
+      "releaseDate": "2026-10-07",
+      "accessibility": null,
+      "eci": null,
+      "contextLength": 1000000,
+      "inputPerM": 0.049999999999999996,
+      "outputPerM": 0.25,
+      "modalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "supportsReasoning": true,
+      "benchmarks": [
+        {
+          "id": "gpqa_diamond",
+          "raw": 0.8964646464646465,
+          "stderr": 0.019774484382483127
+        },
+        {
+          "id": "otis_mock_aime",
+          "raw": 0.9888888888888889,
+          "stderr": 0.005362818328685681
+        },
+        {
+          "id": "hle",
+          "raw": 0.3012,
+          "stderr": 0.0183
+        },
+        {
+          "id": "simpleqa_verified",
+          "raw": 0.238,
+          "stderr": 0.013473586661967093
+        },
+        {
+          "id": "scicode",
+          "raw": 0.549768518518518,
+          "stderr": null
+        }
+      ],
+      "arena": [],
+      "sources": [
+        "epoch",
         "openrouter"
       ]
     },
@@ -807,18 +857,18 @@
       ],
       "arena": [
         {
-          "board": "text",
-          "elo": 1490,
-          "ci": 4,
-          "votes": 59482,
-          "rank": 13
-        },
-        {
           "board": "code",
           "elo": 1692,
           "ci": 6,
           "votes": 17162,
           "rank": 7
+        },
+        {
+          "board": "text",
+          "elo": 1490,
+          "ci": 4,
+          "votes": 59482,
+          "rank": 13
         },
         {
           "board": "vision",
@@ -901,18 +951,18 @@
       ],
       "arena": [
         {
-          "board": "text",
-          "elo": 1504,
-          "ci": 9,
-          "votes": 4552,
-          "rank": 4
-        },
-        {
           "board": "code",
           "elo": 1814,
           "ci": 16,
           "votes": 2229,
           "rank": 1
+        },
+        {
+          "board": "text",
+          "elo": 1504,
+          "ci": 9,
+          "votes": 4552,
+          "rank": 4
         },
         {
           "board": "agent",
@@ -1055,7 +1105,7 @@
         },
         {
           "id": "scicode",
-          "raw": 0.446759259259259,
+          "raw": 0.457175925925926,
           "stderr": null
         },
         {
@@ -1292,6 +1342,11 @@
           "stderr": 0
         },
         {
+          "id": "hle",
+          "raw": 0.4612,
+          "stderr": 0.0195
+        },
+        {
           "id": "simpleqa_verified",
           "raw": 0.465,
           "stderr": 0.015780495050030086
@@ -1407,7 +1462,7 @@
         },
         {
           "id": "scicode",
-          "raw": 0.35714285714285704,
+          "raw": 0.3831018518518521,
           "stderr": null
         },
         {
@@ -1537,7 +1592,7 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.035100000000000006,
+      "inputPerM": 0.02016,
       "outputPerM": 0.891,
       "modalities": [
         "text",
@@ -1554,6 +1609,11 @@
           "id": "otis_mock_aime",
           "raw": 0.9833333333333333,
           "stderr": 0.006405884289881728
+        },
+        {
+          "id": "arc_agi_2",
+          "raw": 0.7291666666666666,
+          "stderr": null
         },
         {
           "id": "simpleqa_verified",
@@ -1845,7 +1905,7 @@
         },
         {
           "id": "scicode",
-          "raw": 0.428240740740741,
+          "raw": 0.4629629629629631,
           "stderr": null
         },
         {
@@ -1923,7 +1983,7 @@
         },
         {
           "id": "scicode",
-          "raw": 0.418981481481481,
+          "raw": 0.434027777777778,
           "stderr": null
         },
         {
@@ -2000,7 +2060,7 @@
         },
         {
           "id": "scicode",
-          "raw": 0.58912037037037,
+          "raw": 0.586805555555556,
           "stderr": null
         },
         {
@@ -2105,7 +2165,7 @@
         },
         {
           "id": "scicode",
-          "raw": 0.53125,
+          "raw": 0.539351851851852,
           "stderr": null
         },
         {
@@ -2240,7 +2300,7 @@
         },
         {
           "id": "scicode",
-          "raw": 0.52662037037037,
+          "raw": 0.533564814814815,
           "stderr": null
         },
         {
@@ -2561,18 +2621,18 @@
       ],
       "arena": [
         {
-          "board": "text",
-          "elo": 1525,
-          "ci": 9,
-          "votes": 4932,
-          "rank": 1
-        },
-        {
           "board": "code",
           "elo": 1678,
           "ci": 15,
           "votes": 1772,
           "rank": 9
+        },
+        {
+          "board": "text",
+          "elo": 1525,
+          "ci": 9,
+          "votes": 4932,
+          "rank": 1
         },
         {
           "board": "agent",
@@ -2614,7 +2674,7 @@
         },
         {
           "id": "scicode",
-          "raw": 0.173611111111111,
+          "raw": 0.16435185185185203,
           "stderr": null
         }
       ],
@@ -2658,7 +2718,7 @@
         },
         {
           "id": "scicode",
-          "raw": 0.211805555555556,
+          "raw": 0.232638888888889,
           "stderr": null
         }
       ],
@@ -2703,7 +2763,7 @@
         },
         {
           "id": "scicode",
-          "raw": 0.434027777777778,
+          "raw": 0.454861111111111,
           "stderr": null
         },
         {
@@ -2940,7 +3000,7 @@
         },
         {
           "id": "scicode",
-          "raw": 0.4375,
+          "raw": 0.447916666666667,
           "stderr": null
         },
         {
@@ -2969,7 +3029,7 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.06,
+      "inputPerM": 0.049999999999999996,
       "outputPerM": 7,
       "modalities": [
         "text"
@@ -3003,7 +3063,7 @@
         },
         {
           "id": "scicode",
-          "raw": 0.50462962962963,
+          "raw": 0.511574074074074,
           "stderr": null
         },
         {
@@ -3085,8 +3145,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.06,
-      "outputPerM": 0.19999999999999998,
+      "inputPerM": 0.036,
+      "outputPerM": 0.8999999999999999,
       "modalities": [
         "text",
         "image",
@@ -4064,7 +4124,7 @@
         },
         {
           "id": "scicode",
-          "raw": 0.49884259259259306,
+          "raw": 0.520833333333333,
           "stderr": null
         },
         {
@@ -4129,7 +4189,7 @@
         },
         {
           "id": "scicode",
-          "raw": 0.46875,
+          "raw": 0.472222222222222,
           "stderr": null
         },
         {
@@ -4351,7 +4411,7 @@
         },
         {
           "id": "scicode",
-          "raw": 0.570601851851852,
+          "raw": 0.577546296296296,
           "stderr": null
         },
         {
@@ -4646,6 +4706,11 @@
         {
           "id": "scicode",
           "raw": 0.55787037037037,
+          "stderr": null
+        },
+        {
+          "id": "ale_bench",
+          "raw": 2743.75,
           "stderr": null
         },
         {
@@ -5107,7 +5172,7 @@
         },
         {
           "id": "scicode",
-          "raw": 0.47337962962963,
+          "raw": 0.482638888888889,
           "stderr": null
         },
         {
@@ -5176,7 +5241,7 @@
         },
         {
           "id": "scicode",
-          "raw": 0.540509259259259,
+          "raw": 0.549768518518518,
           "stderr": null
         },
         {
@@ -5310,6 +5375,11 @@
           "stderr": 0.014299486306926387
         },
         {
+          "id": "arc_agi_2",
+          "raw": 0.6138888888888888,
+          "stderr": null
+        },
+        {
           "id": "simpleqa_verified",
           "raw": 0.56,
           "stderr": 0.015704987954361718
@@ -5440,7 +5510,7 @@
         },
         {
           "id": "scicode",
-          "raw": 0.487268518518519,
+          "raw": 0.496527777777778,
           "stderr": null
         },
         {
@@ -5683,7 +5753,7 @@
         },
         {
           "id": "scicode",
-          "raw": 0.474537037037037,
+          "raw": 0.478009259259259,
           "stderr": null
         },
         {
@@ -5759,18 +5829,18 @@
       ],
       "arena": [
         {
-          "board": "text",
-          "elo": 1488,
-          "ci": 5,
-          "votes": 28280,
-          "rank": 16
-        },
-        {
           "board": "code",
           "elo": 1655,
           "ci": 6,
           "votes": 17061,
           "rank": 14
+        },
+        {
+          "board": "text",
+          "elo": 1488,
+          "ci": 5,
+          "votes": 28280,
+          "rank": 16
         }
       ],
       "sources": [
@@ -5992,7 +6062,7 @@
       "benchmarks": [
         {
           "id": "scicode",
-          "raw": 0.469907407407407,
+          "raw": 0.501157407407407,
           "stderr": null
         },
         {
@@ -6073,6 +6143,55 @@
       "sources": [
         "epoch",
         "arena",
+        "openrouter"
+      ]
+    },
+    {
+      "slug": "mistral-large-4-0",
+      "name": "Mistral Large 4",
+      "vendor": "Mistral",
+      "country": "France",
+      "releaseDate": "2026-10-06",
+      "accessibility": null,
+      "eci": null,
+      "contextLength": 1048576,
+      "inputPerM": 0.6799999999999999,
+      "outputPerM": 2.09,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "supportsReasoning": true,
+      "benchmarks": [
+        {
+          "id": "gpqa_diamond",
+          "raw": 0.8806818181818182,
+          "stderr": 0.019328132475292338
+        },
+        {
+          "id": "otis_mock_aime",
+          "raw": 0.9833333333333333,
+          "stderr": 0.006405884289881728
+        },
+        {
+          "id": "simpleqa_verified",
+          "raw": 0.2,
+          "stderr": 0.012655439943366657
+        },
+        {
+          "id": "scicode",
+          "raw": 0.541666666666667,
+          "stderr": null
+        },
+        {
+          "id": "ale_bench",
+          "raw": 1213.15,
+          "stderr": null
+        }
+      ],
+      "arena": [],
+      "sources": [
+        "epoch",
         "openrouter"
       ]
     },
@@ -6159,7 +6278,7 @@
         },
         {
           "id": "scicode",
-          "raw": 0.563657407407407,
+          "raw": 0.574074074074074,
           "stderr": null
         },
         {
@@ -6220,6 +6339,11 @@
           "stderr": null
         },
         {
+          "id": "ale_bench",
+          "raw": 1688.35,
+          "stderr": null
+        },
+        {
           "id": "webdev_arena",
           "raw": 1651.94,
           "stderr": null
@@ -6227,18 +6351,18 @@
       ],
       "arena": [
         {
-          "board": "text",
-          "elo": 1494,
-          "ci": 6,
-          "votes": 12343,
-          "rank": 9
-        },
-        {
           "board": "code",
           "elo": 1656,
           "ci": 8,
           "votes": 7678,
           "rank": 13
+        },
+        {
+          "board": "text",
+          "elo": 1494,
+          "ci": 6,
+          "votes": 12343,
+          "rank": 9
         },
         {
           "board": "vision",
@@ -6459,7 +6583,7 @@
         },
         {
           "id": "scicode",
-          "raw": 0.397856419092825,
+          "raw": 0.428240740740741,
           "stderr": null
         }
       ],
@@ -6615,7 +6739,7 @@
         },
         {
           "id": "scicode",
-          "raw": 0.423611111111111,
+          "raw": 0.4143518518518521,
           "stderr": null
         }
       ],
@@ -6738,7 +6862,7 @@
         },
         {
           "id": "scicode",
-          "raw": 0.275462962962963,
+          "raw": 0.295138888888889,
           "stderr": null
         },
         {
@@ -6878,7 +7002,7 @@
         },
         {
           "id": "scicode",
-          "raw": 0.357638888888889,
+          "raw": 0.365740740740741,
           "stderr": null
         },
         {
@@ -6888,7 +7012,7 @@
         },
         {
           "id": "terminalbench",
-          "raw": 0.230337078652,
+          "raw": 0.24625468164800002,
           "stderr": 0.03205049478
         }
       ],
@@ -7051,7 +7175,7 @@
         },
         {
           "id": "scicode",
-          "raw": 0.488425925925926,
+          "raw": 0.49537037037037,
           "stderr": null
         },
         {
@@ -7100,7 +7224,7 @@
         },
         {
           "id": "scicode",
-          "raw": 0.454861111111111,
+          "raw": 0.460648148148148,
           "stderr": null
         }
       ],
@@ -7340,12 +7464,6 @@
       "raw": "claude-haiku-4-5-20251001-8k",
       "slug": "claude-haiku-4-5-20251001-8k",
       "reason": "no public API pricing found on OpenRouter"
-    },
-    {
-      "source": "epoch+openrouter",
-      "raw": "claude-haiku-5-5",
-      "slug": "claude-haiku-5-5",
-      "reason": "too few results to rank (3 benchmarks, no Arena votes)"
     },
     {
       "source": "epoch",
@@ -8539,7 +8657,7 @@
       "source": "epoch+arena+openrouter",
       "raw": "mimo-v2-6-flash",
       "slug": "mimo-v2-6-flash",
-      "reason": "too few results to rank (1 benchmark, no Arena votes)"
+      "reason": "too few results to rank (2 benchmarks, no Arena votes)"
     },
     {
       "source": "epoch+arena+openrouter",
@@ -8611,12 +8729,6 @@
       "source": "epoch+openrouter",
       "raw": "mistral-large-2512",
       "slug": "mistral-large-2512",
-      "reason": "too few results to rank (3 benchmarks, no Arena votes)"
-    },
-    {
-      "source": "epoch+openrouter",
-      "raw": "mistral-large-4-0",
-      "slug": "mistral-large-4-0",
       "reason": "too few results to rank (3 benchmarks, no Arena votes)"
     },
     {
@@ -8713,6 +8825,12 @@
       "source": "arena",
       "raw": "muse-video",
       "slug": "muse-video",
+      "reason": "no public API pricing found on OpenRouter"
+    },
+    {
+      "source": "epoch",
+      "raw": "muse-wonder-1-0",
+      "slug": "muse-wonder-1-0",
       "reason": "no public API pricing found on OpenRouter"
     },
     {
@@ -9431,11 +9549,11 @@
     }
   ],
   "stats": {
-    "epochModels": 350,
+    "epochModels": 351,
     "arenaModels": 65,
     "openrouterModels": 357,
-    "joined": 480,
-    "eligible": 111,
+    "joined": 481,
+    "eligible": 113,
     "arenaMatchRate": 0.9384615384615385,
     "arenaTopMatchRate": 1
   }
