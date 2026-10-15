@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-10-15T11:33:57.431Z",
+  "generatedAt": "2026-10-15T17:04:17.883Z",
   "snapshotDates": {
     "epoch": "2026-10-15",
     "arena": "2026-10-15",
     "openrouter": "2026-10-15"
   },
   "snapshotFetchedAt": {
-    "epoch": "2026-10-15T11:33:57.431Z",
+    "epoch": "2026-10-15T17:04:17.883Z",
     "arena": "2026-10-15T04:44:23.512Z",
-    "openrouter": "2026-10-15T11:33:57.083Z"
+    "openrouter": "2026-10-15T17:04:16.781Z"
   },
   "models": [
     {
@@ -976,81 +976,6 @@
       ]
     },
     {
-      "slug": "claude-sonnet-4",
-      "name": "Claude Sonnet 4",
-      "vendor": "Anthropic",
-      "country": "United States of America",
-      "releaseDate": "2025-05-22",
-      "accessibility": null,
-      "eci": null,
-      "contextLength": 200000,
-      "inputPerM": 3,
-      "outputPerM": 15,
-      "modalities": [
-        "image",
-        "text",
-        "file"
-      ],
-      "supportsReasoning": true,
-      "benchmarks": [
-        {
-          "id": "gpqa_diamond",
-          "raw": 0.7828282828282829,
-          "stderr": 0.02937661648494561
-        },
-        {
-          "id": "frontiermath",
-          "raw": 0.041379310344827586,
-          "stderr": 0.011715642254112493
-        },
-        {
-          "id": "otis_mock_aime",
-          "raw": 0.7111111111111111,
-          "stderr": 0.06832943242540508
-        },
-        {
-          "id": "hle",
-          "raw": 0.0776,
-          "stderr": 0.0105
-        },
-        {
-          "id": "arc_agi_2",
-          "raw": 0.012700000000000001,
-          "stderr": null
-        },
-        {
-          "id": "aider_polyglot",
-          "raw": 61.3,
-          "stderr": null
-        },
-        {
-          "id": "scicode",
-          "raw": 0.4004629629629631,
-          "stderr": null
-        },
-        {
-          "id": "ale_bench",
-          "raw": 655.35,
-          "stderr": null
-        },
-        {
-          "id": "os_world",
-          "raw": 43.9,
-          "stderr": null
-        },
-        {
-          "id": "the_agent_company",
-          "raw": 0.432,
-          "stderr": null
-        }
-      ],
-      "arena": [],
-      "sources": [
-        "epoch",
-        "openrouter"
-      ]
-    },
-    {
       "slug": "claude-sonnet-4-5",
       "name": "Claude Sonnet 4.5",
       "vendor": "Anthropic",
@@ -1592,7 +1517,7 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.02376,
+      "inputPerM": 0.0216,
       "outputPerM": 0.72,
       "modalities": [
         "text",
@@ -1709,8 +1634,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.9552599999999999,
-      "outputPerM": 1.9105199999999998,
+      "inputPerM": 0.41237999999999997,
+      "outputPerM": 0.8247599999999999,
       "modalities": [
         "text"
       ],
@@ -3034,8 +2959,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.02,
-      "outputPerM": 7,
+      "inputPerM": 0.15,
+      "outputPerM": 8,
       "modalities": [
         "text"
       ],
@@ -3097,7 +3022,7 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.03,
+      "inputPerM": 0.09999999999999999,
       "outputPerM": 4.8,
       "modalities": [
         "text"
@@ -5788,7 +5713,7 @@
       "eci": null,
       "contextLength": 1048576,
       "inputPerM": 0.44999999999999996,
-      "outputPerM": 15,
+      "outputPerM": 16.5,
       "modalities": [
         "text",
         "image",
@@ -6946,8 +6871,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 262144,
-      "inputPerM": 0.32,
-      "outputPerM": 3.1999999999999997,
+      "inputPerM": 0.25,
+      "outputPerM": 2,
       "modalities": [
         "text",
         "image",
@@ -7534,6 +7459,12 @@
       "source": "epoch",
       "raw": "claude-opus-4-6-120k",
       "slug": "claude-opus-4-6-120k",
+      "reason": "no public API pricing found on OpenRouter"
+    },
+    {
+      "source": "epoch",
+      "raw": "claude-sonnet-4",
+      "slug": "claude-sonnet-4",
       "reason": "no public API pricing found on OpenRouter"
     },
     {
@@ -9556,9 +9487,9 @@
   "stats": {
     "epochModels": 351,
     "arenaModels": 65,
-    "openrouterModels": 357,
+    "openrouterModels": 356,
     "joined": 481,
-    "eligible": 113,
+    "eligible": 112,
     "arenaMatchRate": 0.9384615384615385,
     "arenaTopMatchRate": 1
   }
