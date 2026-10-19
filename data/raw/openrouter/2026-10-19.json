@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-19T13:22:40.819Z",
+  "fetchedAt": "2026-10-19T22:23:16.223Z",
   "source": "https://openrouter.ai/api/v1/models",
   "models": [
     {
@@ -72,8 +72,23 @@
       "name": "Reflection: Beam 1.0 501B A23B",
       "created": 1792160499,
       "contextLength": 1048576,
-      "inputPerM": 1,
-      "outputPerM": 3,
+      "inputPerM": 0.3,
+      "outputPerM": 1,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "inception/mercury-3",
+      "name": "Inception: Mercury 3",
+      "created": 1792158337,
+      "contextLength": 1000000,
+      "inputPerM": 0.09999999999999999,
+      "outputPerM": 0.35,
       "inputModalities": [
         "text"
       ],
@@ -980,7 +995,7 @@
       "name": "DeepSeek: DeepSeek Pro Latest",
       "created": 1789399174,
       "contextLength": 1048576,
-      "inputPerM": 0.16269999999999998,
+      "inputPerM": 0.1307,
       "outputPerM": 8,
       "inputModalities": [
         "text"
@@ -995,8 +1010,8 @@
       "name": "DeepSeek: DeepSeek Flash Latest",
       "created": 1789399150,
       "contextLength": 1048576,
-      "inputPerM": 0.047,
-      "outputPerM": 0.6,
+      "inputPerM": 0.049999999999999996,
+      "outputPerM": 0.024,
       "inputModalities": [
         "text",
         "image"
@@ -1160,8 +1175,8 @@
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "created": 1789021285,
       "contextLength": 1048576,
-      "inputPerM": 0.0376,
-      "outputPerM": 0.08,
+      "inputPerM": 0.035199999999999995,
+      "outputPerM": 0.0112,
       "inputModalities": [
         "text",
         "image"
@@ -1447,8 +1462,8 @@
       "name": "Tencent: Hy4 preview",
       "created": 1787897375,
       "contextLength": 1048576,
-      "inputPerM": 0.834,
-      "outputPerM": 2.501,
+      "inputPerM": 0.7505999999999999,
+      "outputPerM": 2.2509,
       "inputModalities": [
         "text"
       ],
@@ -1594,7 +1609,7 @@
       "name": "Z.ai: GLM Latest",
       "created": 1787151053,
       "contextLength": 1048576,
-      "inputPerM": 0.049999999999999996,
+      "inputPerM": 0.051,
       "outputPerM": 6,
       "inputModalities": [
         "text"
@@ -1917,7 +1932,7 @@
       "name": "DeepSeek: DeepSeek V4 Flash Latest",
       "created": 1785606009,
       "contextLength": 1048576,
-      "inputPerM": 0.005200000000000001,
+      "inputPerM": 0.01592,
       "outputPerM": 0.12,
       "inputModalities": [
         "text"
@@ -1932,8 +1947,8 @@
       "name": "DeepSeek: DeepSeek V4 Flash 0731",
       "created": 1785478908,
       "contextLength": 1048576,
-      "inputPerM": 0.15,
-      "outputPerM": 0.15,
+      "inputPerM": 0.1298,
+      "outputPerM": 0.38939999999999997,
       "inputModalities": [
         "text"
       ],
@@ -2542,8 +2557,8 @@
       "name": "Tencent: Hy3",
       "created": 1783344048,
       "contextLength": 262144,
-      "inputPerM": 0.13199999999999998,
-      "outputPerM": 0.5279999999999999,
+      "inputPerM": 0.0825,
+      "outputPerM": 0.33,
       "inputModalities": [
         "text"
       ],
@@ -3244,7 +3259,7 @@
       "created": 1777318428,
       "contextLength": 1048576,
       "inputPerM": 0.238,
-      "outputPerM": 13,
+      "outputPerM": 16,
       "inputModalities": [
         "text",
         "image",
@@ -3432,8 +3447,8 @@
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "created": 1777000679,
       "contextLength": 1048576,
-      "inputPerM": 0.446136,
-      "outputPerM": 0.892272,
+      "inputPerM": 0.368358,
+      "outputPerM": 0.736716,
       "inputModalities": [
         "text"
       ],
@@ -3625,8 +3640,8 @@
       "name": "Google: Gemma 4 26B A4B ",
       "created": 1775227989,
       "contextLength": 262144,
-      "inputPerM": 0.09,
-      "outputPerM": 0.3,
+      "inputPerM": 0.0765,
+      "outputPerM": 0.255,
       "inputModalities": [
         "image",
         "text",
