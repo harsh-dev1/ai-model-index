@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generatedAt": "2026-10-24T11:06:04.949Z",
+    "generatedAt": "2026-10-24T15:59:28.807Z",
     "sources": [
       {
         "id": "epoch",
         "label": "Epoch AI — AI Benchmarking Hub",
         "url": "https://epoch.ai/benchmarks",
         "licence": "CC-BY 4.0",
-        "fetchedAt": "2026-10-24T11:06:04.896Z",
+        "fetchedAt": "2026-10-24T15:59:28.786Z",
         "records": 353,
         "stale": false
       },
@@ -25,7 +25,7 @@
         "label": "OpenRouter model catalogue",
         "url": "https://openrouter.ai/api/v1/models",
         "licence": "Public API",
-        "fetchedAt": "2026-10-24T11:06:04.949Z",
+        "fetchedAt": "2026-10-24T15:59:28.807Z",
         "records": 365,
         "stale": false
       }
@@ -2664,14 +2664,14 @@
       "pillarScores": {
         "reasoning": 55.5,
         "coding": 71.3,
-        "cost": 80
+        "cost": 79.9
       },
       "pillarCoverage": {
         "reasoning": 5,
         "coding": 1,
         "cost": 1
       },
-      "score": 67.23,
+      "score": 67.21,
       "rank": 3,
       "scoreUncertainty": 6.37,
       "coverage": 0.65,
@@ -3099,14 +3099,14 @@
       "pillarScores": {
         "reasoning": 61.1,
         "coding": 64.1,
-        "cost": 80
+        "cost": 79.9
       },
       "pillarCoverage": {
         "reasoning": 4,
         "coding": 3,
         "cost": 1
       },
-      "score": 66.62,
+      "score": 66.59,
       "rank": 6,
       "scoreUncertainty": 6.34,
       "coverage": 0.65,
@@ -3685,14 +3685,14 @@
       "pillarScores": {
         "reasoning": 58.8,
         "coding": 57.9,
-        "cost": 85.4
+        "cost": 85.2
       },
       "pillarCoverage": {
         "reasoning": 4,
         "coding": 3,
         "cost": 1
       },
-      "score": 64.59,
+      "score": 64.55,
       "rank": 10,
       "scoreUncertainty": 6.34,
       "coverage": 0.65,
@@ -4277,7 +4277,7 @@
         "reasoning": 72.3,
         "coding": 60.9,
         "preference": 60.1,
-        "cost": 53.4
+        "cost": 53.3
       },
       "pillarCoverage": {
         "reasoning": 5,
@@ -4285,7 +4285,7 @@
         "preference": 2,
         "cost": 1
       },
-      "score": 62.74,
+      "score": 62.72,
       "rank": 14,
       "scoreUncertainty": 2.82,
       "coverage": 0.85,
@@ -4379,14 +4379,14 @@
       "pillarScores": {
         "reasoning": 60.6,
         "coding": 65,
-        "cost": 61.4
+        "cost": 61.3
       },
       "pillarCoverage": {
         "reasoning": 3,
         "coding": 3,
         "cost": 1
       },
-      "score": 62.48,
+      "score": 62.45,
       "rank": 15,
       "scoreUncertainty": 6.35,
       "coverage": 0.65,
@@ -4482,14 +4482,14 @@
       "pillarScores": {
         "reasoning": 65.1,
         "coding": 47.8,
-        "cost": 82.5
+        "cost": 82.4
       },
       "pillarCoverage": {
         "reasoning": 3,
         "coding": 3,
         "cost": 1
       },
-      "score": 62.46,
+      "score": 62.44,
       "rank": 16,
       "scoreUncertainty": 6.35,
       "coverage": 0.65,
@@ -4729,7 +4729,7 @@
         "reasoning": 61.4,
         "coding": 61.8,
         "preference": 58.4,
-        "cost": 69.3
+        "cost": 69.2
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -4737,122 +4737,10 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 62.21,
+      "score": 62.19,
       "rank": 18,
       "scoreUncertainty": 2.86,
       "coverage": 0.85,
-      "tieGroup": 2
-    },
-    {
-      "slug": "deepseek-v4-1-flash",
-      "name": "DeepSeek V4.1 Flash",
-      "vendor": "DeepSeek",
-      "country": "China",
-      "releaseDate": "2026-09-09",
-      "accessibility": null,
-      "contextLength": 1048576,
-      "modalities": [
-        "image",
-        "text"
-      ],
-      "supportsReasoning": true,
-      "pricing": {
-        "inputPerM": 0.02,
-        "outputPerM": 1,
-        "blendedPerM": 0.265
-      },
-      "benchmarks": [
-        {
-          "id": "otis_mock_aime",
-          "label": "AIME (mock)",
-          "pillar": "reasoning",
-          "raw": 0.9833333333333333,
-          "display": "98.3%",
-          "normalised": 97,
-          "stderr": 0.006405884289881728,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "ale_bench",
-          "label": "ALE-Bench",
-          "pillar": "coding",
-          "raw": 1092.35,
-          "display": "109235.0%",
-          "normalised": 36.5,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "arc_agi_2",
-          "label": "ARC-AGI-2",
-          "pillar": "reasoning",
-          "raw": 0.7291666666666666,
-          "display": "72.9%",
-          "normalised": 76.8,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "gpqa_diamond",
-          "label": "GPQA Diamond",
-          "pillar": "reasoning",
-          "raw": 0.8983585858585859,
-          "display": "89.8%",
-          "normalised": 81.6,
-          "stderr": 0.017287759372442393,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "scicode",
-          "label": "SciCode",
-          "pillar": "coding",
-          "raw": 0.518518518518518,
-          "display": "51.9%",
-          "normalised": 65.5,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "simpleqa_verified",
-          "label": "SimpleQA Verified",
-          "pillar": "reasoning",
-          "raw": 0.429,
-          "display": "42.9%",
-          "normalised": 52.7,
-          "stderr": 0.015658997547870177,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "webdev_arena",
-          "label": "WebDev Arena",
-          "pillar": "coding",
-          "raw": 1613.95,
-          "display": "1614",
-          "normalised": 65.3,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        }
-      ],
-      "arena": [],
-      "eci": null,
-      "sources": [
-        "epoch",
-        "openrouter"
-      ],
-      "pillarScores": {
-        "reasoning": 63.2,
-        "coding": 57.9,
-        "cost": 67.1
-      },
-      "pillarCoverage": {
-        "reasoning": 4,
-        "coding": 3,
-        "cost": 1
-      },
-      "score": 62.06,
-      "rank": 19,
-      "scoreUncertainty": 6.34,
-      "coverage": 0.65,
       "tieGroup": 2
     },
     {
@@ -4966,9 +4854,121 @@
         "cost": 1
       },
       "score": 62.06,
-      "rank": 20,
+      "rank": 19,
       "scoreUncertainty": 2.89,
       "coverage": 0.85,
+      "tieGroup": 2
+    },
+    {
+      "slug": "deepseek-v4-1-flash",
+      "name": "DeepSeek V4.1 Flash",
+      "vendor": "DeepSeek",
+      "country": "China",
+      "releaseDate": "2026-09-09",
+      "accessibility": null,
+      "contextLength": 1048576,
+      "modalities": [
+        "image",
+        "text"
+      ],
+      "supportsReasoning": true,
+      "pricing": {
+        "inputPerM": 0.02,
+        "outputPerM": 1,
+        "blendedPerM": 0.265
+      },
+      "benchmarks": [
+        {
+          "id": "otis_mock_aime",
+          "label": "AIME (mock)",
+          "pillar": "reasoning",
+          "raw": 0.9833333333333333,
+          "display": "98.3%",
+          "normalised": 97,
+          "stderr": 0.006405884289881728,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "ale_bench",
+          "label": "ALE-Bench",
+          "pillar": "coding",
+          "raw": 1092.35,
+          "display": "109235.0%",
+          "normalised": 36.5,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "arc_agi_2",
+          "label": "ARC-AGI-2",
+          "pillar": "reasoning",
+          "raw": 0.7291666666666666,
+          "display": "72.9%",
+          "normalised": 76.8,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "gpqa_diamond",
+          "label": "GPQA Diamond",
+          "pillar": "reasoning",
+          "raw": 0.8983585858585859,
+          "display": "89.8%",
+          "normalised": 81.6,
+          "stderr": 0.017287759372442393,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "scicode",
+          "label": "SciCode",
+          "pillar": "coding",
+          "raw": 0.518518518518518,
+          "display": "51.9%",
+          "normalised": 65.5,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "simpleqa_verified",
+          "label": "SimpleQA Verified",
+          "pillar": "reasoning",
+          "raw": 0.429,
+          "display": "42.9%",
+          "normalised": 52.7,
+          "stderr": 0.015658997547870177,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "webdev_arena",
+          "label": "WebDev Arena",
+          "pillar": "coding",
+          "raw": 1613.95,
+          "display": "1614",
+          "normalised": 65.3,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        }
+      ],
+      "arena": [],
+      "eci": null,
+      "sources": [
+        "epoch",
+        "openrouter"
+      ],
+      "pillarScores": {
+        "reasoning": 63.2,
+        "coding": 57.9,
+        "cost": 67
+      },
+      "pillarCoverage": {
+        "reasoning": 4,
+        "coding": 3,
+        "cost": 1
+      },
+      "score": 62.04,
+      "rank": 20,
+      "scoreUncertainty": 6.34,
+      "coverage": 0.65,
       "tieGroup": 2
     },
     {
@@ -5155,6 +5155,117 @@
       "tieGroup": 3
     },
     {
+      "slug": "deepseek-v4-pro",
+      "name": "DeepSeek V4 Pro 0423",
+      "vendor": "DeepSeek",
+      "country": "China",
+      "releaseDate": "2026-04-24",
+      "accessibility": null,
+      "contextLength": 1048576,
+      "modalities": [
+        "text"
+      ],
+      "supportsReasoning": true,
+      "pricing": {
+        "inputPerM": 0.2088,
+        "outputPerM": 0.4176,
+        "blendedPerM": 0.261
+      },
+      "benchmarks": [
+        {
+          "id": "otis_mock_aime",
+          "label": "AIME (mock)",
+          "pillar": "reasoning",
+          "raw": 0.9666666666666667,
+          "display": "96.7%",
+          "normalised": 94,
+          "stderr": 0.02002208376727653,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "ale_bench",
+          "label": "ALE-Bench",
+          "pillar": "coding",
+          "raw": 1006.08,
+          "display": "100608.0%",
+          "normalised": 32.5,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "gpqa_diamond",
+          "label": "GPQA Diamond",
+          "pillar": "reasoning",
+          "raw": 0.9090909090909091,
+          "display": "90.9%",
+          "normalised": 84.6,
+          "stderr": 0.020482086775424225,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "scicode",
+          "label": "SciCode",
+          "pillar": "coding",
+          "raw": 0.5,
+          "display": "50.0%",
+          "normalised": 61.3,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "simpleqa_verified",
+          "label": "SimpleQA Verified",
+          "pillar": "reasoning",
+          "raw": 0.46993987975951906,
+          "display": "47.0%",
+          "normalised": 58.6,
+          "stderr": 0.015806515332355317,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "swe_bench_verified",
+          "label": "SWE-bench Verified",
+          "pillar": "coding",
+          "raw": 0.7763975155279503,
+          "display": "77.6%",
+          "normalised": 72.4,
+          "stderr": 0.01897828052158487,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        },
+        {
+          "id": "webdev_arena",
+          "label": "WebDev Arena",
+          "pillar": "coding",
+          "raw": 1463.63,
+          "display": "1464",
+          "normalised": 40,
+          "stderr": null,
+          "sourceUrl": "https://epoch.ai/benchmarks"
+        }
+      ],
+      "arena": [],
+      "eci": null,
+      "sources": [
+        "epoch",
+        "openrouter"
+      ],
+      "pillarScores": {
+        "reasoning": 64.5,
+        "coding": 54.6,
+        "cost": 67.2
+      },
+      "pillarCoverage": {
+        "reasoning": 3,
+        "coding": 4,
+        "cost": 1
+      },
+      "score": 61.32,
+      "rank": 22,
+      "scoreUncertainty": 6.34,
+      "coverage": 0.65,
+      "tieGroup": 3
+    },
+    {
       "slug": "gpt-6-sol",
       "name": "GPT-6 Sol",
       "vendor": "OpenAI",
@@ -5277,120 +5388,9 @@
         "cost": 1
       },
       "score": 60.11,
-      "rank": 22,
+      "rank": 23,
       "scoreUncertainty": 2.83,
       "coverage": 0.85,
-      "tieGroup": 3
-    },
-    {
-      "slug": "deepseek-v4-pro",
-      "name": "DeepSeek V4 Pro 0423",
-      "vendor": "DeepSeek",
-      "country": "China",
-      "releaseDate": "2026-04-24",
-      "accessibility": null,
-      "contextLength": 1048576,
-      "modalities": [
-        "text"
-      ],
-      "supportsReasoning": true,
-      "pricing": {
-        "inputPerM": 0.3276,
-        "outputPerM": 0.6553,
-        "blendedPerM": 0.4096
-      },
-      "benchmarks": [
-        {
-          "id": "otis_mock_aime",
-          "label": "AIME (mock)",
-          "pillar": "reasoning",
-          "raw": 0.9666666666666667,
-          "display": "96.7%",
-          "normalised": 94,
-          "stderr": 0.02002208376727653,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "ale_bench",
-          "label": "ALE-Bench",
-          "pillar": "coding",
-          "raw": 1006.08,
-          "display": "100608.0%",
-          "normalised": 32.5,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "gpqa_diamond",
-          "label": "GPQA Diamond",
-          "pillar": "reasoning",
-          "raw": 0.9090909090909091,
-          "display": "90.9%",
-          "normalised": 84.6,
-          "stderr": 0.020482086775424225,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "scicode",
-          "label": "SciCode",
-          "pillar": "coding",
-          "raw": 0.5,
-          "display": "50.0%",
-          "normalised": 61.3,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "simpleqa_verified",
-          "label": "SimpleQA Verified",
-          "pillar": "reasoning",
-          "raw": 0.46993987975951906,
-          "display": "47.0%",
-          "normalised": 58.6,
-          "stderr": 0.015806515332355317,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "swe_bench_verified",
-          "label": "SWE-bench Verified",
-          "pillar": "coding",
-          "raw": 0.7763975155279503,
-          "display": "77.6%",
-          "normalised": 72.4,
-          "stderr": 0.01897828052158487,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        },
-        {
-          "id": "webdev_arena",
-          "label": "WebDev Arena",
-          "pillar": "coding",
-          "raw": 1463.63,
-          "display": "1464",
-          "normalised": 40,
-          "stderr": null,
-          "sourceUrl": "https://epoch.ai/benchmarks"
-        }
-      ],
-      "arena": [],
-      "eci": null,
-      "sources": [
-        "epoch",
-        "openrouter"
-      ],
-      "pillarScores": {
-        "reasoning": 64.5,
-        "coding": 54.6,
-        "cost": 61.4
-      },
-      "pillarCoverage": {
-        "reasoning": 3,
-        "coding": 4,
-        "cost": 1
-      },
-      "score": 59.98,
-      "rank": 23,
-      "scoreUncertainty": 6.34,
-      "coverage": 0.65,
       "tieGroup": 3
     },
     {
@@ -6027,7 +6027,7 @@
         "reasoning": 72.6,
         "coding": 59.3,
         "preference": 44.7,
-        "cost": 53.4
+        "cost": 53.3
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -6035,7 +6035,7 @@
         "preference": 2,
         "cost": 1
       },
-      "score": 58.74,
+      "score": 58.72,
       "rank": 28,
       "scoreUncertainty": 2.83,
       "coverage": 0.85,
@@ -6360,7 +6360,7 @@
         "reasoning": 66.9,
         "coding": 50.8,
         "preference": 57.6,
-        "cost": 53.4
+        "cost": 53.3
       },
       "pillarCoverage": {
         "reasoning": 4,
@@ -6368,7 +6368,7 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 57.59,
+      "score": 57.58,
       "rank": 31,
       "scoreUncertainty": 2.86,
       "coverage": 0.85,
@@ -7439,7 +7439,7 @@
         "coding": 50.1,
         "agentic": 65.9,
         "preference": 44.2,
-        "cost": 57.2
+        "cost": 57.1
       },
       "pillarCoverage": {
         "reasoning": 5,
@@ -7448,7 +7448,7 @@
         "preference": 2,
         "cost": 1
       },
-      "score": 54.98,
+      "score": 54.97,
       "rank": 39,
       "scoreUncertainty": 0.94,
       "coverage": 1,
@@ -7660,14 +7660,14 @@
       "pillarScores": {
         "reasoning": 27.7,
         "coding": 76.2,
-        "cost": 60.2
+        "cost": 60.1
       },
       "pillarCoverage": {
         "reasoning": 2,
         "coding": 1,
         "cost": 1
       },
-      "score": 53.85,
+      "score": 53.83,
       "rank": 41,
       "scoreUncertainty": 6.38,
       "coverage": 0.65,
@@ -8150,14 +8150,14 @@
       "pillarScores": {
         "reasoning": 55.6,
         "coding": 58.5,
-        "cost": 40.1
+        "cost": 40
       },
       "pillarCoverage": {
         "reasoning": 3,
         "coding": 2,
         "cost": 1
       },
-      "score": 53.14,
+      "score": 53.12,
       "rank": 45,
       "scoreUncertainty": 6.35,
       "coverage": 0.65,
@@ -8271,14 +8271,14 @@
       "pillarScores": {
         "reasoning": 50.9,
         "coding": 60.8,
-        "cost": 42.1
+        "cost": 42
       },
       "pillarCoverage": {
         "reasoning": 4,
         "coding": 4,
         "cost": 1
       },
-      "score": 52.68,
+      "score": 52.65,
       "rank": 46,
       "scoreUncertainty": 6.34,
       "coverage": 0.65,
@@ -8423,7 +8423,7 @@
         "reasoning": 67.3,
         "coding": 58.5,
         "preference": 33.5,
-        "cost": 42.7
+        "cost": 42.6
       },
       "pillarCoverage": {
         "reasoning": 5,
@@ -8431,7 +8431,7 @@
         "preference": 2,
         "cost": 1
       },
-      "score": 52.42,
+      "score": 52.4,
       "rank": 47,
       "scoreUncertainty": 2.82,
       "coverage": 0.85,
@@ -8595,7 +8595,7 @@
         "coding": 51.5,
         "agentic": 69.3,
         "preference": 44.2,
-        "cost": 38.1
+        "cost": 38
       },
       "pillarCoverage": {
         "reasoning": 6,
@@ -8604,7 +8604,7 @@
         "preference": 2,
         "cost": 1
       },
-      "score": 52.2,
+      "score": 52.19,
       "rank": 48,
       "scoreUncertainty": 0.87,
       "coverage": 1,
@@ -8670,14 +8670,14 @@
       "pillarScores": {
         "reasoning": 63.3,
         "coding": 39.2,
-        "cost": 54.6
+        "cost": 54.5
       },
       "pillarCoverage": {
         "reasoning": 2,
         "coding": 1,
         "cost": 1
       },
-      "score": 52.02,
+      "score": 52,
       "rank": 49,
       "scoreUncertainty": 6.38,
       "coverage": 0.65,
@@ -8948,7 +8948,7 @@
         "reasoning": 53.5,
         "coding": 36.8,
         "agentic": 37.2,
-        "cost": 87.6
+        "cost": 87.4
       },
       "pillarCoverage": {
         "reasoning": 2,
@@ -8956,7 +8956,7 @@
         "agentic": 2,
         "cost": 1
       },
-      "score": 51.62,
+      "score": 51.58,
       "rank": 52,
       "scoreUncertainty": 3.71,
       "coverage": 0.8,
@@ -9286,14 +9286,14 @@
       "pillarScores": {
         "reasoning": 58,
         "coding": 49.4,
-        "cost": 39.6
+        "cost": 39.5
       },
       "pillarCoverage": {
         "reasoning": 4,
         "coding": 4,
         "cost": 1
       },
-      "score": 50.45,
+      "score": 50.42,
       "rank": 55,
       "scoreUncertainty": 6.34,
       "coverage": 0.65,
@@ -9500,14 +9500,14 @@
       "pillarScores": {
         "reasoning": 39.7,
         "coding": 48.4,
-        "cost": 68.9
+        "cost": 68.8
       },
       "pillarCoverage": {
         "reasoning": 5,
         "coding": 2,
         "cost": 1
       },
-      "score": 49.78,
+      "score": 49.76,
       "rank": 57,
       "scoreUncertainty": 6.35,
       "coverage": 0.65,
@@ -9603,7 +9603,7 @@
         "reasoning": 56.6,
         "coding": 43.9,
         "preference": 42.3,
-        "cost": 58.1
+        "cost": 58
       },
       "pillarCoverage": {
         "reasoning": 2,
@@ -9611,7 +9611,7 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 49.76,
+      "score": 49.75,
       "rank": 58,
       "scoreUncertainty": 2.88,
       "coverage": 0.85,
@@ -10075,7 +10075,7 @@
         "reasoning": 39,
         "coding": 55.4,
         "agentic": 51.7,
-        "cost": 50.2
+        "cost": 50.1
       },
       "pillarCoverage": {
         "reasoning": 6,
@@ -10083,7 +10083,7 @@
         "agentic": 1,
         "cost": 1
       },
-      "score": 48.61,
+      "score": 48.59,
       "rank": 62,
       "scoreUncertainty": 3.71,
       "coverage": 0.8,
@@ -10157,14 +10157,14 @@
       "pillarScores": {
         "coding": 41.3,
         "agentic": 51,
-        "cost": 58.1
+        "cost": 58
       },
       "pillarCoverage": {
         "coding": 3,
         "agentic": 1,
         "cost": 1
       },
-      "score": 48.53,
+      "score": 48.5,
       "rank": 63,
       "scoreUncertainty": 8.14,
       "coverage": 0.55,
@@ -10270,7 +10270,7 @@
         "reasoning": 58,
         "coding": 42.6,
         "preference": 40.2,
-        "cost": 46.7
+        "cost": 46.6
       },
       "pillarCoverage": {
         "reasoning": 3,
@@ -10278,7 +10278,7 @@
         "preference": 1,
         "cost": 1
       },
-      "score": 47.29,
+      "score": 47.27,
       "rank": 64,
       "scoreUncertainty": 2.87,
       "coverage": 0.85,
@@ -10506,14 +10506,14 @@
       "pillarScores": {
         "reasoning": 34,
         "coding": 58.2,
-        "cost": 50.2
+        "cost": 50.1
       },
       "pillarCoverage": {
         "reasoning": 5,
         "coding": 2,
         "cost": 1
       },
-      "score": 47.05,
+      "score": 47.02,
       "rank": 66,
       "scoreUncertainty": 6.35,
       "coverage": 0.65,
@@ -10678,14 +10678,14 @@
       "pillarScores": {
         "reasoning": 32.9,
         "coding": 41.9,
-        "cost": 76.5
+        "cost": 76.4
       },
       "pillarCoverage": {
         "reasoning": 2,
         "coding": 2,
         "cost": 1
       },
-      "score": 46.42,
+      "score": 46.4,
       "rank": 68,
       "scoreUncertainty": 6.36,
       "coverage": 0.65,
@@ -10780,7 +10780,7 @@
         "reasoning": 19,
         "coding": 51.5,
         "agentic": 64.3,
-        "cost": 65.3
+        "cost": 65.2
       },
       "pillarCoverage": {
         "reasoning": 1,
@@ -10788,7 +10788,7 @@
         "agentic": 2,
         "cost": 1
       },
-      "score": 46.33,
+      "score": 46.31,
       "rank": 69,
       "scoreUncertainty": 3.74,
       "coverage": 0.8,
@@ -11568,14 +11568,14 @@
       "pillarScores": {
         "reasoning": 43.6,
         "coding": 33.3,
-        "cost": 66.3
+        "cost": 66.2
       },
       "pillarCoverage": {
         "reasoning": 3,
         "coding": 3,
         "cost": 1
       },
-      "score": 44.88,
+      "score": 44.85,
       "rank": 75,
       "scoreUncertainty": 6.35,
       "coverage": 0.65,
@@ -11670,7 +11670,7 @@
         "reasoning": 33.5,
         "coding": 54.8,
         "agentic": 39.7,
-        "cost": 50.9
+        "cost": 50.8
       },
       "pillarCoverage": {
         "reasoning": 3,
@@ -11678,7 +11678,7 @@
         "agentic": 1,
         "cost": 1
       },
-      "score": 44.58,
+      "score": 44.56,
       "rank": 76,
       "scoreUncertainty": 3.72,
       "coverage": 0.8,
@@ -11928,14 +11928,14 @@
       "pillarScores": {
         "reasoning": 48.6,
         "coding": 31.2,
-        "cost": 54.8
+        "cost": 54.7
       },
       "pillarCoverage": {
         "reasoning": 4,
         "coding": 2,
         "cost": 1
       },
-      "score": 43.34,
+      "score": 43.32,
       "rank": 79,
       "scoreUncertainty": 6.35,
       "coverage": 0.65,
@@ -12001,14 +12001,14 @@
       "pillarScores": {
         "reasoning": 49.7,
         "coding": 24.8,
-        "cost": 63.3
+        "cost": 63.2
       },
       "pillarCoverage": {
         "reasoning": 2,
         "coding": 1,
         "cost": 1
       },
-      "score": 43.26,
+      "score": 43.24,
       "rank": 80,
       "scoreUncertainty": 6.38,
       "coverage": 0.65,
@@ -12268,7 +12268,7 @@
         "reasoning": 39.5,
         "coding": 32.5,
         "agentic": 43.2,
-        "cost": 63.7
+        "cost": 63.6
       },
       "pillarCoverage": {
         "reasoning": 6,
@@ -12276,7 +12276,7 @@
         "agentic": 1,
         "cost": 1
       },
-      "score": 42.54,
+      "score": 42.53,
       "rank": 82,
       "scoreUncertainty": 3.69,
       "coverage": 0.8,
@@ -12383,7 +12383,7 @@
         "reasoning": 37.7,
         "coding": 68.2,
         "agentic": 42.6,
-        "cost": 6.5
+        "cost": 6.6
       },
       "pillarCoverage": {
         "reasoning": 5,
@@ -12391,7 +12391,7 @@
         "agentic": 1,
         "cost": 1
       },
-      "score": 42.3,
+      "score": 42.32,
       "rank": 83,
       "scoreUncertainty": 3.75,
       "coverage": 0.8,
@@ -12455,14 +12455,14 @@
       "pillarScores": {
         "coding": 30.5,
         "agentic": 44.6,
-        "cost": 58.1
+        "cost": 58
       },
       "pillarCoverage": {
         "coding": 2,
         "agentic": 1,
         "cost": 1
       },
-      "score": 41.87,
+      "score": 41.85,
       "rank": 84,
       "scoreUncertainty": 8.14,
       "coverage": 0.55,
@@ -12714,7 +12714,7 @@
         "reasoning": 30.6,
         "coding": 29,
         "agentic": 33.1,
-        "cost": 84.9
+        "cost": 84.8
       },
       "pillarCoverage": {
         "reasoning": 5,
@@ -12722,7 +12722,7 @@
         "agentic": 1,
         "cost": 1
       },
-      "score": 40.75,
+      "score": 40.73,
       "rank": 86,
       "scoreUncertainty": 3.75,
       "coverage": 0.8,
@@ -12786,14 +12786,14 @@
       "pillarScores": {
         "reasoning": 30.9,
         "coding": 29,
-        "cost": 74.7
+        "cost": 74.6
       },
       "pillarCoverage": {
         "reasoning": 2,
         "coding": 1,
         "cost": 1
       },
-      "score": 40.28,
+      "score": 40.25,
       "rank": 87,
       "scoreUncertainty": 6.38,
       "coverage": 0.65,
@@ -12878,7 +12878,7 @@
         "reasoning": 27.8,
         "coding": 32.8,
         "agentic": 18.9,
-        "cost": 93.5
+        "cost": 93.3
       },
       "pillarCoverage": {
         "reasoning": 2,
@@ -12886,7 +12886,7 @@
         "agentic": 1,
         "cost": 1
       },
-      "score": 40.01,
+      "score": 39.98,
       "rank": 88,
       "scoreUncertainty": 3.73,
       "coverage": 0.8,
@@ -13341,14 +13341,14 @@
       "pillarScores": {
         "reasoning": 20.4,
         "coding": 42.9,
-        "cost": 63.5
+        "cost": 63.4
       },
       "pillarCoverage": {
         "reasoning": 5,
         "coding": 2,
         "cost": 1
       },
-      "score": 39,
+      "score": 38.98,
       "rank": 91,
       "scoreUncertainty": 6.35,
       "coverage": 0.65,
@@ -13526,7 +13526,7 @@
         "reasoning": 41.3,
         "coding": 25.2,
         "agentic": 23.3,
-        "cost": 71.6
+        "cost": 71.4
       },
       "pillarCoverage": {
         "reasoning": 2,
@@ -13534,7 +13534,7 @@
         "agentic": 1,
         "cost": 1
       },
-      "score": 38.58,
+      "score": 38.54,
       "rank": 93,
       "scoreUncertainty": 3.77,
       "coverage": 0.8,
@@ -13609,7 +13609,7 @@
         "reasoning": 41.4,
         "coding": 24.6,
         "agentic": 45.4,
-        "cost": 49.6
+        "cost": 49.5
       },
       "pillarCoverage": {
         "reasoning": 1,
@@ -13617,7 +13617,7 @@
         "agentic": 2,
         "cost": 1
       },
-      "score": 38.44,
+      "score": 38.42,
       "rank": 94,
       "scoreUncertainty": 3.79,
       "coverage": 0.8,
@@ -13931,7 +13931,7 @@
         "reasoning": 19.6,
         "coding": 30.1,
         "agentic": 49.2,
-        "cost": 58.1
+        "cost": 58
       },
       "pillarCoverage": {
         "reasoning": 1,
@@ -13939,7 +13939,7 @@
         "agentic": 1,
         "cost": 1
       },
-      "score": 35.65,
+      "score": 35.63,
       "rank": 97,
       "scoreUncertainty": 3.77,
       "coverage": 0.8,
@@ -14336,14 +14336,14 @@
       "pillarScores": {
         "reasoning": 16.7,
         "coding": 18.8,
-        "cost": 81.7
+        "cost": 81.6
       },
       "pillarCoverage": {
         "reasoning": 5,
         "coding": 2,
         "cost": 1
       },
-      "score": 32.51,
+      "score": 32.48,
       "rank": 100,
       "scoreUncertainty": 6.35,
       "coverage": 0.65,
@@ -14407,14 +14407,14 @@
       "pillarScores": {
         "reasoning": 16.5,
         "coding": 13.9,
-        "cost": 87.3
+        "cost": 87.1
       },
       "pillarCoverage": {
         "reasoning": 2,
         "coding": 1,
         "cost": 1
       },
-      "score": 31.84,
+      "score": 31.79,
       "rank": 101,
       "scoreUncertainty": 6.38,
       "coverage": 0.65,
@@ -14499,7 +14499,7 @@
         "reasoning": 20.6,
         "coding": 28.6,
         "agentic": 35.2,
-        "cost": 50.2
+        "cost": 50.1
       },
       "pillarCoverage": {
         "reasoning": 1,
@@ -14507,7 +14507,7 @@
         "agentic": 1,
         "cost": 1
       },
-      "score": 31.39,
+      "score": 31.37,
       "rank": 102,
       "scoreUncertainty": 3.76,
       "coverage": 0.8,
@@ -14705,14 +14705,14 @@
       "pillarScores": {
         "reasoning": 16.5,
         "coding": 13.9,
-        "cost": 83.8
+        "cost": 83.7
       },
       "pillarCoverage": {
         "reasoning": 2,
         "coding": 1,
         "cost": 1
       },
-      "score": 31.03,
+      "score": 31.01,
       "rank": 104,
       "scoreUncertainty": 6.38,
       "coverage": 0.65,
@@ -14776,14 +14776,14 @@
       "pillarScores": {
         "reasoning": 16.5,
         "coding": 18.9,
-        "cost": 74.2
+        "cost": 74.1
       },
       "pillarCoverage": {
         "reasoning": 2,
         "coding": 1,
         "cost": 1
       },
-      "score": 30.74,
+      "score": 30.72,
       "rank": 105,
       "scoreUncertainty": 6.38,
       "coverage": 0.65,
@@ -14946,14 +14946,14 @@
       "pillarScores": {
         "reasoning": 17,
         "coding": 13.9,
-        "cost": 76.4
+        "cost": 76.3
       },
       "pillarCoverage": {
         "reasoning": 4,
         "coding": 1,
         "cost": 1
       },
-      "score": 29.52,
+      "score": 29.49,
       "rank": 107,
       "scoreUncertainty": 6.37,
       "coverage": 0.65,
@@ -15017,14 +15017,14 @@
       "pillarScores": {
         "reasoning": 16.5,
         "agentic": 18.9,
-        "cost": 61.7
+        "cost": 61.6
       },
       "pillarCoverage": {
         "reasoning": 2,
         "agentic": 1,
         "cost": 1
       },
-      "score": 29.48,
+      "score": 29.45,
       "rank": 108,
       "scoreUncertainty": 8.14,
       "coverage": 0.55,
@@ -15099,14 +15099,14 @@
       "pillarScores": {
         "reasoning": 16.5,
         "coding": 14.5,
-        "cost": 74.9
+        "cost": 74.7
       },
       "pillarCoverage": {
         "reasoning": 2,
         "coding": 2,
         "cost": 1
       },
-      "score": 29.21,
+      "score": 29.16,
       "rank": 109,
       "scoreUncertainty": 6.36,
       "coverage": 0.65,
