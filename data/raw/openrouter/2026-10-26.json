@@ -1,7 +1,41 @@
 {
-  "fetchedAt": "2026-10-26T13:10:30.208Z",
+  "fetchedAt": "2026-10-26T22:42:09.681Z",
   "source": "https://openrouter.ai/api/v1/models",
   "models": [
+    {
+      "id": "openai/gpt-6.1-terra",
+      "name": "OpenAI: GPT-6.1 Terra",
+      "created": 1793038409,
+      "contextLength": 1050000,
+      "inputPerM": 1,
+      "outputPerM": 5,
+      "inputModalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openai/gpt-6.1-terra:batch",
+      "name": "OpenAI: GPT-6.1 Terra (batch)",
+      "created": 1793038409,
+      "contextLength": 1050000,
+      "inputPerM": 0.5,
+      "outputPerM": 2.5,
+      "inputModalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
     {
       "id": "moonshotai/kimi-k3.1-pro",
       "name": "MoonshotAI: Kimi K3.1 Pro",
@@ -1027,7 +1061,7 @@
       "name": "DeepSeek: DeepSeek Pro Latest",
       "created": 1789399174,
       "contextLength": 1048576,
-      "inputPerM": 0.2066,
+      "inputPerM": 0.1188,
       "outputPerM": 8,
       "inputModalities": [
         "text"
@@ -1042,8 +1076,8 @@
       "name": "DeepSeek: DeepSeek Flash Latest",
       "created": 1789399150,
       "contextLength": 1048576,
-      "inputPerM": 0.02,
-      "outputPerM": 1,
+      "inputPerM": 0.04,
+      "outputPerM": 0.5,
       "inputModalities": [
         "text",
         "image"
@@ -1122,8 +1156,8 @@
       "name": "OpenAI: GPT Terra Latest",
       "created": 1789130925,
       "contextLength": 1050000,
-      "inputPerM": 2,
-      "outputPerM": 12,
+      "inputPerM": 1,
+      "outputPerM": 5,
       "inputModalities": [
         "file",
         "image",
@@ -1207,8 +1241,8 @@
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "created": 1789021285,
       "contextLength": 1048576,
-      "inputPerM": 0.02,
-      "outputPerM": 1,
+      "inputPerM": 0.0477,
+      "outputPerM": 0.1908,
       "inputModalities": [
         "text",
         "image"
@@ -1494,8 +1528,8 @@
       "name": "Tencent: Hy4 preview",
       "created": 1787897375,
       "contextLength": 1048576,
-      "inputPerM": 0.834,
-      "outputPerM": 2.501,
+      "inputPerM": 0.7505999999999999,
+      "outputPerM": 2.2509,
       "inputModalities": [
         "text"
       ],
@@ -1979,8 +2013,8 @@
       "name": "DeepSeek: DeepSeek V4 Flash Latest",
       "created": 1785606009,
       "contextLength": 1048576,
-      "inputPerM": 0.0475,
-      "outputPerM": 0.1568,
+      "inputPerM": 0.0422,
+      "outputPerM": 0.1694,
       "inputModalities": [
         "text"
       ],
@@ -1994,8 +2028,8 @@
       "name": "DeepSeek: DeepSeek V4 Flash 0731",
       "created": 1785478908,
       "contextLength": 1048576,
-      "inputPerM": 0.44,
-      "outputPerM": 1.32,
+      "inputPerM": 0.04444,
+      "outputPerM": 0.13332,
       "inputModalities": [
         "text"
       ],
@@ -2284,7 +2318,7 @@
       "name": "MoonshotAI: Kimi K3",
       "created": 1784215858,
       "contextLength": 1048576,
-      "inputPerM": 0.15200000000000002,
+      "inputPerM": 0.19999999999999998,
       "outputPerM": 20,
       "inputModalities": [
         "text",
@@ -2604,8 +2638,8 @@
       "name": "Tencent: Hy3",
       "created": 1783344048,
       "contextLength": 262144,
-      "inputPerM": 0.13199999999999998,
-      "outputPerM": 0.5279999999999999,
+      "inputPerM": 0.0825,
+      "outputPerM": 0.33,
       "inputModalities": [
         "text"
       ],
@@ -2795,8 +2829,8 @@
       "name": "MoonshotAI: Kimi K2.7 Code",
       "created": 1781266361,
       "contextLength": 262144,
-      "inputPerM": 0.6712,
-      "outputPerM": 3.35,
+      "inputPerM": 0.56,
+      "outputPerM": 3.1,
       "inputModalities": [
         "text",
         "image"
@@ -3305,7 +3339,7 @@
       "name": "MoonshotAI: Kimi Latest",
       "created": 1777318428,
       "contextLength": 1048576,
-      "inputPerM": 0.15200000000000002,
+      "inputPerM": 0.19999999999999998,
       "outputPerM": 20,
       "inputModalities": [
         "text",
@@ -3393,7 +3427,7 @@
       "created": 1777260255,
       "contextLength": 262144,
       "inputPerM": 0.09999999999999999,
-      "outputPerM": 0.95,
+      "outputPerM": 0.8999999999999999,
       "inputModalities": [
         "text",
         "image",
@@ -3494,8 +3528,8 @@
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "created": 1777000679,
       "contextLength": 1048576,
-      "inputPerM": 0.797616,
-      "outputPerM": 1.595232,
+      "inputPerM": 0.713052,
+      "outputPerM": 1.426104,
       "inputModalities": [
         "text"
       ],
@@ -3687,8 +3721,8 @@
       "name": "Google: Gemma 4 26B A4B ",
       "created": 1775227989,
       "contextLength": 262144,
-      "inputPerM": 0.09,
-      "outputPerM": 0.3,
+      "inputPerM": 0.0765,
+      "outputPerM": 0.255,
       "inputModalities": [
         "image",
         "text",
@@ -3959,22 +3993,6 @@
       "contextLength": 262144,
       "inputPerM": 0.15,
       "outputPerM": 0.6,
-      "inputModalities": [
-        "text",
-        "image"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": true
-    },
-    {
-      "id": "mistralai/mistral-small-2603:batch",
-      "name": "Mistral: Mistral Small 4 (batch)",
-      "created": 1773695685,
-      "contextLength": 262144,
-      "inputPerM": 0.075,
-      "outputPerM": 0.3,
       "inputModalities": [
         "text",
         "image"
@@ -4992,22 +5010,6 @@
       "supportsReasoning": false
     },
     {
-      "id": "mistralai/ministral-8b-2512:batch",
-      "name": "Mistral: Ministral 3 8B 2512 (batch)",
-      "created": 1764681654,
-      "contextLength": 262144,
-      "inputPerM": 0.075,
-      "outputPerM": 0.075,
-      "inputModalities": [
-        "text",
-        "image"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": false
-    },
-    {
       "id": "mistralai/ministral-3b-2512",
       "name": "Mistral: Ministral 3 3B 2512",
       "created": 1764681560,
@@ -5030,23 +5032,6 @@
       "contextLength": 262144,
       "inputPerM": 0.5,
       "outputPerM": 1.5,
-      "inputModalities": [
-        "text",
-        "image",
-        "file"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": false
-    },
-    {
-      "id": "mistralai/mistral-large-2512:batch",
-      "name": "Mistral: Mistral Large 3 2512 (batch)",
-      "created": 1764624472,
-      "contextLength": 262144,
-      "inputPerM": 0.25,
-      "outputPerM": 0.75,
       "inputModalities": [
         "text",
         "image",
@@ -5700,23 +5685,6 @@
       "supportsReasoning": false
     },
     {
-      "id": "mistralai/mistral-medium-3.1:batch",
-      "name": "Mistral: Mistral Medium 3.1 (batch)",
-      "created": 1755095639,
-      "contextLength": 131072,
-      "inputPerM": 0.19999999999999998,
-      "outputPerM": 1,
-      "inputModalities": [
-        "text",
-        "image",
-        "file"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": false
-    },
-    {
       "id": "z-ai/glm-4.5v",
       "name": "Z.ai: GLM 4.5V",
       "created": 1754922288,
@@ -5935,22 +5903,6 @@
       "contextLength": 256000,
       "inputPerM": 0.3,
       "outputPerM": 0.8999999999999999,
-      "inputModalities": [
-        "text",
-        "file"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": false
-    },
-    {
-      "id": "mistralai/codestral-2508:batch",
-      "name": "Mistral: Codestral 2508 (batch)",
-      "created": 1754079630,
-      "contextLength": 256000,
-      "inputPerM": 0.15,
-      "outputPerM": 0.44999999999999996,
       "inputModalities": [
         "text",
         "file"
