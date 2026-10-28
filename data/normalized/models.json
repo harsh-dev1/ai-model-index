@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-10-28T12:59:43.434Z",
+  "generatedAt": "2026-10-28T22:38:04.547Z",
   "snapshotDates": {
     "epoch": "2026-10-28",
     "arena": "2026-10-15",
     "openrouter": "2026-10-28"
   },
   "snapshotFetchedAt": {
-    "epoch": "2026-10-28T12:59:43.420Z",
+    "epoch": "2026-10-28T22:38:04.547Z",
     "arena": "2026-10-15T04:44:23.512Z",
-    "openrouter": "2026-10-28T12:59:43.434Z"
+    "openrouter": "2026-10-28T22:38:03.508Z"
   },
   "models": [
     {
@@ -324,6 +324,11 @@
         {
           "id": "scicode",
           "raw": 0.549768518518518,
+          "stderr": null
+        },
+        {
+          "id": "ale_bench",
+          "raw": 1587,
           "stderr": null
         }
       ],
@@ -643,7 +648,7 @@
         },
         {
           "id": "hle",
-          "raw": 0.362,
+          "raw": 0.36200000000000004,
           "stderr": 0.0188
         },
         {
@@ -1277,6 +1282,11 @@
           "stderr": 0.0195
         },
         {
+          "id": "arc_agi_2",
+          "raw": 0.8388888888888889,
+          "stderr": null
+        },
+        {
           "id": "simpleqa_verified",
           "raw": 0.465,
           "stderr": 0.015780495050030086
@@ -1469,8 +1479,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.049999999999999996,
-      "outputPerM": 0.15,
+      "inputPerM": 0.045,
+      "outputPerM": 0.5,
       "modalities": [
         "text",
         "image"
@@ -1510,6 +1520,60 @@
         {
           "id": "webdev_arena",
           "raw": 1613.95,
+          "stderr": null
+        }
+      ],
+      "arena": [],
+      "sources": [
+        "epoch",
+        "openrouter"
+      ]
+    },
+    {
+      "slug": "deepseek-v4-1-flash-1017",
+      "name": "DeepSeek V4.1 Flash 1017",
+      "vendor": "DeepSeek",
+      "country": "China",
+      "releaseDate": "2026-10-17",
+      "accessibility": null,
+      "eci": null,
+      "contextLength": 1048576,
+      "inputPerM": 0.15,
+      "outputPerM": 0.6,
+      "modalities": [
+        "text",
+        "image"
+      ],
+      "supportsReasoning": true,
+      "benchmarks": [
+        {
+          "id": "gpqa_diamond",
+          "raw": 0.9318181818181818,
+          "stderr": 0.015671362011907143
+        },
+        {
+          "id": "otis_mock_aime",
+          "raw": 0.9944444444444445,
+          "stderr": 0.003883473863441843
+        },
+        {
+          "id": "arc_agi_2",
+          "raw": 0.7805555555555556,
+          "stderr": null
+        },
+        {
+          "id": "simpleqa_verified",
+          "raw": 0.425,
+          "stderr": 0.01564032031704017
+        },
+        {
+          "id": "scicode",
+          "raw": 0.559027777777778,
+          "stderr": null
+        },
+        {
+          "id": "ale_bench",
+          "raw": 1622,
           "stderr": null
         }
       ],
@@ -1586,8 +1650,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.894012,
-      "outputPerM": 1.788024,
+      "inputPerM": 0.888966,
+      "outputPerM": 1.777932,
       "modalities": [
         "text"
       ],
@@ -2921,8 +2985,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.014,
-      "outputPerM": 7,
+      "inputPerM": 0.006,
+      "outputPerM": 5.4,
       "modalities": [
         "text"
       ],
@@ -3037,8 +3101,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.049999999999999996,
-      "outputPerM": 0.18,
+      "inputPerM": 0.0313,
+      "outputPerM": 0.0923,
       "modalities": [
         "text",
         "image",
@@ -4638,6 +4702,56 @@
       ]
     },
     {
+      "slug": "gpt-6-1-terra",
+      "name": "GPT-6.1 Terra",
+      "vendor": "OpenAI",
+      "country": "United States of America",
+      "releaseDate": "2026-10-26",
+      "accessibility": null,
+      "eci": null,
+      "contextLength": 1050000,
+      "inputPerM": 0.5,
+      "outputPerM": 2.5,
+      "modalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "supportsReasoning": true,
+      "benchmarks": [
+        {
+          "id": "gpqa_diamond",
+          "raw": 0.9431818181818182,
+          "stderr": 0.014911672683567374
+        },
+        {
+          "id": "otis_mock_aime",
+          "raw": 1,
+          "stderr": 0
+        },
+        {
+          "id": "simpleqa_verified",
+          "raw": 0.573,
+          "stderr": 0.01564978964446219
+        },
+        {
+          "id": "scicode",
+          "raw": 0.550925925925926,
+          "stderr": null
+        },
+        {
+          "id": "ale_bench",
+          "raw": 2608.82,
+          "stderr": null
+        }
+      ],
+      "arena": [],
+      "sources": [
+        "epoch",
+        "openrouter"
+      ]
+    },
+    {
       "slug": "gpt-6-astra",
       "name": "GPT-6 Astra",
       "vendor": "OpenAI",
@@ -5620,7 +5734,7 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 262144,
-      "inputPerM": 0.6725,
+      "inputPerM": 0.56,
       "outputPerM": 3.1,
       "modalities": [
         "text",
@@ -5674,7 +5788,7 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.19999999999999998,
+      "inputPerM": 0.192,
       "outputPerM": 20,
       "modalities": [
         "text",
@@ -5788,8 +5902,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 131072,
-      "inputPerM": 0.02,
-      "outputPerM": 0.04,
+      "inputPerM": 0.049999999999999996,
+      "outputPerM": 0.08,
       "modalities": [
         "text"
       ],
@@ -6278,66 +6392,6 @@
       ]
     },
     {
-      "slug": "o1",
-      "name": "o1",
-      "vendor": "OpenAI",
-      "country": "United States of America",
-      "releaseDate": "2024-09-12",
-      "accessibility": null,
-      "eci": null,
-      "contextLength": 200000,
-      "inputPerM": 15,
-      "outputPerM": 60,
-      "modalities": [
-        "text",
-        "image",
-        "file"
-      ],
-      "supportsReasoning": true,
-      "benchmarks": [
-        {
-          "id": "gpqa_diamond",
-          "raw": 0.7676767676767676,
-          "stderr": 0.030088629490217445
-        },
-        {
-          "id": "frontiermath",
-          "raw": 0.09310344827586207,
-          "stderr": 0.017092785280147835
-        },
-        {
-          "id": "otis_mock_aime",
-          "raw": 0.7333333333333333,
-          "stderr": 0.06666666666666667
-        },
-        {
-          "id": "hle",
-          "raw": 0.0796,
-          "stderr": 0.0106
-        },
-        {
-          "id": "simpleqa_verified",
-          "raw": 0.411,
-          "stderr": 0.01556667341859915
-        },
-        {
-          "id": "aider_polyglot",
-          "raw": 61.7,
-          "stderr": null
-        },
-        {
-          "id": "metr_time_horizon",
-          "raw": 38.831588,
-          "stderr": null
-        }
-      ],
-      "arena": [],
-      "sources": [
-        "epoch",
-        "openrouter"
-      ]
-    },
-    {
       "slug": "o3",
       "name": "o3",
       "vendor": "OpenAI",
@@ -6428,7 +6482,7 @@
     },
     {
       "slug": "o3-mini",
-      "name": "o3 Mini High",
+      "name": "o3 Mini",
       "vendor": "OpenAI",
       "country": "United States of America",
       "releaseDate": "2025-01-31",
@@ -6487,7 +6541,7 @@
     },
     {
       "slug": "o4-mini",
-      "name": "o4 Mini High",
+      "name": "o4 Mini",
       "vendor": "OpenAI",
       "country": "United States of America",
       "releaseDate": "2025-04-16",
@@ -7144,8 +7198,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1000000,
-      "inputPerM": 0.039,
-      "outputPerM": 1.25,
+      "inputPerM": 0.19999999999999998,
+      "outputPerM": 2.5,
       "modalities": [
         "text",
         "image",
@@ -7247,6 +7301,12 @@
       "source": "arena",
       "raw": "bagel",
       "slug": "bagel",
+      "reason": "no public API pricing found on OpenRouter"
+    },
+    {
+      "source": "epoch",
+      "raw": "beam-1-0",
+      "slug": "beam-1-0",
       "reason": "no public API pricing found on OpenRouter"
     },
     {
@@ -7611,12 +7671,6 @@
     },
     {
       "source": "epoch+openrouter",
-      "raw": "deepseek-v4-1-flash-1017",
-      "slug": "deepseek-v4-1-flash-1017",
-      "reason": "too few results to rank (3 benchmarks, no Arena votes)"
-    },
-    {
-      "source": "epoch+openrouter",
       "raw": "deepseek-v4-flash",
       "slug": "deepseek-v4-flash",
       "reason": "too few results to rank (3 benchmarks, no Arena votes)"
@@ -7928,6 +7982,12 @@
       "reason": "no public API pricing found on OpenRouter"
     },
     {
+      "source": "epoch",
+      "raw": "gemini-4-carbon",
+      "slug": "gemini-4-carbon",
+      "reason": "no public API pricing found on OpenRouter"
+    },
+    {
       "source": "arena+openrouter",
       "raw": "gemini-nano-banana-2-1",
       "slug": "gemini-nano-banana-2-1",
@@ -8094,12 +8154,6 @@
       "raw": "gpt-5-pro",
       "slug": "gpt-5-pro",
       "reason": "too few results to rank (2 benchmarks, no Arena votes)"
-    },
-    {
-      "source": "epoch+openrouter",
-      "raw": "gpt-6-1-terra",
-      "slug": "gpt-6-1-terra",
-      "reason": "too few results to rank (3 benchmarks, no Arena votes)"
     },
     {
       "source": "arena",
@@ -8382,6 +8436,12 @@
       "raw": "kimi-k2p5",
       "slug": "kimi-k2p5",
       "reason": "no public API pricing found on OpenRouter"
+    },
+    {
+      "source": "epoch+openrouter",
+      "raw": "kimi-k3-1-pro",
+      "slug": "kimi-k3-1-pro",
+      "reason": "too few results to rank (2 benchmarks, no Arena votes)"
     },
     {
       "source": "arena",
@@ -8775,15 +8835,21 @@
     },
     {
       "source": "epoch",
+      "raw": "o1",
+      "slug": "o1",
+      "reason": "no public API pricing found on OpenRouter"
+    },
+    {
+      "source": "epoch",
       "raw": "o1-mini",
       "slug": "o1-mini",
       "reason": "no public API pricing found on OpenRouter"
     },
     {
-      "source": "epoch+openrouter",
+      "source": "epoch",
       "raw": "o1-pro",
       "slug": "o1-pro",
-      "reason": "too few results to rank (1 benchmark, no Arena votes)"
+      "reason": "no public API pricing found on OpenRouter"
     },
     {
       "source": "epoch+openrouter",
@@ -9471,11 +9537,11 @@
     }
   ],
   "stats": {
-    "epochModels": 354,
+    "epochModels": 357,
     "arenaModels": 65,
-    "openrouterModels": 364,
-    "joined": 484,
-    "eligible": 111,
+    "openrouterModels": 362,
+    "joined": 487,
+    "eligible": 112,
     "arenaMatchRate": 0.9384615384615385,
     "arenaTopMatchRate": 1
   }
