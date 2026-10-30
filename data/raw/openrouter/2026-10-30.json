@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-30T12:59:53.073Z",
+  "fetchedAt": "2026-10-30T22:24:01.181Z",
   "source": "https://openrouter.ai/api/v1/models",
   "models": [
     {
@@ -7,8 +7,8 @@
       "name": "Particle AI: Particle-1",
       "created": 1793207893,
       "contextLength": 1048576,
-      "inputPerM": 0.25,
-      "outputPerM": 1,
+      "inputPerM": 0.049999999999999996,
+      "outputPerM": 0.5,
       "inputModalities": [
         "text",
         "image"
@@ -123,8 +123,8 @@
       "name": "MiniMax: MiniMax M3.1 Flash",
       "created": 1792379569,
       "contextLength": 1048576,
-      "inputPerM": 0.15,
-      "outputPerM": 0.6,
+      "inputPerM": 0.075,
+      "outputPerM": 0.3,
       "inputModalities": [
         "text",
         "image",
@@ -670,25 +670,6 @@
       "supportsReasoning": true
     },
     {
-      "id": "typesafe/jev-router",
-      "name": "TypeSafe: Jev Router",
-      "created": 1790363560,
-      "contextLength": 1000000,
-      "inputPerM": -1000000,
-      "outputPerM": -1000000,
-      "inputModalities": [
-        "audio",
-        "file",
-        "image",
-        "text",
-        "video"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": true
-    },
-    {
       "id": "perceptron/perceptron-mk1.5",
       "name": "Perceptron: Perceptron Mk1.5",
       "created": 1790352661,
@@ -986,21 +967,6 @@
       "supportsReasoning": true
     },
     {
-      "id": "nvidia/switchyard",
-      "name": "NVIDIA: Switchyard",
-      "created": 1790025947,
-      "contextLength": 1000000,
-      "inputPerM": -1000000,
-      "outputPerM": -1000000,
-      "inputModalities": [
-        "text"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": false
-    },
-    {
       "id": "xiaomi/mimo-v2.6-pro-ultraspeed",
       "name": "Xiaomi: MiMo-V2.6-Pro-UltraSpeed",
       "created": 1790021267,
@@ -1142,8 +1108,8 @@
       "name": "DeepSeek: DeepSeek Flash Latest",
       "created": 1789399150,
       "contextLength": 1048576,
-      "inputPerM": 0.031,
-      "outputPerM": 0.27,
+      "inputPerM": 0.022,
+      "outputPerM": 0.192,
       "inputModalities": [
         "text",
         "image"
@@ -1594,8 +1560,8 @@
       "name": "Tencent: Hy4 preview",
       "created": 1787897375,
       "contextLength": 1048576,
-      "inputPerM": 0.834,
-      "outputPerM": 2.501,
+      "inputPerM": 0.7505999999999999,
+      "outputPerM": 2.2509,
       "inputModalities": [
         "text"
       ],
@@ -1610,7 +1576,7 @@
       "created": 1787817633,
       "contextLength": 1048576,
       "inputPerM": 0.019700000000000002,
-      "outputPerM": 0.11420000000000001,
+      "outputPerM": 0.1324,
       "inputModalities": [
         "text",
         "image",
@@ -1643,8 +1609,8 @@
       "name": "Z.ai: GLM 5.3 Flash",
       "created": 1787752741,
       "contextLength": 1048576,
-      "inputPerM": 0.15,
-      "outputPerM": 0.5,
+      "inputPerM": 0.019700000000000002,
+      "outputPerM": 0.1324,
       "inputModalities": [
         "text",
         "image",
@@ -1771,8 +1737,8 @@
       "name": "Z.ai: GLM 5.3",
       "created": 1787086655,
       "contextLength": 1048576,
-      "inputPerM": 0.08,
-      "outputPerM": 3.5999999999999996,
+      "inputPerM": 0.10400000000000001,
+      "outputPerM": 2.769,
       "inputModalities": [
         "text"
       ],
@@ -2079,7 +2045,7 @@
       "name": "DeepSeek: DeepSeek V4 Flash Latest",
       "created": 1785606009,
       "contextLength": 1048576,
-      "inputPerM": 0.0486,
+      "inputPerM": 0.045200000000000004,
       "outputPerM": 0.3,
       "inputModalities": [
         "text"
@@ -2356,26 +2322,6 @@
       ],
       "outputModalities": [
         "text"
-      ],
-      "supportsReasoning": true
-    },
-    {
-      "id": "openrouter/auto-beta",
-      "name": "Auto Router (Beta)",
-      "created": 1784311165,
-      "contextLength": 2000000,
-      "inputPerM": -1000000,
-      "outputPerM": -1000000,
-      "inputModalities": [
-        "text",
-        "image",
-        "audio",
-        "file",
-        "video"
-      ],
-      "outputModalities": [
-        "text",
-        "image"
       ],
       "supportsReasoning": true
     },
@@ -2704,8 +2650,8 @@
       "name": "Tencent: Hy3",
       "created": 1783344048,
       "contextLength": 262144,
-      "inputPerM": 0.13199999999999998,
-      "outputPerM": 0.5279999999999999,
+      "inputPerM": 0.0825,
+      "outputPerM": 0.33,
       "inputModalities": [
         "text"
       ],
@@ -2874,21 +2820,6 @@
         "text"
       ],
       "supportsReasoning": true
-    },
-    {
-      "id": "openrouter/fusion",
-      "name": "OpenRouter: Fusion",
-      "created": 1781371647,
-      "contextLength": 1000000,
-      "inputPerM": -1000000,
-      "outputPerM": -1000000,
-      "inputModalities": [
-        "text"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": false
     },
     {
       "id": "moonshotai/kimi-k2.7-code",
@@ -3405,8 +3336,8 @@
       "name": "MoonshotAI: Kimi Latest",
       "created": 1777318428,
       "contextLength": 1048576,
-      "inputPerM": 0.1529,
-      "outputPerM": 10.5572,
+      "inputPerM": 0.1719,
+      "outputPerM": 10.148900000000001,
       "inputModalities": [
         "text",
         "image",
@@ -3594,8 +3525,8 @@
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "created": 1777000679,
       "contextLength": 1048576,
-      "inputPerM": 0.816234,
-      "outputPerM": 1.632468,
+      "inputPerM": 1.5999999999999999,
+      "outputPerM": 3.1999999999999997,
       "inputModalities": [
         "text"
       ],
@@ -3703,21 +3634,6 @@
       "supportsReasoning": true
     },
     {
-      "id": "openrouter/pareto-code",
-      "name": "Pareto Code Router",
-      "created": 1776747900,
-      "contextLength": 2000000,
-      "inputPerM": -1000000,
-      "outputPerM": -1000000,
-      "inputModalities": [
-        "text"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": true
-    },
-    {
       "id": "moonshotai/kimi-k2.6",
       "name": "MoonshotAI: Kimi K2.6",
       "created": 1776699402,
@@ -3787,8 +3703,8 @@
       "name": "Google: Gemma 4 26B A4B ",
       "created": 1775227989,
       "contextLength": 262144,
-      "inputPerM": 0.09,
-      "outputPerM": 0.3,
+      "inputPerM": 0.0675,
+      "outputPerM": 0.22499999999999998,
       "inputModalities": [
         "image",
         "text",
@@ -4573,22 +4489,6 @@
       "supportsReasoning": false
     },
     {
-      "id": "openrouter/free",
-      "name": "Free Models Router",
-      "created": 1769917427,
-      "contextLength": 200000,
-      "inputPerM": 0,
-      "outputPerM": 0,
-      "inputModalities": [
-        "text",
-        "image"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": true
-    },
-    {
       "id": "stepfun/step-3.5-flash",
       "name": "StepFun: Step 3.5 Flash",
       "created": 1769728337,
@@ -4963,21 +4863,6 @@
         "text"
       ],
       "supportsReasoning": true
-    },
-    {
-      "id": "openrouter/bodybuilder",
-      "name": "Body Builder (beta)",
-      "created": 1764903653,
-      "contextLength": 128000,
-      "inputPerM": -1000000,
-      "outputPerM": -1000000,
-      "inputModalities": [
-        "text"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": false
     },
     {
       "id": "openai/gpt-5.1-codex-max",
@@ -7389,26 +7274,6 @@
       "supportsReasoning": false
     },
     {
-      "id": "openrouter/auto",
-      "name": "Auto Router",
-      "created": 1699401600,
-      "contextLength": 2000000,
-      "inputPerM": -1000000,
-      "outputPerM": -1000000,
-      "inputModalities": [
-        "text",
-        "image",
-        "audio",
-        "file",
-        "video"
-      ],
-      "outputModalities": [
-        "text",
-        "image"
-      ],
-      "supportsReasoning": true
-    },
-    {
       "id": "openai/gpt-3.5-turbo-16k",
       "name": "OpenAI: GPT-3.5 Turbo 16k",
       "created": 1693180800,
@@ -7482,6 +7347,141 @@
         "text"
       ],
       "supportsReasoning": false
+    },
+    {
+      "id": "typesafe/jev-router",
+      "name": "TypeSafe: Jev Router",
+      "created": 1790363560,
+      "contextLength": 1000000,
+      "inputPerM": -1000000,
+      "outputPerM": -1000000,
+      "inputModalities": [
+        "audio",
+        "file",
+        "image",
+        "text",
+        "video"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "nvidia/switchyard",
+      "name": "NVIDIA: Switchyard",
+      "created": 1790025947,
+      "contextLength": 1000000,
+      "inputPerM": -1000000,
+      "outputPerM": -1000000,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": false
+    },
+    {
+      "id": "openrouter/auto-beta",
+      "name": "Auto Router (Beta)",
+      "created": 1784311165,
+      "contextLength": 2000000,
+      "inputPerM": -1000000,
+      "outputPerM": -1000000,
+      "inputModalities": [
+        "text",
+        "image",
+        "audio",
+        "file",
+        "video"
+      ],
+      "outputModalities": [
+        "text",
+        "image"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openrouter/fusion",
+      "name": "OpenRouter: Fusion",
+      "created": 1781371647,
+      "contextLength": 1000000,
+      "inputPerM": -1000000,
+      "outputPerM": -1000000,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": false
+    },
+    {
+      "id": "openrouter/pareto-code",
+      "name": "Pareto Code Router",
+      "created": 1776747900,
+      "contextLength": 2000000,
+      "inputPerM": -1000000,
+      "outputPerM": -1000000,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openrouter/free",
+      "name": "Free Models Router",
+      "created": 1769917427,
+      "contextLength": 200000,
+      "inputPerM": 0,
+      "outputPerM": 0,
+      "inputModalities": [
+        "text",
+        "image"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "openrouter/bodybuilder",
+      "name": "Body Builder (beta)",
+      "created": 1764903653,
+      "contextLength": 128000,
+      "inputPerM": -1000000,
+      "outputPerM": -1000000,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": false
+    },
+    {
+      "id": "openrouter/auto",
+      "name": "Auto Router",
+      "created": 1699401600,
+      "contextLength": 2000000,
+      "inputPerM": -1000000,
+      "outputPerM": -1000000,
+      "inputModalities": [
+        "text",
+        "image",
+        "audio",
+        "file",
+        "video"
+      ],
+      "outputModalities": [
+        "text",
+        "image"
+      ],
+      "supportsReasoning": true
     }
   ]
 }
