@@ -1,7 +1,26 @@
 {
-  "fetchedAt": "2026-11-03T14:20:53.624Z",
+  "fetchedAt": "2026-11-03T23:25:54.726Z",
   "source": "https://openrouter.ai/api/v1/models",
   "models": [
+    {
+      "id": "stealth/crouton-alpha",
+      "name": "Crouton Alpha",
+      "created": 1793669930,
+      "contextLength": 1048576,
+      "inputPerM": 0,
+      "outputPerM": 0,
+      "inputModalities": [
+        "text",
+        "image",
+        "video",
+        "file",
+        "audio"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
     {
       "id": "z-ai/glm-5.3-flashx-legal",
       "name": "Z.ai: GLM 5.3 FlashX Legal",
@@ -140,8 +159,8 @@
       "name": "MiniMax: MiniMax M3.1 Flash",
       "created": 1792379569,
       "contextLength": 1048576,
-      "inputPerM": 0.15,
-      "outputPerM": 0.6,
+      "inputPerM": 0.075,
+      "outputPerM": 0.3,
       "inputModalities": [
         "text",
         "image",
@@ -1055,6 +1074,23 @@
       "supportsReasoning": true
     },
     {
+      "id": "x-ai/grok-4.7:batch",
+      "name": "SpaceXAI: Grok 4.7 (batch)",
+      "created": 1790007541,
+      "contextLength": 500000,
+      "inputPerM": 1.5999999999999999,
+      "outputPerM": 4.8,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "qwen/qwen3.8-omni-flash",
       "name": "Qwen: Qwen3.8 Omni Flash",
       "created": 1789959954,
@@ -1125,8 +1161,8 @@
       "name": "DeepSeek: DeepSeek Flash Latest",
       "created": 1789399150,
       "contextLength": 1048576,
-      "inputPerM": 0.035,
-      "outputPerM": 0.315,
+      "inputPerM": 0.0333,
+      "outputPerM": 0.475,
       "inputModalities": [
         "text",
         "image"
@@ -1577,8 +1613,8 @@
       "name": "Tencent: Hy4 preview",
       "created": 1787897375,
       "contextLength": 1048576,
-      "inputPerM": 0.834,
-      "outputPerM": 2.501,
+      "inputPerM": 0.7505999999999999,
+      "outputPerM": 2.2509,
       "inputModalities": [
         "text"
       ],
@@ -1921,6 +1957,23 @@
       "contextLength": 500000,
       "inputPerM": 2,
       "outputPerM": 6,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "x-ai/grok-4.6:batch",
+      "name": "SpaceXAI: Grok 4.6 (batch)",
+      "created": 1786548957,
+      "contextLength": 500000,
+      "inputPerM": 1.5999999999999999,
+      "outputPerM": 4.8,
       "inputModalities": [
         "text",
         "image",
@@ -2317,8 +2370,8 @@
       "name": "MoonshotAI: Kimi K3",
       "created": 1784215858,
       "contextLength": 1048576,
-      "inputPerM": 0.192,
-      "outputPerM": 15,
+      "inputPerM": 0.27599999999999997,
+      "outputPerM": 9.6,
       "inputModalities": [
         "text",
         "image",
@@ -2637,8 +2690,8 @@
       "name": "Tencent: Hy3",
       "created": 1783344048,
       "contextLength": 262144,
-      "inputPerM": 0.13199999999999998,
-      "outputPerM": 0.5279999999999999,
+      "inputPerM": 0.0825,
+      "outputPerM": 0.33,
       "inputModalities": [
         "text"
       ],
@@ -3293,8 +3346,8 @@
       "name": "MoonshotAI: Kimi Latest",
       "created": 1777318428,
       "contextLength": 1048576,
-      "inputPerM": 0.18239999999999998,
-      "outputPerM": 10.1427,
+      "inputPerM": 0.1529,
+      "outputPerM": 10.155100000000001,
       "inputModalities": [
         "text",
         "image",
@@ -3660,8 +3713,8 @@
       "name": "Google: Gemma 4 26B A4B ",
       "created": 1775227989,
       "contextLength": 262144,
-      "inputPerM": 0.09999999999999999,
-      "outputPerM": 0.3,
+      "inputPerM": 0.067,
+      "outputPerM": 0.201,
       "inputModalities": [
         "image",
         "text",
@@ -5655,8 +5708,8 @@
       "name": "OpenAI: gpt-oss-120b",
       "created": 1754414231,
       "contextLength": 131072,
-      "inputPerM": 0.020999999999999998,
-      "outputPerM": 0.07600000000000001,
+      "inputPerM": 0.15,
+      "outputPerM": 0.6,
       "inputModalities": [
         "text"
       ],
@@ -5890,8 +5943,8 @@
       "name": "Qwen: Qwen3 235B A22B Instruct 2507",
       "created": 1753119555,
       "contextLength": 262144,
-      "inputPerM": 0.09,
-      "outputPerM": 0.55,
+      "inputPerM": 0.14,
+      "outputPerM": 0.7999999999999999,
       "inputModalities": [
         "text"
       ],
