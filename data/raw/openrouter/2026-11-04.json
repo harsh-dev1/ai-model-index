@@ -1,7 +1,22 @@
 {
-  "fetchedAt": "2026-11-04T06:29:30.846Z",
+  "fetchedAt": "2026-11-04T19:48:06.161Z",
   "source": "https://openrouter.ai/api/v1/models",
   "models": [
+    {
+      "id": "ricursiveai/ripple-65b-preview",
+      "name": "ricursiveAI/Ripple-65B-Preview",
+      "created": 1793818990,
+      "contextLength": 16384,
+      "inputPerM": 0.19999999999999998,
+      "outputPerM": 0.6,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
     {
       "id": "tencent/hy4",
       "name": "Tencent: Hy4",
@@ -175,8 +190,8 @@
       "name": "MiniMax: MiniMax M3.1 Flash",
       "created": 1792379569,
       "contextLength": 1048576,
-      "inputPerM": 0.15,
-      "outputPerM": 0.6,
+      "inputPerM": 0.075,
+      "outputPerM": 0.3,
       "inputModalities": [
         "text",
         "image",
@@ -192,8 +207,8 @@
       "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
       "created": 1792225624,
       "contextLength": 1048576,
-      "inputPerM": 0.3,
-      "outputPerM": 1.2,
+      "inputPerM": 0.15,
+      "outputPerM": 0.6,
       "inputModalities": [
         "text",
         "image"
@@ -1177,8 +1192,8 @@
       "name": "DeepSeek: DeepSeek Flash Latest",
       "created": 1789399150,
       "contextLength": 1048576,
-      "inputPerM": 0.0333,
-      "outputPerM": 0.475,
+      "inputPerM": 0.022,
+      "outputPerM": 0.39999999999999997,
       "inputModalities": [
         "text",
         "image"
@@ -1629,8 +1644,8 @@
       "name": "Tencent: Hy4 preview",
       "created": 1787897375,
       "contextLength": 1048576,
-      "inputPerM": 0.834,
-      "outputPerM": 2.501,
+      "inputPerM": 0.7505999999999999,
+      "outputPerM": 2.2509,
       "inputModalities": [
         "text"
       ],
@@ -1644,8 +1659,8 @@
       "name": "Z.ai: GLM Flash Latest",
       "created": 1787817633,
       "contextLength": 1048576,
-      "inputPerM": 0.0269,
-      "outputPerM": 0.09960000000000001,
+      "inputPerM": 0.0282,
+      "outputPerM": 0.0937,
       "inputModalities": [
         "text",
         "image",
@@ -1678,8 +1693,8 @@
       "name": "Z.ai: GLM 5.3 Flash",
       "created": 1787752741,
       "contextLength": 1048576,
-      "inputPerM": 0.0269,
-      "outputPerM": 0.09960000000000001,
+      "inputPerM": 0.15,
+      "outputPerM": 0.5,
       "inputModalities": [
         "text",
         "image",
@@ -1806,8 +1821,8 @@
       "name": "Z.ai: GLM 5.3",
       "created": 1787086655,
       "contextLength": 1048576,
-      "inputPerM": 0.08,
-      "outputPerM": 3.5999999999999996,
+      "inputPerM": 0.0699,
+      "outputPerM": 1.4,
       "inputModalities": [
         "text"
       ],
@@ -2131,7 +2146,7 @@
       "name": "DeepSeek: DeepSeek V4 Flash Latest",
       "created": 1785606009,
       "contextLength": 1048576,
-      "inputPerM": 0.059,
+      "inputPerM": 0.0487,
       "outputPerM": 0.3,
       "inputModalities": [
         "text"
@@ -2146,7 +2161,7 @@
       "name": "DeepSeek: DeepSeek V4 Flash 0731",
       "created": 1785478908,
       "contextLength": 1048576,
-      "inputPerM": 0.059,
+      "inputPerM": 0.0487,
       "outputPerM": 0.3,
       "inputModalities": [
         "text"
@@ -2163,23 +2178,6 @@
       "contextLength": 524288,
       "inputPerM": 0.44999999999999996,
       "outputPerM": 1.2,
-      "inputModalities": [
-        "text",
-        "image",
-        "audio"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": true
-    },
-    {
-      "id": "thinkingmachines/inkling-small:free",
-      "name": "Thinking Machines: Inkling Small (free)",
-      "created": 1785443117,
-      "contextLength": 1048576,
-      "inputPerM": 0,
-      "outputPerM": 0,
       "inputModalities": [
         "text",
         "image",
@@ -2365,28 +2363,11 @@
       "supportsReasoning": true
     },
     {
-      "id": "thinkingmachines/inkling:free",
-      "name": "Thinking Machines: Inkling (free)",
-      "created": 1784325956,
-      "contextLength": 1048576,
-      "inputPerM": 0,
-      "outputPerM": 0,
-      "inputModalities": [
-        "text",
-        "image",
-        "audio"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": true
-    },
-    {
       "id": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
       "created": 1784215858,
       "contextLength": 1048576,
-      "inputPerM": 0.19999999999999998,
+      "inputPerM": 0.192,
       "outputPerM": 16,
       "inputModalities": [
         "text",
@@ -2706,8 +2687,8 @@
       "name": "Tencent: Hy3",
       "created": 1783344048,
       "contextLength": 262144,
-      "inputPerM": 0.13199999999999998,
-      "outputPerM": 0.5279999999999999,
+      "inputPerM": 0.0825,
+      "outputPerM": 0.33,
       "inputModalities": [
         "text"
       ],
@@ -3362,8 +3343,8 @@
       "name": "MoonshotAI: Kimi Latest",
       "created": 1777318428,
       "contextLength": 1048576,
-      "inputPerM": 0.19,
-      "outputPerM": 8.940000000000001,
+      "inputPerM": 0.1719,
+      "outputPerM": 9.338799999999999,
       "inputModalities": [
         "text",
         "image",
@@ -3610,7 +3591,7 @@
       "id": "xiaomi/mimo-v2.5",
       "name": "Xiaomi: MiMo-V2.5",
       "created": 1776874269,
-      "contextLength": 1050000,
+      "contextLength": 1000000,
       "inputPerM": 0.39999999999999997,
       "outputPerM": 2,
       "inputModalities": [
@@ -3729,8 +3710,8 @@
       "name": "Google: Gemma 4 26B A4B ",
       "created": 1775227989,
       "contextLength": 262144,
-      "inputPerM": 0.08499999999999999,
-      "outputPerM": 0.256,
+      "inputPerM": 0.041,
+      "outputPerM": 0.123,
       "inputModalities": [
         "image",
         "text",
@@ -5754,8 +5735,8 @@
       "name": "OpenAI: gpt-oss-20b",
       "created": 1754414229,
       "contextLength": 131072,
-      "inputPerM": 0.03,
-      "outputPerM": 0.13,
+      "inputPerM": 0.018,
+      "outputPerM": 0.09,
       "inputModalities": [
         "text"
       ],
@@ -5959,8 +5940,8 @@
       "name": "Qwen: Qwen3 235B A22B Instruct 2507",
       "created": 1753119555,
       "contextLength": 262144,
-      "inputPerM": 0.14,
-      "outputPerM": 0.7999999999999999,
+      "inputPerM": 0.09,
+      "outputPerM": 0.55,
       "inputModalities": [
         "text"
       ],
