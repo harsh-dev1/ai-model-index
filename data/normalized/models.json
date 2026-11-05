@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-05T06:52:21.609Z",
+  "generatedAt": "2026-11-05T19:59:13.480Z",
   "snapshotDates": {
     "epoch": "2026-11-05",
     "arena": "2026-10-15",
     "openrouter": "2026-11-05"
   },
   "snapshotFetchedAt": {
-    "epoch": "2026-11-05T06:52:21.578Z",
+    "epoch": "2026-11-05T19:59:13.459Z",
     "arena": "2026-10-15T04:44:23.512Z",
-    "openrouter": "2026-11-05T06:52:21.609Z"
+    "openrouter": "2026-11-05T19:59:13.480Z"
   },
   "models": [
     {
@@ -1538,8 +1538,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.3,
-      "outputPerM": 1.2,
+      "inputPerM": 0.15,
+      "outputPerM": 0.6,
       "modalities": [
         "text",
         "image"
@@ -1592,7 +1592,7 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.059,
+      "inputPerM": 0.0434,
       "outputPerM": 0.3,
       "modalities": [
         "text"
@@ -1708,8 +1708,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.10700000000000001,
-      "outputPerM": 4.2780000000000005,
+      "inputPerM": 0.103,
+      "outputPerM": 4.109999999999999,
       "modalities": [
         "text"
       ],
@@ -4985,8 +4985,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 131072,
-      "inputPerM": 0.012,
-      "outputPerM": 0.043000000000000003,
+      "inputPerM": 0.028,
+      "outputPerM": 0.10400000000000001,
       "modalities": [
         "text"
       ],
@@ -5940,8 +5940,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 131072,
-      "inputPerM": 0.19999999999999998,
-      "outputPerM": 0.52,
+      "inputPerM": 0.59,
+      "outputPerM": 0.7899999999999999,
       "modalities": [
         "text"
       ],
@@ -5961,44 +5961,6 @@
           "id": "scicode",
           "raw": 0.260416666666667,
           "stderr": null
-        }
-      ],
-      "arena": [],
-      "sources": [
-        "epoch",
-        "openrouter"
-      ]
-    },
-    {
-      "slug": "minimax-m2-1",
-      "name": "MiniMax M2.1",
-      "vendor": "MiniMax",
-      "country": "China",
-      "releaseDate": "2025-12-23",
-      "accessibility": null,
-      "eci": null,
-      "contextLength": 204800,
-      "inputPerM": 0.3,
-      "outputPerM": 1.2,
-      "modalities": [
-        "text"
-      ],
-      "supportsReasoning": true,
-      "benchmarks": [
-        {
-          "id": "ale_bench",
-          "raw": 623.83,
-          "stderr": null
-        },
-        {
-          "id": "webdev_arena",
-          "raw": 1387.48,
-          "stderr": null
-        },
-        {
-          "id": "terminalbench",
-          "raw": 0.36629213483100004,
-          "stderr": 0.028882201141000003
         }
       ],
       "arena": [],
@@ -6059,8 +6021,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 204800,
-      "inputPerM": 0.3,
-      "outputPerM": 1.2,
+      "inputPerM": 0.21,
+      "outputPerM": 0.84,
       "modalities": [
         "text"
       ],
@@ -8024,10 +7986,10 @@
       "reason": "too few results to rank (0 benchmarks, no Arena votes)"
     },
     {
-      "source": "arena",
-      "raw": "gemini-omni-1.1-flash",
+      "source": "arena+openrouter",
+      "raw": "gemini-omni-1-1-flash",
       "slug": "gemini-omni-1-1-flash",
-      "reason": "no public API pricing found on OpenRouter"
+      "reason": "too few results to rank (0 benchmarks, no Arena votes)"
     },
     {
       "source": "arena",
@@ -8690,10 +8652,16 @@
       "reason": "no public API pricing found on OpenRouter"
     },
     {
-      "source": "epoch+openrouter",
+      "source": "epoch",
       "raw": "minimax-m2",
       "slug": "minimax-m2",
-      "reason": "too few results to rank (2 benchmarks, no Arena votes)"
+      "reason": "no public API pricing found on OpenRouter"
+    },
+    {
+      "source": "epoch",
+      "raw": "minimax-m2-1",
+      "slug": "minimax-m2-1",
+      "reason": "no public API pricing found on OpenRouter"
     },
     {
       "source": "epoch",
@@ -9581,9 +9549,9 @@
   "stats": {
     "epochModels": 364,
     "arenaModels": 65,
-    "openrouterModels": 361,
+    "openrouterModels": 360,
     "joined": 494,
-    "eligible": 112,
+    "eligible": 111,
     "arenaMatchRate": 0.9384615384615385,
     "arenaTopMatchRate": 1
   }
