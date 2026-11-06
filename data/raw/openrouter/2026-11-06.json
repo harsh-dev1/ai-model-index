@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-06T06:52:08.327Z",
+  "fetchedAt": "2026-11-06T19:26:47.221Z",
   "source": "https://openrouter.ai/api/v1/models",
   "models": [
     {
@@ -40,7 +40,7 @@
     },
     {
       "id": "ricursiveai/ripple-65b-preview",
-      "name": "ricursiveAI/Ripple-65B-Preview",
+      "name": "Ricursive: Ripple 65B Preview",
       "created": 1793818990,
       "contextLength": 1048576,
       "inputPerM": 0.19999999999999998,
@@ -226,8 +226,8 @@
       "name": "MiniMax: MiniMax M3.1 Flash",
       "created": 1792379569,
       "contextLength": 1048576,
-      "inputPerM": 0.15,
-      "outputPerM": 0.6,
+      "inputPerM": 0.075,
+      "outputPerM": 0.3,
       "inputModalities": [
         "text",
         "image",
@@ -243,8 +243,8 @@
       "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
       "created": 1792225624,
       "contextLength": 1048576,
-      "inputPerM": 0.3,
-      "outputPerM": 1.2,
+      "inputPerM": 0.15,
+      "outputPerM": 0.6,
       "inputModalities": [
         "text",
         "image"
@@ -1393,8 +1393,8 @@
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "created": 1789021285,
       "contextLength": 1048576,
-      "inputPerM": 0.0486,
-      "outputPerM": 0.54,
+      "inputPerM": 0.051,
+      "outputPerM": 0.5670000000000001,
       "inputModalities": [
         "text",
         "image"
@@ -1680,8 +1680,8 @@
       "name": "Tencent: Hy4 preview",
       "created": 1787897375,
       "contextLength": 1048576,
-      "inputPerM": 0.834,
-      "outputPerM": 2.501,
+      "inputPerM": 0.7505999999999999,
+      "outputPerM": 2.2509,
       "inputModalities": [
         "text"
       ],
@@ -1900,6 +1900,23 @@
       "supportsReasoning": true
     },
     {
+      "id": "qwen/qwen3.8-27b:batch",
+      "name": "Qwen: Qwen3.8 27B (batch)",
+      "created": 1786722910,
+      "contextLength": 262144,
+      "inputPerM": 0.16,
+      "outputPerM": 2,
+      "inputModalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "dots-studio/dots-3-note-preview:free",
       "name": "Dots Studio: Dots3-Note Preview (free)",
       "created": 1786680361,
@@ -2007,8 +2024,8 @@
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "created": 1786549364,
       "contextLength": 1048576,
-      "inputPerM": 0.111,
-      "outputPerM": 4.4399999999999995,
+      "inputPerM": 0.1165,
+      "outputPerM": 4.66,
       "inputModalities": [
         "text"
       ],
@@ -2160,6 +2177,22 @@
       "supportsReasoning": true
     },
     {
+      "id": "meta/muse-glimmer-30b:batch",
+      "name": "Meta: Muse Glimmer 30B (batch)",
+      "created": 1786302394,
+      "contextLength": 131072,
+      "inputPerM": 0.24,
+      "outputPerM": 0.96,
+      "inputModalities": [
+        "text",
+        "image"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
       "id": "inclusionai/ling-3.0-tiny",
       "name": "inclusionAI: Ling 3.0 Tiny",
       "created": 1786034890,
@@ -2197,7 +2230,7 @@
       "name": "DeepSeek: DeepSeek V4 Flash Latest",
       "created": 1785606009,
       "contextLength": 1048576,
-      "inputPerM": 0.059,
+      "inputPerM": 0.0434,
       "outputPerM": 0.3,
       "inputModalities": [
         "text"
@@ -2212,8 +2245,23 @@
       "name": "DeepSeek: DeepSeek V4 Flash 0731",
       "created": 1785478908,
       "contextLength": 1048576,
-      "inputPerM": 0.059,
+      "inputPerM": 0.0434,
       "outputPerM": 0.3,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "deepseek/deepseek-v4-flash-0731:batch",
+      "name": "DeepSeek: DeepSeek V4 Flash 0731 (batch)",
+      "created": 1785478908,
+      "contextLength": 1048576,
+      "inputPerM": 0.048,
+      "outputPerM": 0.144,
       "inputModalities": [
         "text"
       ],
@@ -2229,6 +2277,23 @@
       "contextLength": 524288,
       "inputPerM": 0.44999999999999996,
       "outputPerM": 1.2,
+      "inputModalities": [
+        "text",
+        "image",
+        "audio"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "thinkingmachines/inkling-small:batch",
+      "name": "Thinking Machines: Inkling Small (batch)",
+      "created": 1785443117,
+      "contextLength": 524288,
+      "inputPerM": 0.36,
+      "outputPerM": 0.96,
       "inputModalities": [
         "text",
         "image",
@@ -2738,8 +2803,8 @@
       "name": "Tencent: Hy3",
       "created": 1783344048,
       "contextLength": 262144,
-      "inputPerM": 0.13199999999999998,
-      "outputPerM": 0.5279999999999999,
+      "inputPerM": 0.0825,
+      "outputPerM": 0.33,
       "inputModalities": [
         "text"
       ],
@@ -2963,22 +3028,6 @@
       "supportsReasoning": true
     },
     {
-      "id": "nvidia/nemotron-3.5-content-safety:free",
-      "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
-      "created": 1780581864,
-      "contextLength": 128000,
-      "inputPerM": 0,
-      "outputPerM": 0,
-      "inputModalities": [
-        "text",
-        "image"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": true
-    },
-    {
       "id": "nvidia/nemotron-3-ultra-550b-a55b",
       "name": "NVIDIA: Nemotron 3 Ultra",
       "created": 1780551208,
@@ -3047,6 +3096,23 @@
       "contextLength": 1048576,
       "inputPerM": 0.3,
       "outputPerM": 1.2,
+      "inputModalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "minimax/minimax-m3:batch",
+      "name": "MiniMax: MiniMax M3 (batch)",
+      "created": 1780245374,
+      "contextLength": 524288,
+      "inputPerM": 0.224,
+      "outputPerM": 0.88,
       "inputModalities": [
         "text",
         "image",
@@ -3395,7 +3461,7 @@
       "created": 1777318428,
       "contextLength": 1048576,
       "inputPerM": 0.18239999999999998,
-      "outputPerM": 10.1522,
+      "outputPerM": 9.338799999999999,
       "inputModalities": [
         "text",
         "image",
@@ -3583,8 +3649,8 @@
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "created": 1777000679,
       "contextLength": 1048576,
-      "inputPerM": 0.9552599999999999,
-      "outputPerM": 1.9105199999999998,
+      "inputPerM": 0.7805639999999999,
+      "outputPerM": 1.5611279999999998,
       "inputModalities": [
         "text"
       ],
@@ -3761,8 +3827,8 @@
       "name": "Google: Gemma 4 26B A4B ",
       "created": 1775227989,
       "contextLength": 262144,
-      "inputPerM": 0.09,
-      "outputPerM": 0.3,
+      "inputPerM": 0.0675,
+      "outputPerM": 0.22499999999999998,
       "inputModalities": [
         "image",
         "text",
@@ -4062,8 +4128,8 @@
       "name": "NVIDIA: Nemotron 3 Super",
       "created": 1773245239,
       "contextLength": 1048576,
-      "inputPerM": 0.3,
-      "outputPerM": 2.4,
+      "inputPerM": 0.075,
+      "outputPerM": 0.39999999999999997,
       "inputModalities": [
         "text"
       ],
@@ -5711,8 +5777,8 @@
       "name": "OpenAI: gpt-oss-120b",
       "created": 1754414231,
       "contextLength": 131072,
-      "inputPerM": 0.024999999999999998,
-      "outputPerM": 0.093,
+      "inputPerM": 0.020999999999999998,
+      "outputPerM": 0.08,
       "inputModalities": [
         "text"
       ],
@@ -6713,8 +6779,8 @@
       "name": "DeepSeek: DeepSeek V3",
       "created": 1735241320,
       "contextLength": 163840,
-      "inputPerM": 0.2574,
-      "outputPerM": 1.0287,
+      "inputPerM": 0.32,
+      "outputPerM": 0.8899999999999999,
       "inputModalities": [
         "text"
       ],
