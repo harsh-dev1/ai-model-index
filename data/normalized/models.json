@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-09T06:39:27.440Z",
+  "generatedAt": "2026-11-09T22:24:33.098Z",
   "snapshotDates": {
     "epoch": "2026-11-09",
     "arena": "2026-10-15",
     "openrouter": "2026-11-09"
   },
   "snapshotFetchedAt": {
-    "epoch": "2026-11-09T06:39:27.440Z",
+    "epoch": "2026-11-09T22:24:33.098Z",
     "arena": "2026-10-15T04:44:23.512Z",
-    "openrouter": "2026-11-09T06:39:27.161Z"
+    "openrouter": "2026-11-09T22:24:32.889Z"
   },
   "models": [
     {
@@ -1479,8 +1479,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.011,
-      "outputPerM": 0.19999999999999998,
+      "inputPerM": 0.051,
+      "outputPerM": 0.5670000000000001,
       "modalities": [
         "text",
         "image"
@@ -1650,8 +1650,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.9552599999999999,
-      "outputPerM": 1.9105199999999998,
+      "inputPerM": 0.88044,
+      "outputPerM": 1.76088,
       "modalities": [
         "text"
       ],
@@ -3101,8 +3101,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.0335,
-      "outputPerM": 0.083,
+      "inputPerM": 0.03,
+      "outputPerM": 0.061000000000000006,
       "modalities": [
         "text",
         "image",
@@ -5043,8 +5043,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 131072,
-      "inputPerM": 0.018,
-      "outputPerM": 0.09,
+      "inputPerM": 0.024,
+      "outputPerM": 0.112,
       "modalities": [
         "text"
       ],
@@ -5393,6 +5393,11 @@
         {
           "id": "scicode",
           "raw": 0.577546296296296,
+          "stderr": null
+        },
+        {
+          "id": "ale_bench",
+          "raw": 1545.85,
           "stderr": null
         },
         {
@@ -5977,7 +5982,7 @@
       "releaseDate": "2026-02-12",
       "accessibility": null,
       "eci": null,
-      "contextLength": 204800,
+      "contextLength": 200000,
       "inputPerM": 0.3,
       "outputPerM": 1.2,
       "modalities": [
@@ -6020,7 +6025,7 @@
       "releaseDate": "2026-03-18",
       "accessibility": null,
       "eci": null,
-      "contextLength": 204800,
+      "contextLength": 196608,
       "inputPerM": 0.21,
       "outputPerM": 0.84,
       "modalities": [
@@ -7200,8 +7205,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1000000,
-      "inputPerM": 2,
-      "outputPerM": 6,
+      "inputPerM": 1.15,
+      "outputPerM": 3.45,
       "modalities": [
         "text",
         "image",
@@ -7227,6 +7232,11 @@
         {
           "id": "scicode",
           "raw": 0.520833333333333,
+          "stderr": null
+        },
+        {
+          "id": "ale_bench",
+          "raw": 1679.12,
           "stderr": null
         }
       ],
@@ -7360,6 +7370,12 @@
       "raw": "claude-3-sonnet",
       "slug": "claude-3-sonnet",
       "reason": "no public API pricing found on OpenRouter"
+    },
+    {
+      "source": "epoch+openrouter",
+      "raw": "claude-fable-5-2",
+      "slug": "claude-fable-5-2",
+      "reason": "too few results to rank (4 benchmarks, no Arena votes)"
     },
     {
       "source": "epoch",
@@ -8392,6 +8408,12 @@
       "raw": "ideogram-4.5",
       "slug": "ideogram-4-5",
       "reason": "no public API pricing found on OpenRouter"
+    },
+    {
+      "source": "epoch+openrouter",
+      "raw": "inkling-2-small",
+      "slug": "inkling-2-small",
+      "reason": "too few results to rank (2 benchmarks, no Arena votes)"
     },
     {
       "source": "arena",
@@ -9553,10 +9575,10 @@
     }
   ],
   "stats": {
-    "epochModels": 365,
+    "epochModels": 367,
     "arenaModels": 65,
-    "openrouterModels": 358,
-    "joined": 495,
+    "openrouterModels": 359,
+    "joined": 497,
     "eligible": 111,
     "arenaMatchRate": 0.9384615384615385,
     "arenaTopMatchRate": 1

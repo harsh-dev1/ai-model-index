@@ -1,7 +1,76 @@
 {
-  "fetchedAt": "2026-11-09T06:39:27.161Z",
+  "fetchedAt": "2026-11-09T22:24:32.889Z",
   "source": "https://openrouter.ai/api/v1/models",
   "models": [
+    {
+      "id": "thinkingmachines/inkling-2-small:free",
+      "name": "Thinking Machines: Inkling 2 Small (free)",
+      "created": 1794261847,
+      "contextLength": 1048576,
+      "inputPerM": 0,
+      "outputPerM": 0,
+      "inputModalities": [
+        "text",
+        "image"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "anthropic/claude-fable-5.2",
+      "name": "Anthropic: Claude Fable 5.2",
+      "created": 1794253781,
+      "contextLength": 1000000,
+      "inputPerM": 8,
+      "outputPerM": 40,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "anthropic/claude-fable-5.2:batch",
+      "name": "Anthropic: Claude Fable 5.2 (batch)",
+      "created": 1794253781,
+      "contextLength": 1000000,
+      "inputPerM": 4,
+      "outputPerM": 20,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "meta/muse-ember",
+      "name": "Meta: Muse Ember",
+      "created": 1794247648,
+      "contextLength": 1048576,
+      "inputPerM": 0.09999999999999999,
+      "outputPerM": 0.5,
+      "inputModalities": [
+        "text",
+        "image",
+        "video",
+        "file",
+        "audio"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
     {
       "id": "liquid/lfm-3-1.7b",
       "name": "LiquidAI: LFM3-1.7B",
@@ -93,25 +162,6 @@
       "inputModalities": [
         "text",
         "image"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": true
-    },
-    {
-      "id": "stealth/crouton-alpha",
-      "name": "Crouton Alpha",
-      "created": 1793669930,
-      "contextLength": 1048576,
-      "inputPerM": 0,
-      "outputPerM": 0,
-      "inputModalities": [
-        "text",
-        "image",
-        "video",
-        "file",
-        "audio"
       ],
       "outputModalities": [
         "text"
@@ -256,8 +306,8 @@
       "name": "MiniMax: MiniMax M3.1 Flash",
       "created": 1792379569,
       "contextLength": 1048576,
-      "inputPerM": 0.15,
-      "outputPerM": 0.6,
+      "inputPerM": 0.075,
+      "outputPerM": 0.3,
       "inputModalities": [
         "text",
         "image",
@@ -420,7 +470,7 @@
       "created": 1792076662,
       "contextLength": 1048576,
       "inputPerM": 0.15,
-      "outputPerM": 0.5,
+      "outputPerM": 0.47,
       "inputModalities": [
         "text",
         "image",
@@ -606,7 +656,7 @@
       "id": "stepfun/step-5-preview",
       "name": "StepFun: Step 5 Preview",
       "created": 1791462849,
-      "contextLength": 1048576,
+      "contextLength": 1000000,
       "inputPerM": 1,
       "outputPerM": 2.7,
       "inputModalities": [
@@ -1440,8 +1490,8 @@
       "name": "DeepSeek: DeepSeek V4.1 Flash (batch)",
       "created": 1789021285,
       "contextLength": 1048576,
-      "inputPerM": 0.011,
-      "outputPerM": 0.19999999999999998,
+      "inputPerM": 0.112,
+      "outputPerM": 0.33599999999999997,
       "inputModalities": [
         "text",
         "image"
@@ -1558,6 +1608,23 @@
       "contextLength": 1000000,
       "inputPerM": 2,
       "outputPerM": 6,
+      "inputModalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "qwen/qwen3.8-max-0902:batch",
+      "name": "Qwen: Qwen3.8 Max (0902) (batch)",
+      "created": 1788469704,
+      "contextLength": 262144,
+      "inputPerM": 1.15,
+      "outputPerM": 3.45,
       "inputModalities": [
         "text",
         "image",
@@ -1696,8 +1763,8 @@
       "name": "Tencent: Hy4 preview",
       "created": 1787897375,
       "contextLength": 1048576,
-      "inputPerM": 0.834,
-      "outputPerM": 2.501,
+      "inputPerM": 0.7505999999999999,
+      "outputPerM": 2.2509,
       "inputModalities": [
         "text"
       ],
@@ -1745,8 +1812,8 @@
       "name": "Z.ai: GLM 5.3 Flash",
       "created": 1787752741,
       "contextLength": 1048576,
-      "inputPerM": 0.0335,
-      "outputPerM": 0.083,
+      "inputPerM": 0.15,
+      "outputPerM": 0.5,
       "inputModalities": [
         "text",
         "image",
@@ -1762,8 +1829,8 @@
       "name": "Z.ai: GLM 5.3 Flash (batch)",
       "created": 1787752741,
       "contextLength": 1048576,
-      "inputPerM": 0.049999999999999996,
-      "outputPerM": 0.18,
+      "inputPerM": 0.03,
+      "outputPerM": 0.061000000000000006,
       "inputModalities": [
         "text",
         "image",
@@ -2516,8 +2583,8 @@
       "name": "MoonshotAI: Kimi K3 (batch)",
       "created": 1784215858,
       "contextLength": 1048576,
-      "inputPerM": 0.9169999999999999,
-      "outputPerM": 6,
+      "inputPerM": 2.2800000000000002,
+      "outputPerM": 11.399999999999999,
       "inputModalities": [
         "text",
         "image",
@@ -2819,8 +2886,8 @@
       "name": "Tencent: Hy3",
       "created": 1783344048,
       "contextLength": 262144,
-      "inputPerM": 0.13199999999999998,
-      "outputPerM": 0.5279999999999999,
+      "inputPerM": 0.0825,
+      "outputPerM": 0.33,
       "inputModalities": [
         "text"
       ],
@@ -2996,8 +3063,8 @@
       "name": "Anthropic: Claude Fable Latest",
       "created": 1781029944,
       "contextLength": 1000000,
-      "inputPerM": 10,
-      "outputPerM": 50,
+      "inputPerM": 8,
+      "outputPerM": 40,
       "inputModalities": [
         "text",
         "image",
@@ -3491,8 +3558,8 @@
       "name": "MoonshotAI: Kimi Latest",
       "created": 1777318428,
       "contextLength": 1048576,
-      "inputPerM": 0.15389999999999998,
-      "outputPerM": 10.148900000000001,
+      "inputPerM": 0.18239999999999998,
+      "outputPerM": 9.7471,
       "inputModalities": [
         "text",
         "image",
@@ -3680,8 +3747,8 @@
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "created": 1777000679,
       "contextLength": 1048576,
-      "inputPerM": 0.9552599999999999,
-      "outputPerM": 1.9105199999999998,
+      "inputPerM": 0.88044,
+      "outputPerM": 1.76088,
       "inputModalities": [
         "text"
       ],
@@ -3724,7 +3791,7 @@
       "id": "xiaomi/mimo-v2.5-pro",
       "name": "Xiaomi: MiMo-V2.5-Pro",
       "created": 1776874273,
-      "contextLength": 1050000,
+      "contextLength": 1024000,
       "inputPerM": 0.48,
       "outputPerM": 1.7999999999999998,
       "inputModalities": [
@@ -3858,8 +3925,8 @@
       "name": "Google: Gemma 4 26B A4B ",
       "created": 1775227989,
       "contextLength": 262144,
-      "inputPerM": 0.09,
-      "outputPerM": 0.3,
+      "inputPerM": 0.0765,
+      "outputPerM": 0.255,
       "inputModalities": [
         "image",
         "text",
@@ -4044,7 +4111,7 @@
       "id": "minimax/minimax-m2.7",
       "name": "MiniMax: MiniMax M2.7",
       "created": 1773836697,
-      "contextLength": 204800,
+      "contextLength": 196608,
       "inputPerM": 0.21,
       "outputPerM": 0.84,
       "inputModalities": [
@@ -4553,7 +4620,7 @@
       "id": "minimax/minimax-m2.5",
       "name": "MiniMax: MiniMax M2.5",
       "created": 1770908502,
-      "contextLength": 204800,
+      "contextLength": 200000,
       "inputPerM": 0.3,
       "outputPerM": 1.2,
       "inputModalities": [
@@ -5823,8 +5890,8 @@
       "name": "OpenAI: gpt-oss-20b",
       "created": 1754414229,
       "contextLength": 131072,
-      "inputPerM": 0.018,
-      "outputPerM": 0.09,
+      "inputPerM": 0.03,
+      "outputPerM": 0.13,
       "inputModalities": [
         "text"
       ],
@@ -5948,8 +6015,8 @@
       "name": "Z.ai: GLM 4.5 Air",
       "created": 1753471258,
       "contextLength": 131072,
-      "inputPerM": 0.13,
-      "outputPerM": 0.85,
+      "inputPerM": 0.19999999999999998,
+      "outputPerM": 1.1,
       "inputModalities": [
         "text"
       ],
@@ -6148,8 +6215,8 @@
       "name": "Mistral: Mistral Small 3.2 24B",
       "created": 1750443016,
       "contextLength": 256000,
-      "inputPerM": 0.075,
-      "outputPerM": 0.19999999999999998,
+      "inputPerM": 0.09999999999999999,
+      "outputPerM": 0.3,
       "inputModalities": [
         "image",
         "text"
@@ -6158,21 +6225,6 @@
         "text"
       ],
       "supportsReasoning": false
-    },
-    {
-      "id": "minimax/minimax-m1",
-      "name": "MiniMax: MiniMax M1",
-      "created": 1750200414,
-      "contextLength": 1000000,
-      "inputPerM": 0.55,
-      "outputPerM": 2.2,
-      "inputModalities": [
-        "text"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": true
     },
     {
       "id": "google/gemini-2.5-flash",
