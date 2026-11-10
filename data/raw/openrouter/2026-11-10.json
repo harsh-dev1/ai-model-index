@@ -1,7 +1,75 @@
 {
-  "fetchedAt": "2026-11-10T07:23:01.381Z",
+  "fetchedAt": "2026-11-10T19:46:06.847Z",
   "source": "https://openrouter.ai/api/v1/models",
   "models": [
+    {
+      "id": "baidu/ernie-5.5-flash-preview",
+      "name": "Baidu: ERNIE-5.5-Flash-Preview",
+      "created": 1794333533,
+      "contextLength": 1024000,
+      "inputPerM": 0.28,
+      "outputPerM": 1.13,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "baidu/ernie-light-dt-1.0-intl",
+      "name": "Baidu: ERNIE-Light-DT-1.0",
+      "created": 1794331260,
+      "contextLength": 1024000,
+      "inputPerM": 1.13,
+      "outputPerM": 3.9400000000000004,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "google/gemini-4-carbon",
+      "name": "Google: Gemini 4 Carbon",
+      "created": 1794326871,
+      "contextLength": 1048576,
+      "inputPerM": 2,
+      "outputPerM": 10,
+      "inputModalities": [
+        "audio",
+        "file",
+        "image",
+        "text",
+        "video"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "google/gemini-4-carbon:batch",
+      "name": "Google: Gemini 4 Carbon (batch)",
+      "created": 1794326871,
+      "contextLength": 1048576,
+      "inputPerM": 1,
+      "outputPerM": 5,
+      "inputModalities": [
+        "audio",
+        "file",
+        "image",
+        "text",
+        "video"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
     {
       "id": "nex-agi/nex-n2.6",
       "name": "Nex AGI: Nex-N2.6",
@@ -322,8 +390,8 @@
       "name": "MiniMax: MiniMax M3.1 Flash",
       "created": 1792379569,
       "contextLength": 1048576,
-      "inputPerM": 0.15,
-      "outputPerM": 0.6,
+      "inputPerM": 0.075,
+      "outputPerM": 0.3,
       "inputModalities": [
         "text",
         "image",
@@ -1490,8 +1558,8 @@
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "created": 1789021285,
       "contextLength": 1048576,
-      "inputPerM": 0.051,
-      "outputPerM": 0.5670000000000001,
+      "inputPerM": 0.3,
+      "outputPerM": 1.2,
       "inputModalities": [
         "text",
         "image"
@@ -1779,8 +1847,8 @@
       "name": "Tencent: Hy4 preview",
       "created": 1787897375,
       "contextLength": 1048576,
-      "inputPerM": 0.834,
-      "outputPerM": 2.501,
+      "inputPerM": 0.7505999999999999,
+      "outputPerM": 2.2509,
       "inputModalities": [
         "text"
       ],
@@ -1794,8 +1862,8 @@
       "name": "Z.ai: GLM Flash Latest",
       "created": 1787817633,
       "contextLength": 1048576,
-      "inputPerM": 0.0335,
-      "outputPerM": 0.083,
+      "inputPerM": 0.0399,
+      "outputPerM": 0.0784,
       "inputModalities": [
         "text",
         "image",
@@ -1828,8 +1896,8 @@
       "name": "Z.ai: GLM 5.3 Flash",
       "created": 1787752741,
       "contextLength": 1048576,
-      "inputPerM": 0.15,
-      "outputPerM": 0.5,
+      "inputPerM": 0.0399,
+      "outputPerM": 0.0784,
       "inputModalities": [
         "text",
         "image",
@@ -1845,7 +1913,7 @@
       "name": "Z.ai: GLM 5.3 Flash (batch)",
       "created": 1787752741,
       "contextLength": 1048576,
-      "inputPerM": 0.03,
+      "inputPerM": 0.041999999999999996,
       "outputPerM": 0.061000000000000006,
       "inputModalities": [
         "text",
@@ -2902,8 +2970,8 @@
       "name": "Tencent: Hy3",
       "created": 1783344048,
       "contextLength": 262144,
-      "inputPerM": 0.13199999999999998,
-      "outputPerM": 0.5279999999999999,
+      "inputPerM": 0.0825,
+      "outputPerM": 0.33,
       "inputModalities": [
         "text"
       ],
@@ -3033,7 +3101,7 @@
       "name": "Z.ai: GLM 5.2",
       "created": 1781631930,
       "contextLength": 1048576,
-      "inputPerM": 0.006,
+      "inputPerM": 0.007,
       "outputPerM": 6.8,
       "inputModalities": [
         "text"
