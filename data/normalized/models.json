@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-10T19:46:06.847Z",
+  "generatedAt": "2026-11-11T06:29:41.395Z",
   "snapshotDates": {
-    "epoch": "2026-11-10",
+    "epoch": "2026-11-11",
     "arena": "2026-10-15",
-    "openrouter": "2026-11-10"
+    "openrouter": "2026-11-11"
   },
   "snapshotFetchedAt": {
-    "epoch": "2026-11-10T19:46:06.822Z",
+    "epoch": "2026-11-11T06:29:41.395Z",
     "arena": "2026-10-15T04:44:23.512Z",
-    "openrouter": "2026-11-10T19:46:06.847Z"
+    "openrouter": "2026-11-11T06:29:41.165Z"
   },
   "models": [
     {
@@ -1479,8 +1479,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.112,
-      "outputPerM": 0.33599999999999997,
+      "inputPerM": 0.051,
+      "outputPerM": 0.5670000000000001,
       "modalities": [
         "text",
         "image"
@@ -2602,6 +2602,53 @@
       ]
     },
     {
+      "slug": "gemini-4-carbon",
+      "name": "Gemini 4 Carbon",
+      "vendor": "Google",
+      "country": "United States of America",
+      "releaseDate": "2026-10-28",
+      "accessibility": null,
+      "eci": null,
+      "contextLength": 1048576,
+      "inputPerM": 1,
+      "outputPerM": 5,
+      "modalities": [
+        "audio",
+        "file",
+        "image",
+        "text",
+        "video"
+      ],
+      "supportsReasoning": true,
+      "benchmarks": [
+        {
+          "id": "gpqa_diamond",
+          "raw": 0.9652777777777778,
+          "stderr": 0.01207061012675132
+        },
+        {
+          "id": "otis_mock_aime",
+          "raw": 1,
+          "stderr": 0
+        },
+        {
+          "id": "simpleqa_verified",
+          "raw": 0.777,
+          "stderr": 0.013169830843425608
+        },
+        {
+          "id": "scicode",
+          "raw": 0.642361111111111,
+          "stderr": null
+        }
+      ],
+      "arena": [],
+      "sources": [
+        "epoch",
+        "openrouter"
+      ]
+    },
+    {
       "slug": "gemma-3-12b-it",
       "name": "Gemma 3 12B",
       "vendor": "Google",
@@ -2922,8 +2969,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 204800,
-      "inputPerM": 1.4,
-      "outputPerM": 4.4,
+      "inputPerM": 1.33,
+      "outputPerM": 4.18,
       "modalities": [
         "text"
       ],
@@ -7990,12 +8037,6 @@
       "reason": "no public API pricing found on OpenRouter"
     },
     {
-      "source": "epoch+openrouter",
-      "raw": "gemini-4-carbon",
-      "slug": "gemini-4-carbon",
-      "reason": "too few results to rank (1 benchmark, no Arena votes)"
-    },
-    {
       "source": "arena+openrouter",
       "raw": "gemini-nano-banana-2-1",
       "slug": "gemini-nano-banana-2-1",
@@ -9579,7 +9620,7 @@
     "arenaModels": 65,
     "openrouterModels": 363,
     "joined": 497,
-    "eligible": 111,
+    "eligible": 112,
     "arenaMatchRate": 0.9384615384615385,
     "arenaTopMatchRate": 1
   }
