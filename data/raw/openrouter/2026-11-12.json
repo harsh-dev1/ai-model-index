@@ -1,7 +1,45 @@
 {
-  "fetchedAt": "2026-11-12T07:15:34.676Z",
+  "fetchedAt": "2026-11-12T19:57:46.572Z",
   "source": "https://openrouter.ai/api/v1/models",
   "models": [
+    {
+      "id": "google/gemini-4-hydrogen",
+      "name": "Google: Gemini 4 Hydrogen",
+      "created": 1794506460,
+      "contextLength": 1048576,
+      "inputPerM": 1.5,
+      "outputPerM": 7.5,
+      "inputModalities": [
+        "audio",
+        "file",
+        "image",
+        "text",
+        "video"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "google/gemini-4-hydrogen:batch",
+      "name": "Google: Gemini 4 Hydrogen (batch)",
+      "created": 1794506460,
+      "contextLength": 1048576,
+      "inputPerM": 0.75,
+      "outputPerM": 3.75,
+      "inputModalities": [
+        "audio",
+        "file",
+        "image",
+        "text",
+        "video"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
     {
       "id": "baidu/ernie-5.5-flash-preview:free",
       "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
@@ -389,7 +427,7 @@
       "created": 1792778188,
       "contextLength": 1048576,
       "inputPerM": 0.2375,
-      "outputPerM": 8.4085,
+      "outputPerM": 8.785599999999999,
       "inputModalities": [
         "text",
         "image",
@@ -437,8 +475,8 @@
       "name": "MiniMax: MiniMax M3.1 Flash",
       "created": 1792379569,
       "contextLength": 1048576,
-      "inputPerM": 0.15,
-      "outputPerM": 0.6,
+      "inputPerM": 0.075,
+      "outputPerM": 0.3,
       "inputModalities": [
         "text",
         "image",
@@ -454,8 +492,8 @@
       "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
       "created": 1792225624,
       "contextLength": 1048576,
-      "inputPerM": 0.3,
-      "outputPerM": 1.2,
+      "inputPerM": 0.15,
+      "outputPerM": 0.6,
       "inputModalities": [
         "text",
         "image"
@@ -470,8 +508,8 @@
       "name": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch)",
       "created": 1792225624,
       "contextLength": 1048576,
-      "inputPerM": 0.011,
-      "outputPerM": 0.19999999999999998,
+      "inputPerM": 0.049999999999999996,
+      "outputPerM": 0.15,
       "inputModalities": [
         "text",
         "image"
@@ -859,6 +897,21 @@
       "contextLength": 1000000,
       "inputPerM": 0.045,
       "outputPerM": 0.135,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "apodex/apodex-1.1-mini:free",
+      "name": "Apodex: Apodex 1.1 Mini (free)",
+      "created": 1790875335,
+      "contextLength": 262144,
+      "inputPerM": 0,
+      "outputPerM": 0,
       "inputModalities": [
         "text"
       ],
@@ -1606,8 +1659,8 @@
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "created": 1789021285,
       "contextLength": 1048576,
-      "inputPerM": 0.022,
-      "outputPerM": 0.39999999999999997,
+      "inputPerM": 0.3,
+      "outputPerM": 1.2,
       "inputModalities": [
         "text",
         "image"
@@ -1726,6 +1779,21 @@
       "inputModalities": [
         "file",
         "image",
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "inclusionai/ling-3.0-flash-sante",
+      "name": "inclusionAI: Ling 3.0 Flash Sante",
+      "created": 1788545946,
+      "contextLength": 262144,
+      "inputPerM": 0.041999999999999996,
+      "outputPerM": 0.12319999999999999,
+      "inputModalities": [
         "text"
       ],
       "outputModalities": [
@@ -1895,8 +1963,23 @@
       "name": "Tencent: Hy4 preview",
       "created": 1787897375,
       "contextLength": 1048576,
-      "inputPerM": 0.834,
-      "outputPerM": 2.501,
+      "inputPerM": 0.7505999999999999,
+      "outputPerM": 2.2509,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "inclusionai/ling-3.0-flash-fin",
+      "name": "inclusionAI: Ling 3.0 Flash Fin",
+      "created": 1787846290,
+      "contextLength": 262144,
+      "inputPerM": 0.041999999999999996,
+      "outputPerM": 0.12319999999999999,
       "inputModalities": [
         "text"
       ],
@@ -2087,8 +2170,8 @@
       "name": "Z.ai: GLM 5.3 (batch)",
       "created": 1787086655,
       "contextLength": 1048576,
-      "inputPerM": 0.35,
-      "outputPerM": 1.0750000000000002,
+      "inputPerM": 0.44999999999999996,
+      "outputPerM": 2,
       "inputModalities": [
         "text"
       ],
@@ -3001,8 +3084,8 @@
       "name": "Tencent: Hy3",
       "created": 1783344048,
       "contextLength": 262144,
-      "inputPerM": 0.13199999999999998,
-      "outputPerM": 0.5279999999999999,
+      "inputPerM": 0.0825,
+      "outputPerM": 0.33,
       "inputModalities": [
         "text"
       ],
@@ -3147,8 +3230,8 @@
       "name": "Z.ai: GLM 5.2 (batch)",
       "created": 1781631930,
       "contextLength": 1048576,
-      "inputPerM": 0.35,
-      "outputPerM": 1.0750000000000002,
+      "inputPerM": 0.322,
+      "outputPerM": 0.989,
       "inputModalities": [
         "text"
       ],
@@ -3690,14 +3773,14 @@
       "name": "Google: Gemini Flash Latest",
       "created": 1777318398,
       "contextLength": 1048576,
-      "inputPerM": 0.75,
-      "outputPerM": 3.75,
+      "inputPerM": 1.5,
+      "outputPerM": 7.5,
       "inputModalities": [
-        "text",
-        "image",
-        "video",
+        "audio",
         "file",
-        "audio"
+        "image",
+        "text",
+        "video"
       ],
       "outputModalities": [
         "text"
@@ -3862,8 +3945,8 @@
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "created": 1777000679,
       "contextLength": 1048576,
-      "inputPerM": 0.9552599999999999,
-      "outputPerM": 1.9105199999999998,
+      "inputPerM": 0.888966,
+      "outputPerM": 1.777932,
       "inputModalities": [
         "text"
       ],
@@ -4040,8 +4123,8 @@
       "name": "Google: Gemma 4 26B A4B ",
       "created": 1775227989,
       "contextLength": 262144,
-      "inputPerM": 0.08,
-      "outputPerM": 0.09999999999999999,
+      "inputPerM": 0.09,
+      "outputPerM": 0.28,
       "inputModalities": [
         "image",
         "text",
@@ -4373,8 +4456,8 @@
       "name": "Qwen: Qwen3.5-9B",
       "created": 1773152396,
       "contextLength": 262144,
-      "inputPerM": 0.028,
-      "outputPerM": 0.041999999999999996,
+      "inputPerM": 0.14600000000000002,
+      "outputPerM": 0.21400000000000002,
       "inputModalities": [
         "text",
         "image",
@@ -4830,8 +4913,8 @@
       "name": "MoonshotAI: Kimi K2.5",
       "created": 1769487076,
       "contextLength": 262144,
-      "inputPerM": 0.532,
-      "outputPerM": 3.3249999999999997,
+      "inputPerM": 0.5,
+      "outputPerM": 2.5,
       "inputModalities": [
         "text",
         "image"
@@ -6448,8 +6531,8 @@
       "name": "Qwen: Qwen3 14B",
       "created": 1745876478,
       "contextLength": 40960,
-      "inputPerM": 0.09999999999999999,
-      "outputPerM": 0.22,
+      "inputPerM": 0.12,
+      "outputPerM": 0.24,
       "inputModalities": [
         "text"
       ],
