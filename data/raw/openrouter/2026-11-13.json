@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-11-13T06:50:12.897Z",
+  "fetchedAt": "2026-11-13T19:45:21.793Z",
   "source": "https://openrouter.ai/api/v1/models",
   "models": [
+    {
+      "id": "inclusionai/ling-3.2-flash:free",
+      "name": "inclusionAI: Ling 3.2 Flash (free)",
+      "created": 1794591958,
+      "contextLength": 1048576,
+      "inputPerM": 0,
+      "outputPerM": 0,
+      "inputModalities": [
+        "text",
+        "image"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
     {
       "id": "google/gemini-4-hydrogen",
       "name": "Google: Gemini 4 Hydrogen",
@@ -507,8 +523,8 @@
       "name": "MiniMax: MiniMax M3.1 Flash",
       "created": 1792379569,
       "contextLength": 1048576,
-      "inputPerM": 0.15,
-      "outputPerM": 0.6,
+      "inputPerM": 0.075,
+      "outputPerM": 0.3,
       "inputModalities": [
         "text",
         "image",
@@ -524,8 +540,8 @@
       "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
       "created": 1792225624,
       "contextLength": 1048576,
-      "inputPerM": 0.3,
-      "outputPerM": 1.2,
+      "inputPerM": 0.038000000000000006,
+      "outputPerM": 0.5,
       "inputModalities": [
         "text",
         "image"
@@ -929,21 +945,6 @@
       "contextLength": 1000000,
       "inputPerM": 0.045,
       "outputPerM": 0.135,
-      "inputModalities": [
-        "text"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": true
-    },
-    {
-      "id": "apodex/apodex-1.1-mini:free",
-      "name": "Apodex: Apodex 1.1 Mini (free)",
-      "created": 1790875335,
-      "contextLength": 262144,
-      "inputPerM": 0,
-      "outputPerM": 0,
       "inputModalities": [
         "text"
       ],
@@ -1819,21 +1820,6 @@
       "supportsReasoning": true
     },
     {
-      "id": "inclusionai/ling-3.0-flash-sante",
-      "name": "inclusionAI: Ling 3.0 Flash Sante",
-      "created": 1788545946,
-      "contextLength": 262144,
-      "inputPerM": 0.041999999999999996,
-      "outputPerM": 0.12319999999999999,
-      "inputModalities": [
-        "text"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": true
-    },
-    {
       "id": "qwen/qwen3.8-max-0902",
       "name": "Qwen: Qwen3.8 Max (0902)",
       "created": 1788469704,
@@ -1981,7 +1967,7 @@
       "created": 1788206780,
       "contextLength": 131072,
       "inputPerM": 0.06,
-      "outputPerM": 0.15,
+      "outputPerM": 0.25,
       "inputModalities": [
         "text"
       ],
@@ -1995,23 +1981,8 @@
       "name": "Tencent: Hy4 preview",
       "created": 1787897375,
       "contextLength": 1048576,
-      "inputPerM": 0.834,
-      "outputPerM": 2.501,
-      "inputModalities": [
-        "text"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": true
-    },
-    {
-      "id": "inclusionai/ling-3.0-flash-fin",
-      "name": "inclusionAI: Ling 3.0 Flash Fin",
-      "created": 1787846290,
-      "contextLength": 262144,
-      "inputPerM": 0.041999999999999996,
-      "outputPerM": 0.12319999999999999,
+      "inputPerM": 0.7505999999999999,
+      "outputPerM": 2.2509,
       "inputModalities": [
         "text"
       ],
@@ -2375,36 +2346,6 @@
         "text",
         "image",
         "file"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": true
-    },
-    {
-      "id": "liquid/lfm-2.5-2.6b",
-      "name": "LiquidAI: LFM2.5-2.6B",
-      "created": 1786470519,
-      "contextLength": 128000,
-      "inputPerM": 0.35,
-      "outputPerM": 0.5,
-      "inputModalities": [
-        "text"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": true
-    },
-    {
-      "id": "liquid/lfm-2.5-2.6b:free",
-      "name": "LiquidAI: LFM2.5-2.6B (free)",
-      "created": 1786470519,
-      "contextLength": 65536,
-      "inputPerM": 0,
-      "outputPerM": 0,
-      "inputModalities": [
-        "text"
       ],
       "outputModalities": [
         "text"
@@ -3116,8 +3057,8 @@
       "name": "Tencent: Hy3",
       "created": 1783344048,
       "contextLength": 262144,
-      "inputPerM": 0.13199999999999998,
-      "outputPerM": 0.5279999999999999,
+      "inputPerM": 0.0825,
+      "outputPerM": 0.33,
       "inputModalities": [
         "text"
       ],
@@ -3262,8 +3203,8 @@
       "name": "Z.ai: GLM 5.2 (batch)",
       "created": 1781631930,
       "contextLength": 1048576,
-      "inputPerM": 0.322,
-      "outputPerM": 0.989,
+      "inputPerM": 0.34700000000000003,
+      "outputPerM": 1.068,
       "inputModalities": [
         "text"
       ],
@@ -4155,8 +4096,8 @@
       "name": "Google: Gemma 4 26B A4B ",
       "created": 1775227989,
       "contextLength": 262144,
-      "inputPerM": 0.09,
-      "outputPerM": 0.3,
+      "inputPerM": 0.0675,
+      "outputPerM": 0.22499999999999998,
       "inputModalities": [
         "image",
         "text",
@@ -4488,8 +4429,8 @@
       "name": "Qwen: Qwen3.5-9B",
       "created": 1773152396,
       "contextLength": 262144,
-      "inputPerM": 0.088,
-      "outputPerM": 0.129,
+      "inputPerM": 0.135,
+      "outputPerM": 0.19899999999999998,
       "inputModalities": [
         "text",
         "image",
@@ -4850,9 +4791,9 @@
       "id": "minimax/minimax-m2.5",
       "name": "MiniMax: MiniMax M2.5",
       "created": 1770908502,
-      "contextLength": 200000,
+      "contextLength": 198000,
       "inputPerM": 0.27,
-      "outputPerM": 1.08,
+      "outputPerM": 0.95,
       "inputModalities": [
         "text"
       ],
@@ -7073,8 +7014,8 @@
       "name": "DeepSeek: DeepSeek V3",
       "created": 1735241320,
       "contextLength": 163840,
-      "inputPerM": 0.32,
-      "outputPerM": 0.8899999999999999,
+      "inputPerM": 0.2574,
+      "outputPerM": 1.0287,
       "inputModalities": [
         "text"
       ],
