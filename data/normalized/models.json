@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-17T07:58:26.977Z",
+  "generatedAt": "2026-11-17T20:58:11.500Z",
   "snapshotDates": {
     "epoch": "2026-11-17",
     "arena": "2026-10-15",
     "openrouter": "2026-11-17"
   },
   "snapshotFetchedAt": {
-    "epoch": "2026-11-17T07:58:26.977Z",
+    "epoch": "2026-11-17T20:58:11.500Z",
     "arena": "2026-10-15T04:44:23.512Z",
-    "openrouter": "2026-11-17T07:58:26.785Z"
+    "openrouter": "2026-11-17T20:58:11.257Z"
   },
   "models": [
     {
@@ -1792,7 +1792,7 @@
         },
         {
           "id": "scicode",
-          "raw": 0.510416666666667,
+          "raw": 0.517361111111111,
           "stderr": null
         },
         {
@@ -2699,6 +2699,11 @@
         {
           "id": "scicode",
           "raw": 0.642361111111111,
+          "stderr": null
+        },
+        {
+          "id": "ale_bench",
+          "raw": 2374.7,
           "stderr": null
         }
       ],
@@ -5150,8 +5155,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 131072,
-      "inputPerM": 0.024,
-      "outputPerM": 0.112,
+      "inputPerM": 0.018,
+      "outputPerM": 0.09,
       "modalities": [
         "text"
       ],
@@ -5846,8 +5851,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 262144,
-      "inputPerM": 0.6,
-      "outputPerM": 3.5,
+      "inputPerM": 0.7,
+      "outputPerM": 3.75,
       "modalities": [
         "text",
         "image"
@@ -6906,8 +6911,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 262144,
-      "inputPerM": 0.16999999999999998,
-      "outputPerM": 0.25,
+      "inputPerM": 0.11499999999999999,
+      "outputPerM": 0.16899999999999998,
       "modalities": [
         "text",
         "image",
@@ -8154,6 +8159,12 @@
       "reason": "no public API pricing found on OpenRouter"
     },
     {
+      "source": "epoch+openrouter",
+      "raw": "gemini-4-hydrogen",
+      "slug": "gemini-4-hydrogen",
+      "reason": "too few results to rank (1 benchmark, no Arena votes)"
+    },
+    {
       "source": "arena+openrouter",
       "raw": "gemini-nano-banana-2-1",
       "slug": "gemini-nano-banana-2-1",
@@ -8320,6 +8331,12 @@
       "raw": "gpt-5-pro",
       "slug": "gpt-5-pro",
       "reason": "too few results to rank (2 benchmarks, no Arena votes)"
+    },
+    {
+      "source": "epoch+openrouter",
+      "raw": "gpt-6-2-astra",
+      "slug": "gpt-6-2-astra",
+      "reason": "too few results to rank (3 benchmarks, no Arena votes)"
     },
     {
       "source": "arena",
@@ -9727,10 +9744,10 @@
     }
   ],
   "stats": {
-    "epochModels": 370,
+    "epochModels": 372,
     "arenaModels": 65,
-    "openrouterModels": 360,
-    "joined": 500,
+    "openrouterModels": 364,
+    "joined": 502,
     "eligible": 114,
     "arenaMatchRate": 0.9384615384615385,
     "arenaTopMatchRate": 1
