@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-18T07:33:31.554Z",
+  "generatedAt": "2026-11-18T20:35:33.528Z",
   "snapshotDates": {
     "epoch": "2026-11-18",
     "arena": "2026-10-15",
     "openrouter": "2026-11-18"
   },
   "snapshotFetchedAt": {
-    "epoch": "2026-11-18T07:33:31.527Z",
+    "epoch": "2026-11-18T20:35:33.528Z",
     "arena": "2026-10-15T04:44:23.512Z",
-    "openrouter": "2026-11-18T07:33:31.554Z"
+    "openrouter": "2026-11-18T20:35:33.375Z"
   },
   "models": [
     {
@@ -1428,8 +1428,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 163840,
-      "inputPerM": 0.5,
-      "outputPerM": 2.1500000000000004,
+      "inputPerM": 0.5710000000000001,
+      "outputPerM": 2.2859999999999996,
       "modalities": [
         "text"
       ],
@@ -1534,8 +1534,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.051,
-      "outputPerM": 0.5670000000000001,
+      "inputPerM": 0.050699999999999995,
+      "outputPerM": 0.20279999999999998,
       "modalities": [
         "text",
         "image"
@@ -1594,7 +1594,7 @@
       "eci": null,
       "contextLength": 1048576,
       "inputPerM": 0.036,
-      "outputPerM": 0.5,
+      "outputPerM": 0.15,
       "modalities": [
         "text",
         "image"
@@ -2714,6 +2714,53 @@
       ]
     },
     {
+      "slug": "gemini-4-hydrogen",
+      "name": "Gemini 4 Hydrogen",
+      "vendor": "Google",
+      "country": "United States of America",
+      "releaseDate": "2026-11-12",
+      "accessibility": null,
+      "eci": null,
+      "contextLength": 1048576,
+      "inputPerM": 0.75,
+      "outputPerM": 3.75,
+      "modalities": [
+        "audio",
+        "file",
+        "image",
+        "text",
+        "video"
+      ],
+      "supportsReasoning": true,
+      "benchmarks": [
+        {
+          "id": "gpqa_diamond",
+          "raw": 0.9678030303030303,
+          "stderr": 0.011702287369004602
+        },
+        {
+          "id": "otis_mock_aime",
+          "raw": 1,
+          "stderr": 0
+        },
+        {
+          "id": "simpleqa_verified",
+          "raw": 0.709,
+          "stderr": 0.014370995982378034
+        },
+        {
+          "id": "ale_bench",
+          "raw": 1825.67,
+          "stderr": null
+        }
+      ],
+      "arena": [],
+      "sources": [
+        "epoch",
+        "openrouter"
+      ]
+    },
+    {
       "slug": "gemma-3-12b-it",
       "name": "Gemma 3 12B",
       "vendor": "Google",
@@ -3097,8 +3144,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.007,
-      "outputPerM": 6.8,
+      "inputPerM": 0.322,
+      "outputPerM": 0.989,
       "modalities": [
         "text"
       ],
@@ -5851,8 +5898,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 262144,
-      "inputPerM": 0.7,
-      "outputPerM": 3.75,
+      "inputPerM": 0.6,
+      "outputPerM": 3.5,
       "modalities": [
         "text",
         "image"
@@ -8159,12 +8206,6 @@
       "reason": "no public API pricing found on OpenRouter"
     },
     {
-      "source": "epoch+openrouter",
-      "raw": "gemini-4-hydrogen",
-      "slug": "gemini-4-hydrogen",
-      "reason": "too few results to rank (1 benchmark, no Arena votes)"
-    },
-    {
       "source": "arena+openrouter",
       "raw": "gemini-nano-banana-2-1",
       "slug": "gemini-nano-banana-2-1",
@@ -9748,7 +9789,7 @@
     "arenaModels": 65,
     "openrouterModels": 364,
     "joined": 502,
-    "eligible": 114,
+    "eligible": 115,
     "arenaMatchRate": 0.9384615384615385,
     "arenaTopMatchRate": 1
   }
