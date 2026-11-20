@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-20T07:21:21.871Z",
+  "generatedAt": "2026-11-20T20:25:28.323Z",
   "snapshotDates": {
     "epoch": "2026-11-20",
     "arena": "2026-10-15",
     "openrouter": "2026-11-20"
   },
   "snapshotFetchedAt": {
-    "epoch": "2026-11-20T07:21:21.871Z",
+    "epoch": "2026-11-20T20:25:28.323Z",
     "arena": "2026-10-15T04:44:23.512Z",
-    "openrouter": "2026-11-20T07:21:21.551Z"
+    "openrouter": "2026-11-20T20:25:28.148Z"
   },
   "models": [
     {
@@ -1647,7 +1647,7 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.047,
+      "inputPerM": 0.0443,
       "outputPerM": 0.3,
       "modalities": [
         "text"
@@ -2809,7 +2809,7 @@
       "eci": null,
       "contextLength": 131072,
       "inputPerM": 0.08,
-      "outputPerM": 0.16,
+      "outputPerM": 0.44999999999999996,
       "modalities": [
         "text",
         "image"
@@ -5202,8 +5202,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 131072,
-      "inputPerM": 0.018,
-      "outputPerM": 0.09,
+      "inputPerM": 0.017,
+      "outputPerM": 0.08499999999999999,
       "modalities": [
         "text"
       ],
@@ -6185,8 +6185,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 196608,
-      "inputPerM": 0.21,
-      "outputPerM": 0.84,
+      "inputPerM": 0.6,
+      "outputPerM": 1.7999999999999998,
       "modalities": [
         "text"
       ],
@@ -7370,7 +7370,7 @@
       "eci": null,
       "contextLength": 1024000,
       "inputPerM": 0.06,
-      "outputPerM": 2.2,
+      "outputPerM": 1.96,
       "modalities": [
         "text",
         "image",
@@ -8204,6 +8204,12 @@
       "raw": "gemini-3-pro-image-preview (nano-banana-pro)",
       "slug": "gemini-3-pro-image-preview-nano-banana-pro",
       "reason": "no public API pricing found on OpenRouter"
+    },
+    {
+      "source": "epoch+openrouter",
+      "raw": "gemini-4-neon",
+      "slug": "gemini-4-neon",
+      "reason": "too few results to rank (3 benchmarks, no Arena votes)"
     },
     {
       "source": "arena+openrouter",
@@ -9791,10 +9797,10 @@
     }
   ],
   "stats": {
-    "epochModels": 373,
+    "epochModels": 374,
     "arenaModels": 65,
     "openrouterModels": 363,
-    "joined": 503,
+    "joined": 504,
     "eligible": 115,
     "arenaMatchRate": 0.9384615384615385,
     "arenaTopMatchRate": 1
