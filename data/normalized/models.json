@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-23T07:43:59.701Z",
+  "generatedAt": "2026-11-23T23:56:43.725Z",
   "snapshotDates": {
     "epoch": "2026-11-23",
     "arena": "2026-10-15",
     "openrouter": "2026-11-23"
   },
   "snapshotFetchedAt": {
-    "epoch": "2026-11-23T07:43:59.701Z",
+    "epoch": "2026-11-23T23:56:43.725Z",
     "arena": "2026-10-15T04:44:23.512Z",
-    "openrouter": "2026-11-23T07:43:59.617Z"
+    "openrouter": "2026-11-23T23:56:43.458Z"
   },
   "models": [
     {
@@ -1534,8 +1534,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.049800000000000004,
-      "outputPerM": 0.19920000000000002,
+      "inputPerM": 0.049999999999999996,
+      "outputPerM": 0.15,
       "modalities": [
         "text",
         "image"
@@ -1593,8 +1593,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.035,
-      "outputPerM": 0.149,
+      "inputPerM": 0.03,
+      "outputPerM": 0.19999999999999998,
       "modalities": [
         "text",
         "image"
@@ -1763,8 +1763,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 1.32,
-      "outputPerM": 3.9600000000000004,
+      "inputPerM": 0.19,
+      "outputPerM": 8,
       "modalities": [
         "text"
       ],
@@ -5588,7 +5588,7 @@
       "releaseDate": "2026-07-15",
       "accessibility": null,
       "eci": null,
-      "contextLength": 524288,
+      "contextLength": 1048576,
       "inputPerM": 1,
       "outputPerM": 4.05,
       "modalities": [
@@ -8872,10 +8872,10 @@
       "reason": "too few results to rank (3 benchmarks, no Arena votes)"
     },
     {
-      "source": "epoch+openrouter",
+      "source": "epoch",
       "raw": "mimo-v2-5-pro",
       "slug": "mimo-v2-5-pro",
-      "reason": "too few results to rank (3 benchmarks, no Arena votes)"
+      "reason": "no public API pricing found on OpenRouter"
     },
     {
       "source": "epoch+arena+openrouter",
@@ -9037,6 +9037,12 @@
       "source": "arena",
       "raw": "mochi-v1",
       "slug": "mochi-v1",
+      "reason": "no public API pricing found on OpenRouter"
+    },
+    {
+      "source": "epoch",
+      "raw": "muse-ember-1-0",
+      "slug": "muse-ember-1-0",
       "reason": "no public API pricing found on OpenRouter"
     },
     {
@@ -9410,6 +9416,12 @@
       "raw": "qwen3-coder-plus",
       "slug": "qwen3-coder-plus",
       "reason": "no public API pricing found on OpenRouter"
+    },
+    {
+      "source": "epoch+openrouter",
+      "raw": "qwen4",
+      "slug": "qwen4",
+      "reason": "too few results to rank (3 benchmarks, no Arena votes)"
     },
     {
       "source": "epoch",
@@ -9797,10 +9809,10 @@
     }
   ],
   "stats": {
-    "epochModels": 374,
+    "epochModels": 376,
     "arenaModels": 65,
-    "openrouterModels": 364,
-    "joined": 504,
+    "openrouterModels": 363,
+    "joined": 506,
     "eligible": 115,
     "arenaMatchRate": 0.9384615384615385,
     "arenaTopMatchRate": 1
