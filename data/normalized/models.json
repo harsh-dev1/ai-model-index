@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-23T23:56:43.725Z",
+  "generatedAt": "2026-11-24T22:29:24.281Z",
   "snapshotDates": {
-    "epoch": "2026-11-23",
+    "epoch": "2026-11-24",
     "arena": "2026-10-15",
-    "openrouter": "2026-11-23"
+    "openrouter": "2026-11-24"
   },
   "snapshotFetchedAt": {
-    "epoch": "2026-11-23T23:56:43.725Z",
+    "epoch": "2026-11-24T22:29:24.281Z",
     "arena": "2026-10-15T04:44:23.512Z",
-    "openrouter": "2026-11-23T23:56:43.458Z"
+    "openrouter": "2026-11-24T22:29:23.782Z"
   },
   "models": [
     {
@@ -1647,7 +1647,7 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.0434,
+      "inputPerM": 0.045599999999999995,
       "outputPerM": 0.3,
       "modalities": [
         "text"
@@ -1705,8 +1705,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.8999999999999999,
-      "outputPerM": 1.5,
+      "inputPerM": 1.28,
+      "outputPerM": 2.56,
       "modalities": [
         "text"
       ],
@@ -1763,8 +1763,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.19,
-      "outputPerM": 8,
+      "inputPerM": 0.111,
+      "outputPerM": 4.4399999999999995,
       "modalities": [
         "text"
       ],
@@ -5696,49 +5696,6 @@
       ]
     },
     {
-      "slug": "kimi-k2",
-      "name": "Kimi K2 Thinking",
-      "vendor": "Moonshot",
-      "country": "China",
-      "releaseDate": "2025-11-06",
-      "accessibility": null,
-      "eci": null,
-      "contextLength": 262144,
-      "inputPerM": 0.5700000000000001,
-      "outputPerM": 2.3,
-      "modalities": [
-        "text"
-      ],
-      "supportsReasoning": true,
-      "benchmarks": [
-        {
-          "id": "frontiermath",
-          "raw": 0.21403508771929824,
-          "stderr": 0.02433800055326239
-        },
-        {
-          "id": "ale_bench",
-          "raw": 597.5,
-          "stderr": null
-        },
-        {
-          "id": "terminalbench",
-          "raw": 0.35730337078700003,
-          "stderr": 0.028202524731
-        },
-        {
-          "id": "metr_time_horizon",
-          "raw": 54.194148,
-          "stderr": null
-        }
-      ],
-      "arena": [],
-      "sources": [
-        "epoch",
-        "openrouter"
-      ]
-    },
-    {
       "slug": "kimi-k2-5",
       "name": "Kimi K2.5",
       "vendor": "Moonshot",
@@ -6066,8 +6023,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 131072,
-      "inputPerM": 0.02,
-      "outputPerM": 0.04,
+      "inputPerM": 0.049999999999999996,
+      "outputPerM": 0.08,
       "modalities": [
         "text"
       ],
@@ -6141,9 +6098,9 @@
       "releaseDate": "2026-02-12",
       "accessibility": null,
       "eci": null,
-      "contextLength": 198000,
-      "inputPerM": 0.27,
-      "outputPerM": 0.95,
+      "contextLength": 65536,
+      "inputPerM": 0.3,
+      "outputPerM": 1.2,
       "modalities": [
         "text"
       ],
@@ -7098,8 +7055,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 262144,
-      "inputPerM": 0.049999999999999996,
-      "outputPerM": 0.7,
+      "inputPerM": 0.09999999999999999,
+      "outputPerM": 0.8899999999999999,
       "modalities": [
         "text",
         "image",
@@ -7369,8 +7326,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1024000,
-      "inputPerM": 0.035,
-      "outputPerM": 1.5,
+      "inputPerM": 0.06,
+      "outputPerM": 1.96,
       "modalities": [
         "text",
         "image",
@@ -8656,10 +8613,16 @@
       "reason": "no public API pricing found on OpenRouter"
     },
     {
-      "source": "epoch+openrouter",
+      "source": "epoch",
+      "raw": "kimi-k2",
+      "slug": "kimi-k2",
+      "reason": "no public API pricing found on OpenRouter"
+    },
+    {
+      "source": "epoch",
       "raw": "kimi-k2-0905",
       "slug": "kimi-k2-0905",
-      "reason": "too few results to rank (2 benchmarks, no Arena votes)"
+      "reason": "no public API pricing found on OpenRouter"
     },
     {
       "source": "epoch",
@@ -8866,10 +8829,10 @@
       "reason": "no public API pricing found on OpenRouter"
     },
     {
-      "source": "epoch+openrouter",
+      "source": "epoch",
       "raw": "mimo-v2-5",
       "slug": "mimo-v2-5",
-      "reason": "too few results to rank (3 benchmarks, no Arena votes)"
+      "reason": "no public API pricing found on OpenRouter"
     },
     {
       "source": "epoch",
@@ -9811,9 +9774,9 @@
   "stats": {
     "epochModels": 376,
     "arenaModels": 65,
-    "openrouterModels": 363,
+    "openrouterModels": 357,
     "joined": 506,
-    "eligible": 115,
+    "eligible": 114,
     "arenaMatchRate": 0.9384615384615385,
     "arenaTopMatchRate": 1
   }
