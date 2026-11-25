@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-25T08:40:35.148Z",
+  "fetchedAt": "2026-11-25T21:44:23.955Z",
   "source": "https://openrouter.ai/api/v1/models",
   "models": [
     {
@@ -810,8 +810,8 @@
       "name": "MiniMax: MiniMax M3.1 Flash",
       "created": 1792379569,
       "contextLength": 1048576,
-      "inputPerM": 0.15,
-      "outputPerM": 0.6,
+      "inputPerM": 0.075,
+      "outputPerM": 0.3,
       "inputModalities": [
         "text",
         "image",
@@ -827,8 +827,8 @@
       "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
       "created": 1792225624,
       "contextLength": 1048576,
-      "inputPerM": 0.3,
-      "outputPerM": 1.2,
+      "inputPerM": 0.15,
+      "outputPerM": 0.6,
       "inputModalities": [
         "text",
         "image"
@@ -988,44 +988,12 @@
       "supportsReasoning": true
     },
     {
-      "id": "unbiased/pareto-26.10",
-      "name": "Pareto 26.10",
-      "created": 1792073620,
-      "contextLength": 1048576,
-      "inputPerM": 0.7999999999999999,
-      "outputPerM": 3.1999999999999997,
-      "inputModalities": [
-        "text",
-        "image"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": false
-    },
-    {
       "id": "~unbiased/pareto-latest",
       "name": "Pareto Latest",
       "created": 1791933050,
-      "contextLength": 1048576,
-      "inputPerM": 0.7999999999999999,
-      "outputPerM": 3.1999999999999997,
-      "inputModalities": [
-        "text",
-        "image"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": false
-    },
-    {
-      "id": "unbiased/pareto-26.9",
-      "name": "Pareto 26.9",
-      "created": 1791930537,
       "contextLength": 262144,
-      "inputPerM": 2.5,
-      "outputPerM": 7.5,
+      "inputPerM": -1000000,
+      "outputPerM": -1000000,
       "inputModalities": [
         "text",
         "image"
@@ -1239,22 +1207,6 @@
         "text"
       ],
       "supportsReasoning": true
-    },
-    {
-      "id": "unbiased/pareto-26.10-preview",
-      "name": "Pareto 26.10 Preview",
-      "created": 1790863623,
-      "contextLength": 1048576,
-      "inputPerM": 0.7999999999999999,
-      "outputPerM": 3.1999999999999997,
-      "inputModalities": [
-        "text",
-        "image"
-      ],
-      "outputModalities": [
-        "text"
-      ],
-      "supportsReasoning": false
     },
     {
       "id": "openai/gpt-6.1-sol-pro",
@@ -1979,8 +1931,8 @@
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "created": 1789021285,
       "contextLength": 1048576,
-      "inputPerM": 0.14,
-      "outputPerM": 0.42,
+      "inputPerM": 0.050699999999999995,
+      "outputPerM": 0.20279999999999998,
       "inputModalities": [
         "text",
         "image"
@@ -2268,8 +2220,8 @@
       "name": "Tencent: Hy4 preview",
       "created": 1787897375,
       "contextLength": 1048576,
-      "inputPerM": 0.834,
-      "outputPerM": 2.501,
+      "inputPerM": 0.7505999999999999,
+      "outputPerM": 2.2509,
       "inputModalities": [
         "text"
       ],
@@ -2628,7 +2580,7 @@
       "name": "NVIDIA: Nemotron 3.5 Lightning",
       "created": 1786452751,
       "contextLength": 1048576,
-      "inputPerM": 0.049999999999999996,
+      "inputPerM": 0.07,
       "outputPerM": 0.19999999999999998,
       "inputModalities": [
         "text"
@@ -2755,8 +2707,8 @@
       "name": "DeepSeek: DeepSeek V4 Flash Latest",
       "created": 1785606009,
       "contextLength": 1048576,
-      "inputPerM": 0.047,
-      "outputPerM": 0.3,
+      "inputPerM": 0.04532,
+      "outputPerM": 0.13596,
       "inputModalities": [
         "text"
       ],
@@ -2770,7 +2722,7 @@
       "name": "DeepSeek: DeepSeek V4 Flash 0731",
       "created": 1785478908,
       "contextLength": 1048576,
-      "inputPerM": 0.047,
+      "inputPerM": 0.045599999999999995,
       "outputPerM": 0.3,
       "inputModalities": [
         "text"
@@ -3313,8 +3265,8 @@
       "name": "Tencent: Hy3",
       "created": 1783344048,
       "contextLength": 262144,
-      "inputPerM": 0.13199999999999998,
-      "outputPerM": 0.5279999999999999,
+      "inputPerM": 0.0825,
+      "outputPerM": 0.33,
       "inputModalities": [
         "text"
       ],
@@ -4142,8 +4094,8 @@
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "created": 1777000679,
       "contextLength": 1048576,
-      "inputPerM": 1.28,
-      "outputPerM": 2.56,
+      "inputPerM": 0.6237499999999999,
+      "outputPerM": 1.5027,
       "inputModalities": [
         "text"
       ],
@@ -4272,8 +4224,8 @@
       "name": "Google: Gemma 4 26B A4B ",
       "created": 1775227989,
       "contextLength": 262144,
-      "inputPerM": 0.09,
-      "outputPerM": 0.3,
+      "inputPerM": 0.0765,
+      "outputPerM": 0.255,
       "inputModalities": [
         "image",
         "text",
@@ -4544,6 +4496,22 @@
       "contextLength": 262144,
       "inputPerM": 0.15,
       "outputPerM": 0.6,
+      "inputModalities": [
+        "text",
+        "image"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
+    {
+      "id": "mistralai/mistral-small-2603:batch",
+      "name": "Mistral: Mistral Small 4 (batch)",
+      "created": 1773695685,
+      "contextLength": 262144,
+      "inputPerM": 0.075,
+      "outputPerM": 0.3,
       "inputModalities": [
         "text",
         "image"
@@ -5111,7 +5079,7 @@
       "id": "z-ai/glm-4.7-flash",
       "name": "Z.ai: GLM 4.7 Flash",
       "created": 1768833913,
-      "contextLength": 200000,
+      "contextLength": 131072,
       "inputPerM": 0.060500000000000005,
       "outputPerM": 0.39999999999999997,
       "inputModalities": [
@@ -5406,6 +5374,22 @@
       "supportsReasoning": false
     },
     {
+      "id": "mistralai/ministral-8b-2512:batch",
+      "name": "Mistral: Ministral 3 8B 2512 (batch)",
+      "created": 1764681654,
+      "contextLength": 262144,
+      "inputPerM": 0.075,
+      "outputPerM": 0.075,
+      "inputModalities": [
+        "text",
+        "image"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": false
+    },
+    {
       "id": "mistralai/ministral-3b-2512",
       "name": "Mistral: Ministral 3 3B 2512",
       "created": 1764681560,
@@ -5428,6 +5412,23 @@
       "contextLength": 262144,
       "inputPerM": 0.5,
       "outputPerM": 1.5,
+      "inputModalities": [
+        "text",
+        "image",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": false
+    },
+    {
+      "id": "mistralai/mistral-large-2512:batch",
+      "name": "Mistral: Mistral Large 3 2512 (batch)",
+      "created": 1764624472,
+      "contextLength": 262144,
+      "inputPerM": 0.25,
+      "outputPerM": 0.75,
       "inputModalities": [
         "text",
         "image",
@@ -6201,6 +6202,22 @@
       "supportsReasoning": false
     },
     {
+      "id": "mistralai/codestral-2508:batch",
+      "name": "Mistral: Codestral 2508 (batch)",
+      "created": 1754079630,
+      "contextLength": 256000,
+      "inputPerM": 0.15,
+      "outputPerM": 0.44999999999999996,
+      "inputModalities": [
+        "text",
+        "file"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": false
+    },
+    {
       "id": "qwen/qwen3-coder-30b-a3b-instruct",
       "name": "Qwen: Qwen3 Coder 30B A3B Instruct",
       "created": 1753972379,
@@ -6250,8 +6267,8 @@
       "name": "Z.ai: GLM 4.5 Air",
       "created": 1753471258,
       "contextLength": 131072,
-      "inputPerM": 0.13,
-      "outputPerM": 0.85,
+      "inputPerM": 0.19999999999999998,
+      "outputPerM": 1.1,
       "inputModalities": [
         "text"
       ],
@@ -6354,6 +6371,21 @@
         "text"
       ],
       "supportsReasoning": false
+    },
+    {
+      "id": "tngtech/deepseek-r1t2-chimera",
+      "name": "TNG: DeepSeek R1T2 Chimera",
+      "created": 1751986985,
+      "contextLength": 131072,
+      "inputPerM": 1,
+      "outputPerM": 2.625,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
     },
     {
       "id": "morph/morph-v3-large",

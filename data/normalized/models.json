@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-25T08:40:35.148Z",
+  "generatedAt": "2026-11-25T21:44:24.220Z",
   "snapshotDates": {
     "epoch": "2026-11-25",
     "arena": "2026-10-15",
     "openrouter": "2026-11-25"
   },
   "snapshotFetchedAt": {
-    "epoch": "2026-11-25T08:40:35.135Z",
+    "epoch": "2026-11-25T21:44:24.220Z",
     "arena": "2026-10-15T04:44:23.512Z",
-    "openrouter": "2026-11-25T08:40:35.148Z"
+    "openrouter": "2026-11-25T21:44:23.955Z"
   },
   "models": [
     {
@@ -1647,7 +1647,7 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.047,
+      "inputPerM": 0.045599999999999995,
       "outputPerM": 0.3,
       "modalities": [
         "text"
@@ -1705,8 +1705,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 1.28,
-      "outputPerM": 2.56,
+      "inputPerM": 0.6237499999999999,
+      "outputPerM": 1.5027,
       "modalities": [
         "text"
       ],
@@ -2742,6 +2742,11 @@
           "id": "otis_mock_aime",
           "raw": 1,
           "stderr": 0
+        },
+        {
+          "id": "arc_agi_2",
+          "raw": 0.925,
+          "stderr": null
         },
         {
           "id": "simpleqa_verified",
@@ -4606,7 +4611,7 @@
         },
         {
           "id": "arc_agi_2",
-          "raw": 0.839,
+          "raw": 0.8250000000000001,
           "stderr": null
         },
         {
@@ -4901,6 +4906,56 @@
         {
           "id": "ale_bench",
           "raw": 2608.82,
+          "stderr": null
+        }
+      ],
+      "arena": [],
+      "sources": [
+        "epoch",
+        "openrouter"
+      ]
+    },
+    {
+      "slug": "gpt-6-2-astra",
+      "name": "GPT-6.2 Astra",
+      "vendor": "OpenAI",
+      "country": "United States of America",
+      "releaseDate": "2026-11-17",
+      "accessibility": null,
+      "eci": null,
+      "contextLength": 1050000,
+      "inputPerM": 4,
+      "outputPerM": 20,
+      "modalities": [
+        "file",
+        "image",
+        "text"
+      ],
+      "supportsReasoning": true,
+      "benchmarks": [
+        {
+          "id": "gpqa_diamond",
+          "raw": 0.9684343434343434,
+          "stderr": 0.01226242169221459
+        },
+        {
+          "id": "otis_mock_aime",
+          "raw": 1,
+          "stderr": 0
+        },
+        {
+          "id": "arc_agi_2",
+          "raw": 0.9583333333333335,
+          "stderr": null
+        },
+        {
+          "id": "simpleqa_verified",
+          "raw": 0.785,
+          "stderr": 0.012997843819031832
+        },
+        {
+          "id": "ale_bench",
+          "raw": 3017.12,
           "stderr": null
         }
       ],
@@ -8166,7 +8221,7 @@
       "source": "epoch+openrouter",
       "raw": "gemini-4-neon",
       "slug": "gemini-4-neon",
-      "reason": "too few results to rank (3 benchmarks, no Arena votes)"
+      "reason": "too few results to rank (4 benchmarks, no Arena votes)"
     },
     {
       "source": "arena+openrouter",
@@ -8338,15 +8393,9 @@
     },
     {
       "source": "epoch+openrouter",
-      "raw": "gpt-6-2-astra",
-      "slug": "gpt-6-2-astra",
-      "reason": "too few results to rank (4 benchmarks, no Arena votes)"
-    },
-    {
-      "source": "epoch+openrouter",
       "raw": "gpt-6-2-sol",
       "slug": "gpt-6-2-sol",
-      "reason": "too few results to rank (1 benchmark, no Arena votes)"
+      "reason": "too few results to rank (2 benchmarks, no Arena votes)"
     },
     {
       "source": "arena",
@@ -9774,9 +9823,9 @@
   "stats": {
     "epochModels": 376,
     "arenaModels": 65,
-    "openrouterModels": 360,
+    "openrouterModels": 359,
     "joined": 506,
-    "eligible": 114,
+    "eligible": 115,
     "arenaMatchRate": 0.9384615384615385,
     "arenaTopMatchRate": 1
   }
