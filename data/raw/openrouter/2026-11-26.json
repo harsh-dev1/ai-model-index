@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-11-26T08:24:53.529Z",
+  "fetchedAt": "2026-11-26T21:37:09.859Z",
   "source": "https://openrouter.ai/api/v1/models",
   "models": [
+    {
+      "id": "inclusionai/lingsante-3.1-air-vl",
+      "name": "inclusionAI: LingSante 3.1 Air VL",
+      "created": 1795705284,
+      "contextLength": 131072,
+      "inputPerM": 0.06,
+      "outputPerM": 0.18,
+      "inputModalities": [
+        "text",
+        "image"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": true
+    },
     {
       "id": "upstage/solar-mini-4-5",
       "name": "Upstage: Solar Mini 4.5 (Preview)",
@@ -810,8 +826,8 @@
       "name": "MiniMax: MiniMax M3.1 Flash",
       "created": 1792379569,
       "contextLength": 1048576,
-      "inputPerM": 0.15,
-      "outputPerM": 0.6,
+      "inputPerM": 0.075,
+      "outputPerM": 0.3,
       "inputModalities": [
         "text",
         "image",
@@ -827,8 +843,8 @@
       "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
       "created": 1792225624,
       "contextLength": 1048576,
-      "inputPerM": 0.3,
-      "outputPerM": 1.2,
+      "inputPerM": 0.15,
+      "outputPerM": 0.6,
       "inputModalities": [
         "text",
         "image"
@@ -1931,8 +1947,8 @@
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "created": 1789021285,
       "contextLength": 1048576,
-      "inputPerM": 0.14,
-      "outputPerM": 0.42,
+      "inputPerM": 0.050699999999999995,
+      "outputPerM": 0.20279999999999998,
       "inputModalities": [
         "text",
         "image"
@@ -2220,8 +2236,8 @@
       "name": "Tencent: Hy4 preview",
       "created": 1787897375,
       "contextLength": 1048576,
-      "inputPerM": 0.834,
-      "outputPerM": 2.501,
+      "inputPerM": 0.7505999999999999,
+      "outputPerM": 2.2509,
       "inputModalities": [
         "text"
       ],
@@ -2427,8 +2443,8 @@
       "name": "Qwen: Qwen3.8 27B",
       "created": 1786722910,
       "contextLength": 1024000,
-      "inputPerM": 0.035,
-      "outputPerM": 1.5,
+      "inputPerM": 0.06,
+      "outputPerM": 1.96,
       "inputModalities": [
         "text",
         "image",
@@ -2707,8 +2723,8 @@
       "name": "DeepSeek: DeepSeek V4 Flash Latest",
       "created": 1785606009,
       "contextLength": 1048576,
-      "inputPerM": 0.047,
-      "outputPerM": 0.3,
+      "inputPerM": 0.04532,
+      "outputPerM": 0.13596,
       "inputModalities": [
         "text"
       ],
@@ -2722,8 +2738,8 @@
       "name": "DeepSeek: DeepSeek V4 Flash 0731",
       "created": 1785478908,
       "contextLength": 1048576,
-      "inputPerM": 0.06,
-      "outputPerM": 0.18,
+      "inputPerM": 0.045599999999999995,
+      "outputPerM": 0.3,
       "inputModalities": [
         "text"
       ],
@@ -3265,8 +3281,8 @@
       "name": "Tencent: Hy3",
       "created": 1783344048,
       "contextLength": 262144,
-      "inputPerM": 0.13199999999999998,
-      "outputPerM": 0.5279999999999999,
+      "inputPerM": 0.0825,
+      "outputPerM": 0.33,
       "inputModalities": [
         "text"
       ],
@@ -4094,8 +4110,8 @@
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "created": 1777000679,
       "contextLength": 1048576,
-      "inputPerM": 0.888188,
-      "outputPerM": 1.5082,
+      "inputPerM": 0.6659999999999999,
+      "outputPerM": 1.5663,
       "inputModalities": [
         "text"
       ],
@@ -4224,8 +4240,8 @@
       "name": "Google: Gemma 4 26B A4B ",
       "created": 1775227989,
       "contextLength": 262144,
-      "inputPerM": 0.09,
-      "outputPerM": 0.3,
+      "inputPerM": 0.0765,
+      "outputPerM": 0.255,
       "inputModalities": [
         "image",
         "text",
@@ -5792,7 +5808,7 @@
       "id": "z-ai/glm-4.6",
       "name": "Z.ai: GLM 4.6",
       "created": 1759235576,
-      "contextLength": 204800,
+      "contextLength": 202752,
       "inputPerM": 0.5,
       "outputPerM": 2,
       "inputModalities": [
@@ -5935,6 +5951,21 @@
       "contextLength": 262144,
       "inputPerM": 0.09999999999999999,
       "outputPerM": 1.1,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": false
+    },
+    {
+      "id": "moonshotai/kimi-k2-0905",
+      "name": "MoonshotAI: Kimi K2 0905",
+      "created": 1757021147,
+      "contextLength": 262144,
+      "inputPerM": 0.6,
+      "outputPerM": 2.5,
       "inputModalities": [
         "text"
       ],
@@ -6349,6 +6380,21 @@
       "contextLength": 262144,
       "inputPerM": 0.14,
       "outputPerM": 0.7999999999999999,
+      "inputModalities": [
+        "text"
+      ],
+      "outputModalities": [
+        "text"
+      ],
+      "supportsReasoning": false
+    },
+    {
+      "id": "moonshotai/kimi-k2",
+      "name": "MoonshotAI: Kimi K2 0711",
+      "created": 1752263252,
+      "contextLength": 131072,
+      "inputPerM": 0.5700000000000001,
+      "outputPerM": 2.3,
       "inputModalities": [
         "text"
       ],
@@ -6896,7 +6942,7 @@
       "created": 1741756359,
       "contextLength": 131072,
       "inputPerM": 0.08,
-      "outputPerM": 0.16,
+      "outputPerM": 0.44999999999999996,
       "inputModalities": [
         "text",
         "image"

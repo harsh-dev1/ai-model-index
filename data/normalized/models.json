@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-26T08:24:53.693Z",
+  "generatedAt": "2026-11-26T21:37:09.859Z",
   "snapshotDates": {
     "epoch": "2026-11-26",
     "arena": "2026-10-15",
     "openrouter": "2026-11-26"
   },
   "snapshotFetchedAt": {
-    "epoch": "2026-11-26T08:24:53.693Z",
+    "epoch": "2026-11-26T21:37:09.839Z",
     "arena": "2026-10-15T04:44:23.512Z",
-    "openrouter": "2026-11-26T08:24:53.529Z"
+    "openrouter": "2026-11-26T21:37:09.859Z"
   },
   "models": [
     {
@@ -1647,8 +1647,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.048,
-      "outputPerM": 0.144,
+      "inputPerM": 0.045599999999999995,
+      "outputPerM": 0.3,
       "modalities": [
         "text"
       ],
@@ -1705,8 +1705,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.888188,
-      "outputPerM": 1.5082,
+      "inputPerM": 0.6659999999999999,
+      "outputPerM": 1.5663,
       "modalities": [
         "text"
       ],
@@ -2814,7 +2814,7 @@
       "eci": null,
       "contextLength": 131072,
       "inputPerM": 0.08,
-      "outputPerM": 0.16,
+      "outputPerM": 0.44999999999999996,
       "modalities": [
         "text",
         "image"
@@ -2911,7 +2911,7 @@
       "releaseDate": "2025-09-30",
       "accessibility": null,
       "eci": null,
-      "contextLength": 204800,
+      "contextLength": 202752,
       "inputPerM": 0.5,
       "outputPerM": 2,
       "modalities": [
@@ -5751,6 +5751,49 @@
       ]
     },
     {
+      "slug": "kimi-k2",
+      "name": "Kimi K2 0711",
+      "vendor": "Moonshot",
+      "country": "China",
+      "releaseDate": "2025-11-06",
+      "accessibility": null,
+      "eci": null,
+      "contextLength": 131072,
+      "inputPerM": 0.5700000000000001,
+      "outputPerM": 2.3,
+      "modalities": [
+        "text"
+      ],
+      "supportsReasoning": false,
+      "benchmarks": [
+        {
+          "id": "frontiermath",
+          "raw": 0.21403508771929824,
+          "stderr": 0.02433800055326239
+        },
+        {
+          "id": "ale_bench",
+          "raw": 597.5,
+          "stderr": null
+        },
+        {
+          "id": "terminalbench",
+          "raw": 0.35730337078700003,
+          "stderr": 0.028202524731
+        },
+        {
+          "id": "metr_time_horizon",
+          "raw": 54.194148,
+          "stderr": null
+        }
+      ],
+      "arena": [],
+      "sources": [
+        "epoch",
+        "openrouter"
+      ]
+    },
+    {
       "slug": "kimi-k2-5",
       "name": "Kimi K2.5",
       "vendor": "Moonshot",
@@ -7381,8 +7424,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1024000,
-      "inputPerM": 0.035,
-      "outputPerM": 1.5,
+      "inputPerM": 0.06,
+      "outputPerM": 1.96,
       "modalities": [
         "text",
         "image",
@@ -8645,6 +8688,12 @@
     },
     {
       "source": "epoch+openrouter",
+      "raw": "inkling-2-mini",
+      "slug": "inkling-2-mini",
+      "reason": "too few results to rank (3 benchmarks, no Arena votes)"
+    },
+    {
+      "source": "epoch+openrouter",
       "raw": "inkling-2-small",
       "slug": "inkling-2-small",
       "reason": "too few results to rank (2 benchmarks, no Arena votes)"
@@ -8662,16 +8711,10 @@
       "reason": "no public API pricing found on OpenRouter"
     },
     {
-      "source": "epoch",
-      "raw": "kimi-k2",
-      "slug": "kimi-k2",
-      "reason": "no public API pricing found on OpenRouter"
-    },
-    {
-      "source": "epoch",
+      "source": "epoch+openrouter",
       "raw": "kimi-k2-0905",
       "slug": "kimi-k2-0905",
-      "reason": "no public API pricing found on OpenRouter"
+      "reason": "too few results to rank (2 benchmarks, no Arena votes)"
     },
     {
       "source": "epoch",
@@ -9821,11 +9864,11 @@
     }
   ],
   "stats": {
-    "epochModels": 376,
+    "epochModels": 377,
     "arenaModels": 65,
-    "openrouterModels": 359,
-    "joined": 506,
-    "eligible": 115,
+    "openrouterModels": 362,
+    "joined": 507,
+    "eligible": 116,
     "arenaMatchRate": 0.9384615384615385,
     "arenaTopMatchRate": 1
   }
