@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-26T21:37:09.859Z",
+  "generatedAt": "2026-11-27T21:20:48.033Z",
   "snapshotDates": {
-    "epoch": "2026-11-26",
+    "epoch": "2026-11-27",
     "arena": "2026-10-15",
-    "openrouter": "2026-11-26"
+    "openrouter": "2026-11-27"
   },
   "snapshotFetchedAt": {
-    "epoch": "2026-11-26T21:37:09.839Z",
+    "epoch": "2026-11-27T21:20:48.033Z",
     "arena": "2026-10-15T04:44:23.512Z",
-    "openrouter": "2026-11-26T21:37:09.859Z"
+    "openrouter": "2026-11-27T21:20:47.792Z"
   },
   "models": [
     {
@@ -1705,8 +1705,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.6659999999999999,
-      "outputPerM": 1.5663,
+      "inputPerM": 0.61361,
+      "outputPerM": 1.5016,
       "modalities": [
         "text"
       ],
@@ -1763,8 +1763,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 1048576,
-      "inputPerM": 0.111,
-      "outputPerM": 4.4399999999999995,
+      "inputPerM": 0.0999,
+      "outputPerM": 5,
       "modalities": [
         "text"
       ],
@@ -2766,6 +2766,58 @@
       ]
     },
     {
+      "slug": "gemini-4-neon",
+      "name": "Gemini 4 Neon",
+      "vendor": "Google",
+      "country": "United States of America",
+      "releaseDate": "2026-11-18",
+      "accessibility": null,
+      "eci": null,
+      "contextLength": 1048576,
+      "inputPerM": 1.5,
+      "outputPerM": 7.5,
+      "modalities": [
+        "audio",
+        "file",
+        "image",
+        "text",
+        "video"
+      ],
+      "supportsReasoning": true,
+      "benchmarks": [
+        {
+          "id": "gpqa_diamond",
+          "raw": 0.9627525252525253,
+          "stderr": 0.012868846530972452
+        },
+        {
+          "id": "otis_mock_aime",
+          "raw": 1,
+          "stderr": 0
+        },
+        {
+          "id": "arc_agi_2",
+          "raw": 0.9375,
+          "stderr": null
+        },
+        {
+          "id": "simpleqa_verified",
+          "raw": 0.752,
+          "stderr": 0.01366318713487752
+        },
+        {
+          "id": "ale_bench",
+          "raw": 2571.62,
+          "stderr": null
+        }
+      ],
+      "arena": [],
+      "sources": [
+        "epoch",
+        "openrouter"
+      ]
+    },
+    {
       "slug": "gemma-3-12b-it",
       "name": "Gemma 3 12B",
       "vendor": "Google",
@@ -2814,7 +2866,7 @@
       "eci": null,
       "contextLength": 131072,
       "inputPerM": 0.08,
-      "outputPerM": 0.44999999999999996,
+      "outputPerM": 0.16,
       "modalities": [
         "text",
         "image"
@@ -5802,8 +5854,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 262144,
-      "inputPerM": 0.5,
-      "outputPerM": 2.5,
+      "inputPerM": 0.6,
+      "outputPerM": 3,
       "modalities": [
         "text",
         "image"
@@ -6159,8 +6211,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 131072,
-      "inputPerM": 0.71,
-      "outputPerM": 0.71,
+      "inputPerM": 0.59,
+      "outputPerM": 0.7899999999999999,
       "modalities": [
         "text"
       ],
@@ -7013,8 +7065,8 @@
       "accessibility": null,
       "eci": null,
       "contextLength": 262144,
-      "inputPerM": 0.09999999999999999,
-      "outputPerM": 0.25,
+      "inputPerM": 0.08499999999999999,
+      "outputPerM": 0.125,
       "modalities": [
         "text",
         "image",
@@ -7368,6 +7420,46 @@
       ]
     },
     {
+      "slug": "qwen3-7-flash",
+      "name": "Qwen3.7 Flash",
+      "vendor": "Alibaba",
+      "country": "China",
+      "releaseDate": "2026-07-27",
+      "accessibility": null,
+      "eci": null,
+      "contextLength": 1000000,
+      "inputPerM": 0.03,
+      "outputPerM": 0.13,
+      "modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "supportsReasoning": true,
+      "benchmarks": [
+        {
+          "id": "gpqa_diamond",
+          "raw": 0.8232323232323232,
+          "stderr": 0.027178752639044908
+        },
+        {
+          "id": "otis_mock_aime",
+          "raw": 0.8666666666666667,
+          "stderr": 0.051247074319053836
+        },
+        {
+          "id": "ale_bench",
+          "raw": 420.1,
+          "stderr": null
+        }
+      ],
+      "arena": [],
+      "sources": [
+        "epoch",
+        "openrouter"
+      ]
+    },
+    {
       "slug": "qwen3-7-plus",
       "name": "Qwen3.7 Plus",
       "vendor": "Alibaba",
@@ -7511,6 +7603,51 @@
       "sources": [
         "epoch",
         "arena",
+        "openrouter"
+      ]
+    },
+    {
+      "slug": "qwen4",
+      "name": "Qwen4 Max",
+      "vendor": "Alibaba",
+      "country": "China",
+      "releaseDate": "2026-11-16",
+      "accessibility": null,
+      "eci": null,
+      "contextLength": 1000000,
+      "inputPerM": 1.4249999999999998,
+      "outputPerM": 4.2749999999999995,
+      "modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "supportsReasoning": true,
+      "benchmarks": [
+        {
+          "id": "gpqa_diamond",
+          "raw": 0.9400252525252525,
+          "stderr": 0.015752033742797628
+        },
+        {
+          "id": "otis_mock_aime",
+          "raw": 1,
+          "stderr": 0
+        },
+        {
+          "id": "simpleqa_verified",
+          "raw": 0.541,
+          "stderr": 0.015766025737882314
+        },
+        {
+          "id": "ale_bench",
+          "raw": 1830.97,
+          "stderr": null
+        }
+      ],
+      "arena": [],
+      "sources": [
+        "epoch",
         "openrouter"
       ]
     }
@@ -8261,12 +8398,6 @@
       "reason": "no public API pricing found on OpenRouter"
     },
     {
-      "source": "epoch+openrouter",
-      "raw": "gemini-4-neon",
-      "slug": "gemini-4-neon",
-      "reason": "too few results to rank (4 benchmarks, no Arena votes)"
-    },
-    {
       "source": "arena+openrouter",
       "raw": "gemini-nano-banana-2-1",
       "slug": "gemini-nano-banana-2-1",
@@ -8690,7 +8821,7 @@
       "source": "epoch+openrouter",
       "raw": "inkling-2-mini",
       "slug": "inkling-2-mini",
-      "reason": "too few results to rank (3 benchmarks, no Arena votes)"
+      "reason": "too few results to rank (4 benchmarks, no Arena votes)"
     },
     {
       "source": "epoch+openrouter",
@@ -9431,12 +9562,6 @@
       "reason": "no public API pricing found on OpenRouter"
     },
     {
-      "source": "epoch+openrouter",
-      "raw": "qwen3-7-flash",
-      "slug": "qwen3-7-flash",
-      "reason": "too few results to rank (2 benchmarks, no Arena votes)"
-    },
-    {
       "source": "epoch+arena",
       "raw": "qwen3.8-max",
       "slug": "qwen3-8",
@@ -9471,12 +9596,6 @@
       "raw": "qwen3-coder-plus",
       "slug": "qwen3-coder-plus",
       "reason": "no public API pricing found on OpenRouter"
-    },
-    {
-      "source": "epoch+openrouter",
-      "raw": "qwen4",
-      "slug": "qwen4",
-      "reason": "too few results to rank (3 benchmarks, no Arena votes)"
     },
     {
       "source": "epoch",
@@ -9868,7 +9987,7 @@
     "arenaModels": 65,
     "openrouterModels": 362,
     "joined": 507,
-    "eligible": 116,
+    "eligible": 119,
     "arenaMatchRate": 0.9384615384615385,
     "arenaTopMatchRate": 1
   }
